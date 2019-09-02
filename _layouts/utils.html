@@ -1,0 +1,32 @@
+{# Utility functions for the templates #}
+
+{% macro fa(name, class='', title='') %}
+    <i class="fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}
+
+{% macro fali(name, class='', title='') %}
+    <i class="fa-li fa fa-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}
+
+{% macro ai(name, class='', title='') %}
+    <i class="ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}
+
+{% macro aili(name, class='', title='') %}
+    <i class="fa-li ai ai-{{ name }} {{ class }}" title="{{ title }}"></i>
+{% endmacro %}
+
+{% macro author_list(authors, site, link=True) %}
+    {% for name in authors.split(', ') %}
+        {% if name in site.authors %}
+            {{ site.authors[name] }}{% if not loop.last %}, {% endif%}
+        {% else %}
+            {% set author = site.reflinks["/people/" ~ name] %}
+            {% if link %}
+                <a href="{{ author.url }}">{{ author.title }}</a>{% if not loop.last %}, {% endif%}
+            {% else %}
+                {{ author.title }}{% if not loop.last %}, {% endif%}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}

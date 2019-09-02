@@ -1,0 +1,34 @@
+{% extends "page.html" %}
+
+{% from "utils.html" import fa, ai, author_list %}
+
+{% block content %}
+
+{{ super() }}
+
+{% for row in this.content|batch(2) %}
+    <div class="row">
+    {% for thesis in row %}
+        <div class="col-md-6">
+            <div class="well article-box">
+                <a href="{{thesis.url}}">
+                    <h3>
+                        {% if thesis.oa is defined and thesis.oa %}
+                            {{ai("open-access", title="Open-access paper")}}
+                        {% endif %}
+                        {{ thesis.title }}
+                    </h3>
+                </a>
+                <p>
+                    ({{thesis.date.year}})
+                    {{ author_list(thesis.author, site, link=True) }}
+                    | Advisor: {{ author_list(thesis.advisor, site, link=True) }}
+                    | {{ thesis.level }} thesis
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}
+
+{% endblock %}

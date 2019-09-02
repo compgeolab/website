@@ -1,0 +1,28 @@
+{% extends "page.html" %}
+
+{% from "utils.html" import fa, ai %}
+
+{% block content %}
+
+{{ super() }}
+
+{% if not this.content %}
+    No recent news.
+{% else %}
+    {% for row in this.content|batch(2) %}
+        <div class="row">
+        {% for article in row %}
+            <div class="col-md-6">
+                <div class="well article-box">
+                    <h3>
+                        <small>{{article.date}}:</small>
+                    <a href="{{article.url}}">{{ article.title }}</a>
+                    </h3>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% endblock %}

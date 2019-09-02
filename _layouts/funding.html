@@ -1,0 +1,34 @@
+{% extends "page.html" %}
+
+{% from "utils.html" import fa, ai, author_list %}
+
+{% block content %}
+
+{{ super() }}
+
+{% for row in this.content|batch(2) %}
+    <div class="row">
+    {% for grant in row %}
+        <div class="col-md-6">
+            <div class="well article-box">
+                <a href="{{grant.url}}">
+                    <h3>
+                        {{ grant.title }}
+                    </h3>
+                </a>
+                <p>
+                    {{grant.period}}
+                    |
+                    PI: {{ author_list(grant.author.split(', ')[0], site, link=True) }}
+                    |
+                    {{ grant.institution }}
+                    |
+                    {{ grant.agency }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}
+
+{% endblock %}

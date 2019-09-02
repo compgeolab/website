@@ -1,0 +1,221 @@
+/* To stick the footer to the bottom of the page */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 12pt;
+    /* Margin bottom by footer height with a little room to accomodate small
+     * screens */
+    margin-bottom: 400px;
+}
+
+h1 {
+    margin-bottom: 21px;
+}
+
+h3 {
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+img.picture {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.fa-ul {
+    margin-top: 10px;
+}
+
+.fa-ul li {
+    margin-bottom: 15px;
+}
+
+.category-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item > i {
+    margin-right: 5px;
+}
+
+p.pub-date-author {
+    margin-bottom: 20px;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.alm {
+    margin-top: 20px;
+}
+
+.altmetric-embed img {
+    width: auto; /* Prevent img width=100% in Chrome (makes it stretched) */
+}
+
+.site-description {
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.carousel {
+    margin: 40px 0px;
+}
+
+.carousel-caption {
+    background: #00000099;
+    padding: 20px;
+}
+
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right {
+    position: absolute;
+    top: 50%;
+}
+
+.banner-area {
+    margin-top: 70px;
+}
+
+.latest-papers > li > a {
+    /*color: #2C3E50;*/
+}
+
+/* NAVBAR */
+/****************************************************************************/
+.menu {
+    border: none;
+    margin-bottom: 30px;
+    background-color: #333;
+    color: #ffffff;
+    position: relative;
+    min-height: 50px;
+    display: block;
+    font-size: 12pt;
+    line-height:50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+    color: #ffffff;
+}
+
+.menu-brand {
+    font-size: 19px;
+}
+
+.menu-brand > a:hover {
+    text-decoration: none;
+}
+
+.menu-brand > a > img {
+    width: 28px;
+    height: 28px;
+    display: inline;
+    margin: 0px 10px;
+}
+
+.menu-list {
+    padding-top: 0px;
+}
+
+.menu-list > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list > ul > li {
+    display: inline;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+/****************************************************************************/
+
+/* FOOTER */
+/****************************************************************************/
+footer {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #333;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: #dddddd;
+    /* To stick the footer to the bottom of the page */
+    position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    min-height: 180px;
+}
+
+footer a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+/****************************************************************************/
+
+/* ENTRY IN PAPER LIST */
+/****************************************************************************/
+.article-box {
+    background-color: #ffffff;
+}
+
+.article-box  img {
+    width: 100%;
+}
+
+.article-box i {
+    margin-right: 3px;
+}
+
+.article-box p {
+    color: #6F6F6F;
+}
+
+.article-box a {
+    color: #333;
+}
+
+
+/* ENTRY IN PEOPLE LIST */
+/****************************************************************************/
+.people-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.people-box img.img-circle {
+    width: 130px;
+}
+
+.people-box p {
+    font-size: 12pt;
+    color: #999999;
+}
+
+.people-box h2 {
+    margin-top: 20px;
+}

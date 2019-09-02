@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ this.title }} | {{ site.name }}
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    {% block breadcrumbs %}
+    {% endblock %}
+
+    {% block content_title %}
+        <h1>{{ this.title }}</h1>
+    {% endblock %}
+
+    {% block content %}
+        {{ this.body }}
+        <hr>
+    {% endblock %}
+
+</div>
+
+{% endblock %}

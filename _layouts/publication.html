@@ -1,0 +1,216 @@
+{% extends "page.html" %}
+{% from "utils.html" import fa, ai, fali, aili, author_list %}
+
+{% block breadcrumbs %}
+    <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        {%- for bc in this.breadcrumbs[:-1] -%}
+            <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
+        {%- endfor -%}
+    </ol>
+{% endblock %}
+
+{% block content_title %}
+    <h1>
+        {% if this.level is defined %}
+            <em>{{ this.level }} thesis</em>:
+        {% endif %}
+        {{ this.title }}
+    </h1>
+    {% if this.author is defined %}
+        <p class="pub-date-author">
+            {% if this.date is defined %}
+                ({{ this.date.year }})
+            {% endif %}
+            {{ author_list(this.author, site, link=True) }}
+        </p>
+    {% endif %}
+    <hr>
+{% endblock %}
+
+
+{% block content %}
+
+{% if this.inreview is defined and this.inreview %}
+    <div class="alert alert-warning">
+        This article is currently <strong>undergoing peer-review</strong>
+        at <em>{{ this.journal }}</em>.
+    </div>
+{% endif %}
+
+<div class="row">
+    <div class="col-md-4">
+
+        <h2>Info</h2>
+
+        <ul class="fa-ul">
+            {% block left %}
+                {% if this.oa is defined and this.oa %}
+                    <li class=" active">
+                        {{ aili("open-access", "fa-fw", "Open-access article") }}
+                        Open-Access
+                    </li>
+                {% endif %}
+                {% if this.journal is defined %}
+                    <li>
+                        {{ fali("book", "fa-fw", "Journal name") }}
+                        Journal: {{this.journal}}
+                    </li>
+                {% endif %}
+                {% if this.period is defined %}
+                    <li>
+                        {{ fali("calendar", "fa-fw", "Duration") }}
+                        {{this.period}}
+                    </li>
+                {% endif %}
+                {% if this.institution is defined %}
+                    <li>
+                        {{ fali("university", "fa-fw", "Institution") }}
+                        {{this.institution}}
+                    </li>
+                {% endif %}
+                {% if this.agency is defined %}
+                    <li>
+                        {{ fali("money", "fa-fw", "Funding agency") }}
+                        {{this.agency}}
+                    </li>
+                {% endif %}
+                {% if this.location is defined %}
+                    <li>
+                        {{ fali("map-marker", "fa-fw", "Location") }}
+                        {{this.location}}
+                    </li>
+                {% endif %}
+                {% if this.advisor is defined %}
+                    <li>
+                        {{ fali("graduation-cap", "fa-fw", "Advisor") }}
+                        Advisor: {{ author_list(this.advisor, site, link=True) }}
+                    </li>
+                {% endif %}
+                {% if this.coadvisor is defined %}
+                    <li>
+                        {{ fali("graduation-cap", "fa-fw", "Co-advisor") }}
+                        Co-advisor: {{ author_list(this.coadvisor, site, link=True) }}
+                    </li>
+                {% endif %}
+                {% if this.repository is defined %}
+                    <li>
+                        {{ fali("github-square", "fa-fw", "Github repository") }}
+                        Source code:
+                        <a href="https://github.com/{{this.repository}}">{{
+                            this.repository}}</a>
+                    </li>
+                {% endif %}
+                {% if this.supplement is defined %}
+                    <li>
+                        {{ fali("paperclip", "fa-fw", "Supplementary material") }}
+                        Supplement:
+                        <a href="https://doi.org/{{this.supplement}}">{{this.supplement}}</a>
+                    </li>
+                {% endif %}
+                {% if this.sucupira is defined %}
+                    <li>
+                        {{ fali("info-circle", "fa-fw", "Additional information") }}
+                        More info:
+                        <a href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho={{this.sucupira}}">Sucupira platform</a>
+                    </li>
+                {% endif %}
+                {% if this.pdf is defined %}
+                    <li>
+                        {{ fali("file-pdf-o", "fa-fw", "Paper PDF") }}
+                        PDF:
+                        <a href="/pdf/{{this.pdf}}" target="_blank" type="application/pdf">{{this.pdf}}</a>
+                    </li>
+                {% endif %}
+                {% if this.preprint is defined %}
+                    <li>
+                        {{ fali("file-pdf-o", "fa-fw", "Preprint PDF") }}
+                        PDF (preprint):
+                        <a href="https://doi.org/{{this.preprint}}">{{ this.preprint}}</a>
+                    </li>
+                {% endif %}
+                {% if this.doi is defined %}
+                    <li>
+                        {{ fali("external-link", "fa-fw", "DOI link to publisher") }}
+                        doi: <a href="https://doi.org/{{this.doi}}">{{
+                            this.doi}}</a>
+                    </li>
+                {% endif %}
+            {% endblock %}
+        </ul>
+
+        {% if this.doi is defined %}
+            <h2>Article Level Metrics</h2>
+            <div class="alm">
+                <div data-badge-details="right" data-badge-type="medium-donut" data-doi="{{this.doi}}"  data-condensed="true" class="altmetric-embed"></div>
+            </div>
+            <div class="alm">
+                <span class="__dimensions_badge_embed__" data-doi="{{ this.doi }}" data-legend="always"></span>
+                <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+            </div>
+        {% endif %}
+
+        {% if this.citation is defined %}
+            <h2>Citation</h2>
+            <p>{{this.citation}}</p>
+        {% endif %}
+
+
+        {% if this.related_papers is defined or this.related_thesis is defined %}
+            <h2>Related research</h2>
+            {% if this.related_papers is defined %}
+
+                {% set papers = [] %}
+                {% for paper in site.reflinks["/papers"].content %}
+                    {% if paper.components[-1] in this.related_papers.split(',') %}
+                        {% if papers.append(paper) %}{% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                <h3>Papers</h3>
+
+                <ul class="fa-ul">
+                {% for article in papers %}
+                    <li>
+                        <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                        <a href="{{ article.url }}">{{ article.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+
+            {% endif %}
+
+            {% if this.related_thesis is defined %}
+
+                {% set theses = [] %}
+                {% for thesis in site.reflinks["/thesis"].content %}
+                    {% if thesis.components[-1] in this.related_thesis.split(',') %}
+                        {% if theses.append(thesis) %}{% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                <h3>Theses</h3>
+
+                <ul class="fa-ul">
+                {% for article in theses %}
+                    <li>
+                        <i class="fa-li fa fa-book fa-fw"></i>
+                        <a href="{{ article.url }}">{{ article.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+
+            {% endif %}
+        {% endif %}
+
+    </div>
+
+
+    <div class="col-md-8">
+        {% block right %}
+            {{ this.body }}
+        {% endblock %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,209 @@
+{% extends "publication.html" %}
+{% from "utils.html" import fa, ai, fali, aili, author_list %}
+
+{% block content_title %}
+    <div class="row">
+        <div class="col-xs-4 col-sm-3 col-md-2">
+            {% if this.picture is defined %}
+                <img class="img-circle picture" src="/images/pic/{{this.picture}}"></img>
+            {% else %}
+                <img class="img-circle picture" src="/images/pic/misc.png"></img>
+            {% endif %}
+        </div>
+        <div class="col-xs-8 col-sm-9 col-md-10">
+            <h1>{{ this.title }}</h1>
+            <h2>
+                <em>{{ this.position }}</em>
+                {% if this.former is defined and this.former %}
+                    | <em>Former member</em>
+                {% endif %}
+            </h2>
+        </div>
+    </div>
+    <hr>
+{% endblock %}
+
+{% block left %}
+    {% if this.period is defined %}
+        <li>
+            {{ fali("calendar", "fa-fw", "Duration") }}
+            {{this.period}}
+        </li>
+    {% endif %}
+    {% if this.institution is defined %}
+        <li>
+            {{ fali("university", "fa-fw", "Institution") }}
+            {{this.institution}}
+        </li>
+    {% endif %}
+    {% if this.location is defined %}
+        <li>
+            {{ fali("map-marker", "fa-fw", "Location") }}
+            {{this.location}}
+        </li>
+    {% endif %}
+    {% if this.advisor is defined %}
+        <li>
+            {{ fali("graduation-cap", "fa-fw", "Advisor") }}
+            Advisor: {{ author_list(this.advisor, site, link=True) }}
+        </li>
+    {% endif %}
+    {% if this.coadvisor is defined %}
+        <li>
+            {{ fali("graduation-cap", "fa-fw", "Co-advisor") }}
+            Co-advisor: {{ author_list(this.coadvisor, site, link=True) }}
+        </li>
+    {% endif %}
+    {% if this.orcid is defined %}
+        <li>
+            {{ aili("orcid", "fa-fw", "ORCID") }}
+            ORCID: <a href="http://orcid.org/{{this.orcid}}">{{this.orcid}}</a>
+        </li>
+    {% endif %}
+    {% if this.researcherid is defined %}
+        <li>
+            {{ fali("barcode", "fa-fw", "ResearcherID") }}
+            ResearcherID: <a href="http://www.researcherid.com/rid/{{this.researcherid}}">{{this.researcherid}}</a>
+        </li>
+    {% endif %}
+    {% if this.impactstory is defined %}
+        <li>
+            {{ aili("impactstory", "fa-fw", "ImpactStory") }}
+            <a href="https://impactstory.org/u/{{this.impactstory}}">ImpactStory (online impact)</a>
+        </li>
+    {% endif %}
+    {% if this.scholar is defined %}
+        <li>
+            {{ aili("google-scholar", "fa-fw", "Google Scholar") }}
+            <a href="{{this.scholar}}">Google Scholar</a>
+        </li>
+    {% endif %}
+    {% if this.lattes is defined %}
+        <li>
+            {{ aili("lattes", "fa-fw", "Currículo Lattes") }}
+            <a href="{{this.lattes}}">Currículo Lattes</a>
+        </li>
+    {% endif %}
+    {% if this.researchgate is defined %}
+        <li>
+            {{ aili("researchgate", "fa-fw", "ResearchGate") }}
+            <a href="{{this.researchgate}}">ResearchGate</a>
+        </li>
+    {% endif %}
+    {% if this.github is defined %}
+        <li>
+            {{ fali("github-square", "fa-fw", "Github") }}
+            Github: <a href="http://github.com/{{this.github}}">{{this.github}}</a>
+        </li>
+    {% endif %}
+    {% if this.email is defined %}
+        <li>
+            {{ fali("envelope", "fa-fw", "email") }}
+            e-mail{% if this.email2 is defined %} (primary){% endif %}:
+            <a href="mailto:{{this.email}}">{{this.email}}</a>
+        </li>
+    {% endif %}
+    {% if this.email2 is defined %}
+        <li>
+            {{ fali("envelope", "fa-fw", "email") }}
+            e-mail (secondary): <a href="mailto:{{this.email2}}">{{this.email2}}</a>
+        </li>
+    {% endif %}
+    {% if this.website is defined %}
+        <li>
+            {{ fali("external-link-square", "fa-fw", "Personal website") }}
+            <a href="{{this.website}}">{{this.website.split("//")[1]}}</a>
+        </li>
+    {% endif %}
+{% endblock %}
+
+{% block right %}
+
+    {{ super() }}
+
+    {% set pubs = [] %}
+    {% for paper in site.reflinks["/papers"].content %}
+        {% if this.components[-1] in paper.author.split(", ") %}
+            {% if pubs.append(paper) %}{% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if pubs %}
+        <h2>Latest papers</h2>
+        <ul class="fa-ul">
+            {% for paper in pubs[:5] %}
+                <li><i class="fa-li fa fa-file-text-o fa-fw"></i>
+                    <a href="{{ paper.url }}">{{ paper.title }}</a>
+                    ({{ paper.date.year }})
+                    {% if paper.inreview is defined and paper.inreview %}
+                        <span class="label label-warning">under review</span>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% set theses = [] %}
+    {% for thesis in site.reflinks["/thesis"].content %}
+        {% if this.components[-1] in thesis.advisor.split(", ") %}
+            {% if theses.append(thesis) %}{% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if theses %}
+        <h2>Latest theses advised</h2>
+        <ul class="fa-ul">
+            {% for thesis in theses[:5] %}
+                <li><i class="fa-li fa fa-book fa-fw"></i>
+                    <a href="{{ thesis.url }}">{{ thesis.title }}</a>
+                    ({{ thesis.date.year }})
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% set students = site.reflinks["/people"].content|selectattr("advisor", "defined")|reverse|list %}
+    {% set mine_ad = students|selectattr("advisor", "equalto", this.components[-1])|list %}
+    {% set mine_co = students|selectattr("coadvisor", "defined")|selectattr("coadvisor", "equalto", this.components[-1])|list %}
+    {% set mine = mine_ad + mine_co %}
+    {% if mine %}
+        {% set current = mine|rejectattr("former", "defined")|list %}
+        {% if current %}
+            {{ list_students(current, "Current students") }}
+        {% endif %}
+
+        {% set past = mine|selectattr("former", "defined")|list %}
+        {% if past %}
+            {{ list_students(past, "Former students") }}
+        {% endif %}
+    {% endif %}
+
+    {% set theses = [] %}
+    {% for thesis in site.reflinks["/thesis"].content %}
+        {% if this.components[-1] in thesis.author.split(", ") %}
+            {% if theses.append(thesis) %}{% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if theses %}
+        <h2>Theses authored</h2>
+        <ul class="fa-ul">
+            {% for thesis in theses %}
+                <li><i class="fa-li fa fa-book fa-fw"></i>
+                    <a href="{{ thesis.url }}">{{ thesis.title }}</a>
+                    ({{ thesis.date.year }})
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+{% endblock %}
+
+
+{% macro list_students(students, title) %}
+    <h2>{{ title }}</h2>
+    <ul class="fa-ul">
+        {% for student in students %}
+        <li><i class="fa-li fa fa-user fa-fw"></i>
+            <a href="{{ student.url }}">{{ student.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}

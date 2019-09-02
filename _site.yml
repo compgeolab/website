@@ -1,0 +1,72 @@
+name: "PINGA lab"
+
+title: "<strong>PINGA</strong>lab"
+
+menu_logo: "/images/pinga-logo.png"
+
+description: "An international research group for inverse problems in Geophysics"
+
+banner: "/images/pinga-banner.svg"
+
+author: Leonardo Uieda
+
+keep_files: [".nojekyll"]
+
+ignore_patterns: [
+    "README.md",
+    "CONTRIBUTING.md",
+    ".github_deploy_key.enc",
+    "environment.yml",
+    "requirements.txt",
+    ".images",
+    "news/test*.md",
+    ]
+
+strict_undefined: true
+
+language: en
+
+keywords: 'science, geoscience, geophysics, software, open-source'
+
+authors:
+    carla: Carla Braitenberg
+    jbsilva: João B. C. Silva
+    elder: E. Yokoyama
+    acbruno: A. C. Bruno
+    joaomanoel: J. M. B Pereira
+    agustina: Agustina Pesce
+    mario: Mario E. Gimenez
+    jaraujo: J. Araujo
+    afsantos: A. F. Santos
+    cluz-lima: C. Luz-Lima
+    lafmendoza: L. A. F. Mendoza
+    guangdong: Guangdong Zhao
+    bo: Bo Chen
+    jliu: Jianxin Liu
+    mkaban: Mikhail K. Kaban
+    lchen: Longwei Chen
+    rguo: Rongwen Guo
+
+menulinks: [
+    ['/news', 'News'],
+    ['/research', 'Research'],
+    ['/funding', 'Funding'],
+    ['/papers', 'Papers'],
+    ['/thesis', 'Theses'],
+    ['/people', 'People'],
+    ['https://github.com/pinga-lab',
+     '<i class="fa fa-github fa-lg" title="Github"></i>'],
+    ]
+
+reflinks:
+    content_license:
+        url: http://creativecommons.org/licenses/by/4.0/
+        title: CC-BY License
+    site_repo:
+        url: https://github.com/pinga-lab/website
+        title: pinga-lab/website
+
+carousel:
+  tesseroid-variable-density.jpg: ["Gravitational field calculation in spherical coordinates using variable densities in depth", /papers/tesseroid-variable-density.html]
+  verde.jpg: ["Verde: Processing and gridding spatial data using Green's functions", /papers/verde.html]
+  monogenic-signal.jpg: ["The monogenic signal of potential-field data: A Python implementation", /papers/monogenic-signal-python.html]

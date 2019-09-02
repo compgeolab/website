@@ -1,0 +1,32 @@
+# Configuration file for TravisCI
+os: linux
+dist: xenial
+language: python
+python: "3.6"
+notifications:
+  email: false
+
+# Only build pushes from the master branch. PRs are always built.
+branches:
+  only:
+    - master
+
+env:
+  global:
+
+# Setup the build environment
+install:
+  # Install the requirements
+  - pip install -r requirements.txt
+
+script:
+  # Build the website HTML
+  - make
+
+deploy:
+  # Push the built HMTL to Github pages
+  #- provider: script
+    #script: doctr deploy . --built-docs _build --key-path .github_deploy_key.enc --deploy-repo compgeolab/compgeolab.github.io
+    #skip_cleanup: true
+    #on:
+      #branch: master

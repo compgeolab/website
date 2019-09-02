@@ -1,0 +1,15 @@
+name: urubu
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.6
+    - pip
+    - doctr
+    - jinja2>=2.7
+    - beautifulsoup4
+    - markdown<3
+    - pygments
+    - pyyaml
+    - pip:
+        - urubu==1.3.1

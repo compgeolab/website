@@ -2,9 +2,7 @@ title: "Computer-Oriented Geoscience Lab"
 
 description: "Geophysical research powered by open-source software"
 
-brand: "Computer-Oriented Geoscience Lab"
-
-brand_img: "/images/compgeolab.svg"
+brand: "/images/compgeolab-banner.svg"
 
 url: https://www.compgeolab.org
 
@@ -44,11 +42,12 @@ menulinks: [
 
 menuicons: [
     ['https://github.com/compgeolab', '<i class="fa fa-github fa-lg" title="Github"></i>'],
+    ['https://twitter.com/compgeolab', '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
     ['/tag', '<i class="fa fa-tags fa-lg" title="Browse by tag"></i>'],
     ['/rss.xml', '<i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i>'],
     ]
 
-twitter: leouieda
+twitter: compgeolab
 
 authors:
     uieda: Leonardo Uieda

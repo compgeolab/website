@@ -70,10 +70,6 @@ i.ai {
     line-height: 1.7em;
 }
 
-.content {
-    margin-top: 30px;
-}
-
 .home-index {
     margin-bottom: 100px;
 }
@@ -283,12 +279,43 @@ img {
     margin: 0px;
 }
 
-.banner-description {
-    font-size: 2.5em;
+.banner-slogan {
+    padding: 80px 0px;
+}
+
+.banner-slogan h1 {
+    font-size: 3em;
     font-weight: normal;
     line-height: 1.7em;
     margin: 0px;
-    padding: 100px 0px;
+}
+
+.banner-slogan p {
+    font-size: 1.3em;
+    font-weight: normal;
+    line-height: 1.7em;
+    margin: 40px 0px 50px 0px;
+}
+
+.banner-slogan a {
+    color: #ffffff;
+}
+
+.banner-slogan a:hover {
+    text-transform: none;
+}
+
+.banner-button {
+    font-size: 1em;
+    border: none;
+    border-radius: 7px;
+    background-color: #d40000;
+    box-shadow: inset -2px -2px 1px rgba(0,0,0,0.3);
+}
+
+.banner-button:hover {
+    background-color: #cf0000;
+    box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3);
 }
 
 .summary-box {

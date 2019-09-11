@@ -75,10 +75,20 @@
                 {{ menu("menu-transparent", site) }}
 
                 <div class="banner-text">
-                    {% if this.description is defined %}
-                        <h1 class="banner-description" title="{{ title }}">
-                            {{ this.description }}
-                        </h1>
+                    {% if this.slogan is defined %}
+                        <div class="container content banner-slogan">
+                            <h1 title="{{ title }}">{{ this.slogan }}</h1>
+                            {% if this.description is defined %}
+                                <p title="{{ title }}">{{ this.description }}</p>
+                            {% endif %}
+                            {% if this.button_text is defined %}
+                                <a href="{{ this.button_target }}" target="_blank">
+                                    <button type="button" class="btn btn-lg banner-button">
+                                        {{ this.button_text }}
+                                    </button>
+                                </a>
+                            {% endif %}
+                        </div>
                     {% else %}
                         <h1 class="banner-title" title="{{ title }}">
                             {{ this.title }}

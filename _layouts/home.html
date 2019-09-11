@@ -1,97 +1,26 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
+{% from "utils.html" import make_index %}
+
+{% block twitter_card_description %}
+    <meta name="twitter:description" content="{{ site.description|striptags }}">
+{% endblock %}
+
+{% block opengraph_description %}
+    <meta property="og:description" content="{{ site.description|striptags }}">
+{% endblock %}
+
+{% block breadcrumbs %}
+{% endblock %}
+
+{% block title %}
+    {{ site.title|striptags }}
+{% endblock %}
+
 
 {% block body %}
 
-<div class="container">
-
-<div class="row banner-area">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8">
-        <img src="{{ site.banner }}"></img>
-        <div class="alert site-description">
-            {{ site.description }}
-        </div>
-    </div>
-    <div class="col-md-2">
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6">
+    <div class="container">
         {{ this.body }}
     </div>
-    <div class="col-md-6">
-        <h2>Research highlights</h2>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">
-            <div class="carousel-inner" role="listbox">
-                {% for img in site.carousel %}
-                    <div class="item{% if loop.index == 1 %} active{% endif %}">
-                        <a href="{{ site.carousel[img][1] }}" target="_blank">
-                            <img class="carousel-image" src="/images/carousel/{{ img }}">
-                        </a>
-                        <div class="carousel-caption">
-                            {{ site.carousel[img][0] }}
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <i class="fa fa-chevron-right"></i>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>News</h2>
-        {% if not site.reflinks["/news"].content %}
-            No recent news.
-        {% else %}
-            <ul class="fa-ul">
-            {% for article in site.reflinks["/news"].content[0:3] %}
-                <li><i class="fa-li fa fa-comment-o fa-fw"></i>
-                    {{ article.date }}:
-                    <a href="{{ article.url }}">{{ article.title }}</a>
-                </li>
-            {% endfor %}
-            </ul>
-        {% endif %}
-    </div>
-    <div class="col-md-4">
-        <h2>Papers</h2>
-        <ul class="fa-ul latest-papers">
-        {% for article in site.reflinks["/papers"].content[0:5] %}
-            <li><i class="fa-li fa fa-file-text-o fa-fw"></i>
-                <a href="{{ article.url }}">{{ article.title }}</a>
-                ({{ article.date.year }})
-                {% if article.inreview is defined and article.inreview %}
-                    <span class="label label-warning">under review</span>
-                {% endif %}
-            </li>
-        {% endfor %}
-        </ul>
-    </div>
-    <div class="col-md-4">
-        <h2>Theses</h2>
-        <ul class="fa-ul latest-papers">
-        {% for thesis in site.reflinks["/thesis"].content[0:5] %}
-            <li><i class="fa-li fa fa-book fa-fw"></i>
-                <a href="{{ thesis.url }}">{{ thesis.title }}</a>
-                ({{ thesis.date.year }})
-            </li>
-        {% endfor %}
-        </ul>
-    </div>
-</div>
-
-</div>
 
 {% endblock %}

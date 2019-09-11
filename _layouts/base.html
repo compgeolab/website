@@ -5,32 +5,47 @@
 {% block head %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     {% block meta %}
-        <meta name="author" content="{{ site.author }}"/>
+        <meta name="author" content="{{ site.authors[site.author] }}"/>
+
         {% if site.keywords %}
             <meta name="keywords" content="{{ site.keywords }}"/>
         {% endif %}
+
+        {% block twitter_card %}
+        {% endblock %}
+
+        {% block opengraph %}
+        {% endblock %}
     {% endblock %}
-    <title>{% block title %}{{ site.name }}{% endblock title %}</title>
+
+    <title>{% block title %}{{ site.title|striptags }}{% endblock title %}</title>
     <link rel="shortcut icon" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <!-- Include the Source Sans Pro Google fonts CSS -->
-    <link rel="stylesheet" href="/css/sourcesanspro/sourcesanspro.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    {% if site.rss is defined %}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.rss }}" title="{{ site.title }}">
+    {% endif %}
+
+    <!-- Include Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300%7COpen+Sans:400,600" rel="stylesheet">
+
     <!--Include the Font Awesome and Academicons CSS-->
     <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
-    <!-- Include MathJax from the CDN -->
-    <script type="text/javascript" async
-     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    <!-- Google Analytics -->
+
+    <!-- Google Analytics tracking code -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-38125837-6', 'auto', {'storage': 'none'});
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+            Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38125837-5', 'auto', {'storage': 'none'});
       ga('set', 'anonymizeIp', true);
       ga('send', 'pageview');
     </script>
@@ -39,7 +54,42 @@
 
 <body>
 
-    {% include 'nav.html' %}
+    {% from "utils.html" import menu %}
+
+    {% block banner %}
+        {% if this.banner is defined %}
+            {% if this.banner_position is defined %}
+                {% set position = this.banner_position %}
+            {% else %}
+                {% set position = "center" %}
+            {% endif %}
+            {% if this.banner_description is defined %}
+                {% set title = this.banner_description %}
+            {% else %}
+                {% set title = "" %}
+            {% endif %}
+            <div class="banner"
+                 title="{{ title }}"
+                 style="background-image: linear-gradient(to top, transparent, #00000099), url(/{{ site.banner_path }}/{{ this.banner }}); background-position: {{position}};">
+
+                {{ menu("menu-transparent", site) }}
+
+                <div class="banner-text">
+                    {% if this.description is defined %}
+                        <div class="banner-description" title="{{ title }}">
+                            {{ this.description }}
+                        </div>
+                    {% else %}
+                        <h1 class="banner-title" title="{{ title }}">
+                            {{ this.title }}
+                        </h1>
+                    {% endif %}
+                </div>
+            </div>
+        {% else %}
+            {{ menu("menu-opaque", site) }}
+        {% endif %}
+    {% endblock %}
 
     {% block body %}
     {% endblock %}
@@ -55,8 +105,7 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <!-- For the altmetric badge in articles -->
-    <script type='text/javascript'
-     src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
 </body>
 </html>

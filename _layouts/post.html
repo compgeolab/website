@@ -1,12 +1,24 @@
-{% extends "page.html" %}
-{% from "utils.html" import fa, ai %}
+{% extends "publication.html" %}
+{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_index, pub_info_icon, related_pages, disqus %}
 
-{% block content_title %}
-    <h1>{{ this.title }}</h1>
-    <em>Published on {{ this.date }}</em>
-    <hr>
-{% endblock %}
 
 {% block content %}
+
+    <h1>{{ this.title }}</h1>
+
+    <ul class="fa-ul">
+        <li class="post-date">
+            {{ pub_info_icon("fa fa-calendar", "date") }}
+            {{ this.date.strftime(' %d %B %Y') }}
+        </li>
+        {% if this.tags is defined %}
+            <li>
+                {{ pub_info_icon("fa fa-tags", "tags") }}
+                {{ make_tags(this.tags) }}
+            </li>
+        {% endif %}
+    </ul>
+
     {{ this.body }}
+
 {% endblock %}

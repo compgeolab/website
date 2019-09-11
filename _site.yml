@@ -1,72 +1,120 @@
-name: "PINGA lab"
+title: "Computer-Oriented Geoscience Lab"
 
-title: "<strong>PINGA</strong>lab"
+description: "Geophysical research powered by open-source software"
 
-menu_logo: "/images/pinga-logo.png"
+brand: "Computer-Oriented Geoscience Lab"
 
-description: "An international research group for inverse problems in Geophysics"
+brand_img: "/images/compgeolab.svg"
 
-banner: "/images/pinga-banner.svg"
+url: https://www.compgeolab.org
 
-author: Leonardo Uieda
+rss: https://www.compgeolab.org/rss.xml
 
-keep_files: [".nojekyll"]
-
-ignore_patterns: [
-    "README.md",
-    "CONTRIBUTING.md",
-    ".github_deploy_key.enc",
-    "environment.yml",
-    "requirements.txt",
-    ".images",
-    "news/test*.md",
-    ]
-
-strict_undefined: true
+author: uieda
 
 language: en
 
 keywords: 'science, geoscience, geophysics, software, open-source'
 
+keep_files: [".nojekyll"]
+
+ignore_patterns: [
+    "README.md",
+    "LICENSE.md",
+    ".github_deploy_key.enc",
+    "environment.yml",
+    "requirements.txt",
+    "css/academicons/README.md",
+    ]
+
+strict_undefined: true
+
+thumbnail_path: "images/thumb"
+
+banner_path: "images/banner"
+
+menulinks: [
+    ['/news', 'News'],
+    ['/research', 'Research'],
+    ['/publications', 'Publications'],
+    ['/software', 'Software'],
+    ['/people', 'People'],
+    ['/manual', 'Manual'],
+    ]
+
+menuicons: [
+    ['https://github.com/compgeolab', '<i class="fa fa-github fa-lg" title="Github"></i>'],
+    ['/tag', '<i class="fa fa-tags fa-lg" title="Browse by tag"></i>'],
+    ['/rss.xml', '<i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i>'],
+    ]
+
+twitter: leouieda
+
 authors:
+    uieda: Leonardo Uieda
+    barbosa: Valéria C. F. Barbosa
     carla: Carla Braitenberg
+    melo: Felipe F. Melo
+    oliveira-jr: Vanderlei C. Oliveira Jr
     jbsilva: João B. C. Silva
-    elder: E. Yokoyama
-    acbruno: A. C. Bruno
-    joaomanoel: J. M. B Pereira
+    daiana: Daiana P. Sales
+    carlos: Dionisio U. Carlos
+    ussami: Naomi Ussami
+    everton: Everton P. Bomfim
+    eder: Eder Molina
+    yli: Yaoguo Li
+    mbraga: Marco A. Braga
+    angeli: Glauco Angeli
+    peres: Guilherme Peres
+    dagrella: Manoel S. D'Agrella Filho
+    pwessel: Paul Wessel
+    joaquim: Joaquim Luis
+    remko: Remko Scharroo
+    wobbe: Florian Wobbe
+    walter: Walter H. F. Smith
+    dongdong: Dongdong Tian
+    hallam: Kristoffer A. T. Hallam
+    sandwell: David Sandwell
+    bridget: Bridget Smith-Konter
+    eric: Xiaohua Xu
+    santiago: Santiado R. Soler
     agustina: Agustina Pesce
     mario: Mario E. Gimenez
-    jaraujo: J. Araujo
-    afsantos: A. F. Santos
-    cluz-lima: C. Luz-Lima
-    lafmendoza: L. A. F. Mendoza
+    lindsey: Lindsey J. Heagy
     guangdong: Guangdong Zhao
     bo: Bo Chen
     jliu: Jianxin Liu
     mkaban: Mikhail K. Kaban
     lchen: Longwei Chen
     rguo: Rongwen Guo
-
-menulinks: [
-    ['/news', 'News'],
-    ['/research', 'Research'],
-    ['/funding', 'Funding'],
-    ['/papers', 'Papers'],
-    ['/thesis', 'Theses'],
-    ['/people', 'People'],
-    ['https://github.com/pinga-lab',
-     '<i class="fa fa-github fa-lg" title="Github"></i>'],
-    ]
+    lbarba: Lorena A. Barba
+    jbazan: Juanjo Bazan
+    jbrown: Jed Brown
+    rguimera: Roman V. Guimera
+    mgymrek: Melissa Gymrek
+    ahanna: Alex Hanna
+    khuff: Kathryn D. Huff
+    dkatz: Daniel S. Katz
+    cmadan: Christopher R. Madan
+    kmoerman: Kevin M. Moerman
+    kniemeyer: Kyle E. Niemeyer
+    jpoulson: Jack L. Poulson
+    pprins: Pjotr Prins
+    kram: Karthik Ram
+    arokem: Ariel Rokem
+    arfon: Arfon M. Smith
+    gthiruvathukal: George K. Thiruvathukal
+    kthyng: Kristen M. Thyng
+    bwilson: Bruce E. Wilson
+    yehudi: Yo Yehudi
 
 reflinks:
+    leouieda:
+        url: https://www.leouieda.com
+        title: Leonardo Uieda
     content_license:
         url: http://creativecommons.org/licenses/by/4.0/
         title: CC-BY License
     site_repo:
-        url: https://github.com/pinga-lab/website
-        title: pinga-lab/website
-
-carousel:
-  tesseroid-variable-density.jpg: ["Gravitational field calculation in spherical coordinates using variable densities in depth", /papers/tesseroid-variable-density.html]
-  verde.jpg: ["Verde: Processing and gridding spatial data using Green's functions", /papers/verde.html]
-  monogenic-signal.jpg: ["The monogenic signal of potential-field data: A Python implementation", /papers/monogenic-signal-python.html]
+        url: https://github.com/compgeolab/website
+        title: compgeolab/website

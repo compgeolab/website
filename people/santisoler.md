@@ -1,5 +1,5 @@
 ---
-title: Santiago Soler
+title: Santiago R. Soler
 date: 2017-05-26
 position: PhD Student
 institution: Instituto Geofísico Sismológico Volponi

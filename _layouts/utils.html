@@ -136,13 +136,17 @@
 
 {%- macro get_authors(article, site, fancy=true) -%}
 {# Make the author list by expanding the stubs into full names from "site.authors" #}
-    {%- for author in article.author.split(', ') -%}
-        {%- if fancy and author == site.author -%}
-            {% set author_name = "<strong>" + site.authors[author] + "</strong>" -%}
-        {%- else -%}
-            {% set author_name = site.authors[author] -%}
+    {%- for name in article.author.split(', ') -%}
+        {% if "/people/" + name in site.reflinks %}
+            {% set author = site.reflinks["/people/" + name] %}
+            {%- if fancy -%}
+                <a href="{{ author.url }}">{{ author.title }}</a>{% if not loop.last %}, {% endif %}
+            {%- else -%}
+                {{ author.title }}{% if not loop.last %}, {% endif %}
+            {%- endif -%}
+        {% else %}
+            {{ site.authors[name] }}{% if not loop.last %}, {% endif%}
         {%- endif -%}
-        {{ author_name }}{% if not loop.last %}, {% endif %}
     {%- endfor -%}
 {%- endmacro -%}
 

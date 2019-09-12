@@ -240,6 +240,11 @@ p.pub-date-author {
     margin: 0px 3px;
 }
 
+.card-author a {
+    color: #000000;
+    font-weight: 600;
+}
+
 img {
     width: 100%;
 }

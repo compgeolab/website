@@ -220,20 +220,20 @@ p.pub-date-author {
     padding: 20px 0px;
 }
 
-.card-caption {
-    padding-top: 9px;
-    padding-bottom: 9px;
-    color: #333333;
-    font-size: 0.9em;
-    line-height: 1.5em;
+.card-title {
 }
 
-.card-title {
-    color: #2780e3;
+.card-caption {
+    font-size: 0.9em;
+    margin: 10px 0px 0px 0px;
 }
 
 .card-date {
-    color: #aaaaaa;
+    color: #888888;
+}
+
+.card-author {
+    margin: 0px 3px;
 }
 
 img {

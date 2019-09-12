@@ -72,36 +72,35 @@
 {%- endmacro -%}
 
 
-{%- macro card(page, site, year_only=true) -%}
+{%- macro card(page, site, year_only=true, title_only=false) -%}
 {# Make a card linked to the page showing the title, authors, date, etc #}
-    <div class="well card">
-        <a href="{{ page.url }}">
-            <span class="card-title">
-                {{ page.title }}
-                {%- if page.oa is defined and page.oa -%}
-                    {{ ai("open-access") }}
+    <div class="card">
+        <span class="card-title">
+            <a href="{{ page.url }}">{{ page.title }}</a>
+        </span>
+        {% if not title_only %}
+            <p class="card-caption">
+                <span class="card-date">
+                    {%- if year_only -%}
+                        ({{ page.date.year }})
+                    {%- else -%}
+                        ({{ page.date.strftime('%Y-%m-%d') }})
+                    {%- endif -%}
+                </span>
+                <span class="card-author">
+                    {{ get_authors(page, site) }}
+                </span>
+                {%- if page.inreview is defined and page.inreview -%}
+                    <span class="label label-warning">under review</span>
                 {%- endif -%}
-            </span>
-        </a>
-        <p class="card-authors">
-            <span class="card-date">
-                {%- if year_only -%}
-                    ({{ page.date.year }})
-                {%- else -%}
-                    ({{ page.date.strftime('%Y-%m-%d') }})
+                {%- if page.preprint_server is defined and page.preprint_server -%}
+                    <span class="label label-primary">preprint</span>
                 {%- endif -%}
-            </span>
-            {{ get_authors(page, site) }}.
-        </p>
-        {%- if page.inreview is defined and page.inreview -%}
-            <span class="label label-warning">IN REVIEW</span>
-        {%- endif -%}
-        {%- if page.preprint_server is defined and page.preprint_server -%}
-            <span class="label label-primary">PREPRINT</span>
-        {%- endif -%}
-        {%- if page.accepted is defined and page.accepted -%}
-            <span class="label label-primary">ACCEPTED</span>
-        {%- endif -%}
+                {%- if page.accepted is defined and page.accepted -%}
+                    <span class="label label-primary">accepted</span>
+                {%- endif -%}
+            </p>
+        {% endif %}
     </div>
 {%- endmacro -%}
 
@@ -120,25 +119,12 @@
         <div class="row">
         {%- for article in row -%}
             <div class="col-md-6 col-sm-6 col-xs-6">
-                {{ card(article, site, year_only=year_only) }}
+                {{ card(article, site, year_only=year_only, title_only=title_only) }}
             </div>
         {%- endfor -%}
         </div>
     {%- endfor -%}
     </div>
-{%- endmacro -%}
-
-
-{%- macro make_side_index(content, site, date=false, year_only=true, show_oa=false, ncards=false) -%}
-{# Make a list of cards for the side bar #}
-    {%- if ncards == false -%}
-        {% set cards = content -%}
-    {%- else -%}
-        {% set cards = content[:ncards] -%}
-    {%- endif -%}
-    {% for article in cards %}
-        {{ card(article, site, date=date, year_only=year_only, show_oa=show_oa, collapse_side=true) }}
-    {% endfor %}
 {%- endmacro -%}
 
 
@@ -433,8 +419,8 @@
 {# Create an index section with pages that share a tag with this one #}
     {% set pages = article|related(site)|sort(attribute='date', reverse=true) %}
     {% if pages %}
-        <h2>Related pages</h2>
-        {{ make_index(pages, site, year_only=true, ncards=4, hr=false) }}
+        <h2>Related</h2>
+        {{ make_index(pages, site, ncards=4, hr=false, title_only=true) }}
     {% endif %}
 {%- endmacro -%}
 
@@ -471,20 +457,6 @@
             {% set badges = badges + [altmetric_badge(article.doi)] %}
             {% set badges = badges + [dimensions_badge(article.doi)] %}
         {%- endif -%}
-        {%- if article.preprint is defined -%}
-            {% set badges = badges + [altmetric_badge(article.preprint)] %}
-            {% set badges = badges + [dimensions_badge(article.preprint)] %}
-        {%- endif -%}
-        {%- if article.supplement is defined -%}
-            {% set badges = badges + [altmetric_badge(article.supplement)] %}
-            {% set badges = badges + [dimensions_badge(article.supplement)] %}
-        {%- endif -%}
-        {%- if article.poster is defined -%}
-            {% set badges = badges + [altmetric_badge(article.poster)] %}
-        {%- endif -%}
-        {%- if article.slides is defined -%}
-            {% set badges = badges + [altmetric_badge(article.slides)] %}
-        {%- endif -%}
 
         {%- if badges -%}
             <h2>Article Level Metrics</h2>
@@ -513,6 +485,7 @@
         {%- endif -%}
     {%- endif -%}
 {%- endmacro -%}
+
 
 {%- macro menu(class, site, brand=true, columns=true) -%}
 {# Layout the menu using the specified class #}

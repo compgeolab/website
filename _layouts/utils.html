@@ -198,37 +198,6 @@
             </p>
         {%- endif -%}
     {%- endif -%}
-
-    {%- if article.inprogress is defined and article.inprogress -%}
-        {%- if fancy -%}
-            <div class="alert alert-info alert-blue">
-            {{ fa("refresh", "fa-fw", "Course in progress") }}
-        {%- else -%}
-            <p>
-        {%- endif -%}
-            This course is currently <strong>in progress</strong>
-            for the {{article.date.year}} school year.
-        {%- if fancy -%}
-            </div>
-        {%- else -%}
-            </p>
-        {%- endif -%}
-    {%- endif -%}
-
-    {%- if article.future is defined and article.future -%}
-        {%- if fancy -%}
-            <div class="alert alert-info alert-blue">
-            {{ fa("clock-o", "fa-fw", "Future event") }}
-        {%- else -%}
-            <p>
-        {%- endif -%}
-            This event will happen on {{article.date}}.
-        {%- if fancy -%}
-            </div>
-        {%- else -%}
-            </p>
-        {%- endif -%}
-    {%- endif -%}
 {%- endmacro -%}
 
 
@@ -238,7 +207,8 @@
    "meta" to "baseurl" and make a link using "meta" as the link text.
 #}
     {%- if meta[:4] == "http" -%}
-        <a href="{{ meta }}">{{ meta }}</a>
+        {% set name = meta.split("://")[1] %}
+        <a href="{{ meta }}">{{ name }}</a>
     {% elif "<a href=" in meta and "</a>" in meta -%}
         {{ meta }}
     {%- else -%}
@@ -288,16 +258,68 @@
                 Journal: <em>{{article.journal}}</em>
             </li>
         {%- endif -%}
-        {%- if article.event is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-users", "Event name", fancy) }}
-                {{article.event}}
-            </li>
-        {%- endif -%}
         {%- if article.institution is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-university", "Institution", fancy) }}
                 {{article.institution}}
+            </li>
+        {%- endif -%}
+        {%- if article.location is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-map-marker", "Location", fancy) }}
+                {{article.location}}
+            </li>
+        {%- endif -%}
+        {%- if article.email is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-envelope", "email", fancy) }}
+                <a href="mailto:{{article.email}}">{{article.email}}</a>
+            </li>
+        {%- endif -%}
+        {%- if article.orcid is defined -%}
+            <li>
+                {{ pub_info_icon("ai ai-orcid", "ORCID", fancy) }}
+                <a href="https://orcid.org/{{article.orcid}}">ORCID</a>
+            </li>
+            <li>
+                {{ pub_info_icon("ai ai-impactstory", "Impactstory", fancy) }}
+                <a href="https://impactstory.org/u/{{article.orcid}}">Impactstory</a>
+            </li>
+        {%- endif -%}
+        {%- if article.researcherid is defined -%}
+            <li>
+                {{ pub_info_icon("ai ai-researcherid", "ResearcherID", fancy) }}
+                <a href="https://publons.com/researcher/{{article.researcherid}}">ResearcherID</a>
+            </li>
+        {%- endif -%}
+        {%- if article.scholar is defined -%}
+            <li>
+                {{ pub_info_icon("ai ai-google-scholar", "Google Scholar", fancy) }}
+                <a href="{{article.scholar}}">Google Scholar</a>
+            </li>
+        {%- endif -%}
+        {%- if article.researchgate is defined -%}
+            <li>
+                {{ pub_info_icon("ai ai-researchgate", "ResearchGate", fancy) }}
+                <a href="{{article.researchgate}}">ResearchGate</a>
+            </li>
+        {%- endif -%}
+        {%- if article.github is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-github", "GitHub", fancy) }}
+                <a href="https://github.com/{{article.github}}">GitHub</a>
+            </li>
+        {%- endif -%}
+        {%- if article.twitter is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-twitter", "Twitter", fancy) }}
+                <a href="https://twitter.com/{{article.twitter}}">Twitter</a>
+            </li>
+        {%- endif -%}
+        {%- if article.linkedin is defined -%}
+            <li>
+                {{ pub_info_icon("fa fa-linkedin", "LinkedIn", fancy) }}
+                <a href="https://linkedin.com/in/{{article.linkedin}}">LinkedIn</a>
             </li>
         {%- endif -%}
         {%- if article.agency is defined -%}
@@ -309,7 +331,7 @@
         {%- if article.role is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-users", "Project role", fancy) }}
-                {{article.role}}
+                Role: {{article.role}}
             </li>
         {%- endif -%}
         {%- if article.award is defined -%}
@@ -324,59 +346,10 @@
                 {{article.funds}}
             </li>
         {%- endif -%}
-        {%- if article.thesis is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-book", "Thesis title", fancy) }}
-                Thesis: <em>{{ article.thesis }}</em>
-            </li>
-        {%- endif -%}
-        {%- if article.advisor is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-graduation-cap", "Advisor", fancy) }}
-                Advisor: {{ article.advisor }}
-            </li>
-        {%- endif -%}
-        {%- if article.sucupira is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-info-circle", "Additional information", fancy) }}
-                More info:
-                <a href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id_trabalho={{article.sucupira}}">Sucupira platform</a>
-            </li>
-        {%- endif -%}
-        {%- if article.course is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-graduation-cap", "Course type", fancy) }}
-                {{ article.course|capitalize() }} course
-            </li>
-        {%- endif -%}
-        {%- if article.language is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-flag", "Programming language", fancy) }}
-                Language: {{article.language}}
-            </li>
-        {%- endif -%}
         {%- if article.license is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-gavel", "Open-source license", fancy) }}
-                {{article.license}} License
-            </li>
-        {%- endif -%}
-        {%- if article.slides is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-desktop", "Download slides", fancy) }}
-                Slides: {{ make_metadata_link(article.slides) }}
-            </li>
-        {%- endif -%}
-        {%- if article.poster is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-picture-o", "Download poster", fancy) }}
-                Poster: {{ make_metadata_link(article.poster) }}
-            </li>
-        {%- endif -%}
-        {%- if article.youtube is defined -%}
-            <li>
-                {{ pub_info_icon("fa fa-youtube-play", "Video on Youtube", fancy) }}
-                YouTube video: {{ make_metadata_link(article.youtube, baseurl="https://www.youtube.com/watch?v=") }}
+                License: {{article.license}}
             </li>
         {%- endif -%}
         {%- if article.repository is defined -%}
@@ -412,7 +385,7 @@
         {%- if article.website is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-home", "Website", fancy) }}
-                Website: {{ make_metadata_link(article.website) }}
+                {{ make_metadata_link(article.website) }}
             </li>
         {%- endif -%}
         {%- if article.tags is defined -%}

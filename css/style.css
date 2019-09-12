@@ -303,7 +303,7 @@ img {
     font-size: 1.2em;
     font-weight: normal;
     line-height: 1.7em;
-    margin: 40px 0px 50px 0px;
+    margin: 40px 10px 50px 10px;
 }
 
 .banner-slogan a {
@@ -327,41 +327,12 @@ img {
     box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3);
 }
 
-.summary-box {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-
 .alert-blue {
     background-color: #2780e3;
 }
 
-.sidebar h2 {
-    margin-top: 30px;
-}
-
-.sidebar .card {
-    padding-top: 0px;
-}
-
-.sidebar .card-thumbnail {
-    padding-top: 15px;
-}
-
 .post-date {
     color: #aaaaaa;
-}
-
-.contact {
-    margin-bottom: 30px;
-}
-
-.feedback {
-    margin-bottom: 20px;
-}
-
-#disqus_thread {
-    margin-top: 90px;
 }
 
 .tag {
@@ -408,13 +379,24 @@ img {
     font-size: 0.9em;
 }
 
-.research-index {
-    margin-top: 60px;
-    margin-bottom: 60px;
+.person h1 {
+    margin-bottom: 0px;
+}
+
+.person h2 {
+    font-size: 1.6em;
+    border-bottom: none;
+    margin: 10px 0px;
 }
 
 @media (min-width: 1200px) {
     .content {
         width: 900px;
+    }
+}
+
+@media (max-width: 767px) {
+    .picture {
+        padding: 0px 20%;
     }
 }

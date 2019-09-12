@@ -1,0 +1,44 @@
+{% extends "page.html" %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info,
+   article_level_metrics, feedback, insert_thumbnail, make_breadcrumbs, related_pages,
+   disqus %}
+
+
+{% block breadcrumbs %}
+    {{ make_breadcrumbs(this) }}
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <img class="img-circle picture" src="/images/people/{{this.picture}}"></img>
+        </div>
+        <div class="col-sm-9 col-md-10">
+            <div class="person">
+            <h1>{{ this.title }}</h1>
+            <h2>
+                {{ this.position }}
+                {% if this.former is defined and this.former %}
+                    | Former member
+                {% endif %}
+            </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            {{ this.body }}
+        </div>
+        <div class="col-md-4">
+            <h2>Info</h2>
+
+            <div class="info">
+                {{ pub_info(this, fancy=true) }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,20 +1,20 @@
 ---
 title: Leonardo Uieda
-date: 2019-09-09
+date: 2017-01-01
 institution: University of Liverpool
 location: Liverpool, United Kingdom
-position: Lecturer
+position: Lecturer - PI
 website: https://www.leouieda.com
 picture: uieda.jpg
 github: leouieda
-email: leouieda@gmail.com
-email2: Leonardo.Uieda@liverpool.ac.uk
+twitter: leouieda
+linkedin: uieda
+email: Leonardo.Uieda@liverpool.ac.uk
 scholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
 researcherid: G-3258-2012
 researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
 orcid: 0000-0001-6123-9515
-impactstory: 0000-0001-6123-9515
-layout: page
+layout: person
 ---
 
 

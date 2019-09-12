@@ -5,8 +5,6 @@ position: PhD Student
 institution: Instituto Geofísico Sismológico Volponi
 location: San Juan, Argentina
 period: 2017-Present
-advisor: mario
-coadvisor: uieda
 website: https://santisoler.github.io
 picture: santisoler.jpg
 github: santisoler
@@ -14,7 +12,7 @@ email: santiago.r.soler@gmail.com
 scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
 researchgate: https://www.researchgate.net/profile/Santiago_Soler2
 orcid: 0000-0001-9202-5317
-layout: page
+layout: person
 ---
 
 # About

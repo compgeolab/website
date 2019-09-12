@@ -136,7 +136,6 @@ i.ai {
 .menu-brand > a > img {
     height: 50px;
     display: inline;
-    margin: 0px 10px;
 }
 
 .menu-list {
@@ -263,7 +262,7 @@ img {
 
 .banner-text {
     margin: 0;
-    padding: 10px 10% 70px 10%;
+    padding: 20px 0px 80px 0px;
     width: 100%;
     display: table;
     vertical-align: middle;
@@ -284,14 +283,14 @@ img {
 }
 
 .banner-slogan h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: normal;
     line-height: 1.7em;
     margin: 0px;
 }
 
 .banner-slogan p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: normal;
     line-height: 1.7em;
     margin: 40px 0px 50px 0px;

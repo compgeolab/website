@@ -11,10 +11,12 @@
             {{ pub_info_icon("fa fa-calendar", "date") }}
             {{ this.date.strftime(' %d %B %Y') }}
         </li>
-        <li>
-            {{ pub_info_icon("fa fa-users", "authors") }}
-            {{ get_authors(this, site, fancy=true) }}
-        </li>
+        {% if this.author is defined %}
+            <li>
+                {{ pub_info_icon("fa fa-users", "authors") }}
+                {{ get_authors(this, site, fancy=true) }}
+            </li>
+        {% endif %}
         {% if this.tags is defined %}
             <li>
                 {{ pub_info_icon("fa fa-tags", "tags") }}

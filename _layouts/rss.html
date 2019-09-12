@@ -22,22 +22,21 @@
         <guid>{{ site.url }}{{ post.url }}</guid>
         <pubDate>{{ post.date.strftime('%a, %d %b %Y 12:00:00 GMT') }}</pubDate>
         {% if post.author is defined %}
-        <dc:creator>{{ get_authors(post, site, fancy=false) }}</dc:creator>
+        <dc:creator>{{ get_authors(post, site)|striptags }}</dc:creator>
         {% endif %}
         <description><![CDATA[
 
             {{ pub_alerts(post, fancy=false) }}
 
-            {% if category != "blog" %}
+            {{ post.body }}
+
+            {% if category == "publications" %}
                 <h2>Info</h2>
                 {{ pub_info(post, fancy=false) }}
             {% endif %}
-
-            {{ post.body }}
-
             {% if post.citation is defined %}
                 <h2>Citation</h2>
-                <p>{{post.citation}}</p>
+                <p>{{ post.citation }}</p>
             {% endif %}
 
         ]]></description>

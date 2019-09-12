@@ -22,6 +22,6 @@
     {% for group in this.content|groupby("type") %}
         {% set category = site.reflinks[group.grouper] %}
         <h2 class="category-header">{{ category.title }}</h2>
-        {{ make_index(group.list, site, year_only=true, hr=false) }}
+        {{ make_index(group.list, site) }}
     {% endfor %}
 {% endblock %}

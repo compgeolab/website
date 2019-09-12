@@ -4,10 +4,8 @@ date: 2019-06-11
 author: santiago, agustina, mario, uieda
 repository: pinga-lab/tesseroid-variable-density
 journal: Geophysical Journal International
-thumbnail: tesseroid-variable-density.png
 layout: publication
 tags: gravity, tesseroids, forward-modeling
-alm: true
 doi: 10.1093/gji/ggz277
 preprint: 10.31223/osf.io/3548g
 supplement: 10.6084/m9.figshare.8239622

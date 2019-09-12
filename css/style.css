@@ -96,7 +96,7 @@ i.ai {
 
 .breadcrumb {
     font-size: 0.9em;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .menu {
@@ -224,7 +224,12 @@ p.pub-date-author {
 
 .card-caption {
     font-size: 0.9em;
-    margin: 10px 0px 0px 0px;
+    margin: 0px;
+}
+
+.card-body {
+    font-size: 0.9em;
+    margin: 0px;
 }
 
 .card-date {
@@ -239,13 +244,13 @@ img {
     width: 100%;
 }
 
+.alm {
+    margin-top: 30px;
+}
+
 .altmetric-embed img + .__dimensions_badge_embed__ img {
     width: auto;
     height: 100%;
-}
-
-.altmetric-badge-group {
-    padding: 20px 15px;
 }
 
 .embed-responsive {

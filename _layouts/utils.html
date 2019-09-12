@@ -72,22 +72,24 @@
 {%- endmacro -%}
 
 
-{%- macro card(page, site, year_only=true, title_only=false) -%}
+{%- macro card(page, site, author=true, date=true, body=false) -%}
 {# Make a card linked to the page showing the title, authors, date, etc #}
     <div class="card">
         <span class="card-title">
             <a href="{{ page.url }}">{{ page.title }}</a>
         </span>
-        {% if not title_only %}
+        {% if date or author %}
             <p class="card-caption">
-                <span class="card-date">
-                    {%- if year_only -%}
-                        ({{ page.date.year }})
-                    {%- else -%}
-                        ({{ page.date.strftime('%Y-%m-%d') }})
-                    {%- endif -%}
-                </span>
-                {% if page.author is defined %}
+                {% if date %}
+                    <span class="card-date">
+                        {%- if date == "full" -%}
+                            ({{ page.date.strftime('%Y-%m-%d') }})
+                        {%- else -%}
+                            ({{ page.date.year }})
+                        {%- endif -%}
+                    </span>
+                {% endif %}
+                {% if author and page.author is defined %}
                     <span class="card-author">
                         {{ get_authors(page, site) }}
                     </span>
@@ -103,28 +105,30 @@
                 {%- endif -%}
             </p>
         {% endif %}
+        {% if body %}
+            <div class="card-body">
+                {{ page.body|striptags|truncate }}
+            </div>
+        {% endif %}
     </div>
 {%- endmacro -%}
 
 
-{%- macro make_index(content, site, title_only=false, year_only=true, hr=true, ncards=false) -%}
+{%- macro make_index(content, site, author=true, date=true, body=false, ncards=false, columns=true) -%}
     <div class="card-index">
-    {%- if hr -%}
-        <hr>
-    {%- endif -%}
     {%- if ncards == false -%}
         {% set cards = content -%}
     {%- else -%}
         {% set cards = content[:ncards] -%}
     {%- endif -%}
     {%- for row in cards|batch(2) -%}
-        <div class="row">
+        {%- if columns -%}<div class="row">{%- endif -%}
         {%- for article in row -%}
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                {{ card(article, site, year_only=year_only, title_only=title_only) }}
-            </div>
+            {%- if columns -%}<div class="col-md-6 col-sm-6">{%- endif -%}
+                {{ card(article, site, author=author, date=date, body=body) }}
+            {%- if columns -%}</div>{%- endif -%}
         {%- endfor -%}
-        </div>
+        {%- if columns -%}</div>{%- endif -%}
     {%- endfor -%}
     </div>
 {%- endmacro -%}
@@ -417,12 +421,25 @@
 {%- endmacro -%}
 
 
-{%- macro related_pages(article, site) -%}
+{%- macro related_pages(article, site, columns=false, author=false, date=false) -%}
 {# Create an index section with pages that share a tag with this one #}
     {% set pages = article|related(site)|sort(attribute='date', reverse=true) %}
     {% if pages %}
         <h2>Related</h2>
-        {{ make_index(pages, site, ncards=4, hr=false, title_only=true) }}
+        <ul class="fa-ul">
+        {% for article in pages %}
+            {% set category = article.id.split('/')[1] %}
+            {% if category == "publications" %}
+                {% set icon = "file-text-o" %}
+            {% else %}
+                {% set icon = "comment-o" %}
+            {% endif %}
+            <li>
+                <i class="fa-li fa fa-{{ icon }} fa-fw"></i>
+                <a href="{{ article.url }}">{{ article.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
     {% endif %}
 {%- endmacro -%}
 
@@ -430,12 +447,7 @@
 {%- macro altmetric_badge(doi) -%}
 {# Insert the altmetric badge if "doi" is a valid doi. #}
     {%- if "doi.org/" in make_metadata_link(doi) -%}
-        <div class="altmetric-embed"
-             data-badge-popover="right"
-             data-badge-type="medium-donut"
-             data-doi="{{ doi }}"
-        >
-        </div>
+        <div data-badge-details="right" data-badge-type="medium-donut" data-doi="{{ doi }}"  data-condensed="true" class="altmetric-embed"></div>
     {%- endif -%}
 {%- endmacro -%}
 
@@ -443,7 +455,7 @@
 {%- macro dimensions_badge(doi) -%}
 {# Insert the Dimensions.ai badge if "doi" is a valid doi. #}
     {%- if "doi.org/" in make_metadata_link(doi) -%}
-    <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
+    <span class="__dimensions_badge_embed__" data-doi="{{ doi }}" data-legend="always"></span>
     <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
     {%- endif -%}
 {%- endmacro -%}
@@ -451,41 +463,12 @@
 
 {%- macro article_level_metrics(article) -%}
 {# Create the article level metrics section #}
-
-    {%- if article.alm is defined and article.alm -%}
-
-        {% set badges = [] %}
-        {%- if article.doi is defined -%}
-            {% set badges = badges + [altmetric_badge(article.doi)] %}
-            {% set badges = badges + [dimensions_badge(article.doi)] %}
-        {%- endif -%}
-
-        {%- if badges -%}
-            <h2>Article Level Metrics</h2>
-
-            {% set per_row = 4 %}
-            {% set per_group = 2 %}
-            {% set col_size_group = 12 // (per_row // per_group) %}
-            {% set col_size_badge = 12 // per_group %}
-
-            {%- for row in badges|batch(per_row) -%}
-                <div class="row">
-                {%- for group in row|batch(per_group) -%}
-                    <div class="col-sm-{{ col_size_group }} altmetric-badge-group">
-                        <div class="row">
-                        {%- for badge in group -%}
-                            <div class="col-xs-{{ col_size_badge }}">
-                                {{ badge }}
-                            </div>
-                        {%- endfor -%}
-                        </div>
-                    </div>
-                {%- endfor -%}
-                </div>
-            {%- endfor -%}
-
-        {%- endif -%}
-    {%- endif -%}
+    {% set badges = [altmetric_badge(article.doi), dimensions_badge(article.doi)] %}
+    {%- for badge in badges -%}
+        <div class="alm">
+            {{ badge }}
+        </div>
+    {%- endfor -%}
 {%- endmacro -%}
 
 

@@ -6,10 +6,8 @@ repository: fatiando/verde
 journal: Journal of Open Source Software
 doi: 10.21105/joss.00957
 citation: "Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(30), 957. doi:10.21105/joss.00957"
-alm: true
-thumbnail: verde.png
 layout: publication
-tags: fatiando, open-source, equivalent-layer
+tags: fatiando, open-source, data-processing
 oa: true
 ---
 

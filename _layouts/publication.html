@@ -24,21 +24,29 @@
 
     {{ pub_alerts(this, fancy=true) }}
 
-    <h2>Info</h2>
+    <div class="row">
+        <div class="col-md-8">
+            {{ this.body }}
+        </div>
+        <div class="col-md-4">
+            <h2>Info</h2>
 
-    <div class="info">
-        {{ pub_info(this, fancy=true) }}
+            <div class="info">
+                {{ pub_info(this, fancy=true) }}
+            </div>
+
+            {% if this.doi is defined %}
+                <h2>Article Level Metrics</h2>
+                {{ article_level_metrics(this) }}
+            {% endif %}
+
+            {% if this.citation is defined %}
+                <h2>Citation</h2>
+                <p>{{ this.citation }}</p>
+            {% endif %}
+
+            {{ related_pages(this, site, columns=false) }}
+        </div>
     </div>
-
-    {{ this.body }}
-
-    {% if this.citation is defined %}
-        <h2>Citation</h2>
-        <p>{{this.citation}}</p>
-    {% endif %}
-
-    {{ article_level_metrics(this) }}
-
-    {{ related_pages(this, site) }}
 
 {% endblock %}

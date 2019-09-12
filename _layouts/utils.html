@@ -87,9 +87,11 @@
                         ({{ page.date.strftime('%Y-%m-%d') }})
                     {%- endif -%}
                 </span>
-                <span class="card-author">
-                    {{ get_authors(page, site) }}
-                </span>
+                {% if page.author is defined %}
+                    <span class="card-author">
+                        {{ get_authors(page, site) }}
+                    </span>
+                {% endif %}
                 {%- if page.inreview is defined and page.inreview -%}
                     <span class="label label-warning">under review</span>
                 {%- endif -%}

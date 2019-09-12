@@ -18,11 +18,10 @@
 
 {% block content %}
     <h1>{{ fa('tags', title="Pages with tag") }} {{ make_tag(this.title, link=false) }}</h1>
-    {{ make_index(this.content, site, date=true, year_only=true, show_oa=true) }}
     {# The type attribute is define by a hook in _python/hooks.py #}
-    {# {% for group in this.content|groupby("type") %}
+    {% for group in this.content|groupby("type") %}
         {% set category = site.reflinks[group.grouper] %}
-        <h2 class="category-header"><a href="{{ category.url }}">{{ category.title }}  »</a></h2>
-        {{ make_index(group.list, site, date=true, year_only=true, show_oa=true, hr=false) }}
-    {% endfor %} #}
+        <h2 class="category-header">{{ category.title }}</h2>
+        {{ make_index(group.list, site, year_only=true, hr=false) }}
+    {% endfor %}
 {% endblock %}

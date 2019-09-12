@@ -32,7 +32,6 @@ several sets of constraints to overcome the instability of the solution.
 
 <div class="research-index">
     {{ make_tags(["inversion", "gravity", "magnetic", "euler-deconvolution"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/inversion"].content[:4], site, hr=false, date=false) }}
 </div>
 
 
@@ -48,7 +47,6 @@ I'm still doing work related to this theme.
 
 <div class="research-index">
     {{ make_tags(["forward-modeling", "tesseroids"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/forward-modeling"].content[:4], site, hr=false, date=false) }}
 </div>
 
 
@@ -76,5 +74,4 @@ problems.
 
 <div class="research-index">
     {{ make_tags(["equivalent-layer"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/equivalent-layer"].content[:4], site, hr=false, date=false) }}
 </div>

@@ -1,5 +1,5 @@
 {% extends "publication.html" %}
-{% from "utils.html" import feedback, insert_thumbnail, make_tags, fa, make_index, pub_info_icon, related_pages, disqus %}
+{% from "utils.html" import make_tags, make_index, pub_info_icon, get_authors, related_pages %}
 
 
 {% block content %}
@@ -10,6 +10,10 @@
         <li class="post-date">
             {{ pub_info_icon("fa fa-calendar", "date") }}
             {{ this.date.strftime(' %d %B %Y') }}
+        </li>
+        <li>
+            {{ pub_info_icon("fa fa-users", "authors") }}
+            {{ get_authors(this, site, fancy=true) }}
         </li>
         {% if this.tags is defined %}
             <li>

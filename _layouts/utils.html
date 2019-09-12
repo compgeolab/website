@@ -72,65 +72,41 @@
 {%- endmacro -%}
 
 
-{%- macro card(page, site, date=true, year_only=true, show_oa=false, inprogress=false, collapse_side=false) -%}
-{# Make a card linked to the page showing the thumbnail, title, etc #}
-    {%- if collapse_side -%}
-        {% set col_thumb = "col-xs-6 col-sm-4 col-md-12" -%}
-        {% set col_title = "col-xs-6 col-sm-8 col-md-12" -%}
-    {%- else -%}
-        {% set col_thumb = "col-md-12" -%}
-        {% set col_title = "col-md-12" -%}
-    {%- endif -%}
-    <a href="{{ page.url }}">
-    <div class="row card">
-        <div class="{{ col_thumb }} card-thumbnail">
-            {{ insert_thumbnail(page, site, fancy=false) }}
-        </div>
-        <div class="{{ col_title }} card-caption">
-            {%- if show_oa and page.oa is defined and page.oa -%}
-                {{ ai("open-access") }}
-            {%- endif -%}
+{%- macro card(page, site, year_only=true) -%}
+{# Make a card linked to the page showing the title, authors, date, etc #}
+    <div class="well card">
+        <a href="{{ page.url }}">
             <span class="card-title">
                 {{ page.title }}
+                {%- if page.oa is defined and page.oa -%}
+                    {{ ai("open-access") }}
+                {%- endif -%}
             </span>
-            {%- if date -%}
-                <br>
-                <span class="card-date">
+        </a>
+        <p class="card-authors">
+            <span class="card-date">
                 {%- if year_only -%}
                     ({{ page.date.year }})
                 {%- else -%}
-                    ({{ page.date.strftime('%d %b %Y') }})
+                    ({{ page.date.strftime('%Y-%m-%d') }})
                 {%- endif -%}
-                </span>
-            {%- endif -%}
-            <br>
-            {%- if inprogress and page.inprogress is defined and page.inprogress -%}
-                <span class="label label-primary">IN PROGRESS</span>
-            {%- endif -%}
-            {%- if page.inreview is defined and page.inreview -%}
-                <span class="label label-warning">IN REVIEW</span>
-            {%- endif -%}
-            {%- if page.preprint_server is defined and page.preprint_server -%}
-                <span class="label label-primary">PREPRINT</span>
-            {%- endif -%}
-            {%- if page.accepted is defined and page.accepted -%}
-                <span class="label label-primary">ACCEPTED</span>
-            {%- endif -%}
-            {%- if page.future is defined and page.future -%}
-                <span class="label label-warning">UPCOMING</span>
-            {%- endif -%}
-        </div>
-    </div></a>
+            </span>
+            {{ get_authors(page, site) }}.
+        </p>
+        {%- if page.inreview is defined and page.inreview -%}
+            <span class="label label-warning">IN REVIEW</span>
+        {%- endif -%}
+        {%- if page.preprint_server is defined and page.preprint_server -%}
+            <span class="label label-primary">PREPRINT</span>
+        {%- endif -%}
+        {%- if page.accepted is defined and page.accepted -%}
+            <span class="label label-primary">ACCEPTED</span>
+        {%- endif -%}
+    </div>
 {%- endmacro -%}
 
 
-{%- macro make_index(content, site, date=false, year_only=true, show_oa=false, hr=true, ncards=false, twocolumn=true) -%}
-{# Make an index of cards for the elements in content.
-   There will be 4 cards in a row and collapse to 2 in a row for smaller
-   displays. The way to do this is to batch the cards into pairs, make a row
-   with 2 columns and place a pair in each column.
-   If ncards is not false, then it should be number of cards to show.
-#}
+{%- macro make_index(content, site, title_only=false, year_only=true, hr=true, ncards=false) -%}
     <div class="card-index">
     {%- if hr -%}
         <hr>
@@ -141,25 +117,13 @@
         {% set cards = content[:ncards] -%}
     {%- endif -%}
     {%- for row in cards|batch(2) -%}
-        {%- if twocolumn -%}
-            {%- if loop.index is odd -%}
-                <div class="row">
-            {%- endif -%}
-            <div class="col-md-6">
-        {%- endif -%}
-                <div class="row">
-                {%- for article in row -%}
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        {{ card(article, site, date=date, year_only=year_only, show_oa=show_oa) }}
-                    </div>
-                {%- endfor -%}
-                </div>
-        {%- if twocolumn -%}
+        <div class="row">
+        {%- for article in row -%}
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                {{ card(article, site, year_only=year_only) }}
             </div>
-            {%- if loop.index is even or loop.last -%}
-                </div>
-            {%- endif -%}
-        {%- endif -%}
+        {%- endfor -%}
+        </div>
     {%- endfor -%}
     </div>
 {%- endmacro -%}
@@ -470,7 +434,7 @@
     {% set pages = article|related(site)|sort(attribute='date', reverse=true) %}
     {% if pages %}
         <h2>Related pages</h2>
-        {{ make_index(pages, site, date=true, year_only=true, ncards=4, hr=false) }}
+        {{ make_index(pages, site, year_only=true, ncards=4, hr=false) }}
     {% endif %}
 {%- endmacro -%}
 
@@ -547,20 +511,6 @@
             {%- endfor -%}
 
         {%- endif -%}
-    {%- endif -%}
-{%- endmacro -%}
-
-
-{%- macro insert_thumbnail(article, site, fancy=true) -%}
-{# Make the thumbnail image for the article #}
-    {%- if fancy -%}
-        {% set class = "pub-thumbnail" -%}
-    {%- else -%}
-        {% set class = "" -%}
-    {%- endif -%}
-    {%- if article.thumbnail is defined -%}
-    <img class="{{ class }}" alt="Thumbnail image for publication."
-         src="/{{ site.thumbnail_path }}/{{ article.thumbnail }}">
     {%- endif -%}
 {%- endmacro -%}
 

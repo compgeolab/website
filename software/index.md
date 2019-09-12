@@ -1,6 +1,6 @@
 ---
 title: Software
-layout: index
+layout: page
 order: date
 banner: disturbance.jpg
 banner_description: "Map of the gravity disturbance around the Pacific Ocean."
@@ -18,13 +18,9 @@ and hosted on [Github](https://github.com/leouieda/).
 
 <div class="research-index">
     {{ make_tags(["open-source"], icon=true) }}
-    {{ make_index(site.reflinks["/tag/open-source"].content[:4], site, hr=false, date=false) }}
 </div>
 
 I'm the creator and/or maintainer of the following projects:
-
-<div class="research-index">
-</div>
 
 
 ## Fatiando a Terra ([www.fatiando.org](https://www.fatiando.org))

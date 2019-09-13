@@ -1,0 +1,44 @@
+{% extends "page.html" %}
+
+
+{% macro person_card(person) -%}
+    <a href="{{person.url}}">
+    <div class="person-card">
+        <img class="img-circle" src="/images/people/{{ person.picture }}"></img>
+        <p class="person-card-name">{{ person.title }}</p>
+        <p class="person-card-position">{{ person.position }}<br>{{ person.institution }}</p>
+    </div>
+    </a>
+{%- endmacro %}
+
+
+{% block content %}
+
+    {{ super() }}
+
+    {% for row in this.content|rejectattr("former", "defined")|sort(attribute='date')|batch(3) %}
+        <div class="row">
+        {% for person in row %}
+            <div class="col-sm-4 col-md-4">
+                {{ person_card(person) }}
+            </div>
+        {% endfor %}
+        </div>
+    {% endfor %}
+
+    {% set former = this.content|selectattr("former", "defined")|list %}
+    {% if former %}
+        <h2>Former members</h2>
+
+        {% for row in former|sort(attribute='date', reverse=true)|batch(3) %}
+            <div class="row">
+            {% for person in row %}
+                <div class="col-sm-4 col-md-4">
+                    {{ person_card(person) }}
+                </div>
+            {% endfor %}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

@@ -389,6 +389,26 @@ img {
     margin: 10px 0px;
 }
 
+.person-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.person-card img.img-circle {
+    width: 200px;
+}
+
+.person-card-position {
+    font-size: 0.9em;
+    color: #aaaaaa;
+    margin: 0px;
+}
+
+.person-card-name {
+    font-size: 1.3em;
+    margin: 20px 0px 5px 0px;
+}
+
 @media (min-width: 1200px) {
     .content {
         width: 900px;

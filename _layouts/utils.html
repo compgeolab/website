@@ -475,6 +475,12 @@
         </div>
         <div class="{{ col_small }} menu-list">
             <ul>
+                {% if site.github is defined %}
+                    <li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                {% endif %}
+                {% if site.twitter is defined %}
+                    <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                {% endif %}
                 {% for url, title in site.menuicons %}
                     <li><a href="{{ url }}">{{ title }}</a></li>
                 {% endfor %}

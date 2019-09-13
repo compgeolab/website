@@ -193,7 +193,12 @@ footer a:hover {
 }
 
 .footer-text {
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 30px 0px;
+    font-size: 0.9em;
+}
+
+.footer-text p {
+    margin: 0px 0px 15px 0px;
 }
 
 .list-group-item {

@@ -21,6 +21,38 @@
 
     <div class="container">
         {{ this.body }}
+
+        {% set latest = 3 %}
+        <div class="row">
+            <div class="col-md-6">
+                <h2>News</h2>
+                <ul class="fa-ul">
+                {% for page in site.reflinks["/news"].content[:latest] %}
+                    <li>
+                        <i class="fa-li fa fa-comments-o fa-fw"></i>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                        <br>
+                        <span class="card-date">({{ page.date.strftime('%Y-%m-%d') }})</span>
+                        {{ page.body|striptags|truncate(length=130) }}
+                    </li>
+                {% endfor %}
+                </ul>
+                <a class="text-right" href="/news">News archives »</a>
+            </div>
+            <div class="col-md-6">
+                <h2>Publications</h2>
+                <ul class="fa-ul">
+                {% for page in site.reflinks["/publications"].content[:latest] %}
+                    <li>
+                        <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+                <a href="/publications">All publications »</a>
+            </div>
+        </div>
+
     </div>
 
 {% endblock %}

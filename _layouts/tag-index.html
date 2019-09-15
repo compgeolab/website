@@ -2,11 +2,10 @@
 {% from "utils.html" import make_index, make_tags, fa %}
 
 {% block content %}
-    <h1>{{ fa('tags') }} {{ this.title }}</h1>
     {% if this.body is defined %}
         {{ this.body }}
     {% endif %}
-    <hr>
+    <h2>{{ fa('tags') }} List of tags in use (click to browse tagged pages)</h2>
     <div class="tag-index">
         {{ make_tags(site|tagnames|sort) }}
     </div>

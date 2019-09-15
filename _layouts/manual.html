@@ -1,0 +1,41 @@
+{% extends "page.html" %}
+{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info,
+   article_level_metrics, feedback, insert_thumbnail, make_breadcrumbs, related_pages,
+   disqus %}
+
+
+{% block breadcrumbs %}
+    {% if not this.banner is defined %}
+        {{ make_breadcrumbs(this) }}
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-8">
+            {% if not this.banner is defined %}
+                <h1>{{ this.title }}</h1>
+            {% endif %}
+            {{ this.body }}
+        </div>
+        <div class="col-md-4">
+            <h2>Contents</h2>
+            <ul>
+                <li>
+                    <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>
+                    <ul>
+                        {% for page in site.reflinks["/manual"].content %}
+                            <li>
+                                <a href="{{ page.url }}">{{ page.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
+

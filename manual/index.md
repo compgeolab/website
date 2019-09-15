@@ -1,9 +1,8 @@
 ---
 title: Manual
-layout: index
+layout: manual
 order: date
 reverse: true
-banner: disturbance.jpg
 ---
 
 **UNDER CONSTRUCTION**

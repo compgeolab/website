@@ -208,11 +208,11 @@
 #}
     {%- if meta[:4] == "http" -%}
         {% set name = meta.split("://")[1] %}
-        <a href="{{ meta }}">{{ name }}</a>
+        <a target="_blank" href="{{ meta }}">{{ name }}</a>
     {% elif "<a href=" in meta and "</a>" in meta -%}
         {{ meta }}
     {%- else -%}
-        <a href="{{ baseurl }}{{ meta }}">{{ meta }}</a>
+        <a target="_blank" href="{{ baseurl }}{{ meta }}">{{ meta }}</a>
     {%- endif -%}
 {%- endmacro -%}
 
@@ -279,47 +279,47 @@
         {%- if article.orcid is defined -%}
             <li>
                 {{ pub_info_icon("ai ai-orcid", "ORCID", fancy) }}
-                <a href="https://orcid.org/{{article.orcid}}">ORCID</a>
+                <a target="_blank" href="https://orcid.org/{{article.orcid}}">ORCID</a>
             </li>
             <li>
                 {{ pub_info_icon("ai ai-impactstory", "Impactstory", fancy) }}
-                <a href="https://impactstory.org/u/{{article.orcid}}">Impactstory</a>
+                <a target="_blank" href="https://impactstory.org/u/{{article.orcid}}">Impactstory</a>
             </li>
         {%- endif -%}
         {%- if article.researcherid is defined -%}
             <li>
                 {{ pub_info_icon("ai ai-researcherid", "ResearcherID", fancy) }}
-                <a href="https://publons.com/researcher/{{article.researcherid}}">ResearcherID</a>
+                <a target="_blank" href="https://publons.com/researcher/{{article.researcherid}}">ResearcherID</a>
             </li>
         {%- endif -%}
         {%- if article.scholar is defined -%}
             <li>
                 {{ pub_info_icon("ai ai-google-scholar", "Google Scholar", fancy) }}
-                <a href="{{article.scholar}}">Google Scholar</a>
+                <a target="_blank" href="{{article.scholar}}">Google Scholar</a>
             </li>
         {%- endif -%}
         {%- if article.researchgate is defined -%}
             <li>
                 {{ pub_info_icon("ai ai-researchgate", "ResearchGate", fancy) }}
-                <a href="{{article.researchgate}}">ResearchGate</a>
+                <a target="_blank" href="{{article.researchgate}}">ResearchGate</a>
             </li>
         {%- endif -%}
         {%- if article.github is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-github", "GitHub", fancy) }}
-                <a href="https://github.com/{{article.github}}">GitHub</a>
+                <a target="_blank" href="https://github.com/{{article.github}}">GitHub</a>
             </li>
         {%- endif -%}
         {%- if article.twitter is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-twitter", "Twitter", fancy) }}
-                <a href="https://twitter.com/{{article.twitter}}">Twitter</a>
+                <a target="_blank" href="https://twitter.com/{{article.twitter}}">Twitter</a>
             </li>
         {%- endif -%}
         {%- if article.linkedin is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-linkedin", "LinkedIn", fancy) }}
-                <a href="https://linkedin.com/in/{{article.linkedin}}">LinkedIn</a>
+                <a target="_blank" href="https://linkedin.com/in/{{article.linkedin}}">LinkedIn</a>
             </li>
         {%- endif -%}
         {%- if article.agency is defined -%}
@@ -367,7 +367,7 @@
         {%- if article.pdf is defined -%}
             <li>
                 {{ pub_info_icon("fa fa-file-pdf-o", "Paper PDF", fancy) }}
-                PDF: <a href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
+                PDF: <a target="_blank" href="/pdf/{{article.pdf}}">{{article.pdf}}</a>
             </li>
         {%- endif -%}
         {%- if article.preprint is defined -%}
@@ -380,6 +380,12 @@
             <li>
                 {{ pub_info_icon("fa fa-external-link", "DOI link to publisher", fancy) }}
                 doi: {{ make_metadata_link(article.doi) }}
+            </li>
+        {%- endif -%}
+        {%- if article.cv is defined -%}
+            <li>
+                {{ pub_info_icon("ai ai-cv", "Curriculum Vitæ", fancy) }}
+                <a target="_blank" type="application/pdf" rel="external noopener noreferrer" href="{{ article.cv }}">Curriculum Vitæ (PDF)</a>
             </li>
         {%- endif -%}
         {%- if article.website is defined -%}
@@ -476,10 +482,10 @@
         <div class="{{ col_small }} menu-list">
             <ul>
                 {% if site.github is defined %}
-                    <li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/{{ site.github }}"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
                 {% endif %}
                 {% if site.twitter is defined %}
-                    <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
                 {% endif %}
                 {% for url, title in site.menuicons %}
                     <li><a href="{{ url }}">{{ title }}</a></li>

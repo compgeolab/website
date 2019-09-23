@@ -8,6 +8,11 @@ All members of the lab, along with visitors, are expected to agree with the
 following code of conduct. We will enforce this code as needed. We expect
 cooperation from all members to help ensuring a safe environment for everybody.
 
+> **Note:** The Computer-Oriented Geoscience Lab is subject to the policies of the
+> University of Liverpool. This document does not override any of those policies, and
+> the policies of the University take precedence over any statements (implied or
+> explicit) in this document.
+
 # The Quick Version
 
 The lab is dedicated to providing a harassment-free experience for everyone,
@@ -39,13 +44,6 @@ For official concerns, please contact [UNIVERSITY POINT OF CONTACT]().
 We expect members to follow these guidelines at any lab-related event. We expect members
 to treat each other professionally with respect to their work, with constructive
 criticism and without dismissive behavior (e.g., eyerolling).
-
-# Note
-
-The Computer-Oriented Geoscience Lab is subject to the policies of the University of
-Liverpool. This document does not override any of those policies, and the policies of
-the University take precedence over any statements (implied or explicit) in this
-document.
 
 # About this document
 

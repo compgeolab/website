@@ -36,10 +36,11 @@ immediately.
 
 If you are being harassed, notice that someone else is being harassed, or have any other
 concerns, please contact [Leonardo Uieda][/people/uieda] immediately.
-If Leonardo is the cause of your concern, TODO (email) is a good informal
-point of contact; they do not work for Leonardo and have agreed to
-mediate.
-For official concerns, please contact [UNIVERSITY POINT OF CONTACT]().
+For official concerns or if Leonardo is the cause of your concern,
+please contact the
+[Student Experience Team](https://www.liverpool.ac.uk/environmental-sciences/contacts-and-location/)
+and/or see the
+[University of Liverpool guidelines on bullying and harassment](https://www.liverpool.ac.uk/hr/diversityandequality/bullying/).
 
 We expect members to follow these guidelines at any lab-related event. We expect members
 to treat each other professionally with respect to their work, with constructive

@@ -1,7 +1,5 @@
 {% extends "page.html" %}
-{% from "utils.html" import fa, ai, get_authors, pub_alerts, pub_info,
-   article_level_metrics, feedback, insert_thumbnail, make_breadcrumbs, related_pages,
-   disqus %}
+{% from "utils.html" import make_breadcrumbs, manual_index %}
 
 
 {% block breadcrumbs %}
@@ -22,18 +20,7 @@
         </div>
         <div class="col-md-4">
             <h2>Contents</h2>
-            <ul>
-                <li>
-                    <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>
-                    <ul>
-                        {% for page in site.reflinks["/manual"].content %}
-                            <li>
-                                <a href="{{ page.url }}">{{ page.title }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </li>
-            </ul>
+            {{ manual_index(site) }}
         </div>
     </div>
 

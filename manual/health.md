@@ -27,6 +27,18 @@ Quoting from the article
 
 # Campus Resources
 
-The University of Liverpool has a number of resources that may be of assistance.
+The University of Liverpool has a number of resources that may be of assistance:
 
-TODO
+* [Student Services](https://www.liverpool.ac.uk/studentsupport/): General information
+  and links to the different types of support offered to university students.
+* [Mental Health Advisory Service](https://www.liverpool.ac.uk/studentsupport/mentalhealthadvisoryservice/):
+  The service can help you settle into student life and offers advisory on mental health
+  issues. **If you feel concerned that you or someone you know may have
+  more complex mental health needs, contact the Mental Health Advisory
+  Service** ([counserv@liverpool.ac.uk](mailto:counserv@liverpool.ac.uk) or 0151 794
+  3304).
+* [Counselling Service](https://www.liverpool.ac.uk/studentsupport/counselling/): The
+  University offers drop-in counselling sessions. **This is not an emergency service. In
+  the event of an emergency call 2222 (internal) or 999 (external)**.
+* [Self-help Information](https://www.liverpool.ac.uk/studentsupport/counselling/selfhelp/):
+  There is a lot of information on self-help with tips and information.

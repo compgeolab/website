@@ -59,4 +59,3 @@ This text was adapted from that used in the
 [Data Intensive Biology Lab](http://ivory.idyll.org/lab/)
 and the
 [Data Exploration Lab](https://data-exp-lab.github.io/).
-

@@ -3,7 +3,7 @@ title: Leonardo Uieda
 date: 2017-01-01
 institution: University of Liverpool
 location: Liverpool, United Kingdom
-position: Lecturer - PI
+position: Lecturer
 website: https://www.leouieda.com
 picture: uieda.jpg
 github: leouieda
@@ -22,8 +22,8 @@ layout: person
 # About
 
 I am Lecturer in Geophysics at the
-[Department of Earth, Ocean and Ecological Sciences of the University of Liverpool](https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/),
-UK.
+[Department of Earth, Ocean and Ecological Sciences](https://www.liverpool.ac.uk/environmental-sciences/staff/leonardo-uieda/)
+of the University of Liverpool, UK.
 My research focuses on inverse problems in potential field
 geophysics with a heavy dose of open-source software development.
 I do my best to bring more openness to the scientific process

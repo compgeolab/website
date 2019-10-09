@@ -20,9 +20,3 @@ principals, ethics, and expectations.
 improve/update it.
 The source files for the manual can be found in the `manual` folder of
 [github.com/compgeolab/website](https://github.com/compgeolab/website).
-
-The manual is based on the excellent [Lab Carpentry](http://labcarpentry.org/)
-blueprints, with material adapted from the
-[Data Intensive Biology Lab](http://ivory.idyll.org/lab/)
-and the [Data Exploration Lab](https://data-exp-lab.github.io/).
-

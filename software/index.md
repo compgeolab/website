@@ -5,10 +5,7 @@ order: date
 banner: disturbance.jpg
 ---
 
-**UNDER CONSTRUCTION**
+The main software projects developed by the lab are:
 
-## Fatiando a Terra ([www.fatiando.org](https://www.fatiando.org))
-
-## Tesseroids  ([www.tesseroids.org](http://www.tesseroids.org))
-
-## PyGMT ([www.pygmt.org](https://www.pygmt.org))
+* Fatiando a Terra ([www.fatiando.org](https://www.fatiando.org))
+* Tesseroids  ([www.tesseroids.org](http://www.tesseroids.org))

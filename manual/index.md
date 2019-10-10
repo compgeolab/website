@@ -5,7 +5,6 @@ content:
     - checklist
     - health
     - coc
-    - mission
     - expectations
     - communication
     - code

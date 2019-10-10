@@ -33,12 +33,12 @@ authorship. Sharing information during group meetings does not, although if mate
 intellectual contributions (i.e., new directions, solutions to problems, specific and
 directed project ideas) are made by lab members, that would confer authorship.
 
+Please keep Leo apprised of the broad outlines of your external and internal
+collaborations.
 Leo would very much like to be involved in the development of external projects,
 but this is not strictly necessary.
 It is certainly not necessary where lab members are providing supporting roles to
 external collaborations.
-Please keep Leo apprised of the broad outlines of your external and internal
-collaborations.
 
 # Project Ownership
 

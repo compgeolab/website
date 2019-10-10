@@ -494,3 +494,19 @@
         </div>
     </div>
 {%- endmacro -%}
+
+
+{%- macro manual_index(site) -%}
+    <ul>
+        <li>
+            <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>
+            <ul>
+                {% for page in site.reflinks["/manual"].content %}
+                    <li>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+{%- endmacro -%}

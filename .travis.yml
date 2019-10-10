@@ -26,10 +26,10 @@ script:
   # Build the website HTML
   - make
 
-#deploy:
-  ## Push the built HMTL to Github pages
-  #- provider: script
-    #script: doctr deploy . --built-docs _build --key-path .github_deploy_key.enc --deploy-repo compgeolab/compgeolab.github.io
-    #skip_cleanup: true
-    #on:
-      #branch: master
+deploy:
+  # Push the built HMTL to Github pages
+  - provider: script
+    script: doctr deploy . --built-docs _build --key-path .github_deploy_key.enc --deploy-repo compgeolab/compgeolab.github.io
+    skip_cleanup: true
+    on:
+      branch: master

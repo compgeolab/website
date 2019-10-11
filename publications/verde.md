@@ -21,6 +21,13 @@ into separate packages.
 The peer-review at JOSS is open and can be found at
 [openjournals/joss-reviews#957](https://github.com/openjournals/joss-reviews/issues/957).
 
+![Example of using `verde.BlockMean` with data uncertainties.](/images/block-mean-example.jpg)
+<br>
+*Figure: Example of using `verde.BlockMean` to calculate weighted means in spatial
+blocks assuming different uncertainty models. Full source code to produce this image is
+available in the [Verde example
+gallery](https://www.fatiando.org/verde/v1.2.0/gallery/blockreduce_weights_mean.html).*
+
 
 # Abstract
 

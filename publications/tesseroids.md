@@ -18,9 +18,16 @@ software [Tesseroids](http://www.tesseroids.org).
 The software is a suite of C coded command-line programs that calculate the
 gravitational field of a tesseroid (spherical prism) model.
 There is also a separate Python implementation of the same algorithm in the
-`fatiando.gravmag.tesseroid` module of the open-source library
-[Fatiando a Terra](https://www.fatiando.org/v0.5) (introduced in version 0.3).
+`fatiando.gravmag.tesseroid` module of the
+[Fatiando a Terra](https://www.fatiando.org/v0.5) library (introduced in version 0.3)
+and in [Harmonica](https://github.com/fatiando/harmonica).
 
+![Example of adaptive discretization of a tesseroid using different distance-size ratio.](/images/tesseroid-adaptive-discretization.jpg)
+<br>
+*Figure: Adaptive discretization of the tesseroid shown in panel (a) for a computation
+point P using the distance-size ratio D equal to (b) 1, (c) 2, and (d) 6. Lr, Lφ, and Lλ
+are the dimensions of the tesseroid. Note that increasing D results in a fine division
+of the tesseroid close the computation point and a coarser division further away.*
 
 # Abstract
 

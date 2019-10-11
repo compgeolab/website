@@ -30,22 +30,17 @@ These differences allow us to know where the gravity-derived model can be truste
 You can **download** the model results, source code, and input data from
 doi:[10.6084/m9.figshare.3987267](https://doi.org/10.6084/m9.figshare.3987267)
 
-![The estimated Moho depth for South America and differences with seismological estimates.](/images/south-american-moho-gravity-inversion.png)
-\[[high resolution version](https://raw.githubusercontent.com/pinga-lab/paper-moho-inversion-tesseroids/master/model/south-american-moho.png)\]
+![The estimated Moho depth for South America and differences with seismological estimates.](/images/south-american-moho.jpg)
 <br>
-*Figure caption:
-Dotted lines represent the boundaries between major geologic provinces.
-AD: Andean Province, AFB: Andean foreland basins, AM: Amazonas Basin, BR:
-Brazilian Shield, BO: Borborema province, CH: Chaco Basin, GB: Guyana
-Basin, GU: Guyana Shield, PB: Parnaíba Basin, PC: Parecis Basin, PR:
-Paraná Basin, PT: Patagonia province, SF: São Francisco Craton, SM:
-Solimões Basin.  Solid orange lines mark the limits of the main
-lithospheric plates. AF: Africa Plate, AN: Antarctica Plate, CA:
-Caribbean Plate, CO: Cocos Plate, SA: South America Plate, SC: Scotia
-Plate, NZ: Nazca Plate.  The solid light grey line is the 35 km Moho
-depth contour.*
-
-
+*Figure: Estimated depth to the crust-mantle interface (Moho) from satellite
+measurements of gravity disturbances. Dotted lines represent the boundaries between
+major geologic provinces. AD: Andean Province, AFB: Andean foreland basins, AM: Amazonas
+Basin, BR: Brazilian Shield, BO: Borborema province, CH: Chaco Basin, GB: Guyana Basin,
+GU: Guyana Shield, PB: Parnaíba Basin, PC: Parecis Basin, PR: Paraná Basin, PT:
+Patagonia province, SF: São Francisco Craton, SM: Solimões Basin.  Solid orange lines
+mark the limits of the main lithospheric plates. AF: Africa Plate, AN: Antarctica Plate,
+CA: Caribbean Plate, CO: Cocos Plate, SA: South America Plate, SC: Scotia Plate, NZ:
+Nazca Plate.  The solid light grey line is the 35 km Moho depth contour.*
 
 # Open-source implementation
 
@@ -57,7 +52,6 @@ The code uses the forward modeling and inversion packages of the
 You'll find the source code, input data, and instructions to produce the
 results from the paper on the Github repository. There should be enough
 information for you to produce all figures of the paper.
-
 
 # Abstract
 

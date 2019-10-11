@@ -14,8 +14,6 @@ tags: inversion, gravity
 
 # About
 
-This was Leo's first publication in a scientific journal and the
-topic of hist [Masters dissertation](https://www.leouieda.com/about/masters.html).
 The inversion method proposed in this paper is implemented in the open-source
 [Fatiando a Terra](https://www.fatiando.org/v0.5) Python library
 as the `fatiando.gravmag.harvester` module.
@@ -63,23 +61,9 @@ Brazil, we estimated a compact iron ore body that is in agreement with geologic
 information and previous interpretations.
 
 ![3D visualization of estimate ore-body from the planting inversion of gravity gradient data.](/images/quadrilatero-ferrifero-density-model.jpg)
-*Inversion results for data from the Quadrilátero Ferrífero, southeastern Brazil.
-Perspective views of the estimated density-contrast distribution, where prisms with zero
-density contrast are not shown or shown in gray and prisms with density contrast 1
-g/cm³, corresponding to the iron ore body of the Cauê itabirite, are shown in solid or
-transparent red. The seeds used in the inversion are shown as black prisms.*
-
-# Bibtex
-
-
-    @article{uieda2012,
-        title = {Robust 3D gravity gradient inversion by planting anomalous densities},
-        volume = {77},
-        issn = {00168033},
-        doi = {10.1190/geo2011-0388.1},
-        number = {4},
-        journal = {Geophysics},
-        author = {Uieda, Leonardo and Barbosa, Valéria C. F.},
-        year = {2012},
-        pages = {G55--G66},
-    }
+<br>
+*Figure: Inversion results for data from the Quadrilátero Ferrífero, southeastern
+Brazil. Perspective views of the estimated density-contrast distribution, where prisms
+with zero density contrast are not shown or shown in gray and prisms with density
+contrast 1 g/cm³, corresponding to the iron ore body of the Cauê itabirite, are shown in
+solid or transparent red. The seeds used in the inversion are shown as black prisms.*

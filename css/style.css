@@ -339,6 +339,10 @@ img {
     color: #aaaaaa;
 }
 
+.manual-current {
+    font-weight: bold;
+}
+
 .tag {
     background-color: #eeeeee;
     color: #333333;

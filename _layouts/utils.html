@@ -496,14 +496,19 @@
 {%- endmacro -%}
 
 
-{%- macro manual_index(site) -%}
+{%- macro manual_index(page, site) -%}
     <ul>
         <li>
             <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>
             <ul>
-                {% for page in site.reflinks["/manual"].content %}
-                    <li>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
+                {% for manpage in site.reflinks["/manual"].content %}
+                    {% if manpage.url == page.url %}
+                        {% set class="manual-current" %}
+                    {% else %}
+                        {% set class="" %}
+                    {% endif %}
+                    <li class={{ class }}>
+                        <a href="{{ manpage.url }}">{{ manpage.title }}</a>
                     </li>
                 {% endfor %}
             </ul>

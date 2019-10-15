@@ -2,6 +2,7 @@
 title: Code of Conduct
 date: 2019-09-15
 layout: manual
+pager: true
 ---
 
 All members of the lab, along with visitors, are expected to agree with the

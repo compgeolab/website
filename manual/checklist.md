@@ -2,6 +2,7 @@
 title: Induction checklist
 date: 2019-09-15
 layout: manual
+pager: true
 ---
 
 When you join the lab (ideally within the first week),

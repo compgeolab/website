@@ -9,6 +9,7 @@ content:
     - communication
     - code
     - papers
+pager: true
 ---
 
 This document is designed to be a reference document for lab members as well as part of

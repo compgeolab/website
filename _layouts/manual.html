@@ -19,11 +19,17 @@
             {{ this.body }}
             {% if this.pager is defined and this.pager %}
                 <ul class="pager">
-                    {% if this.prev %}
-                        <li class="previous"><a href="{{this.prev.url}}">&larr; {{this.prev.title}}</a></li>
-                    {% endif %}
-                    {% if this.next %}
-                        <li class="next"><a href="{{this.next.url}}">{{this.next.title}} &rarr;</a></li>
+                    {% if this.content is defined %}
+                        <!-- Add pager on the Manual page (manual/index.md) -->
+                        <li class="next"><a href="{{this.content[0].url}}">{{this.content[0].title}} &rarr;</a></li>
+                    {% else %}
+                        <!-- Add pager on each content page of the Manual -->
+                        {% if this.prev %}
+                            <li class="previous"><a href="{{this.prev.url}}">&larr; {{this.prev.title}}</a></li>
+                        {% endif %}
+                        {% if this.next %}
+                            <li class="next"><a href="{{this.next.url}}">{{this.next.title}} &rarr;</a></li>
+                        {% endif %}
                     {% endif %}
                 </ul>
             {% endif %}

@@ -2,6 +2,7 @@
 title: Communication
 date: 2019-09-15
 layout: manual
+pager: true
 ---
 
 > This page covers in-group communication. If you wish to contact the group, please

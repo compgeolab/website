@@ -2,13 +2,13 @@
 
 
 {% macro person_card(person) -%}
-    <a href="{{person.url}}">
     <div class="person-card">
-        <img class="img-circle" src="/images/people/{{ person.picture }}"></img>
-        <p class="person-card-name">{{ person.title }}</p>
+        <a href="{{person.url}}">
+            <img class="img-circle" src="/images/people/{{ person.picture }}"></img>
+            <p class="person-card-name">{{ person.title }}</p>
+        </a>
         <p class="person-card-position">{{ person.position }}<br>{{ person.institution }}</p>
     </div>
-    </a>
 {%- endmacro %}
 
 

@@ -5,7 +5,7 @@ position: Undergraduate Student
 institution: University of Liverpool
 location: Liverpool, United Kingdom
 period: 2019-Present
-picture: misc.jpg
+picture: cthomson.jpg
 github: charlierthomson
 layout: person
 ---

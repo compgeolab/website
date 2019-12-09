@@ -36,6 +36,7 @@ strict_undefined: true
 banner_path: "images/banner"
 
 menulinks: [
+    ['/news', 'News'],
     ['/research', 'Research'],
     ['/publications', 'Publications'],
     ['/software', 'Software'],

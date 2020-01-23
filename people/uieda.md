@@ -33,3 +33,19 @@ In the spirit of open-science,
 I share all of the research and
 teaching material online under permissive licenses.
 I'm also fairly active in social media, mostly Twitter.
+
+Along with my role at the University, I'm also a
+[Topic Editor for the Journal of Open Source Software](https://joss.theoj.org/),
+a member of the [Advisory Council for EarthArXiv](https://eartharxiv.org/),
+and
+a [Fellow of the Software Sustainability Institute][/news/ssi-fellowship].
+
+Before coming to Liverpool, I was a Visiting Researcher at the University of
+Hawai'i, USA, where I worked on the <a
+href="https://www.generic-mapping-tools.org">Generic Mapping Tools</a> (GMT), a
+widely-used software for processing and visualizing geophysical data. My main
+contributions were the development of [PyGMT](https://www.pygmt.org) and
+modernizing the team's development process (moving to GitHub, starting a
+Discourse forum, setting up continuous-integration, etc). Prior to Hawai'i, I
+worked for three years as Assistant Professor of Geophysics at the Universidade
+do Estado do Rio de Janeiro, Brazil.

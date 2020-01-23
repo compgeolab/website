@@ -22,12 +22,13 @@
     <div class="container">
         {{ this.body }}
 
-        {% set latest = 3 %}
+        {% set latest_news = 3 %}
+        {% set latest_papers = 5 %}
         <div class="row">
             <div class="col-md-6">
                 <h2>News</h2>
                 <ul class="fa-ul">
-                {% for page in site.reflinks["/news"].content[:latest] %}
+                {% for page in site.reflinks["/news"].content[:latest_news] %}
                     <li>
                         <i class="fa-li fa fa-comments-o fa-fw"></i>
                         <a href="{{ page.url }}">{{ page.title }}</a>
@@ -42,7 +43,7 @@
             <div class="col-md-6">
                 <h2>Publications</h2>
                 <ul class="fa-ul">
-                {% for page in site.reflinks["/publications"].content[:latest] %}
+                {% for page in site.reflinks["/publications"].content[:latest_papers] %}
                     <li>
                         <i class="fa-li fa fa-file-text-o fa-fw"></i>
                         <a href="{{ page.url }}">{{ page.title }}</a>

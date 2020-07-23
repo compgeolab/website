@@ -1,6 +1,6 @@
 # Souce code for compgeolab.org
 
-[![Build Status](https://img.shields.io/travis/compgeolab/website/master.svg?style=flat-square)](https://travis-ci.org/compgeolab/website)
+[![build-html](https://github.com/compgeolab/website/workflows/build-html/badge.svg?event=push)](https://github.com/compgeolab/website/actions?query=workflow%3Abuild-html)
 
 ## Making changes to the site
 

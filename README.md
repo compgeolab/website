@@ -10,10 +10,10 @@ See [CONTRIBUTING.md](https://github.com/compgeolab/website/blob/master/CONTRIBU
 
 The site is automatically built and deployed to
 [compgeolab/compgeolab.github.io](https://github.com/compgeolab/compgeolab.github.io)
-by the TravisCI service.
+by the GitHub Actions service.
 Every time a commit is pushed to the *master* branch, the HTML is compiled and the
 website is updated.
-See `.travis.yml` for the configuration.
+See `.github/workflows/build.yml` for the configuration.
 
 ## License
 

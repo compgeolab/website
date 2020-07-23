@@ -5,7 +5,6 @@ channels:
 dependencies:
     - python=3.8
     - pip
-    - doctr
     - jinja2>=2.7
     - beautifulsoup4
     - markdown<3

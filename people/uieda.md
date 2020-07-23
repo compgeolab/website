@@ -21,18 +21,18 @@ layout: person
 
 # About
 
-I am Lecturer in Geophysics at the
+Lecturer in Geophysics at the
 [Department of Earth, Ocean and Ecological Sciences](https://www.liverpool.ac.uk/environmental-sciences/staff/leonardo-uieda/)
 of the University of Liverpool, UK.
+
 My research focuses on inverse problems in potential field
 geophysics with a heavy dose of open-source software development.
 I do my best to bring more openness to the scientific process
 and to train the next generation of scientists in the best practices of
 reproducible computational experiments.
-In the spirit of open-science,
-I share all of the research and
-teaching material online under permissive licenses.
-I'm also fairly active in social media, mostly Twitter.
+I'm also fairly active in social media, mostly
+[Twitter](https://twitter.com/leouieda)
+and the [Software Underground](https://softwareunderground.org/).
 
 Along with my role at the University, I'm also a
 [Topic Editor for the Journal of Open Source Software](https://joss.theoj.org/),

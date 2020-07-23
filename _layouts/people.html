@@ -28,7 +28,7 @@
 
     {% set former = this.content|selectattr("former", "defined")|list %}
     {% if former %}
-        <h2>Former members</h2>
+        <h2>Previous lab members</h2>
 
         {% for row in former|sort(attribute='date', reverse=true)|batch(3) %}
             <div class="row">

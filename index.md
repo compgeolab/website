@@ -1,9 +1,6 @@
 ---
 title: Computer-Oriented Geoscience Lab
-slogan: "Geophysical research<br>powered by open-source software"
-description: We design novel methods for geophysical data processing, forward modeling, and inversion. Source code included.
-button_text: 'SEE OUR RESEARCH THEMES <i style="margin-left: 10px;" class="fa fa-angle-double-right"></i>'
-button_target: /research
+slogan: "Geophysical research powered by open-source software"
 layout: home
 content:
     - news
@@ -11,3 +8,10 @@ content:
 banner: disturbance.jpg
 ---
 
+
+<div class="home">
+<h1>
+We design computational methods for geophysical data processing, forward
+modeling, and inversion. <b>Source code included.</b>
+</h1>
+</div>

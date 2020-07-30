@@ -287,20 +287,24 @@ img {
 
 .banner-title {
     font-size: 2.5em;
-    font-weight: normal;
+    font-weight: 300;
     line-height: 1.7em;
     margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .banner-slogan {
-    padding: 80px 0px;
+    padding: 60px 0px;
 }
 
 .banner-slogan h1 {
-    font-size: 2.5em;
-    font-weight: normal;
+    font-size: 3.5em;
+    font-weight: 700;
     line-height: 1.7em;
     margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .banner-slogan p {
@@ -329,6 +333,16 @@ img {
 .banner-button:hover {
     background-color: #cf0000;
     box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3);
+}
+
+.home {
+    margin-bottom: 60px;
+}
+
+.home h1 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.7em;
 }
 
 .alert-blue {

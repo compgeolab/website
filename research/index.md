@@ -1,8 +1,8 @@
 ---
 title: Research
+banner_title: true
 layout: page
 order: date
-banner: disturbance.jpg
 ---
 
 In the Computer-Oriented Geoscience Lab we create and use open-source software to

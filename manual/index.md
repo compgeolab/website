@@ -1,5 +1,5 @@
 ---
-title: Manual
+title: Lab manual
 layout: manual
 content:
     - checklist
@@ -20,3 +20,14 @@ principals, ethics, and expectations.
 improve/update it.
 The source files for the manual can be found in the `manual` folder of
 [github.com/compgeolab/website](https://github.com/compgeolab/website).
+
+<hr>
+<blockquote>
+<p>
+This manual is based on the excellent
+<a href="http://labcarpentry.org">Lab Carpentry</a>
+blueprints, with material adapted from the
+<a href="http://ivory.idyll.org/lab/">Data Intensive Biology Lab</a>
+and the
+<a href="https://data-exp-lab.github.io/">Data Exploration Lab</a>.
+</blockquote>

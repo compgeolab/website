@@ -31,7 +31,7 @@
     {% endif %}
 
     <!-- Include Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300%7COpen+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700%7COpen+Sans:400,600" rel="stylesheet">
 
     <!--Include the Font Awesome and Academicons CSS-->
     <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
@@ -44,48 +44,28 @@
     {% from "utils.html" import menu %}
 
     {% block banner %}
-        {% if this.banner is defined %}
-            {% if this.banner_position is defined %}
-                {% set position = this.banner_position %}
-            {% else %}
-                {% set position = "center" %}
-            {% endif %}
-            {% if this.banner_description is defined %}
-                {% set title = this.banner_description %}
-            {% else %}
-                {% set title = "" %}
-            {% endif %}
-            <div class="banner"
-                 title="{{ title }}"
-                 style="background-image: linear-gradient(to top, transparent, #00000099), url(/{{ site.banner_path }}/{{ this.banner }}); background-position: {{position}};">
-
-                {{ menu("menu-transparent", site) }}
-
-                <div class="banner-text">
-                    {% if this.slogan is defined %}
-                        <div class="container content banner-slogan">
-                            <h1 title="{{ title }}">{{ this.slogan }}</h1>
-                            {% if this.description is defined %}
-                                <p title="{{ title }}">{{ this.description }}</p>
-                            {% endif %}
-                            {% if this.button_text is defined %}
-                                <a href="{{ this.button_target }}" target="_blank">
-                                    <button type="button" class="btn btn-lg banner-button">
-                                        {{ this.button_text }}
-                                    </button>
-                                </a>
-                            {% endif %}
-                        </div>
-                    {% else %}
-                        <h1 class="banner-title" title="{{ title }}">
-                            {{ this.title }}
-                        </h1>
-                    {% endif %}
-                </div>
-            </div>
+        {% if this.banner_position is defined %}
+            {% set position = this.banner_position %}
         {% else %}
-            {{ menu("menu-opaque", site) }}
+            {% set position = "center" %}
         {% endif %}
+        <div class="banner"
+             style="background-image: linear-gradient(to top, transparent, #00000099), url(/{{ site.banner }}); background-position: {{position}};">
+
+            {{ menu("menu-transparent", site) }}
+
+            <div class="banner-text">
+                {% if this.slogan is defined %}
+                    <div class="container content banner-slogan">
+                        <h1>{{ this.slogan }}</h1>
+                    </div>
+                {% elif this.banner_title is defined %}
+                    <h1 class="banner-title">
+                        {{ this.title }}
+                    </h1>
+                {% endif %}
+            </div>
+        </div>
     {% endblock %}
 
     {% block body %}

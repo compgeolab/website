@@ -1,7 +1,8 @@
 ---
 title: News
+banner_title:
 layout: news
 order: date
 reverse: true
-banner: disturbance.jpg
 ---
+

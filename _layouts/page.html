@@ -2,14 +2,8 @@
 
 
 {% block twitter_card %}
-    {% if this.thumbnail is defined %}
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:creator" content="@{{ site.twitter }}">
-        <meta name="twitter:image" content="{{ site.url }}/{{ site.thumbnail_path }}/{{ this.thumbnail }}">
-    {% else %}
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:image" content="{{ site.url }}/images/twitter-card-image.png">
-    {% endif %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ site.url }}/images/twitter-card-image.png">
     <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:title" content="{{ this.title }}">
     {% block twitter_card_description %}
@@ -27,11 +21,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ this.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    {% if this.thumbnail is defined %}
-        <meta property="og:image" content="{{ site.url }}/{{ site.thumbnail_path }}/{{ this.thumbnail }}">
-    {% else %}
-        <meta property="og:image" content="{{ site.url }}/images/twitter-card-image.png">
-    {% endif %}
+    <meta property="og:image" content="{{ site.url }}/images/twitter-card-image.png">
     {% block opengraph_description %}
         {% if this.body is defined %}
             <meta property="og:description" content="{{ (this.body|striptags)[:140] }}...">
@@ -54,7 +44,7 @@
         {% endblock %}
 
         {% block content %}
-            {% if not this.banner is defined %}
+            {% if not this.banner_title is defined %}
                 <h1>{{ this.title }}</h1>
             {% endif %}
             {% if this.body is defined %}

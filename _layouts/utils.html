@@ -500,18 +500,16 @@
     <ul>
         <li>
             <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>
-            <ul>
-                {% for manpage in site.reflinks["/manual"].content %}
-                    {% if manpage.url == page.url %}
-                        {% set class="manual-current" %}
-                    {% else %}
-                        {% set class="" %}
-                    {% endif %}
-                    <li class={{ class }}>
-                        <a href="{{ manpage.url }}">{{ manpage.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+		{% for manpage in site.reflinks["/manual"].content %}
+			{% if manpage.url == page.url %}
+				{% set class="manual-current" %}
+			{% else %}
+				{% set class="" %}
+			{% endif %}
+			<li class={{ class }}>
+				<a href="{{ manpage.url }}">{{ manpage.title }}</a>
+			</li>
+		{% endfor %}
         </li>
     </ul>
 {%- endmacro -%}

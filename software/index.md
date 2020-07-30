@@ -1,8 +1,8 @@
 ---
 title: Software
+banner_title:
 layout: page
 order: date
-banner: disturbance.jpg
 ---
 
 The main software projects developed by the lab are:

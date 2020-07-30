@@ -3,9 +3,6 @@
 
 
 {% block breadcrumbs %}
-    {% if not this.banner is defined %}
-        {{ make_breadcrumbs(this) }}
-    {% endif %}
 {% endblock %}
 
 
@@ -13,11 +10,14 @@
 
     <div class="row">
         <div class="col-md-8">
-            {% if not this.banner is defined %}
+            {% if not this.banner_title is defined %}
                 <h1>{{ this.title }}</h1>
             {% endif %}
+
             {{ this.body }}
+
             {% if this.pager is defined and this.pager %}
+                <hr>
                 <ul class="pager">
                     {% if this.content is defined %}
                         <!-- Add pager on the Manual page (manual/index.md) -->
@@ -33,17 +33,6 @@
                     {% endif %}
                 </ul>
             {% endif %}
-            <hr>
-            <blockquote>
-            <p>
-            This manual is based on the excellent
-            <a href="http://labcarpentry.org">Lab Carpentry</a>
-            blueprints, with material adapted from the
-            <a href="http://ivory.idyll.org/lab/">Data Intensive Biology Lab</a>
-            and the
-            <a href="https://data-exp-lab.github.io/">Data Exploration Lab</a>.
-            </blockquote>
-            </p>
         </div>
         <div class="col-md-4">
             <h2>Contents</h2>

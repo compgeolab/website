@@ -4,6 +4,8 @@ description: "Geophysical research powered by open-source software"
 
 brand: "/images/compgeolab-banner.svg"
 
+banner: "images/banner/disturbance.jpg"
+
 url: https://www.compgeolab.org
 
 rss: https://www.compgeolab.org/rss.xml
@@ -33,8 +35,6 @@ ignore_patterns: [
     ]
 
 strict_undefined: true
-
-banner_path: "images/banner"
 
 menulinks: [
     ['/news', 'News'],

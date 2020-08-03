@@ -341,6 +341,10 @@ img {
     color: #aaaaaa;
 }
 
+.manual-contents h2 {
+    margin-top: 0px;
+}
+
 .manual-current {
     font-weight: bold;
 }

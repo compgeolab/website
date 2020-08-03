@@ -1,18 +1,14 @@
 {% extends "page.html" %}
-{% from "utils.html" import make_breadcrumbs, manual_index %}
-
-
-{% block breadcrumbs %}
-{% endblock %}
 
 
 {% block content %}
 
+    {% if not this.banner_title is defined %}
+        <h1>{{ this.title }}</h1>
+    {% endif %}
+
     <div class="row">
         <div class="col-md-8">
-            {% if not this.banner_title is defined %}
-                <h1>{{ this.title }}</h1>
-            {% endif %}
 
             {{ this.body }}
 
@@ -34,11 +30,22 @@
                 </ul>
             {% endif %}
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 manual-contents">
             <h2>Contents</h2>
-            {{ manual_index(this, site) }}
+            <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>:
+            <ul>
+                {% for page in site.reflinks["/manual"].content %}
+                    {% if page.url == this.url %}
+                        {% set class="manual-current" %}
+                    {% else %}
+                        {% set class="" %}
+                    {% endif %}
+                    <li class={{ class }}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 
 {% endblock %}
-

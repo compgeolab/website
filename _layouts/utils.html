@@ -61,17 +61,6 @@
 {%- endmacro -%}
 
 
-{%- macro make_breadcrumbs(page) -%}
-{# Make the breadcrumbs bar for a page #}
-    <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
-        {%- for bc in page.breadcrumbs[:-1] -%}
-            <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
-        {%- endfor -%}
-    </ol>
-{%- endmacro -%}
-
-
 {%- macro card(page, site, author=true, date=true, body=false) -%}
 {# Make a card linked to the page showing the title, authors, date, etc #}
     <div class="card">
@@ -493,23 +482,4 @@
             </ul>
         </div>
     </div>
-{%- endmacro -%}
-
-
-{%- macro manual_index(page, site) -%}
-    <ul>
-        <li>
-            <a href="{{ site.reflinks["/manual"].url }}">{{ site.reflinks["/manual"].title }}</a>
-		{% for manpage in site.reflinks["/manual"].content %}
-			{% if manpage.url == page.url %}
-				{% set class="manual-current" %}
-			{% else %}
-				{% set class="" %}
-			{% endif %}
-			<li class={{ class }}>
-				<a href="{{ manpage.url }}">{{ manpage.title }}</a>
-			</li>
-		{% endfor %}
-        </li>
-    </ul>
 {%- endmacro -%}

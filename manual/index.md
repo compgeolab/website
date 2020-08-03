@@ -1,6 +1,7 @@
 ---
 title: Lab manual
 layout: manual
+banner_title: true
 content:
     - checklist
     - health

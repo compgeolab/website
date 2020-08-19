@@ -8,6 +8,13 @@
     {{ site.location }}
   </p>
   <p>
+    Source code to build this site:
+    <a href="https://github.com/{{ site.repository }}">{{ site.repository }}</a>
+    •
+    Last updated {{ site.now.date().isoformat() }}
+    from commit <code><a href="https://github.com/{{ site.repository }}/commit/{{ site.commit }}">{{ site.commit }}</a></code>
+  </p>
+  <p>
     © 2019-{{ site.now.year }} {{ site.author }}
     •
     Except where noted, all content is licensed

@@ -8,6 +8,8 @@ banner: "images/banner/disturbance.jpg"
 
 url: https://www.compgeolab.org
 
+repository: compgeolab/website
+
 rss: https://www.compgeolab.org/rss.xml
 
 author: Leonardo Uieda

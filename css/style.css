@@ -414,11 +414,11 @@ img {
 }
 
 .person-card img.img-circle {
-    width: 200px;
+    width: 60%;
 }
 
 .person-card-position {
-    font-size: 0.9em;
+    font-size: 1.0em;
     color: #aaaaaa;
     margin: 0px;
 }

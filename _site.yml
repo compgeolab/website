@@ -39,6 +39,7 @@ ignore_patterns: [
 strict_undefined: true
 
 menulinks: [
+    ['/', 'Home'],
     ['/news', 'News'],
     ['/publications', 'Publications'],
     ['/software', 'Software'],

@@ -6,8 +6,9 @@ tags: meta
 layout: post
 ---
 
-The [Software Undergroudn](https://softwareunderground.org/) is organizing a
+The [Software Underground](https://softwareunderground.org/) is organizing a
 massive free online event next week:
+[Transform2020 Virtual Conference on digital subsurface](https://transform2020.sched.com/).
 
 [![Transform2020 Virtual Conference on digital subsurface](../images/transform2020.jpg)](https://transform2020.sched.com/)
 

@@ -7,11 +7,11 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.7em;
-    line-height: 1.7em;
+    font-size: 1.8em;
+    line-height: 1.8em;
     /* Margin bottom by footer height with a little room to accomodate small
      * screens */
-    margin-bottom: 600px;
+    margin-bottom: 700px;
 }
 
 h1, h2, h3 {
@@ -68,10 +68,6 @@ i.fa {
 
 i.ai {
     line-height: 1.7em;
-}
-
-.home-index {
-    margin-bottom: 100px;
 }
 
 .category-header {
@@ -157,11 +153,10 @@ i.ai {
 
 footer {
     width: 100%;
-    background-color: #7e0f15;
+    background-color: #111111;
     box-shadow: 0px 0px 5px #333333;
     padding: 0px 0px;
-    color: #ffd1d1;
-    /*color: #aaaaaa;*/
+    color: #999999;
     /* To stick the footer to the bottom of the page */
     position: absolute;
     bottom: 0;
@@ -170,7 +165,7 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: #eeeeee;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -329,13 +324,32 @@ img {
 }
 
 .home {
-    margin-bottom: 60px;
+    margin-top: -100px !important;
 }
 
-.home h1 {
-    text-align: center;
-    font-size: 2em;
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.7em;
     line-height: 1.7em;
+    text-align: center;
+    margin: 0px;
+}
+
+.home-block {
+    margin-top: 15%;
+}
+
+.home-block h2 {
+    border-bottom: none;
+    margin-top: 0px;
+}
+
+.caption {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666666;
+    text-align: center;
 }
 
 .alert-blue {

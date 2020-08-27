@@ -19,39 +19,24 @@
 
 {% block body %}
 
-    <div class="container">
+    <div class="container home">
         {{ this.body }}
 
-        {% set latest_news = 3 %}
-        {% set latest_papers = 5 %}
-        <div class="row">
-            <div class="col-md-6">
-                <h2>News</h2>
-                <ul class="fa-ul">
-                {% for page in site.reflinks["/news"].content[:latest_news] %}
-                    <li>
-                        <i class="fa-li fa fa-comments-o fa-fw"></i>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                        <br>
-                        <span class="card-date">({{ page.date.strftime('%Y-%m-%d') }})</span>
-                        {{ page.body|striptags|truncate(length=130) }}
-                    </li>
-                {% endfor %}
-                </ul>
-                <a class="text-right" href="/news">News archives »</a>
-            </div>
-            <div class="col-md-6">
-                <h2>Publications</h2>
-                <ul class="fa-ul">
-                {% for page in site.reflinks["/publications"].content[:latest_papers] %}
-                    <li>
-                        <i class="fa-li fa fa-file-text-o fa-fw"></i>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-                <a href="/publications">All publications »</a>
-            </div>
+        <div class="home-block">
+            <h2>News</h2>
+            <ul class="fa-ul">
+            {% for page in site.reflinks["/news"].content[:3] %}
+                <li>
+                    <i class="fa-li fa fa-comments-o fa-fw"></i>
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                    <br>
+                    <span class="card-date">({{ page.date.strftime('%Y-%m-%d') }})</span>
+                    {{ page.body|first_paragragh }}
+                    [...]
+                </li>
+            {% endfor %}
+            </ul>
+            <a class="text-right" href="/news">News archives »</a>
         </div>
 
     </div>

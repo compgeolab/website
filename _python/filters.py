@@ -16,11 +16,18 @@ def shuffle(seq):
         return seq
 
 
+def first_paragragh(text):
+    """
+    Return the first paragraph of the given text string.
+    """
+    return text.split("</p>")[0].strip("<p>")
+
+
 def remove(seq, ids):
     """
     Remove a list of items with the given id attributes from the list.
     """
-    return [item for item in seq if item['id'] not in ids]
+    return [item for item in seq if item["id"] not in ids]
 
 
 def related(page, site):
@@ -28,15 +35,15 @@ def related(page, site):
     Make a list of related pages that share the same tags.
     """
     related = []
-    if 'tags' in page:
+    if "tags" in page:
         ids = []
-        for tag in page['tags']:
-            content = site['reflinks']['/tag/{}'.format(tag)]['content']
-            ids.extend([page['id'] for page in content])
+        for tag in page["tags"]:
+            content = site["reflinks"]["/tag/{}".format(tag)]["content"]
+            ids.extend([page["id"] for page in content])
         # Use the set to remove any duplicates (pages that share more than 1
         # tag with this one)
-        related = [site['reflinks'][i] for i in set(ids)]
-        related = remove(related, [page['id']])
+        related = [site["reflinks"][i] for i in set(ids)]
+        related = remove(related, [page["id"]])
     return related
 
 
@@ -44,14 +51,14 @@ def pages(site, ids):
     """
     Select only the pages with the given ids from the site.
     """
-    return [site['reflinks'][i] for i in ids]
+    return [site["reflinks"][i] for i in ids]
 
 
 def tagnames(site):
     """
     Get a list of all tags (just the names) from the site.
     """
-    return [tag['title'] for tag in site['reflinks']['/tag']['content']]
+    return [tag["title"] for tag in site["reflinks"]["/tag"]["content"]]
 
 
 filters = dict(
@@ -60,4 +67,5 @@ filters = dict(
     related=related,
     pages=pages,
     tagnames=tagnames,
+    first_paragragh=first_paragragh,
 )

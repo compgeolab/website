@@ -40,7 +40,6 @@ strict_undefined: true
 
 menulinks: [
     ['/news', 'News'],
-    ['/research', 'Research'],
     ['/publications', 'Publications'],
     ['/software', 'Software'],
     ['/people', 'People'],

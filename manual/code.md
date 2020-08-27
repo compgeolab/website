@@ -97,3 +97,24 @@ algorithmic strategies) will be made collaboratively.
 For technical directions on lab-developed software, we operate by
 ["lazy consensus"](https://rave.apache.org/docs/governance/lazyConsensus.html),
 which can be conducted via the Slack chat.
+
+# External software projects
+
+Whenever possible, please contribute upstream to external open-source projects,
+participate in their mailing lists, and report issues as appropriate on their mailing
+lists, issue trackers, and so on. We strive to be good "citizens" of the open-source
+community. When engaging with other members of the community, be respectful, kind, and
+thoughtful in your communication.
+
+Projects that are developed by lab members with external collaborators (for instance,
+[Fatiando](https://www.fatiando.org/) would fall under this distinction) should
+have their discussions held openly.
+For instance, while it is useful to have in-person meetings, if these are held in
+response to an online inquiry (i.e., "I'll come by your office to help you out") then a
+summary should be sent afterwards to ensure that the project members who cannot be in
+the office can still participate and understand.
+This can help discourage the notion that projects developed by lab members are not
+community projects, and will also help to continue engaging other collaborators.
+
+For more discussion about this topic, see Matt Turk's paper
+[Scaling a Code in the Human Dimension](https://arxiv.org/abs/1301.7064).

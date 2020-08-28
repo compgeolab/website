@@ -56,7 +56,7 @@
 
             <div class="banner-text">
                 {% if this.slogan is defined %}
-                    <div class="container content banner-slogan">
+                    <div class="container banner-slogan">
                         <h1>{{ this.slogan }}</h1>
                     </div>
                 {% elif this.banner_title is defined %}
@@ -64,6 +64,25 @@
                         {{ this.title }}
                     </h1>
                 {% endif %}
+                {% if this.description is defined %}
+                    <div class="container">
+                        <p class="description">
+                        {{ this.description }}
+                        </p>
+                    </div>
+                {% endif %}
+                {% if this.buttons is defined %}
+                    <div class="container banner-buttons">
+                    {% for button in this.buttons %}
+                        <a href="{{ this.buttons[button] }}">
+                            <button type="button" class="btn btn-lg banner-button">
+                                {{ button }}
+                            </button>
+                        </a>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+
             </div>
         </div>
     {% endblock %}

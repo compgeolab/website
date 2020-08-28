@@ -23,12 +23,12 @@
         {{ this.body }}
 
         <div class="home-block">
-            <h2>News</h2>
-            <ul class="fa-ul">
-            {% for page in site.reflinks["/news"].content[:3] %}
+            <h2>Lab News</h2>
+            <ul class="fa-ul news">
+            {% for page in site.reflinks["/news"].content[:4] %}
                 <li>
                     <i class="fa-li fa fa-comments-o fa-fw"></i>
-                    <a href="{{ page.url }}">{{ page.title }}</a>
+                    <a class="news-title" href="{{ page.url }}">{{ page.title }}</a>
                     <br>
                     <span class="card-date">({{ page.date.strftime('%Y-%m-%d') }})</span>
                     {{ page.body|first_paragragh }}

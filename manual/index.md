@@ -1,7 +1,6 @@
 ---
 title: Lab manual
 layout: manual
-banner_title: true
 content:
     - checklist
     - health
@@ -12,6 +11,8 @@ content:
     - papers
 pager: true
 ---
+
+# About
 
 This document is designed to be a reference for lab members and collaborators
 as well as part of an induction process when people join the lab. It outlines

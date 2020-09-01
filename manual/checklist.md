@@ -9,7 +9,7 @@ When you first join the lab (ideally within the first few weeks), you will have
 a meeting with Leo to introduce lab protocols, set expectations, add you to
 communication channels, etc.
 
-## Before your meeting
+# Before your meeting
 
 Please make sure the following have happened **before meeting Leo**:
 
@@ -22,7 +22,7 @@ Please make sure the following have happened **before meeting Leo**:
    your user name. Make it something professional (this will be associated with
    your future publications from the lab).
 
-## During your meeting
+# During your meeting
 
 You will be added to:
 
@@ -47,7 +47,7 @@ The we'll go over this document:
 1. Check-ins, feedback, and meetings
 1. Computing resources
 
-## After your meeting
+# After your meeting
 
 1. Read the [Code of Conduct][/manual/coc] carefully.
 1. Go over this document again on your own (ask on Slack if you have any

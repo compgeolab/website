@@ -1,6 +1,5 @@
 ---
 title: Publications
-banner_title:
 layout: index
 order: date
 reverse: true

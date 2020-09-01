@@ -1,6 +1,5 @@
 ---
 title: Software
-banner_title:
 layout: page
 order: date
 ---

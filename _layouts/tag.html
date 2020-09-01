@@ -6,16 +6,6 @@
     Tag "{{ this.title }}" | {{ site.title }}
 {% endblock %}
 
-
-{% block breadcrumbs %}
-    <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
-        {% set bc = site.reflinks["/tag"] %}
-        <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
-    </ol>
-{% endblock %}
-
-
 {% block content %}
     <h1>{{ fa('tags', title="Pages with tag") }} {{ make_tag(this.title, link=false) }}</h1>
     {# The type attribute is define by a hook in _python/hooks.py #}

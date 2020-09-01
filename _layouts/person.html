@@ -6,19 +6,19 @@
 
 {% block content %}
 
-    <div class="row">
-        <div class="col-sm-3 col-md-2">
-            <img class="img-circle picture" src="/images/people/{{this.picture}}"></img>
-        </div>
-        <div class="col-sm-9 col-md-10">
-            <div class="person">
-            <h1>{{ this.title }}</h1>
-            <h2>
-                {{ this.position }}
-                {% if this.former is defined and this.former %}
-                    | Former member
-                {% endif %}
-            </h2>
+    <div class="person">
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                <img class="img-circle picture" src="/images/people/{{this.picture}}"></img>
+            </div>
+            <div class="col-sm-9 col-md-10">
+                <h1>{{ this.title }}</h1>
+                <h2>
+                    {{ this.position }}
+                    {% if this.former is defined and this.former %}
+                        | Former member
+                    {% endif %}
+                </h2>
             </div>
         </div>
     </div>

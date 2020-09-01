@@ -1,6 +1,5 @@
 ---
 title: Research
-banner_title:
 layout: page
 order: date
 ---

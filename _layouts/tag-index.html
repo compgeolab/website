@@ -2,6 +2,7 @@
 {% from "utils.html" import make_index, make_tags, fa %}
 
 {% block content %}
+    <h1>{{ this.title }}</h1>
     {% if this.body is defined %}
         {{ this.body }}
     {% endif %}

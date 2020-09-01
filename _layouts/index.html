@@ -5,9 +5,9 @@
 
     <div class="container">
         {% block content %}
-            {% if not this.banner_title is defined %}
-                <h1>{{ this.title }}</h1>
-            {% endif %}
+
+            <h1>{{ this.title }}</h1>
+
             {% if this.body is defined %}
                 {{ this.body }}
             {% endif %}

@@ -22,7 +22,8 @@ h1, h2, h3 {
 h1 {
     font-size: 2.5em;
     line-height: 1.4em;
-    margin-bottom: 30px;
+    margin: 80px 0px;
+    text-align: center;
 }
 
 h2 {
@@ -207,6 +208,11 @@ p.pub-date-author {
     margin-bottom: 20px;
 }
 
+.pub-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
 .card {
     border: none;
     padding: 20px 0px;
@@ -258,7 +264,6 @@ img {
     background-size: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
     margin: 0px;
-    margin-bottom: 100px;
     width: 100%;
 }
 
@@ -342,7 +347,6 @@ img {
 }
 
 .home {
-    margin-top: -100px !important;
 }
 
 .home-block {
@@ -378,8 +382,9 @@ img {
     color: #aaaaaa;
 }
 
-.manual-contents h2 {
-    margin-top: 0px;
+.post-title {
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .manual-current {
@@ -430,8 +435,13 @@ img {
     font-size: 0.9em;
 }
 
+.person {
+    margin-top: 80px;
+}
+
 .person h1 {
-    margin-bottom: 0px;
+    margin: 21px 0 0 0;
+    text-align: left;
 }
 
 .person h2 {

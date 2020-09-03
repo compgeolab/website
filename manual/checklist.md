@@ -17,7 +17,6 @@ Please make sure the following have happened **before meeting Leo**:
    invitation. Please remind him if you don't get one.
 1. Setup Slack on your computer/tablet/phone or use the website version:
    [compgeolab.slack.com](https://compgeolab.slack.com)
-1. Install [Zoom](https://zoom.us/), we'll be using this for video conferences.
 1. Create an account on [GitHub](https://github.com/). Make sure you remember
    your user name. Make it something professional (this will be associated with
    your future publications from the lab).
@@ -43,7 +42,7 @@ The we'll go over this document:
 1. Mental Health Resources
 1. Code of Conduct
 1. Expectations (what we expect from you, what you can expect from us)
-1. Communication (email, Slack, GitHub, Zoom, etc)
+1. Communication (email, Slack, GitHub, Jitsi Meet, etc)
 1. Check-ins, feedback, and meetings
 1. Computing resources
 

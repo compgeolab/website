@@ -57,5 +57,5 @@ The we'll go over this document:
 1. Explore the GitHub organization to see what the group is working on.
 1. Study the [Software Carpentry](https://software-carpentry.org/lessons/)
    lessons on Version Control with Git, Python, and the Unix Shell. They will
-   be crucial for your project.
+   be crucial for your project. Go over Git and the Unix Shell first.
 1. Go and start making something brilliant!

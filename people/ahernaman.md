@@ -11,5 +11,4 @@ layout: person
 
 
 # About
-
-
+I'm a Third year undergraduate at the university of liverpool undertaking his masters project titled "Estimating the accuracy of Moho depth estimates from gravity inversion" 

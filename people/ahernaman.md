@@ -9,6 +9,5 @@ github: AidanHernaman
 layout: person
 ---
 
-
 # About
 I'm a Third year geophysics(geology) undergraduate at the university of liverpool undertaking his masters project titled "Estimating the accuracy of Moho depth estimates from gravity inversion" 

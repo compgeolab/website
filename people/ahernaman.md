@@ -10,4 +10,4 @@ layout: person
 ---
 
 # About
-I'm a Third year geophysics(geology) undergraduate at the university of liverpool undertaking his masters project titled "Estimating the accuracy of Moho depth estimates from gravity inversion" 
+I'm a third year Geophysics (Geology) undergraduate at the University of Liverpool undertaking my Master's project titled "Estimating the accuracy of Moho depth estimates from gravity inversion".

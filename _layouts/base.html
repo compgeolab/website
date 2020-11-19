@@ -54,32 +54,33 @@
 
             {{ menu("menu-transparent", site) }}
 
-            <div class="banner-text">
-                {% if this.slogan is defined %}
-                    <div class="container banner-slogan">
-                        <h1>{{ this.slogan }}</h1>
-                    </div>
-                {% endif %}
-                {% if this.description is defined %}
-                    <div class="container">
-                        <p class="description">
-                        {{ this.description }}
-                        </p>
-                    </div>
-                {% endif %}
-                {% if this.buttons is defined %}
-                    <div class="container banner-buttons">
-                    {% for button in this.buttons %}
-                        <a href="{{ this.buttons[button] }}">
-                            <button type="button" class="btn btn-lg banner-button">
-                                {{ button }}
-                            </button>
-                        </a>
-                    {% endfor %}
-                    </div>
-                {% endif %}
-
-            </div>
+            {% if this.slogan is defined or this.description is defined or this.buttons is defined %}
+                <div class="banner-text">
+                    {% if this.slogan is defined %}
+                        <div class="container banner-slogan">
+                            <h1>{{ this.slogan }}</h1>
+                        </div>
+                    {% endif %}
+                    {% if this.description is defined %}
+                        <div class="container">
+                            <p class="description">
+                            {{ this.description }}
+                            </p>
+                        </div>
+                    {% endif %}
+                    {% if this.buttons is defined %}
+                        <div class="container banner-buttons">
+                        {% for button in this.buttons %}
+                            <a href="{{ this.buttons[button] }}">
+                                <button type="button" class="btn btn-lg banner-button">
+                                    {{ button }}
+                                </button>
+                            </a>
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
         </div>
     {% endblock %}
 

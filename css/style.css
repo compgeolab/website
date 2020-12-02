@@ -369,9 +369,11 @@ img {
 
 .caption {
     font-size: 0.9em;
+    line-height: 1.5em;
     font-style: italic;
     color: #666666;
     text-align: center;
+    margin-top: 10px;
 }
 
 .alert-blue {

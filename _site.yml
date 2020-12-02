@@ -44,6 +44,7 @@ menulinks: [
     ['/research', 'Research'],
     ['/publications', 'Publications'],
     ['/software', 'Software'],
+    ['/data', 'Data'],
     ['/people', 'People'],
     ['/manual', 'Manual'],
     ]

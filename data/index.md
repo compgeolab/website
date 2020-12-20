@@ -8,8 +8,7 @@ Along the course of our research, we often produce open-access datasets and
 models. These products are available for free under permissive licenses
 (usually the
 [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/)
-license). You can usually find links to all data and model products in the
-publications themselves. Below is a curated list of datasets and models
+license). Below is a curated list of datasets and models
 generated or compiled by the group.
 
 <div class="home-block">

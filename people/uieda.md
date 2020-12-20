@@ -46,6 +46,9 @@ href="https://www.generic-mapping-tools.org">Generic Mapping Tools</a> (GMT), a
 widely-used software for processing and visualizing geophysical data. My main
 contributions were the development of [PyGMT](https://www.pygmt.org) and
 modernizing the team's development process (moving to GitHub, starting a
-Discourse forum, setting up continuous-integration, etc). Prior to Hawai'i, I
-worked for three years as Assistant Professor of Geophysics at the Universidade
-do Estado do Rio de Janeiro, Brazil.
+Discourse forum, setting up continuous-integration, etc).
+
+Prior to Hawai'i, I worked for three years as Assistant Professor of Geophysics
+at the Universidade do Estado do Rio de Janeiro, Brazil. This provided
+invaluable teaching experience and allowed me to mature as an early career
+academic.

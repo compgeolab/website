@@ -31,7 +31,7 @@ for easier loading and plotting using standard tools like
 <ul class="fa-ul">
     <li>
         <i class="fa-li fa fa-download"></i> Download:
-        <a href="https://github.com/compgeolab/australia-gravity-data/releases/latest">australia-ground-gravity.nc</a>
+        <a href="https://doi.org/10.6084/m9.figshare.13643837">dataset in netCDF format</a>
     </li>
     <li>
         <i class="fa-li fa fa-github"></i> Source code:

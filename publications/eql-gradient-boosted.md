@@ -17,7 +17,7 @@ tags: data-processing, gravity, open-source
 This paper describes how we used the gradient-boosting machine learning method
 to scale equivalent source processing to millions gravity and magnetic data.
 Equivalent sources allow us take into account the observation height and the
-physics of potential fields (manly, they are harmonic functions) when
+physics of potential fields (mainly, they are harmonic functions) when
 processing and interpolation, which are often ignored by other methods.
 This leads to great results but it's involves large linear models, so
 processing datasets of this magnitude is tricky.

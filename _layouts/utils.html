@@ -27,7 +27,7 @@
 
 
 {%- macro make_tag(tag, fancy=true, link=true) -%}
-{# Utility for inserting academicons icons #}
+{# Utility for inserting a tag icon #}
     {%- if fancy -%}
         {% set class = "label label-default tag" %}
         {%- if link -%}
@@ -444,7 +444,7 @@
 {%- endmacro -%}
 
 
-{%- macro menu(class, site, brand=true, columns=true) -%}
+{%- macro menu(class, site, links, brand=true, columns=true) -%}
 {# Layout the menu using the specified class #}
     {% if columns %}
         {% set col_small = "col-lg-3" %}
@@ -463,7 +463,7 @@
         </div>
         <div class="{{ col_large }} menu-list">
             <ul>
-                {% for url, title in site.menulinks %}
+                {% for url, title in links %}
                     <li><a href="{{ url }}">{{ title }}</a></li>
                 {% endfor %}
             </ul>

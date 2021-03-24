@@ -52,7 +52,7 @@
         <div class="banner"
              style="background-image: linear-gradient(to top, transparent, #00000099), url(/{{ site.banner }}); background-position: {{position}};">
 
-            {{ menu("menu-transparent", site) }}
+            {{ menu("menu-transparent", site, site.menulinks) }}
 
             {% if this.slogan is defined or this.description is defined or this.buttons is defined %}
                 <div class="banner-text">

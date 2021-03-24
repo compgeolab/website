@@ -1,10 +1,12 @@
 ---
-title: "Two PhD studentships at the University of Liverpool"
+title: "(CLOSED) Two PhD studentships at the University of Liverpool"
 author: uieda
 date: 2019-12-08
-tags: meta
+tags: open-positions
 layout: post
 ---
+
+> **Update (2020/01/10):** This position is now closed.
 
 I have two open positions for funded studentships at the University of
 Liverpool.

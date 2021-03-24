@@ -39,14 +39,24 @@ ignore_patterns: [
 strict_undefined: true
 
 menulinks: [
+    ['/research', 'Research'],
+    ['/software', 'Software'],
+    ['/data', 'Data'],
+    ['/publications', 'Publications'],
+    ['/people', 'People'],
+    ['/manual', 'Manual'],
+    ]
+
+bottommenulinks: [
     ['/', 'Home'],
     ['/news', 'News'],
     ['/research', 'Research'],
-    ['/publications', 'Publications'],
     ['/software', 'Software'],
     ['/data', 'Data'],
+    ['/publications', 'Publications'],
     ['/people', 'People'],
     ['/manual', 'Manual'],
+    ['/tag/open-positions', 'Join the team'],
     ]
 
 menuicons: [

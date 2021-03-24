@@ -4,8 +4,9 @@ layout: page
 order: date
 ---
 
-Our research mostly involves the creation and application of new methods for
-geophysical modeling and data processing, mostly in gravity and magnetics.
+Our research focuses on the creation and application of new methods for
+geophysical modeling and data processing, mostly in the fields of gravimetry
+and magnetometry.
 
 <div class="home-block">
 <div class="row">
@@ -23,12 +24,12 @@ several types of constraints to overcome these challenges.
 </div>
 <div class="col-md-6">
 
-<a href="/publications/planting-inversion.html">
-<img src="/images/quadrilatero-ferrifero-density-model.jpg">
+<a href="/publications/moho-tesseroid-inversion.html">
+<img src="/images/south-american-moho.jpg">
 </a>
 <p class="caption">
-Distribution of an iron ore deposit in Brazil estimated from gravity gradient
-data.
+Maps of the depth to the crust-mantle boundary under South America (left) and
+differences between gravity- and seismologically-derived depths (right).
 </p>
 
 </div>

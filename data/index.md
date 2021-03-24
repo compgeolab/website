@@ -100,12 +100,12 @@ source code</a>
 </div>
 <div class="col-md-6">
 
-<a href="https://github.com/pinga-lab/paper-moho-inversion-tesseroids">
-<img src="/images/south-american-moho.jpg" alt="Maps of the Moho depth for South America (left) and differences between gravity- and seismologically-derived depths (right).">
+<a href="/publications/moho-tesseroid-inversion.html">
+<img src="/images/south-american-moho.jpg"
+     alt="Maps of the depth to the crust-mantle boundary under South America (left) and differences between gravity- and seismologically-derived depths (right).">
 </a>
 <p class="caption">
-Maps of the Moho depth for South America (left) and differences between
-gravity- and seismologically-derived depths (right).
+Maps of the depth to the crust-mantle boundary under South America (left) and differences between gravity- and seismologically-derived depths (right).
 </p>
 
 </div>

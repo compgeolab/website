@@ -1,3 +1,6 @@
+{%- if this.redirect is defined -%}
+    <meta http-equiv="Refresh" content="0;url={{ this.redirect }}"/>
+{%- else -%}
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 
@@ -102,3 +105,4 @@
 
 </body>
 </html>
+{%- endif -%}

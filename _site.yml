@@ -44,7 +44,6 @@ menulinks: [
     ['/data', 'Data'],
     ['/publications', 'Publications'],
     ['/people', 'People'],
-    ['/manual', 'Manual'],
     ]
 
 bottommenulinks: [
@@ -55,8 +54,8 @@ bottommenulinks: [
     ['/data', 'Data'],
     ['/publications', 'Publications'],
     ['/people', 'People'],
-    ['/manual', 'Manual'],
-    ['/tag/open-positions', 'Join the team'],
+    ['/tag/open-positions', 'Work with us'],
+    ['https://github.com/compgeolab/manual', 'Lab manual'],
     ]
 
 menuicons: [

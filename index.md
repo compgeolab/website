@@ -5,7 +5,7 @@ description: "In the <em>Computer-Oriented Geoscience Lab</em>, we design comput
 buttons:
     Our research: /research
     Software tools: /software
-    Join the team: /tag/open-positions
+    Work with us: /tag/open-positions
 layout: home
 content:
     - news

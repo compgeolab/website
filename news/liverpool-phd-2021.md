@@ -1,10 +1,12 @@
 ---
-title: "PhD studentship at the University of Liverpool"
+title: "(CLOSED) PhD studentship at the University of Liverpool"
 author: uieda
 date: 2021-03-24
 tags: open-positions
 layout: post
 ---
+
+> Update (2021/05/20): This position is now closed.
 
 We have one open position for a fully funded 5-year PhD and graduate student
 assistant position at the University of Liverpool.

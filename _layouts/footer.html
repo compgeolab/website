@@ -1,6 +1,6 @@
 {% from "utils.html" import menu %}
 
-{{ menu("menu-transparent", site, brand=false, columns=false) }}
+{{ menu("menu-transparent", site, site.bottommenulinks, brand=false, columns=false) }}
 
 <div class="footer-text text-center">
   <div class="container">
@@ -15,10 +15,11 @@
     from commit <code><a href="https://github.com/{{ site.repository }}/commit/{{ site.commit }}">{{ site.commit }}</a></code>
   </p>
   <p>
-    © 2019-{{ site.now.year }} {{ site.author }}
+    © {{ site.now.year }} {{ site.author }}
     •
-    Except where noted, all content is licensed
+    Except where noted, all content is available under a
     <a href="{{ site.reflinks.content_license.url }}">{{ site.reflinks.content_license.title }}</a>
+    license
   </p>
 </div>
 </div>

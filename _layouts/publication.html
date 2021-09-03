@@ -26,6 +26,11 @@
     <div class="row">
         <div class="col-md-8">
             {{ this.body }}
+
+            {% if this.citation is defined %}
+                <h2>Citation</h2>
+                <p>{{ this.citation }}</p>
+            {% endif %}
         </div>
         <div class="col-md-1">
         </div>
@@ -39,11 +44,6 @@
             {% if this.doi is defined %}
                 <h2>Article Level Metrics</h2>
                 {{ article_level_metrics(this) }}
-            {% endif %}
-
-            {% if this.citation is defined %}
-                <h2>Citation</h2>
-                <p>{{ this.citation }}</p>
             {% endif %}
 
             {{ related_pages(this, site, columns=false) }}

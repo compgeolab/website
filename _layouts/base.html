@@ -1,3 +1,6 @@
+{%- if this.redirect is defined -%}
+    <meta http-equiv="Refresh" content="0;url={{ this.redirect }}"/>
+{%- else -%}
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 
@@ -52,34 +55,35 @@
         <div class="banner"
              style="background-image: linear-gradient(to top, transparent, #00000099), url(/{{ site.banner }}); background-position: {{position}};">
 
-            {{ menu("menu-transparent", site) }}
+            {{ menu("menu-transparent", site, site.menulinks) }}
 
-            <div class="banner-text">
-                {% if this.slogan is defined %}
-                    <div class="container banner-slogan">
-                        <h1>{{ this.slogan }}</h1>
-                    </div>
-                {% endif %}
-                {% if this.description is defined %}
-                    <div class="container">
-                        <p class="description">
-                        {{ this.description }}
-                        </p>
-                    </div>
-                {% endif %}
-                {% if this.buttons is defined %}
-                    <div class="container banner-buttons">
-                    {% for button in this.buttons %}
-                        <a href="{{ this.buttons[button] }}">
-                            <button type="button" class="btn btn-lg banner-button">
-                                {{ button }}
-                            </button>
-                        </a>
-                    {% endfor %}
-                    </div>
-                {% endif %}
-
-            </div>
+            {% if this.slogan is defined or this.description is defined or this.buttons is defined %}
+                <div class="banner-text">
+                    {% if this.slogan is defined %}
+                        <div class="container banner-slogan">
+                            <h1>{{ this.slogan }}</h1>
+                        </div>
+                    {% endif %}
+                    {% if this.description is defined %}
+                        <div class="container">
+                            <p class="description">
+                            {{ this.description }}
+                            </p>
+                        </div>
+                    {% endif %}
+                    {% if this.buttons is defined %}
+                        <div class="container banner-buttons">
+                        {% for button in this.buttons %}
+                            <a href="{{ this.buttons[button] }}">
+                                <button type="button" class="btn btn-lg banner-button">
+                                    {{ button }}
+                                </button>
+                            </a>
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
         </div>
     {% endblock %}
 
@@ -101,3 +105,4 @@
 
 </body>
 </html>
+{%- endif -%}

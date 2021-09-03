@@ -39,13 +39,23 @@ ignore_patterns: [
 strict_undefined: true
 
 menulinks: [
+    ['/research', 'Research'],
+    ['/software', 'Software'],
+    ['/data', 'Data'],
+    ['/publications', 'Publications'],
+    ['/people', 'People'],
+    ]
+
+bottommenulinks: [
     ['/', 'Home'],
     ['/news', 'News'],
     ['/research', 'Research'],
-    ['/publications', 'Publications'],
     ['/software', 'Software'],
+    ['/data', 'Data'],
+    ['/publications', 'Publications'],
     ['/people', 'People'],
-    ['/manual', 'Manual'],
+    ['/tag/open-positions', 'Work with us'],
+    ['https://github.com/compgeolab/manual', 'Lab manual'],
     ]
 
 menuicons: [
@@ -69,4 +79,4 @@ authors:
 reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by/4.0/
-        title: CC-BY License
+        title: CC-BY

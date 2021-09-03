@@ -2,12 +2,11 @@
 title: "Gradient-boosted equivalent sources"
 date: 2021-01-25
 author: santisoler, uieda
+doi: 10.1093/gji/ggab297
 repository: compgeolab/eql-gradient-boosted
-preprint_server: EarthArXiv
 preprint: 10.31223/X58G7C
 supplement: 10.6084/m9.figshare.13604360
-citation: "Soler, S., & Uieda, L. (2021). Gradient-boosted equivalent sources. EarthArXiv. doi:10.31223/x58g7c"
-alm: true
+citation: "Soler, S.R. and Uieda, L. (2021). Gradient-boosted equivalent sources. Geophysical Journal International. doi: 10.1093/gji/ggab297"
 layout: publication
 tags: data-processing, gravity, open-source
 ---

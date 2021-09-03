@@ -5,7 +5,7 @@ position: PhD Student
 institution: Instituto Geofísico Sismológico Volponi
 location: San Juan, Argentina
 period: 2017-Present
-website: https://santisoler.github.io
+website: https://www.santisoler.com
 picture: santisoler.jpg
 github: santisoler
 email: santiago.r.soler@gmail.com

@@ -1,6 +1,7 @@
 site_name: "Computer-Oriented Geoscience Lab"
 site_description: "Geophysical research powered by open-source software"
 brand: "images/compgeolab-banner.svg"
+favicon: "images/favicon.png"
 url: "https://www.compgeolab.org"
 repository: compgeolab/website
 author: Leonardo Uieda
@@ -16,16 +17,16 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 navigation:
   - name: Home
     id: index
-  - name: Research
-    id: research/index
-  - name: Software
-    id: software/index
-  - name: Data
-    id: data/index
-  - name: People
-    id: people/index
-  - name: News
-    id: news/index
+  #- name: Research
+    #id: research/index
+  #- name: Software
+    #id: software/index
+  #- name: Data
+    #id: data/index
+  #- name: People
+    #id: people/index
+  #- name: News
+    #id: news/index
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   title: CC-BY
@@ -35,3 +36,4 @@ ignore:
   - CONTRIBUTING.md
   - environment.yml
   - Makefile
+  - css/academicons/README.md

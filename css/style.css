@@ -1,5 +1,24 @@
 /* Styles for basic elements */
 /*****************************************************************************/
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--bs-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--bs-blue);
+  text-decoration: underline;
+}
+
+code {
+  color: #dc1c2f;
+  font-size: 0.9rem;
+}
+
 img {
   width: 100%;
 }
@@ -14,7 +33,6 @@ footer {
   width: 100%;
   color: #aaa;
   background-color: #111111;
-  box-shadow: 0 0 0.5rem #000000aa;
   font-size: 1rem;
 }
 
@@ -50,7 +68,11 @@ footer a:hover {
 /* Custom classes */
 /*****************************************************************************/
 .page-content {
-  margin-top: 2.5rem;
+  padding-top: 5rem;
+}
+
+.page-section {
+  padding: 7rem 0;
 }
 
 .callout {
@@ -80,7 +102,7 @@ footer a:hover {
 .banner-button {
   color: #ffffff;
   background-color: var(--clab-red);
-  box-shadow: 0.15rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0.15rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);*/
 }
 
 .banner-button:hover {

@@ -17,8 +17,8 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 navigation:
   - name: Home
     id: index
-  #- name: Research
-    #id: research/index
+  - name: Research
+    id: research/index
   #- name: Software
     #id: software/index
   #- name: Data
@@ -27,9 +27,6 @@ navigation:
     #id: people/index
   #- name: News
     #id: news/index
-license:
-  url: http://creativecommons.org/licenses/by/4.0/
-  title: CC-BY
 ignore:
   - README.md
   - LICENSE.md

@@ -1,16 +1,29 @@
+/* Variable definitions and redefinitions of bootstrap variables (bs) */
+/*****************************************************************************/
+:root {
+  --bs-body-font-size: 1.1rem;
+  --clab-red: #d41111;
+  --clab-blue: #2060c2;
+}
+
 /* Styles for basic elements */
 /*****************************************************************************/
+h1 {
+  margin-bottom: 2rem;
+}
+
+
 h2 {
   margin-bottom: 1.5rem;
 }
 
 a {
-  color: var(--bs-blue);
+  color: var(--clab-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--bs-blue);
+  color: var(--clab-blue);
   text-decoration: underline;
 }
 
@@ -24,20 +37,23 @@ img {
 }
 
 header {
-  background-color: #111111;
+  background-image: url(/images/banner.svg);
+  background-position: top;
+  background-size: cover;
+  font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
 footer {
-  margin-top: 5rem;
   padding: 4rem 0;
   width: 100%;
-  color: #aaa;
-  background-color: #111111;
+  color: var(--bs-gray-500);
+  background-color: var(--bs-gray-900);
   font-size: 1rem;
 }
 
 footer a {
-  color: #dddddd;
+  color: var(--bs-gray-300);
   text-decoration: none;
 }
 
@@ -49,11 +65,6 @@ footer a:hover {
 
 /* Tweaks to Bootstrap classes */
 /*****************************************************************************/
-:root {
-  --bs-body-font-size: 1.1rem;
-  --clab-red: #d41111;
-}
-
 .container {
   max-width: 980px;
 }
@@ -64,11 +75,25 @@ footer a:hover {
   margin-right: 0.5rem;
 }
 
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 300;
+}
 
 /* Custom classes */
 /*****************************************************************************/
 .page-content {
   padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .page-section {
@@ -89,23 +114,21 @@ footer a:hover {
 }
 
 .banner {
-  background-position: bottom;
-  background-size: cover;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6) inset;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  color: #ffffff;
 }
 
-.banner-text {
-  padding: 7rem 0;
-  color: #fff;
+.banner h1 {
+  margin-bottom: 4rem;
 }
 
-.banner-button {
+.clab-button {
   color: #ffffff;
   background-color: var(--clab-red);
-  /*box-shadow: 0.15rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);*/
 }
 
-.banner-button:hover {
+.clab-button:hover {
   color: #ffffff;
   background-color: #bf0f0f;
 }

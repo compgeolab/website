@@ -37,7 +37,7 @@
 </head>
 
 <body>
-  <header class="shadow-sm">
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
       <div class="container align-middle">
         <a class="navbar-brand" href="/">
@@ -50,15 +50,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-middle"  id="navbarNav">
-          <ul class="navbar-nav flex-row flex-wrap">
+          <ul class="navbar-nav">
             {%- for item in config.navigation %}
-              <li class="nav-item col-6 col-md-auto">
+              <li class="nav-item">
                 {{ make_nav_link(item.name, item.id, page, site) }}
               </li>
             {%- endfor %}
           </ul>
-          <ul class="navbar-nav ms-md-auto">
-            <li class="nav-item">
+          <ul class="navbar-nav ms-md-auto flex-row flex-wrap">
+            <li class="nav-item col-2 col-md-auto">
               <a class="nav-link" aria-label="GitHub" href="https://github.com/{{ config.repository }}" target="_blank"><i class="fab fa-github fa-lg me-1" title="GitHub" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
@@ -68,14 +68,29 @@
         </div>
       </div>
     </nav>
+    {%- if page.banner_title is defined %}
+      <section class="container text-center banner">
+        <h1 class="display-4">
+          {{ page.banner_title }}
+        </h1>
+        {%- if page.banner_subtitle is defined %}
+          <p class="lead fs-4">
+            {{ page.banner_subtitle }}
+          </p>
+        {%- endif %}
+      </section>
+    {%- endif %}
   </header>
 
   <main>
     {%- block content %}
-      <section>
-        <div class="container page-content narrow-page">
-          {{ page.body }}
-        </div>
+      {%- if page.no_container is defined and page.no_container %}
+        {%- set section_class = "" %}
+      {%- else %}
+        {%- set section_class = "container page-content narrow-page" %}
+      {%- endif %}
+      <section class="{{ section_class }}">
+        {{ page.body }}
       </section>
     {%- endblock %}
   </main>
@@ -112,4 +127,3 @@
 
 </body>
 </html>
-

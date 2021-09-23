@@ -21,8 +21,8 @@ navigation:
     id: research/index
   #- name: Software
     #id: software/index
-  #- name: Data
-    #id: data/index
+  - name: Data
+    id: data/index
   #- name: People
     #id: people/index
   - name: News

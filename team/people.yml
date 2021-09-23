@@ -1,8 +1,15 @@
+# This is the list that populates the team page. Add yourself to the
+# appropriate category.
+#
+# Your profile picture will be loaded from your GitHub account automatically.
+# Required fields: name, role, affiliation
+
 # List of current lab members
 current:
   - name: Leonardo Uieda
-    role: PI | Lecturer
+    role: PI / Lecturer
     affiliation: University of Liverpool, UK
+    pronouns: he/him
     github: leouieda
     email: Leonardo.Uieda@liverpool.ac.uk
     orcid: 0000-0001-6123-9515

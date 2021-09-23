@@ -21,13 +21,13 @@ group.
     <h2>{{ data.title }}</h2>
     <p>{{ data.description }}</p>
     <a class="btn btn-primary mb-2 me-3" target="_blank" href="https://doi.org/{{ data.doi }}">
-      <i class="fa fa-download me-1"></i> Download
+      <i class="fa fa-download me-1" aria-hidden="true"></i> Download
     </a>
     <a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://github.com/{{ data.repository }}">
-      <i class="fab fa-github me-1"></i> Source code
+      <i class="fab fa-github me-1" aria-hidden="true"></i> Source code
     </a>
     <a target="_blank" class="btn btn-outline-primary mb-2 me-2" href="{{ data.license_url }}">
-      <i class="fa fa-gavel me-1"></i> License: {{ data.license }}
+      <i class="fa fa-gavel me-1" aria-hidden="true"></i> License: {{ data.license }}
     </a>
   </div>
   <div class="col-md-5 {{ loop.cycle('', 'order-md-first') }}">

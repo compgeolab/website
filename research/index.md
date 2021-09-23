@@ -41,7 +41,7 @@ density from observed gravity disturbances.
 <div class="row mt-5 gy-5 gx-5">
 <div class="col-md-7">
 
-<h2>Forward modeling</h2>
+## Forward modeling
 
 A key component for solving an inverse problem is first solve the **forward
 problem** (predicting observed data from a known model of the subsurface).
@@ -68,7 +68,7 @@ continental and global scales.
 <div class="row mt-5 gy-5 gx-5">
 <div class="col-md-7">
 
-<h2>Data processing</h2>
+## Data processing
 
 There is no turning back from the **machine learning** frenzy that has taken
 over the world. Geoscientists have been doing similar things for decades, for

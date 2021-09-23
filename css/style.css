@@ -89,6 +89,18 @@ footer a:hover {
   font-weight: 300;
 }
 
+.card {
+  border: none;
+  border-radius: none;
+}
+
+.card-img-top {
+  border-radius: 50%;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* Custom classes */
 /*****************************************************************************/
 .page-content {

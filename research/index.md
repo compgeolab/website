@@ -24,7 +24,7 @@ We develop methods to overcome these challenges and solve different kinds of
 inverse problems that arise in geophysics.
 
 </div>
-<div class="col-md-5 justify-content-center">
+<div class="col-md-5">
 
 <video style="display: block; margin: 0 auto; width: 70%;" muted autoplay controls="false" loop>
 <source src="/images/planting-inversion.mp4" type="video/mp4"/>

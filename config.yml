@@ -19,8 +19,8 @@ navigation:
     id: index
   - name: Research
     id: research/index
-  #- name: Software
-    #id: software/index
+  - name: Software
+    id: software/index
   - name: Data
     id: data/index
   - name: Team

@@ -38,22 +38,22 @@ SOMETHING ABOUT SOFTWARE.
 
 {# Create a list of pages from the news folder #}
 {%- set news = [] %}
-{%- for id, page in site.items() %}
-  {%- if page.parent == "news" and id != "news/index" %}
-    {%- do news.append(page) %}
+{%- for id, item in site.items() %}
+  {%- if item.parent == "news" and id != "news/index" %}
+    {%- do news.append(item) %}
   {%- endif %}
 {%- endfor %}
 
 <ul class="mt-4">
-{%- for page in (news|sort(attribute="date", reverse=True)|list)[:5] %}
+{%- for item in (news|sort(attribute="date", reverse=True)|list)[:5] %}
 <li class="mb-2">
-<span class="text-muted f-6">{{ page.date|replace("-", "/") }}:</span>
-<a href="/{{ page.path }}">{{ page.title }}</a>
+<a href="/{{ item.path }}">{{ item.title }}</a>
+<span class="text-muted fs-6">({{ item.date|replace("-", "/") }})</span>
 </li>
 {%- endfor %}
 </ul>
 
-[Past updates »](/news)
+<a class="btn btn-outline-primary mt-3" href="/news">More updates »</a>
 
 </div>
 </div>

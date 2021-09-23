@@ -1,9 +1,6 @@
 ---
 title: "Free online workshop on gravity data processing at Transform 2021"
-author: uieda
 date: 2021-03-23
-tags: meta
-layout: post
 ---
 
 The 2021 edition of the

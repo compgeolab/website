@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{%- block content %}
+  <section class="container page-content">
+    {{ page.body }}
+
+    {# Create a list of pages from the news folder #}
+    {%- set news = [] %}
+    {%- for id, item in site.items() %}
+      {%- if item.parent == "news" and id != "news/index" %}
+        {%- do news.append(item) %}
+      {%- endif %}
+    {%- endfor %}
+
+    {%- for item in news|sort(attribute="date", reverse=True) %}
+      <h2 class="fs-4 mb-2 mt-5">
+        {{ item.title }}
+        <span class="text-muted fs-6">({{ item.date|replace("-", "/") }})</span>
+      </h2>
+      <p class="text-muted">
+      {{ item.body|striptags|trim|truncate(200) }}
+      </p>
+      <a class="btn btn-outline-primary" href="/{{ item.path }}">Read more »</a>
+    {%- endfor %}
+  </section>
+{%- endblock %}

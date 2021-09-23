@@ -139,6 +139,17 @@ footer a:hover {
   margin-bottom: 4rem;
 }
 
+.clab-button-outline {
+  color: var(--clab-red);
+  background-color: none;
+  border-color: var(--clab-red);
+}
+
+.clab-button-outline:hover {
+  color: #ffffff;
+  background-color: var(--clab-red);
+}
+
 .clab-button {
   color: #ffffff;
   background-color: var(--clab-red);
@@ -147,4 +158,11 @@ footer a:hover {
 .clab-button:hover {
   color: #ffffff;
   background-color: #bf0f0f;
+}
+
+.video-box {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--bs-gray-400);
 }

@@ -12,6 +12,9 @@ template: base.html
 <div class="container-fluid" style="background-color: var(--bs-gray-200);">
 <div class="container page-section">
 
+<div class="row">
+<div class="col-md-7">
+
 ## About
 
 The **CompGeoLab** is a research group based at the
@@ -22,11 +25,31 @@ measured disturbances in the Earth's gravity field.
 These are the main tools used by geoscientists to **image the inside** of the
 Earth and other planets.
 
-SOMETHING ABOUT SOFTWARE.
+We also specialize in building **open-source scientific software**.
+Our team works on several tools and projects, developed in-house and with the
+larger scientific community.
 
 <div class="mt-4">
-<a class="btn clab-button mb-4 me-2" href="/research">Our research</a>
-<a class="btn clab-button mb-4" href="/people">Meet the team</a>
+<a class="btn clab-button mb-4 me-2" href="/team">Meet the team</a>
+<a class="btn clab-button-outline mb-4 me-2" href="/research">Our research</a>
+<a class="btn clab-button-outline mb-4 me-2" href="/contact">Work with us!</a>
+</div>
+
+</div>
+<div class="col-md-5">
+
+<div class="video-box shadow">
+<video style="display: block; margin: 0 auto; width: 80%;" muted autoplay controls="false" loop>
+<source src="/images/planting-inversion.mp4" type="video/mp4"/>
+</video>
+</div>
+
+<p class="fs-6 text-center mt-3">
+The planting method determining subsurface density from observed gravity
+disturbances.
+</p>
+
+</div>
 </div>
 
 </div>

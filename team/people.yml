@@ -10,6 +10,7 @@ current:
     researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
     cv: https://www.leouieda.com/cv/leonardo_uieda_cv.pdf
     website: https://www.leouieda.com
+
   - name: Santiago Soler
     role: PhD student
     affiliation: Instituto Geofísico Sismológico Volponi, Argentina
@@ -19,19 +20,17 @@ current:
     google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
     researchgate: https://www.researchgate.net/profile/Santiago_Soler2
     website: https://www.santisoler.com/
-  - name: India Uppal
-    role: PhD student
-    affiliation: University of Liverpool, UK
-    github: indiauppal
 
 # List of external collaborators
 collaborators:
+
   - name: Vanderlei C. Oliveira Jr.
     role: Researcher
     affiliation: PINGA Lab, Observatório Nacional, Brazil
     github: birocoles
     orcid: 0000-0002-6338-4086
     website: https://www.pinga-lab.org/people/oliveira-jr.html
+
   - name: Valéria C. F. Barbosa
     role: Researcher
     affiliation: PINGA Lab, Observatório Nacional, Brazil

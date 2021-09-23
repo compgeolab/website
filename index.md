@@ -12,10 +12,10 @@ template: base.html
 <div class="container-fluid" style="background-color: var(--bs-gray-200);">
 <div class="container page-section">
 
-<div class="row">
-<div class="col-md-7">
+## About us
 
-## About
+<div class="row gy-5 gx-5">
+<div class="col-md-7">
 
 The **CompGeoLab** is a research group based at the
 [{{ config.location.university }}'s {{ config.location.school }}][uol].
@@ -26,10 +26,10 @@ These are the main tools used by geoscientists to **image the inside** of the
 Earth and other planets.
 
 We also specialize in building **open-source scientific software**.
-Our team works on several tools and projects, developed in-house and with the
-larger scientific community.
+Our team works on several tools and projects, both developing tools in-house
+and contributing across the larger scientific ecosystem.
 
-<div class="mt-4">
+<div class="mt-5">
 <a class="btn clab-button mb-4 me-2" href="/team">Meet the team</a>
 <a class="btn clab-button-outline mb-4 me-2" href="/research">Our research</a>
 <a class="btn clab-button-outline mb-4 me-2" href="/contact">Work with us!</a>
@@ -38,16 +38,10 @@ larger scientific community.
 </div>
 <div class="col-md-5">
 
-<div class="video-box shadow">
-<video style="display: block; margin: 0 auto; width: 80%;" muted autoplay controls="false" loop>
-<source src="/images/planting-inversion.mp4" type="video/mp4"/>
-</video>
-</div>
-
-<p class="fs-6 text-center mt-3">
-The planting method determining subsurface density from observed gravity
-disturbances.
-</p>
+{%- set caption = "Modelled density anomalies associated with iron-ore formations derived from observed gravity disturbances." %}
+<img class="mb-5" src="/images/quadrilatero-ferrifero-density-model.png" alt="{{ caption }}" title="{{ caption }}">
+{%- set caption = "Our software is built mostly with the Python and C languages." %}
+<img src="/images/languages.svg" alt="{{ caption }}" title="{{ caption }}">
 
 </div>
 </div>
@@ -58,6 +52,8 @@ disturbances.
 <div class="container page-section">
 
 ## Lab updates
+
+News, updates, job postings, and more:
 
 {# Create a list of pages from the news folder #}
 {%- set news = [] %}

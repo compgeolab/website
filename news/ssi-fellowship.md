@@ -1,9 +1,6 @@
 ---
 title: "Leo has been awarded a Software Sustainability Institute Fellowship"
-author: uieda
 date: 2020-01-23
-tags: meta
-layout: post
 ---
 
 The [Software Sustainability Institute](https://www.software.ac.uk/) offers

@@ -36,7 +36,24 @@ SOMETHING ABOUT SOFTWARE.
 
 ## Lab updates
 
-News feed here.
+{# Create a list of pages from the news folder #}
+{%- set news = [] %}
+{%- for id, page in site.items() %}
+  {%- if page.parent == "news" and id != "news/index" %}
+    {%- do news.append(page) %}
+  {%- endif %}
+{%- endfor %}
+
+<ul class="mt-4">
+{%- for page in (news|sort(attribute="date", reverse=True)|list)[:5] %}
+<li class="mb-2">
+<span class="text-muted f-6">{{ page.date|replace("-", "/") }}:</span>
+<a href="/{{ page.path }}">{{ page.title }}</a>
+</li>
+{%- endfor %}
+</ul>
+
+[Past updates »](/news)
 
 </div>
 </div>

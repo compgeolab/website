@@ -100,6 +100,10 @@ footer a:hover {
   padding: 7rem 0;
 }
 
+.narrow-page {
+  max-width: 750px;
+}
+
 .callout {
   margin: 0 auto 1.5rem;
   /* Set a tiny bottom padding because 0 causes it to ignore the p padding */

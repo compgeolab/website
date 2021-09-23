@@ -26,8 +26,8 @@ These are the main tools used by geoscientists to **image the inside** of the
 Earth and other planets.
 
 We also specialize in building **open-source scientific software**.
-Our team works on several tools and projects, both developing tools in-house
-and contributing across the larger scientific ecosystem.
+Our team works on [several tools and projects](/software), both developing
+tools in-house and contributing across the larger scientific ecosystem.
 
 <div class="mt-5">
 <a class="btn clab-button mb-4 me-2" href="/team">Meet the team</a>
@@ -65,7 +65,7 @@ News, updates, job postings, and more:
 
 <ul class="mt-4">
 {%- for item in (news|sort(attribute="date", reverse=True)|list)[:5] %}
-<li class="mb-2">
+<li>
 <a href="/{{ item.path }}">{{ item.title }}</a>
 <span class="text-muted fs-6">({{ item.date|replace("-", "/") }})</span>
 </li>

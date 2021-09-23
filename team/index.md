@@ -15,7 +15,7 @@ template: base.html
             <img class="card-img-top" src="/images/avatar-placeholder.jpg" alt="{{ person.name }}'s profile picture">
           {%- endif %}
           <div class="card-body text-center">
-            <h3 class="card-title fs-4">{{ person.name }}</h3>
+            <h3 class="card-title fs-4" id="{{ person.github }}">{{ person.name }}</h3>
             <p class="card-text fs-6 mb-1 text-muted">{{ person.affiliation }}</p>
             <p class="card-text fs-6 mb-1 text-muted">{{ person.role }}</p>
             <ul class="fa-ul list-inline ms-0 fs-5 mb-1">

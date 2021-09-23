@@ -19,7 +19,7 @@ A collection of **Python** tools for geophysics. The Fatiando tools are the
 heart of most of our research and teaching efforts. This is the main project on
 which we work.
 
-<a class="btn btn-primary mb-2 me-3" target="_blank" href="https://www.fatiando.org">
+<a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://www.fatiando.org">
 Project website
 </a>
 <a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://github.com/fatiando">
@@ -44,7 +44,7 @@ geosciences.
 Our team contributes to both GMT and the [PyGMT](https://www.pygmt.org)
 library which brings all the power of GMT to the Scientific Python ecosystem.
 
-<a class="btn btn-primary mb-2 me-3" target="_blank" href="https://www.generic-mapping-tools.org">
+<a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://www.generic-mapping-tools.org">
 Project website
 </a>
 <a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://github.com/GenericMappingTools">
@@ -68,7 +68,7 @@ A collection of command-line programs for modeling the gravitational potential,
 acceleration, and gradient tensor. Tesseroids supports models and computation
 grids in Cartesian and spherical coordinates.
 
-<a class="btn btn-primary mb-2 me-3" target="_blank" href="https://tesseroids.leouieda.com">
+<a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://tesseroids.leouieda.com">
 Project website
 </a>
 <a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://github.com/leouieda/tesseroids">

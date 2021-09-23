@@ -1,18 +1,19 @@
 ---
-title: "(CLOSED) Two PhD studentships at the University of Liverpool"
-author: uieda
+title: "Two PhD studentships at the University of Liverpool"
 date: 2019-12-08
-tags: open-positions
-layout: post
 ---
 
-> **Update (2020/01/10):** This position is now closed.
+<div class="callout">
+
+**Update (2020/01/10):** This position is now closed.
+
+</div>
 
 I have two open positions for funded studentships at the University of
 Liverpool.
 **Applications are open until 10 January 2020**.
 
-# Project descriptions
+## Project descriptions
 
 > Follow the links for more detailed versions.
 
@@ -43,7 +44,7 @@ regional crustal and sedimentary basin models. The inversion methods developed
 in this project can be applied to produce improved crustal thickness estimates
 for South America, Africa, Antarctica, the Moon, Mars, etc.
 
-# The details
+## The details
 
 The funding for these projects comes from the School of Environment Sciences.
 Applicants choose a project when applying and will be judged on their own merit
@@ -57,14 +58,14 @@ normal competition.
 
 Both projects have a large computational component. Students will make code
 contributions to the different [open-source Python software developed by the
-lab][/software].
+lab](/software).
 They will be trained to develop software in a collaborative environment using
 GitHub and use the current best practices in software engineering and
 reproducible research.
 
-Applicants are encouraged to read the [lab manual][/manual] to familiarize
-themselves with the way we approach science, expectations, our code of conduct,
-etc.
+Applicants are encouraged to read the [lab manual](https://github.com/compgeolab/manual)
+to familiarize themselves with the way we approach science, expectations, our
+code of conduct, etc.
 
 **If you're interested in applying (or know someone who might be), please
-[get in touch][/people/uieda]!**
+[get in touch](/contact)!**

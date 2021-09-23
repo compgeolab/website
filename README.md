@@ -4,15 +4,15 @@
 
 ## Making changes to the site
 
-See [CONTRIBUTING.md](https://github.com/compgeolab/website/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Automatic deploy of HTML to GitHub Pages
 
 The site is automatically built and deployed to
 [compgeolab/compgeolab.github.io](https://github.com/compgeolab/compgeolab.github.io)
 by the GitHub Actions service.
-Every time a commit is pushed to the *master* branch, the HTML is compiled and the
-website is updated.
+Every time a commit is pushed to the *main* branch, the HTML is compiled and
+the website is updated.
 See `.github/workflows/build.yml` for the configuration.
 
 ## License

@@ -1,0 +1,38 @@
+site_name: "Computer-Oriented Geoscience Lab"
+site_description: "Geophysical research powered by open-source software"
+brand: "images/compgeolab-banner.svg"
+favicon: "images/favicon.png"
+url: "https://www.compgeolab.org"
+repository: compgeolab/website
+author: Leonardo Uieda
+twitter: leouieda
+github: compgeolab
+location:
+  department: Department of Earth, Ocean and Ecological Sciences
+  school: School of Environmental Sciences
+  university: University of Liverpool
+  country: UK
+language: en
+keywords: 'science, geoscience, geophysics, software, open-source'
+navigation:
+  - name: Home
+    id: index
+  - name: Research
+    id: research/index
+  - name: Software
+    id: software/index
+  - name: Data
+    id: data/index
+  - name: Team
+    id: team/index
+  - name: News
+    id: news/index
+  - name: Contact
+    id: contact/index
+ignore:
+  - README.md
+  - LICENSE.md
+  - CONTRIBUTING.md
+  - environment.yml
+  - Makefile
+  - css/academicons/README.md

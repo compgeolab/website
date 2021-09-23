@@ -1,0 +1,67 @@
+# This is the list that populates the team page. Add yourself to the
+# appropriate category.
+#
+# Your profile picture will be loaded from your GitHub account automatically.
+# Required fields: name, role, affiliation
+
+# List of current lab members
+current:
+  - name: Leonardo Uieda
+    role: PI / Lecturer
+    affiliation: University of Liverpool, UK
+    pronouns: he/him
+    github: leouieda
+    email: Leonardo.Uieda@liverpool.ac.uk
+    orcid: 0000-0001-6123-9515
+    google_scholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
+    researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    cv: https://www.leouieda.com/cv/leonardo_uieda_cv.pdf
+    website: https://www.leouieda.com
+
+  - name: Santiago Soler
+    role: PhD student
+    affiliation: Instituto Geofísico Sismológico Volponi, Argentina
+    github: santisoler
+    email: santiago.r.soler@gmail.com
+    orcid: 0000-0001-9202-5317
+    google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
+    researchgate: https://www.researchgate.net/profile/Santiago_Soler2
+    website: https://www.santisoler.com/
+
+# List of external collaborators
+collaborators:
+
+  - name: Vanderlei C. Oliveira Jr.
+    role: Researcher
+    affiliation: PINGA Lab, Observatório Nacional, Brazil
+    github: birocoles
+    orcid: 0000-0002-6338-4086
+    website: https://www.pinga-lab.org/people/oliveira-jr.html
+
+  - name: Valéria C. F. Barbosa
+    role: Researcher
+    affiliation: PINGA Lab, Observatório Nacional, Brazil
+    github: valcris
+    orcid: 0000-0002-9767-6044
+    website: https://www.pinga-lab.org/people/barbosa.html
+
+# List of past lab members
+alumni:
+  - name: Daniel Gilbert
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+  - name: Aidan Hernaman
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+  - name: Lottie Cooper
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+  - name: Charles Thomson
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+  - name: Steven Heer
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+  - name: Alexander Borges
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK

@@ -1,8 +1,10 @@
 ---
-title: News
-banner_title:
-layout: news
-order: date
-reverse: true
+title: Lab updates
+template: news-index.html
 ---
 
+# {{ page.title }}
+
+<p class="lead">
+News, updates, job postings, and more.
+</p>

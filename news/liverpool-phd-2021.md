@@ -1,12 +1,13 @@
 ---
-title: "(CLOSED) PhD studentship at the University of Liverpool"
-author: uieda
+title: "PhD studentship at the University of Liverpool"
 date: 2021-03-24
-tags: open-positions
-layout: post
 ---
 
-> Update (2021/05/20): This position is now closed.
+<div class="callout">
+
+**Update (2021/05/20):** This position is now closed.
+
+</div>
 
 We have one open position for a fully funded 5-year PhD and graduate student
 assistant position at the University of Liverpool.
@@ -19,7 +20,7 @@ assistant position at the University of Liverpool.
 
 ![](/images/liverpool-phd-antarctica-2021.png)
 
-# Project: Improving estimates of Antarctic geothermal heat flow from geophysical data
+## Project: Improving estimates of Antarctic geothermal heat flow from geophysical data
 
 The flow of heat coming from the Earth's interior is an important parameter for
 how ice sheets flow and deform. It also plays a key role in determining how the
@@ -54,17 +55,17 @@ By achieving these goals, we hope to quantify and reduce the uncertainty in the
 Curie isotherm depth estimates for Antarctica, which is a key parameter in
 determining geothermal heat flow in Antarctica.
 
-# The supervisory team
+## The supervisory team
 
 You will be working with an international team of researchers:
 
-* [Leonardo Uieda][/people/uieda] (me) as the primary advisor.
+* Leonardo Uieda (me) as the primary advisor.
 * [Richard Holme](https://www.liverpool.ac.uk/environmental-sciences/staff/richard-holme/),
   also from the University of Liverpool.
 * [Vanderlei Coelho Oliveira Jr.](https://www.pinga-lab.org/people/oliveira-jr.html)
   from the [PINGA lab](https://www.pinga-lab.org) at the [Observatório Nacional, Brazil](https://on.br).
 
-# Why work with us
+## Why work with us
 
 Through this PhD, you will acquire the mathematical and Python programming
 skills required to undertake the project. You will be trained to develop
@@ -80,7 +81,7 @@ different open-source Python [software developed by the research
 group][/software], mainly [Fatiando a Terra](https://www.fatiando.org), leading
 to potential impact beyond standard scientific publications.
 
-# What we are looking for
+## What we are looking for
 
 This position would suit someone with skills in (or who is willing to learn):
 
@@ -91,7 +92,7 @@ This position would suit someone with skills in (or who is willing to learn):
 An ideal candidate would also be motivated, able to self-study, and interested
 in open-science practices and open-source software.
 
-# The position
+## The position
 
 This position is for a Graduate Teaching Assistant at 0.5 full-time employment
 (FTE) over a 5 year period.
@@ -115,7 +116,7 @@ Applicants are encouraged to read the [lab manual][/manual] to familiarize
 themselves with the way we approach science, expectations, our code of conduct,
 etc.
 
-# Applications
+## Applications
 
 **Interested?** Find out more about:
 
@@ -131,4 +132,4 @@ etc.
 You **have to apply for both** positions and make sure both are marked as "GTA
 SoES Post".
 
-If have any questions, please [get in touch][/people/uieda]!
+If have any questions, please [get in touch](/contact)!

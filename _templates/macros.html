@@ -1,6 +1,96 @@
 {# Macros to make the life easier across the website #}
 
 
+{%- macro button_link(href, text, type="btn-primary", icon="none") %}
+  <a class="btn btn-sm {{ type }}" href="{{ href }}" target="_blank">
+    <i class="{{ icon }} me-1" aria-hidden="true"></i>
+    {{ text }}
+  </a>
+{%- endmacro %}
+
+
+{%- macro make_publication_list(papers) %}
+{# Create a list of publications #}
+<div class="mt-5">
+  {%- for paper in papers %}
+    {%- set id = loop.index %}
+    {%- if paper.doi is defined %}
+      {%- set doi = paper.doi %}
+    {%- else %}
+      {%- set doi = paper.preprint %}
+    {%- endif %}
+    {%- set citation = "https://citation.crosscite.org/?doi=" ~ doi %}
+    {%- set bibtex = "https://www.doi2bib.org/bib/" ~ doi %}
+    {%- if paper.openaccess is defined and paper.openaccess %}
+      {%- set pdf = "https://doi.org/" ~ paper.doi %}
+    {%- elif paper.preprint is defined %}
+      {%- set pdf = "https://doi.org/" ~ paper.preprint %}
+    {%- elif paper.pdf is defined %}
+      {%- set pdf = paper.pdf %}
+    {%- endif %}
+    <div class="mb-5">
+    <h2 class="fs-4 mb-1">
+      {{ paper.title|trim }}
+    </h2>
+    <p class="mb-1">
+      {{ paper.authors|trim }}
+      <span class="text-muted">({{ paper.year }})</span>
+    </p>
+    <p class="text-muted fs-6">
+      {%- if paper.openaccess is defined and paper.openaccess %}
+        <span class="badge bg-success fw-normal me-1">
+          <i class="ai ai-open-access me-1" aria-hidden="true"></i>
+          open-access
+        </span>
+      {%- endif %}
+      {%- if paper.preprint is defined and not paper.doi is defined %}
+        <span class="badge bg-warning text-dark fw-normal me-1">
+          preprint
+        </span>
+      {%- endif %}
+      {{ paper.journal }},
+      doi:<a href="https://doi.org/{{ doi }}">{{ doi }}</a>
+    </p>
+    <button class="btn btn-secondary btn-sm" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
+        aria-expanded="false" aria-controls="collapse-{{ id }}">
+      Find out more
+    </button>
+    {{ button_link(pdf, "Get the PDF", type="btn-primary", icon="fa fa-file-pdf") }}
+    {{ button_link(citation, "Citation", type="btn-outline-secondary", icon="fa fa-quote-right") }}
+    {{ button_link(bibtex, "BibTex", type="btn-outline-secondary", icon="fa fa-code") }}
+    {%- if paper.data is defined %}
+      {{ button_link("https://doi.org/" ~ paper.data, "Data", type="btn-outline-secondary", icon="fa fa-chart-bar") }}
+    {%- endif %}
+    {%- if paper.github is defined %}
+      {{ button_link("https://github.com/" ~ paper.github, "Code", type="btn-outline-secondary", icon="fab fa-github") }}
+    {%- endif %}
+    <div id="collapse-{{ id }}" class="collapse mt-4">
+      {%- if paper.note is defined %}
+        <div class="callout callout-note mb-4">
+          <p><strong>Note:</strong> {{ paper.note|trim }}</p>
+        </div>
+      {%- endif %}
+      <h3 class="fs-5">Abstract</h3>
+      <p>
+        {{ paper.abstract|trim }}
+      </p>
+      <h3 class="fs-5">Article Level Metrics</h3>
+      <div class="row mt-3 gy-3 gx-5 justify-content-start">
+        <div class="col-6 col-sm-2">
+          <div class="altmetric-embed" data-badge-type="medium-donut"  data-badge-popover="right"  data-doi="{{ doi }}"></div>
+        </div>
+        <div class="col-6 col-sm-2">
+          <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
+        </div>
+      </div>
+    </div>
+    </div>
+  {%- endfor %}
+</div>
+{%- endmacro %}
+
+
 {%- macro make_people_list(people) %}
 {# Create a list of people with photos (from GitHub) and other info #}
   <div class="row gy-3 gx-5 my-5">
@@ -19,7 +109,7 @@
             {%- if person.pronouns is defined %}
               <p class="card-text fs-6 mb-1 text-muted">pronouns: {{ person.pronouns }}</p>
             {%- endif %}
-            <ul class="fa-ul list-inline ms-0 fs-5 mb-1">
+            <ul class="list-inline fs-5 mb-1">
               {%- if person.github is defined %}
               <li class="list-inline-item">
                 <a href="https://github.com/{{ person.github }}"

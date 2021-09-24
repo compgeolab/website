@@ -30,7 +30,7 @@
     {%- endif %}
     <div class="mb-5">
     <h2 class="fs-4 mb-1">
-      {{ paper.title }}
+      {{ paper.title|trim }}
     </h2>
     <p class="mb-1">
       {{ paper.authors|trim }}
@@ -38,7 +38,7 @@
     </p>
     <p class="text-muted fs-6">
       {%- if paper.openaccess is defined and paper.openaccess %}
-        <span class="badge bg-primary fw-normal me-1">
+        <span class="badge bg-success fw-normal me-1">
           <i class="ai ai-open-access me-1" aria-hidden="true"></i>
           open-access
         </span>

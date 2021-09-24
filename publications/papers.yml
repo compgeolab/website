@@ -1,0 +1,66 @@
+papers:
+
+  - title: Gradient-boosted equivalent sources
+    year: 2021
+    doi: 10.1093/gji/ggab297
+    authors: Soler, S.R. and Uieda, L.
+    journal: Geophysical Journal International
+    preprint: 10.31223/X58G7C
+    data: 10.6084/m9.figshare.13604360
+    github: compgeolab/eql-gradient-boosted
+    abstract: |
+      The equivalent source technique is a powerful and widely used method for
+      processing gravity and magnetic data. Nevertheless, its major drawback is
+      the large computational cost in terms of processing time and computer
+      memory. We present two techniques for reducing the computational cost of
+      equivalent source processing: block-averaging source locations and the
+      gradient-boosted equivalent source algorithm. Through block-averaging,
+      we reduce the number of source coefficients that must be estimated
+      while retaining the minimum desired resolution in the final processed
+      data. With the gradient boosting method, we estimate the sources
+      coefficients in small batches along overlapping windows, allowing us to
+      reduce the computer memory requirements arbitrarily to conform to the
+      constraints of the available hardware. We show that the combination of
+      block-averaging and gradient-boosted equivalent sources is capable of
+      producing accurate interpolations through tests against synthetic data.
+      Moreover, we demonstrate the feasibility of our method by gridding a
+      gravity dataset covering Australia with over 1.7 million observations
+      using a modest personal computer.
+    note: |
+      This research was done entirely with open-source software and open data!
+      This means that anyone should be able to fully reproduce our results
+      using the information in the paper and the material in the associated
+      GitHub repository. This is the final part of Santiago's PhD thesis.
+
+  - title: The Generic Mapping Tools Version 6
+    year: 2019
+    doi: 10.1029/2019GC008515
+    authors: |
+      Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H.
+      F., & Tian, D.
+    journal: Geochemistry, Geophysics, Geosystems
+    openaccess: true
+    data: 10.6084/m9.figshare.8171339
+    github: GenericMappingTools/gmt
+    abstract: |
+      The Generic Mapping Tools (GMT) software is ubiquitous in the Earth and
+      Ocean sciences. As a cross-platform tool producing high quality maps and
+      figures, it is used by tens of thousands of scientists around the world.
+      The basic syntax of GMT scripts has evolved very slowly since the 1990s,
+      despite the fact that GMT is generally perceived to have a steep learning
+      curve with many pitfalls for beginners and experienced users alike.
+      Reducing these pitfalls means changing the interface, which would break
+      compatibility with thousands of existing scripts. With the latest GMT
+      version 6, we solve this conundrum by introducing a new "modern mode" to
+      complement the interface used in previous versions, which GMT 6 now calls
+      "classic mode". GMT 6 defaults to classic mode and thus is a recommended
+      upgrade for all GMT 5 users. Nonetheless, new users should take advantage
+      of modern mode to make shorter scripts, quickly access commonly used
+      global data sets, and take full advantage of the new tools to draw
+      subplots, place insets, and create animations.
+    note: |
+      This paper marks the release of GMT version 6. Most of the work done for
+      this release had the goal of reducing barriers to entry for new users.
+      The user experience as a whole has been improved and these changes are
+      the foundation for my work on PyGMT. The development of the new modern
+      mode was funded by our NSF EarthScope grant.

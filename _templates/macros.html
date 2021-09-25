@@ -52,31 +52,29 @@
       doi:<a href="https://doi.org/{{ doi }}">{{ doi }}</a>
     </p>
     <button class="btn btn-secondary btn-sm" type="button"
-        data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}"
-        aria-expanded="false" aria-controls="collapse-{{ id }}">
-      Find out more
+        data-bs-toggle="collapse" data-bs-target="#collapse-abstract-{{ id }}"
+        aria-expanded="false" aria-controls="collapse-abstract-{{ id }}">
+      Find out more <span class="ms-1">▾</span>
     </button>
-    {{ button_link(pdf, "Get the PDF", type="btn-primary", icon="fa fa-file-pdf") }}
-    {{ button_link(citation, "Citation", type="btn-outline-secondary", icon="fa fa-quote-right") }}
-    {{ button_link(bibtex, "BibTex", type="btn-outline-secondary", icon="fa fa-code") }}
+    {{ button_link(pdf, "PDF", type="btn-primary", icon="fa fa-file-pdf") }}
     {%- if paper.data is defined %}
-      {{ button_link("https://doi.org/" ~ paper.data, "Data", type="btn-outline-secondary", icon="fa fa-chart-bar") }}
+      {{ button_link("https://doi.org/" ~ paper.data, "Data", type="btn-outline-primary", icon="fa fa-chart-bar") }}
     {%- endif %}
     {%- if paper.github is defined %}
-      {{ button_link("https://github.com/" ~ paper.github, "Code", type="btn-outline-secondary", icon="fab fa-github") }}
+      {{ button_link("https://github.com/" ~ paper.github, "Code", type="btn-outline-primary", icon="fab fa-github") }}
     {%- endif %}
-    <div id="collapse-{{ id }}" class="collapse mt-4">
+    <div id="collapse-abstract-{{ id }}" class="collapse paper-info mt-4 overflow-hidden">
       {%- if paper.note is defined %}
         <div class="callout callout-note mb-4">
           <p><strong>Note:</strong> {{ paper.note|trim }}</p>
         </div>
       {%- endif %}
       <h3 class="fs-5">Abstract</h3>
-      <p>
-        {{ paper.abstract|trim }}
-      </p>
+      <p>{{ paper.abstract|trim }}</p>
+      <h3 class="fs-5">Cite as</h3>
+      <p class="citation">{{ paper.citation|trim }}</p>
       <h3 class="fs-5">Article Level Metrics</h3>
-      <div class="row mt-3 gy-3 gx-5 justify-content-start">
+      <div class="row mt-2 mb-4 gy-3 gx-5 justify-content-start">
         <div class="col-6 col-sm-2">
           <div class="altmetric-embed" data-badge-type="medium-donut"  data-badge-popover="right"  data-doi="{{ doi }}"></div>
         </div>
@@ -84,6 +82,8 @@
           <span class="__dimensions_badge_embed__" data-doi="{{ doi }}"></span>
         </div>
       </div>
+      <h3 class="fs-5">BibTex</h3>
+      <pre><code>{{ paper.bibtex|trim|escape }}</code></pre>
     </div>
     </div>
   {%- endfor %}

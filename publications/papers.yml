@@ -31,6 +31,24 @@ papers:
       This means that anyone should be able to fully reproduce our results
       using the information in the paper and the material in the associated
       GitHub repository. This is the final part of Santiago's PhD thesis.
+    citation: |
+      Soler, S. R., & Uieda, L. (2021). Gradient-boosted equivalent sources.
+      Geophysical Journal International, 227(3), 1768–1783.
+      https://doi.org/10.1093/gji/ggab297
+    bibtex: |
+      @article{Soler2021,
+        doi = {10.1093/gji/ggab297},
+        url = {https://doi.org/10.1093/gji/ggab297},
+        year = {2021},
+        month = aug,
+        publisher = {Oxford University Press ({OUP})},
+        volume = {227},
+        number = {3},
+        pages = {1768--1783},
+        author = {Santiago R Soler and Leonardo Uieda},
+        title = {Gradient-boosted equivalent sources},
+        journal = {Geophysical Journal International}
+      }
 
   - title: "Pooch: A friend to fetch your data files"
     year: 2020
@@ -73,6 +91,24 @@ papers:
       <a href="https://www.fatiando.org">Fatiando a Terra</a>.
       The peer-review at JOSS is open and can be found on GitHub issue
       <a href="https://github.com/openjournals/joss-reviews/issues/1943">openjournals/joss-reviews#1943</a>.
+    citation: |
+      Uieda, L., Soler, S., Rampin, R., van Kemenade, H., Turk, M., Shapero,
+      D., et al. (2020). Pooch: A friend to fetch your data files. Journal of
+      Open Source Software, 5(45), 1943. https://doi.org/10.21105/joss.01943
+    bibtex: |
+      @article{Uieda2020,
+        doi = {10.21105/joss.01943},
+        url = {https://doi.org/10.21105/joss.01943},
+        year = {2020},
+        month = jan,
+        publisher = {The Open Journal},
+        volume = {5},
+        number = {45},
+        pages = {1943},
+        author = {Leonardo Uieda and Santiago Soler and R{\'{e}}mi Rampin and Hugo van Kemenade and Matthew Turk and Daniel Shapero and Anderson Banihirwe and John Leeman},
+        title = {Pooch: A friend to fetch your data files},
+        journal = {Journal of Open Source Software}
+      }
 
   - title: |
       Gravitational field calculation in spherical coordinates using variable
@@ -118,6 +154,25 @@ papers:
       extends the methodology to work for depth-variable densities. Santiago
       led this project, did most of the work and a large part of the writing of
       the paper. This is the first paper of his PhD thesis.
+    citation: |
+      Soler, S. R., Pesce, A., Gimenez, M. E., & Uieda, L. (2019).
+      Gravitational field calculation in spherical coordinates using variable
+      densities in depth. Geophysical Journal International, 218(3), 2150–2164.
+      https://doi.org/10.1093/gji/ggz27
+    bibtex: |
+      @article{Soler2019,
+        doi = {10.1093/gji/ggz277},
+        url = {https://doi.org/10.1093/gji/ggz277},
+        year = {2019},
+        month = jun,
+        publisher = {Oxford University Press ({OUP})},
+        volume = {218},
+        number = {3},
+        pages = {2150--2164},
+        author = {Santiago R Soler and Agustina Pesce and Mario E Gimenez and Leonardo Uieda},
+        title = {Gravitational field calculation in spherical coordinates using variable densities in depth},
+        journal = {Geophysical Journal International}
+      }
 
   - title: The Generic Mapping Tools Version 6
     year: 2019
@@ -151,6 +206,25 @@ papers:
       The user experience as a whole has been improved and these changes are
       the foundation for my work on PyGMT. The development of the new modern
       mode was funded by our NSF EarthScope grant.
+    citation: |
+      Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H.
+      F., & Tian, D. (2019). The Generic Mapping Tools Version 6. Geochemistry,
+      Geophysics, Geosystems, 20(11), 5556–5564.
+      https://doi.org/10.1029/2019gc008515
+    bibtex: |
+      @article{Wessel2019,
+        doi = {10.1029/2019gc008515},
+        url = {https://doi.org/10.1029/2019gc008515},
+        year = {2019},
+        month = nov,
+        publisher = {American Geophysical Union ({AGU})},
+        volume = {20},
+        number = {11},
+        pages = {5556--5564},
+        author = {P. Wessel and J. F. Luis and L. Uieda and R. Scharroo and F. Wobbe and W. H. F. Smith and D. Tian},
+        title = {The Generic Mapping Tools Version 6},
+        journal = {Geochemistry,  Geophysics,  Geosystems}
+      }
 
   - title: |
       Efficient 3D large-scale forward-modeling and inversion of gravitational
@@ -194,6 +268,26 @@ papers:
       journal. After which, the authors reached out and kindly asked if he
       wanted to help improve the paper further. We worked on this for the
       better part of a year, adding the inversion and lunar mascon application.
+    citation: |
+      Zhao, G., Chen, B., Uieda, L., Liu, J., Kaban, M. K., Chen, L., & Guo, R.
+      (2019). Efficient 3‐D Large‐Scale Forward Modeling and Inversion of
+      Gravitational Fields in Spherical Coordinates With Application to Lunar
+      Mascons. Journal of Geophysical Research: Solid Earth, 124(4), 4157–4173.
+      https://doi.org/10.1029/2019jb017691
+    bibtex: |
+      @article{Zhao2019,
+        doi = {10.1029/2019jb017691},
+        url = {https://doi.org/10.1029/2019jb017691},
+        year = {2019},
+        month = apr,
+        publisher = {American Geophysical Union ({AGU})},
+        volume = {124},
+        number = {4},
+        pages = {4157--4173},
+        author = {Guangdong Zhao and Bo Chen and Leonardo Uieda and Jianxin Liu and Mikhail K. Kaban and Longwei Chen and Rongwen Guo},
+        title = {Efficient 3-D Large-Scale Forward Modeling and Inversion of Gravitational Fields in Spherical Coordinates With Application to Lunar Mascons},
+        journal = {Journal of Geophysical Research: Solid Earth}
+      }
 
   - title: "Verde: Processing and gridding spatial data using Green's functions"
     year: 2018
@@ -230,6 +324,25 @@ papers:
       <a href="https://www.fatiando.org">Fatiando a Terra</a>.
       The peer-review at JOSS is open and can be found on GitHub issue
       <a href="https://github.com/openjournals/joss-reviews/issues/957">openjournals/joss-reviews#957</a>.
+    citation: |
+      Uieda, L. (2018). Verde: Processing and gridding spatial data using
+      Green's functions. Journal of Open Source Software, 3(30), 957.
+      https://doi.org/10.21105/joss.00957
+    bibtex: |
+      @article{Uieda2018,
+        doi = {10.21105/joss.00957},
+        url = {https://doi.org/10.21105/joss.00957},
+        year = {2018},
+        month = oct,
+        publisher = {The Open Journal},
+        volume = {3},
+        number = {30},
+        pages = {957},
+        author = {Leonardo Uieda},
+        title = {Verde: Processing and gridding spatial data using Green's functions},
+        journal = {Journal of Open Source Software}
+      }
+
 
   - title: |
       Fast non-linear gravity inversion in spherical coordinates with
@@ -267,6 +380,25 @@ papers:
       and Amazonas Basins, the Paraná Basin, and the Borborema province. These
       differences suggest the existence of crustal or mantle density anomalies that
       were unaccounted for during gravity data processing.
+    citation: |
+      Uieda, L., & Barbosa, V. C. F. (2016). Fast nonlinear gravity inversion
+      in spherical coordinates with application to the South American Moho.
+      Geophysical Journal International, 208(1), 162–176.
+      https://doi.org/10.1093/gji/ggw390
+    bibtex: |
+      @article{Uieda2016,
+        doi = {10.1093/gji/ggw390},
+        url = {https://doi.org/10.1093/gji/ggw390},
+        year = {2016},
+        month = oct,
+        publisher = {Oxford University Press ({OUP})},
+        volume = {208},
+        number = {1},
+        pages = {162--176},
+        author = {Leonardo Uieda and Val{\'{e}}ria C.F. Barbosa},
+        title = {Fast nonlinear gravity inversion in spherical coordinates with application to the South American Moho},
+        journal = {Geophysical Journal International}
+      }
 
   - title: "Tesseroids: forward modeling gravitational fields in spherical coordinates"
     year: 2016
@@ -301,3 +433,21 @@ papers:
     note: |
       This paper describes the algorithms used in version 1.2.0 of the
       open-source software <a href="/software">Tesseroids</a>.
+    citation: |
+      Uieda, L., Barbosa, V. C. F., & Braitenberg, C. (2016). Tesseroids:
+      Forward-modeling gravitational fields in spherical coordinates.
+      GEOPHYSICS, 81(5), F41–F48. https://doi.org/10.1190/geo2015-0204.1
+    bibtex: |
+      @article{Uieda2016,
+        doi = {10.1190/geo2015-0204.1},
+        url = {https://doi.org/10.1190/geo2015-0204.1},
+        year = {2016},
+        month = sep,
+        publisher = {Society of Exploration Geophysicists},
+        volume = {81},
+        number = {5},
+        pages = {F41--F48},
+        author = {Leonardo Uieda and Val{\'{e}}ria C. F. Barbosa and Carla Braitenberg},
+        title = {Tesseroids: Forward-modeling gravitational fields in spherical coordinates},
+        journal = {{GEOPHYSICS}}
+      }

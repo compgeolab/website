@@ -85,15 +85,23 @@ code {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #ffffff;
   font-weight: normal;
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffffff;
+.navbar-dark .navbar-nav .nav-link.active:hover {
+  text-decoration: none;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
   font-weight: 300;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 li.nav-item {

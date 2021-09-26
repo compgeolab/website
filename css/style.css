@@ -104,6 +104,10 @@ code {
   border-bottom: 2px solid #fff;
 }
 
+.navbar-dark .navbar-nav .nav-link.nav-icon:hover {
+  border-bottom: none;
+}
+
 li.nav-item {
   margin-bottom: 0;
 }

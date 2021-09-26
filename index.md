@@ -9,7 +9,7 @@ no_container: true
 template: base.html
 ---
 
-<div class="container-fluid" style="background-color: var(--bs-gray-200);">
+<div class="container-fluid overflow-hidden" style="background-color: var(--bs-gray-200);">
 <div class="container page-section">
 
 ## About us

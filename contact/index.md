@@ -27,7 +27,7 @@ Found bugs/typos? Open an issue or pull request on <a href="https://github.com/c
 
 <div class="callout callout-warning mb-5">
 
-**Before you decide to work us:** read the
+**Before you decide to work with us:** read the
 [Lab Manual](https://github.com/compgeolab/manual) carefully to make sure you
 agree with our stance on open-access, FAIR data/software, and overall work
 ethics.

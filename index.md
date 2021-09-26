@@ -72,7 +72,7 @@ News, updates, job postings, and more:
 {%- endfor %}
 </ul>
 
-<a class="btn btn-outline-primary mt-3" href="/news">More updates »</a>
+<a class="btn btn-outline-primary mt-3" href="/news">More updates <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
 
 </div>
 </div>

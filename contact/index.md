@@ -25,7 +25,16 @@ Found bugs/typos? Open an issue or pull request on <a href="https://github.com/c
 </li>
 </ul>
 
-<div class="callout callout-warning mb-5">
+## Collaborations
+
+We're always interested in new collaborations and interesting projects.
+We'd love to hear from you if your project or idea could benefit from our
+expertise in data analysis, inverse problems, and research software
+engineering.
+
+**Reach out** to [our team](/team) to start a conversation!
+
+<div class="callout callout-warning mt-4 mb-5">
 
 **Before you decide to work with us:** read the
 [Lab Manual](https://github.com/compgeolab/manual) carefully to make sure you
@@ -40,6 +49,6 @@ ethics.
 and <a href="https://twitter.com/leouieda">social media</a>.
 We'll post calls for scholarships and open positions in the lab.
 
-**Have your own funding?** Get in touch if you're interested in pursuing a
-self-funded PhD or applying for externally-funded postdoc fellowships to work
-in the lab.
+**Have your own funding?** Talk to [Leo](/team) if you're interested in
+pursuing a self-funded PhD or applying for externally-funded postdoc
+fellowships to work in the lab.

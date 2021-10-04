@@ -108,6 +108,10 @@ code {
   border-bottom: none;
 }
 
+.navbar-collapse {
+  transition-duration: 0s;
+}
+
 li.nav-item {
   margin-bottom: 0;
 }

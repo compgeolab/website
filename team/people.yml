@@ -21,16 +21,17 @@ current:
   - name: Santiago Soler
     role: PhD student
     affiliation: Instituto Geofísico Sismológico Volponi, Argentina
+    pronouns: he/him
     github: santisoler
     email: santiago.r.soler@gmail.com
     orcid: 0000-0001-9202-5317
     google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
     researchgate: https://www.researchgate.net/profile/Santiago_Soler2
     website: https://www.santisoler.com/
+    cv: https://www.santisoler.com/cv/cv.pdf
 
 # List of external collaborators
 collaborators:
-
   - name: Vanderlei C. Oliveira Jr.
     role: Researcher
     affiliation: PINGA Lab, Observatório Nacional, Brazil

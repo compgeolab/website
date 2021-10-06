@@ -28,6 +28,12 @@ current:
     researchgate: https://www.researchgate.net/profile/Santiago_Soler2
     website: https://www.santisoler.com/
 
+  - name: India Uppal
+    role: PhD student
+    affiliation: University of Liverpool, UK
+    pronouns: she/her
+    github: indiauppal
+
 # List of external collaborators
 collaborators:
 

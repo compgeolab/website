@@ -17,7 +17,7 @@ Email <a href="/team/#leouieda">Leo</a> or another <a href="/team">team member</
 </li>
 <li>
 <i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
-Find us on the <a href="/team/#leouieda">Software Underground</a> Slack.
+Find us on the <a href="https://softwareunderground.org/">Software Underground</a> Slack.
 </li>
 <li>
 <i class="fa-li fab fa-github fa-fw" aria-hidden="true"></i>

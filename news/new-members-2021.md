@@ -3,7 +3,7 @@ title: "Welcoming our newest lab members in 2021 🎉"
 date: 2021-11-01
 ---
 
-I'm very happy to welcome the newest members of out team who have joined us
+I'm very happy to welcome the newest members of our team who have joined us
 these past few months:
 
 * **India Uppal** is starting a PhD at the University of Liverpool with myself,

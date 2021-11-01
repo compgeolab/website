@@ -59,7 +59,7 @@ to pull in changes from the original:
 
 And finally, update your fork:
 
-    git pull origin main
+    git push origin main
 
 Now your local copy and fork should be updated.
 

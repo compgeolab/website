@@ -36,6 +36,11 @@ current:
     pronouns: she/her
     github: indiauppal
 
+  - name: Laura Nicholls
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+
+
 # List of external collaborators
 collaborators:
   - name: Vanderlei C. Oliveira Jr.
@@ -70,8 +75,5 @@ alumni:
     role: Undergraduate student
     affiliation: University of Liverpool, UK
   - name: Alexander Borges
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-  - name: Laura Nicholls
     role: Undergraduate student
     affiliation: University of Liverpool, UK

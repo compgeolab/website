@@ -41,6 +41,7 @@ li {
 
 header {
   background-image: url(/images/banner.svg);
+  background-color: var(--bs-gray-900);
   background-position: top;
   background-size: cover;
   font-size: 1rem;

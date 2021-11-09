@@ -42,6 +42,12 @@ current:
     role: Undergraduate student
     affiliation: University of Liverpool, UK
 
+  - name: Sarah Margrethe Askevold
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+    pronouns: she/her
+    github: SAskevold
+
 
 # List of external collaborators
 collaborators:

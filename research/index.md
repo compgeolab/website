@@ -3,6 +3,8 @@ title: Our research themes
 template: base.html
 ---
 
+{% from "macros.html" import figure, video %}
+
 # {{ page.title }}
 
 <p class="lead">
@@ -26,14 +28,7 @@ inverse problems that arise in geophysics.
 </div>
 <div class="col-md-5">
 
-<video style="display: block; margin: 0 auto; width: 70%;" muted autoplay controls="false" loop>
-<source src="/images/planting-inversion.mp4" type="video/mp4"/>
-</video>
-
-<p class="fs-6 text-muted text-center">
-The planting method for solving the inverse problem of estimating
-density from observed gravity disturbances.
-</p>
+{{ video(src="../images/planting-inversion.mp4", caption="The planting method for solving the inverse problem of estimating density from observed gravity disturbances.", style="display: block; margin: 0 auto; width: 70%;") }}
 
 </div>
 </div>
@@ -54,13 +49,7 @@ continental and global scales.
 </div>
 <div class="col-md-5 order-md-first">
 
-{%- set caption = "A tesseroid (spherical prism) discretized using our adaptive algorithm." %}
-
-<img src="/images/tesseroid.jpg" alt="{{ caption }}">
-
-<p class="fs-6 text-muted text-center">
-{{ caption }}
-</p>
+{{ figure(src="../images/tesseroid.jpg", caption="A tesseroid (spherical prism) discretized using our adaptive algorithm.") }}
 
 </div>
 </div>
@@ -79,13 +68,7 @@ geophysical problems.
 </div>
 <div class="col-md-5">
 
-{%- set caption = "Spatial data has uncertainties which need to be handled properly. There are different ways to use uncertainties as data weights for processing." %}
-
-<img src="/images/block-mean-example.jpg" alt="{{ caption }}">
-
-<p class="text-muted text-center fs-6">
-{{ caption }}
-</p>
+{{ figure(src="../images/block-mean-example.jpg", caption="Spatial data has uncertainties which need to be handled properly. There are different ways to use uncertainties as data weights for processing.") }}
 
 </div>
 </div>

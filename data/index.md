@@ -3,6 +3,8 @@ title: Data & Models
 template: base.html
 ---
 
+{% from "macros.html" import figure, video %}
+
 # {{ page.title }}
 
 <p class="lead">
@@ -31,8 +33,7 @@ group.
     </a>
   </div>
   <div class="col-md-5 {{ loop.cycle('', 'order-md-first') }}">
-    <img src="{{ data.image }}" alt="{{ data.caption }}">
-    <p class="fs-6 text-muted text-center mt-2">{{ data.caption }}</p>
+    {{ figure(src=data.image, caption=data.caption) }}
   </div>
   </div>
 {%- endfor %}

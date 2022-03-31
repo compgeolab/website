@@ -9,6 +9,8 @@ no_container: true
 template: base.html
 ---
 
+{% from "macros.html" import figure %}
+
 <div class="container-fluid overflow-hidden" style="background-color: var(--bs-gray-200);">
 <div class="container page-section">
 
@@ -30,18 +32,15 @@ Our team works on [several tools and projects](/software), both developing
 tools in-house and contributing across the larger scientific ecosystem.
 
 <div class="mt-5">
-<a class="btn clab-button mb-4 me-2" href="/team">Meet the team</a>
+<a class="btn clab-button mb-4 me-2" href="/contact">Work with us!</a>
 <a class="btn clab-button-outline mb-4 me-2" href="/research">Our research</a>
-<a class="btn clab-button-outline mb-4 me-2" href="/contact">Work with us!</a>
+<a class="btn clab-button-outline mb-4 me-2" href="/team">Meet the team</a>
 </div>
 
 </div>
 <div class="col-md-5">
 
-{%- set caption = "Modelled density anomalies associated with iron-ore formations derived from observed gravity disturbances." %}
-<img class="mb-5" src="/images/quadrilatero-ferrifero-density-model.png" alt="{{ caption }}" title="{{ caption }}">
-{%- set caption = "Our software is built mostly with the Python and C languages." %}
-<img src="/images/languages.svg" alt="{{ caption }}" title="{{ caption }}">
+{{ figure(src="images/quadrilatero-ferrifero-density-model.png", caption="Modelled density anomalies associated with iron-ore formations derived from observed gravity disturbances.") }}
 
 </div>
 </div>

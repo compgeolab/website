@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Work with us!
 template: base.html
 ---
 
@@ -25,30 +25,44 @@ Found bugs/typos? Open an issue or pull request on <a href="https://github.com/c
 </li>
 </ul>
 
-## Collaborations
-
-We're always interested in new collaborations and interesting projects.
-We'd love to hear from you if your project or idea could benefit from our
-expertise in data analysis, inverse problems, and research software
-engineering.
-
-**Reach out** to [our team](/team) to start a conversation!
-
 <div class="callout callout-warning mt-4 mb-5">
 
-**Before you decide to work with us:** read the
+**Before deciding if you want to work with us:** Read the
 [Lab Manual](https://github.com/compgeolab/manual) carefully to make sure you
 agree with our stance on open-access, FAIR data/software, and overall work
 ethics.
 
 </div>
 
-## Positions in the lab
+## Services
 
-**Looking for a funded position?** Keep an eye on the <a href="/news">lab updates</a>
+We have over a decade years of experience in developing open-source software in
+Python and C, processing and modelling gravity and magnetic data, and teaching
+technical skills at different levels.
+We can offer services in:
+
+<ul style="list-style-type: none; padding-left: 0;">
+<li>🧑🏽‍🏫 Training in data science and research software development.</li>
+<li>🔓 Integrating open-source and open-data into your workflow.</li>
+<li>🍎 Potential field data processing, 3D modelling, and inversion.</li>
+<li>🧑🏽‍💻 Adding features to our open-source software.</li>
+</ul>
+
+<h2 class="mt-5">Research collaborations</h2>
+
+We're always interested in new collaborations and interesting projects.
+We'd love to hear from you if your project or idea could benefit from our
+expertise in data analysis, inverse problems, and research software
+engineering.
+
+👋🏽 **Reach out to [our team](/team) to start a conversation!**
+
+<h2 class="mt-5">Positions in the lab</h2>
+
+👩🏿‍🎓 **Looking for a funded position?** Keep an eye on the <a href="/news">lab updates</a>
 and <a href="https://twitter.com/leouieda">social media</a>.
 We'll post calls for scholarships and open positions in the lab.
 
-**Have your own funding?** Talk to [Leo](/team) if you're interested in
+💰 **Have your own funding?** Talk to [Leo](/team) if you're interested in
 pursuing a self-funded PhD or applying for externally-funded postdoc
 fellowships to work in the lab.

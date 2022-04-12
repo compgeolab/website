@@ -16,6 +16,16 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+h2 > a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+}
+
+h2 > a:hover {
+  text-decoration: underline;
+  color: var(--bs-body-color);
+}
+
 a {
   color: var(--clab-blue);
   text-decoration: none;

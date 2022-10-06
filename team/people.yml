@@ -38,18 +38,6 @@ current:
     email: sgiuppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
 
-  - name: Laura Nicholls
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-    pronouns: she/her
-    github: LNich
-
-  - name: Sarah Margrethe Askevold
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-    pronouns: she/her
-    github: SAskevold
-
 
 # List of external collaborators
 collaborators:
@@ -69,6 +57,16 @@ collaborators:
 
 # List of past lab members
 alumni:
+  - name: Laura Nicholls
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+    pronouns: she/her
+    github: LNich
+  - name: Sarah Margrethe Askevold
+    role: Undergraduate student
+    affiliation: University of Liverpool, UK
+    pronouns: she/her
+    github: SAskevold
   - name: Daniel Gilbert
     role: Undergraduate student
     affiliation: University of Liverpool, UK

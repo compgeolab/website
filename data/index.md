@@ -32,7 +32,7 @@ group.
       <i class="fa fa-gavel me-1" aria-hidden="true"></i> License: {{ data.license }}
     </a>
   </div>
-  <div class="col-md-5 {{ loop.cycle('', 'order-md-first') }}">
+  <div class="col-md-5">
     {{ figure(src=data.image, caption=data.caption) }}
   </div>
   </div>

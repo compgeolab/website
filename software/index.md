@@ -52,7 +52,7 @@ Project website
 </a>
 
 </div>
-<div class="col-md-5 order-md-first">
+<div class="col-md-5">
 
 <img src="/images/gmt-logo.png" alt="GMT logo">
 

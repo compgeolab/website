@@ -1,9 +1,9 @@
 ---
-title: Our research themes
+title: Our research
 template: base.html
 ---
 
-{% from "macros.html" import figure, video %}
+{% from "macros.html" import figure, video, page_title_link %}
 
 # {{ page.title }}
 
@@ -13,11 +13,16 @@ We focus on the creation and application of new methods for geophysical
 gravimetry and magnetometry.
 </p>
 
+<section class="mt-5">
 
-## Machine learning & data processing
+## Themes
+
+<hr class="mb-5">
 
 <div class="row mb-5 gy-5 gx-5">
 <div class="col-md-7">
+
+### Machine learning & data processing
 
 It's undeniable that a **machine learning** frenzy has taken over the world.
 Geoscientists have been doing similar things for decades, for example the
@@ -34,8 +39,13 @@ geophysical problems.
 
 Selected publications:
 
-* [Gradient-boosted equivalent sources (Soler & Uieda, 2021)](https://github.com/compgeolab/eql-gradient-boosted)
-* [Verde: Processing and gridding spatial data using Green's functions (Uieda, 2018)](https://doi.org/10.21105/joss.00957)
+* [Gradient-boosted equivalent sources](https://github.com/compgeolab/eql-gradient-boosted)
+* [Verde: Processing and gridding spatial data using Green's functions](https://doi.org/10.21105/joss.00957)
+
+Presentations:
+
+* EGU2021: [Gradient-boosted equivalent sources for gridding large gravity and magnetic datasets](https://doi.org/10.6084/m9.figshare.14515188)
+* EGU2020: [Evaluating the accuracy of equivalent-source predictions using cross-validation](https://doi.org/10.6084/m9.figshare.12245372)
 
 </div>
 
@@ -47,10 +57,10 @@ Selected publications:
 </div>
 </div>
 
-## Geophysical inversion and imaging
-
 <div class="row mb-5 gy-5 gx-5">
 <div class="col-md-7">
+
+### Geophysical inversion and imaging
 
 Our ultimate goal as geophysicists is to **understand the inner structure and
 dynamics of the Earth** from surface observations. This is a tough mathematical
@@ -68,8 +78,8 @@ inverse problems that arise in geophysics.
 
 Selected publications:
 
-* [Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho (Uieda & Barbosa, 2017)](https://github.com/pinga-lab/paper-moho-inversion-tesseroids)
-* [Robust 3D gravity gradient inversion by planting anomalous densities (Uieda & Barbosa, 2012)](https://github.com/pinga-lab/paper-planting-densities)
+* [Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho](https://github.com/pinga-lab/paper-moho-inversion-tesseroids)
+* [Robust 3D gravity gradient inversion by planting anomalous densities](https://github.com/pinga-lab/paper-planting-densities)
 
 </div>
 
@@ -81,10 +91,10 @@ Selected publications:
 </div>
 </div>
 
-## Forward modeling
-
 <div class="row gy-5 gx-5">
 <div class="col-md-7">
+
+### Forward modeling
 
 A key component for solving an inverse problem is first solve the **forward
 problem** (predicting observed data from a known model of the subsurface).
@@ -103,8 +113,8 @@ continental and global scales.
 
 Selected publications:
 
-* [Gravitational field calculation in spherical coordinates using variable densities in depth (Soler et al., 2019)](https://github.com/pinga-lab/tesseroid-variable-density)
-* [Tesseroids: forward modeling gravitational fields in spherical coordinates (Uieda et al., 2016)](https://github.com/pinga-lab/paper-tesseroids)
+* [Gravitational field calculation in spherical coordinates using variable densities in depth](https://github.com/pinga-lab/tesseroid-variable-density)
+* [Tesseroids: forward modeling gravitational fields in spherical coordinates](https://github.com/pinga-lab/paper-tesseroids)
 
 </div>
 
@@ -115,3 +125,80 @@ Selected publications:
 
 </div>
 </div>
+
+</section>
+<section class="mt-5">
+
+## Projects
+
+<hr class="mb-5">
+
+<div class="row mb-5 gy-5 gx-5">
+<div class="col-md-7">
+
+### Magnetic microscopy
+
+The magnetization locked in minerals at the time of their formation is a
+gateway to the **Earth's distant past**.
+So far, researchers have only been able to make bulk measurements from each
+sample.
+Magnetic microscopy technology is now allowing us to distinguish **the magnetic
+fields of the individual minerals** that make up the rock sample.
+Our group is working with experts in paleomagnetism to **develop new methods**
+that are capable of unlocking the huge potential of these new data.
+
+<button class="btn btn-success me-1 mb-2" type="button"
+    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-magmicro"
+    aria-expanded="false" aria-controls="collapse-abstract-magmicro">
+  Our work on this project <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
+</button>
+<div id="collapse-abstract-magmicro" class="collapse paper-info mt-2 overflow-hidden">
+
+News:
+
+* {{ page_title_link(site["news/rsoc-mag-microscopy-2022"]) }}
+
+</div>
+
+</div>
+<div class="col-md-5">
+
+{{ figure(src="../images/magnetic-microscopy-example-data.jpg", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
+
+</div>
+</div>
+
+<div class="row mb-5 gy-5 gx-5">
+<div class="col-md-7">
+
+### Antarctic geothermal heat flow
+
+Heat flow from the Earth's interior is an important parameter for how **ice
+sheets flow** and how the Earth's crust rebounds upwards once ice mass is
+displaced, influencing **sea-level rise**.
+Magnetic anomaly data is one of the few ways we have to determine heat flow.
+Our group is working to improve the way **airborne and satellite magnetic
+data** are merged and modelled to produce heat flow estimates.
+
+<button class="btn btn-success me-1 mb-2" type="button"
+    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-antarctica"
+    aria-expanded="false" aria-controls="collapse-abstract-antarctica">
+  Our work on this project <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
+</button>
+<div id="collapse-abstract-antarctica" class="collapse paper-info mt-2 overflow-hidden">
+
+News:
+
+* {{ page_title_link(site["news/liverpool-phd-2021"]) }}
+
+</div>
+
+</div>
+<div class="col-md-5">
+
+{{ figure(src="../images/antarctica-magnetic-data.jpg", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica.') }}
+
+</div>
+</div>
+
+</section>

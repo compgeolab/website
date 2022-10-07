@@ -7,6 +7,8 @@ date: 2021-03-24
 
 **Update (2021/05/20):** This position is now closed.
 
+**Update (2021/11/01):** India Uppal has joined the group under this project!
+
 </div>
 
 We have one open position for a fully funded 5-year PhD and graduate student

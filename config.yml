@@ -22,7 +22,7 @@ navigation:
     id: research/index
   - name: Software
     id: software/index
-  - name: Data & Models
+  - name: Data
     id: data/index
   - name: Team
     id: team/index

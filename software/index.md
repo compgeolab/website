@@ -1,5 +1,5 @@
 ---
-title: Software projects
+title: Open-source software
 template: base.html
 ---
 

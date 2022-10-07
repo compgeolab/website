@@ -1,5 +1,5 @@
 ---
-title: Data & Models
+title: Data and models
 template: base.html
 ---
 

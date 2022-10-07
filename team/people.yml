@@ -38,7 +38,6 @@ current:
     email: I.Uppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
 
-
 # List of external collaborators
 collaborators:
   - name: Vanderlei C. Oliveira Jr.
@@ -54,6 +53,12 @@ collaborators:
     github: valcris
     orcid: 0000-0002-9767-6044
     website: https://www.pinga-lab.org/people/barbosa.html
+
+  - name: Ricardo I. F. Trindade
+    role: Professor
+    affiliation: Universidade de São Paulo, Brazil
+    orcid: 0000-0001-9848-9550
+    researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
 
 # List of past lab members
 alumni:

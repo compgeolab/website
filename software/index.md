@@ -29,7 +29,7 @@ Project website
 </div>
 <div class="col-md-5">
 
-<img src="/images/fatiando-banner.svg" alt="Fatiando a Terra logo">
+<img src="../images/fatiando-banner.svg" alt="Fatiando a Terra logo">
 
 </div>
 </div>
@@ -54,7 +54,7 @@ Project website
 </div>
 <div class="col-md-5">
 
-<img src="/images/gmt-logo.png" alt="GMT logo">
+<img src="../images/gmt-logo.png" alt="GMT logo">
 
 </div>
 </div>
@@ -78,7 +78,7 @@ Project website
 </div>
 <div class="col-md-5">
 
-<img src="/images/tesseroids-banner.svg" alt="Tesseroids logo">
+<img src="../images/tesseroids-banner.svg" alt="Tesseroids logo">
 
 </div>
 </div>

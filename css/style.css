@@ -50,7 +50,7 @@ li {
 }
 
 header {
-  background-image: url(/images/banner.jpg);
+  background-image: url(../images/banner.jpg);
   background-color: var(--bs-gray-900);
   background-position: top;
   background-size: cover;

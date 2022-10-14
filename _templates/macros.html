@@ -19,8 +19,8 @@
 {%- endmacro %}
 
 
-{%- macro page_title_link(page) %}
-  <a href="/{{ page.path }}">{{ page.title }}</a>
+{%- macro page_title_link(page, anchor) %}
+  <a href="{{ page.path|relative_to(anchor.path) }}">{{ page.title }}</a>
 {%- endmacro %}
 
 
@@ -29,14 +29,14 @@
   <div class="row gy-3 gx-5 my-5">
     {%- for person in people %}
       <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
-        <div class="card">
+        <div class="card" id="{{ person.github }}">
           {%- if person.github is defined %}
             <img class="card-img-top" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
           {%- else %}
-            <img class="card-img-top" src="/images/avatar-placeholder.jpg" alt="{{ person.name }}'s profile picture">
+            <img class="card-img-top" src="../images/avatar-placeholder.jpg" alt="{{ person.name }}'s profile picture">
           {%- endif %}
           <div class="card-body text-center">
-            <h3 class="card-title fs-4" id="{{ person.github }}">{{ person.name }}</h3>
+            <h3 class="card-title fs-4">{{ person.name }}</h3>
             <p class="card-text fs-6 mb-1 text-muted">{{ person.affiliation }}</p>
             <p class="card-text fs-6 mb-1 text-muted">{{ person.role }}</p>
             {%- if person.pronouns is defined %}

@@ -13,7 +13,7 @@ for you.
 <ul class="fa-ul my-5">
 <li>
 <i class="fa-li fa fa-envelope-open fa-fw" aria-hidden="true"></i>
-Email <a href="/team/#leouieda">Leo</a> or another <a href="/team">team member</a> directly.
+Email <a href="{{ site["team/index"].path|relative_to(page.path) }}#leouieda">Leo</a> or another <a href="{{ site["team/index"].path|relative_to(page.path) }}">team member</a> directly.
 </li>
 <li>
 <i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
@@ -55,14 +55,14 @@ We'd love to hear from you if your project or idea could benefit from our
 expertise in data analysis, inverse problems, and research software
 engineering.
 
-👋🏽 **Reach out to [our team](/team) to start a conversation!**
+👋🏽 **Reach out to [our team]({{ site["team/index"].path|relative_to(page.path) }}) to start a conversation!**
 
 <h2 class="mt-5">Positions in the lab</h2>
 
-👩🏿‍🎓 **Looking for a funded position?** Keep an eye on the <a href="/news">lab updates</a>
+👩🏿‍🎓 **Looking for a funded position?** Keep an eye on the <a href="{{ site["news/index"].path|relative_to(page.path) }}">lab updates</a>
 and <a href="https://twitter.com/leouieda">social media</a>.
 We'll post calls for scholarships and open positions in the lab.
 
-💰 **Have your own funding?** Talk to [Leo](/team) if you're interested in
+💰 **Have your own funding?** Talk to [Leo]({{ site["team/index"].path|relative_to(page.path) }}#leouieda) if you're interested in
 pursuing a self-funded PhD or applying for externally-funded postdoc
 fellowships to work in the lab.

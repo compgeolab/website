@@ -17,7 +17,7 @@ Below is a curated list of datasets and models generated or compiled by the
 group.
 </p>
 
-{%- for data in page.datasets %}
+{%- for data in page.data %}
   <div class="row mt-5 gy-5 gx-5">
   <div class="col-md-7">
     <h2>{{ data.title }}</h2>
@@ -33,7 +33,7 @@ group.
     </a>
   </div>
   <div class="col-md-5">
-    {{ figure(src=data.image, caption=data.caption) }}
+    {{ figure(src=data.image|relative_to(page.path), caption=data.caption) }}
   </div>
   </div>
 {%- endfor %}

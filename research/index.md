@@ -156,7 +156,7 @@ that are capable of unlocking the huge potential of these new data.
 
 News:
 
-* {{ page_title_link(site["news/rsoc-mag-microscopy-2022"]) }}
+* {{ page_title_link(site["news/rsoc-mag-microscopy-2022"], page) }}
 
 </div>
 
@@ -189,7 +189,7 @@ data** are merged and modelled to produce heat flow estimates.
 
 News:
 
-* {{ page_title_link(site["news/liverpool-phd-2021"]) }}
+* {{ page_title_link(site["news/liverpool-phd-2021"], page) }}
 
 </div>
 

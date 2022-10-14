@@ -12,7 +12,7 @@ We are an international group of researchers joined by a shared passion for
 geoscience and helping our peers by making free high-quality tools.
 </p>
 
-{{ macros.make_people_list(page.current) }}
+{{ macros.make_people_list(page.people.current) }}
 
 <hr class="mb-5">
 
@@ -21,7 +21,7 @@ geoscience and helping our peers by making free high-quality tools.
 Research is never done in a vacuum! We are proud to collaborate with
 world-leading researchers:
 
-{{ macros.make_people_list(page.collaborators) }}
+{{ macros.make_people_list(page.people.collaborators) }}
 
 <hr class="mb-5">
 
@@ -29,4 +29,4 @@ world-leading researchers:
 
 People who passed through the lab and have since moved on:
 
-{{ macros.make_people_list(page.alumni) }}
+{{ macros.make_people_list(page.people.alumni) }}

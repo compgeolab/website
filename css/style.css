@@ -81,9 +81,10 @@ code {
 }
 
 figcaption {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   color: #6c757d;
+  margin-top: 0.6rem;
 }
 
 

@@ -19,7 +19,7 @@ gravimetry and magnetometry.
 
 <hr class="mb-5">
 
-<div class="row mb-5 gy-5 gx-5">
+<div class="row mb-5 gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Machine learning & data processing
@@ -30,24 +30,10 @@ Geoscientists have been doing similar things for decades, for example the
 similarities, we are applying other machine learning techniques to these
 geophysical problems.
 
-<button class="btn btn-primary me-1 mb-2" type="button"
-    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-ml"
-    aria-expanded="false" aria-controls="collapse-abstract-ml">
-  Our work on this theme <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
-</button>
-<div id="collapse-abstract-ml" class="collapse paper-info mt-2 overflow-hidden">
-
-Selected publications:
-
-* [Gradient-boosted equivalent sources](https://github.com/compgeolab/eql-gradient-boosted)
-* [Verde: Processing and gridding spatial data using Green's functions](https://doi.org/10.21105/joss.00957)
-
-Presentations:
-
-* EGU2021: [Gradient-boosted equivalent sources for gridding large gravity and magnetic datasets](https://doi.org/10.6084/m9.figshare.14515188)
-* EGU2020: [Evaluating the accuracy of equivalent-source predictions using cross-validation](https://doi.org/10.6084/m9.figshare.12245372)
-
-</div>
+Examples of our work on this theme:
+* [Gradient-boosted equivalent sources](https://github.com/compgeolab/eql-gradient-boosted) ([video abstract](https://doi.org/10.6084/m9.figshare.14515188))
+* [Verde: Processing and gridding spatial data using Green's functions](https://doi.org/10.21105/joss.00957) ([project documentation](https://www.fatiando.org/verde/latest/))
+* [Evaluating the accuracy of equivalent-source predictions using cross-validation](https://doi.org/10.6084/m9.figshare.12245372)
 
 </div>
 <div class="col-md-5">
@@ -57,7 +43,7 @@ Presentations:
 </div>
 </div>
 
-<div class="row mb-5 gy-5 gx-5">
+<div class="row mb-5 gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Geophysical inversion and imaging
@@ -69,19 +55,10 @@ solution might not exist or be non-unique and unstable.
 We develop methods to overcome these challenges and solve different kinds of
 inverse problems that arise in geophysics.
 
-<button class="btn btn-primary me-1 mb-2" type="button"
-    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-inv"
-    aria-expanded="false" aria-controls="collapse-abstract-inv">
-  Our work on this theme <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
-</button>
-<div id="collapse-abstract-inv" class="collapse paper-info mt-2 overflow-hidden">
-
-Selected publications:
+Examples of our work on this theme:
 
 * [Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho](https://github.com/pinga-lab/paper-moho-inversion-tesseroids)
 * [Robust 3D gravity gradient inversion by planting anomalous densities](https://github.com/pinga-lab/paper-planting-densities)
-
-</div>
 
 </div>
 <div class="col-md-5">
@@ -91,7 +68,7 @@ Selected publications:
 </div>
 </div>
 
-<div class="row gy-5 gx-5">
+<div class="row gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Forward modeling
@@ -104,19 +81,10 @@ sphere).
 This is a surprisingly difficult task but is crucial to model geology at
 continental and global scales.
 
-<button class="btn btn-primary me-1 mb-2" type="button"
-    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-fwd"
-    aria-expanded="false" aria-controls="collapse-abstract-fwd">
-  Our work on this theme <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
-</button>
-<div id="collapse-abstract-fwd" class="collapse paper-info mt-2 overflow-hidden">
-
-Selected publications:
+Examples of our work on this theme:
 
 * [Gravitational field calculation in spherical coordinates using variable densities in depth](https://github.com/pinga-lab/tesseroid-variable-density)
 * [Tesseroids: forward modeling gravitational fields in spherical coordinates](https://github.com/pinga-lab/paper-tesseroids)
-
-</div>
 
 </div>
 <div class="col-md-5">
@@ -133,7 +101,7 @@ Selected publications:
 
 <hr class="mb-5">
 
-<div class="row mb-5 gy-5 gx-5">
+<div class="row mb-5 gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Magnetic microscopy
@@ -147,18 +115,9 @@ fields of the individual minerals** that make up the rock sample.
 Our group is working with experts in paleomagnetism to **develop new methods**
 that are capable of unlocking the huge potential of these new data.
 
-<button class="btn btn-success me-1 mb-2" type="button"
-    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-magmicro"
-    aria-expanded="false" aria-controls="collapse-abstract-magmicro">
-  Our work on this project <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
-</button>
-<div id="collapse-abstract-magmicro" class="collapse paper-info mt-2 overflow-hidden">
-
-News:
+Examples of our work on this project:
 
 * {{ page_title_link(site["news/rsoc-mag-microscopy-2022"], page) }}
-
-</div>
 
 </div>
 <div class="col-md-5">
@@ -168,7 +127,7 @@ News:
 </div>
 </div>
 
-<div class="row mb-5 gy-5 gx-5">
+<div class="row mb-5 gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Antarctic geothermal heat flow
@@ -180,18 +139,9 @@ Magnetic anomaly data is one of the few ways we have to determine heat flow.
 Our group is working to improve the way **airborne and satellite magnetic
 data** are merged and modelled to produce heat flow estimates.
 
-<button class="btn btn-success me-1 mb-2" type="button"
-    data-bs-toggle="collapse" data-bs-target="#collapse-abstract-antarctica"
-    aria-expanded="false" aria-controls="collapse-abstract-antarctica">
-  Our work on this project <i class="fa fa-chevron-circle-down ms-1" aria-hidden="true"></i>
-</button>
-<div id="collapse-abstract-antarctica" class="collapse paper-info mt-2 overflow-hidden">
-
-News:
+Examples of our work on this project:
 
 * {{ page_title_link(site["news/liverpool-phd-2021"], page) }}
-
-</div>
 
 </div>
 <div class="col-md-5">

@@ -5,6 +5,8 @@ favicon: "images/favicon.png"
 url: "https://www.compgeolab.org"
 repository: compgeolab/website
 author: Leonardo Uieda
+mastodon: leouieda
+mastodon_server: scicomm.xyz
 twitter: leouieda
 github: compgeolab
 linkedin: uieda

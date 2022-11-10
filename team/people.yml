@@ -26,6 +26,16 @@ current:
     email: I.Uppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
 
+  - name: Gelson Ferreira
+    role: PhD student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: Souza-junior
+    email: gelson.ferreira@iag.usp.br
+    orcid: 0000-0002-5695-4239
+    researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
+
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler

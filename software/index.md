@@ -15,9 +15,9 @@ the scientific Python ecosystem.
 
 ## Fatiando a Terra
 
-A collection of **Python** tools for geophysics. The Fatiando tools are the
-heart of most of our research and teaching efforts. This is the main project on
-which we work.
+A collection of Python tools for geophysics. The Fatiando tools are the heart
+of most of our research and teaching efforts. This is the main project on which
+we work.
 
 <a class="btn btn-primary mb-2 me-3" target="_blank" href="https://www.fatiando.org">
   <i class="fas fa-home me-1" aria-hidden="true"></i> Website
@@ -33,6 +33,32 @@ which we work.
 <div class="col-md-5">
 
 <img src="../images/fatiando-banner.svg" alt="Fatiando a Terra logo">
+
+</div>
+</div>
+
+<div class="row mt-5 gy-5 gx-5 align-items-center">
+<div class="col-md-7">
+
+## xlandsat
+
+A small Python library for loading Landsat multi-spectral remote sensing scenes
+from downloaded from [USGS EarthExplorer](https://earthexplorer.usgs.gov/) into
+``xarray.Dataset`` containers. It takes care of reading the metadata and
+organizing the bands into a single data structure for easier manipulation,
+processing, and visualization.
+
+<a class="btn btn-primary mb-2 me-3" target="_blank" href="https://www.compgeolab.org/xlandsat">
+  <i class="fas fa-home me-1" aria-hidden="true"></i> Website
+</a>
+<a class="btn btn-outline-primary mb-2 me-3" target="_blank" href="https://github.com/compgeolab/xlandsat">
+  <i class="fab fa-github me-1" aria-hidden="true"></i> GitHub
+</a>
+
+</div>
+<div class="col-md-5">
+
+<img src="../images/xlandsat.jpg" alt="Example infrared composite image of the 2022 Mauna Loa eruption generated with xlandsat from Landsat 9 data.">
 
 </div>
 </div>

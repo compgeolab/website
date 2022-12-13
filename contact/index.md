@@ -6,56 +6,29 @@ template: base.html
 # {{ page.title }}
 
 <p class="lead">
-Interested in working with us? Get in touch! Pick the option that works best
-for you.
+Get in touch if you're looking to establish a collaboration or find a position
+in the lab.
 </p>
 
-<ul class="fa-ul my-5">
-<li>
-<i class="fa-li fa fa-envelope-open fa-fw" aria-hidden="true"></i>
-Email <a href="{{ site["team/index"].path|relative_to(page.path) }}#leouieda">Leo</a> or another <a href="{{ site["team/index"].path|relative_to(page.path) }}">team member</a> directly.
-</li>
-<li>
-<i class="fa-li fab fa-slack fa-fw" aria-hidden="true"></i>
-Find us on the <a href="https://softwareunderground.org/">Software Underground</a> Slack.
-</li>
-<li>
-<i class="fa-li fab fa-github fa-fw" aria-hidden="true"></i>
-Found bugs/typos? Open an issue or pull request on <a href="https://github.com/compgeolab">GitHub</a>.
-</li>
-</ul>
+<div class="callout callout-note mt-4 mb-5">
 
-<div class="callout callout-warning mt-4 mb-5">
-
-**Before deciding if you want to work with us:** Read the
-[Lab Manual](https://github.com/compgeolab/manual) carefully to make sure you
-agree with our stance on open-access, FAIR data/software, and overall work
-ethics.
+**Before deciding if you want to work with us:**
+Read our [Lab Manual](https://github.com/compgeolab/manual) carefully to make
+sure you agree with our stance on open-access, FAIR data/software, and overall
+work ethics.
 
 </div>
-
-## Services
-
-We have over a decade years of experience in developing open-source software in
-Python and C, processing and modelling gravity and magnetic data, and teaching
-technical skills at different levels.
-We can offer services in:
-
-<ul style="list-style-type: none; padding-left: 0;">
-<li>🧑🏽‍🏫 Training in data science and research software development.</li>
-<li>🔓 Integrating open-source and open-data into your workflow.</li>
-<li>🍎 Potential field data processing, 3D modelling, and inversion.</li>
-<li>🧑🏽‍💻 Adding features to our open-source software.</li>
-</ul>
 
 <h2 class="mt-5">Research collaborations</h2>
 
 We're always interested in new collaborations and interesting projects.
 We'd love to hear from you if your project or idea could benefit from our
-expertise in data analysis, inverse problems, and research software
-engineering.
+expertise in data analysis, gravity & magnetics, inverse problems, and research
+software engineering.
 
-👋🏽 **Reach out to [our team]({{ site["team/index"].path|relative_to(page.path) }}) to start a conversation!**
+<i class="fa-li fa fa-envelope-open fa-fw" aria-hidden="true"></i>
+**Reach out to <a href="{{ site["team/index"].path|relative_to(page.path) }}#leouieda">Leo</a>**
+to start a conversation.
 
 <h2 class="mt-5">Positions in the lab</h2>
 

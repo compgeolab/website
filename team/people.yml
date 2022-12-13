@@ -15,6 +15,7 @@ current:
     orcid: 0000-0001-6123-9515
     google_scholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
     researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    lattes: 8939551682050504
     cv: https://www.leouieda.com/cv/leonardo_uieda_cv.pdf
     website: https://www.leouieda.com
 
@@ -55,6 +56,7 @@ collaborators:
     affiliation: PINGA Lab, Observatório Nacional, Brazil
     github: birocoles
     orcid: 0000-0002-6338-4086
+    lattes: 4332841435949533
     website: https://www.pinga-lab.org/people/oliveira-jr.html
 
   - name: Valéria C. F. Barbosa
@@ -62,6 +64,7 @@ collaborators:
     affiliation: PINGA Lab, Observatório Nacional, Brazil
     github: valcris
     orcid: 0000-0002-9767-6044
+    lattes: 0391036221142471
     website: https://www.pinga-lab.org/people/barbosa.html
 
   - name: Ricardo I. F. Trindade

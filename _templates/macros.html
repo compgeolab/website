@@ -43,19 +43,19 @@
               <p class="card-text fs-6 mb-1 text-muted">pronouns: {{ person.pronouns }}</p>
             {%- endif %}
             <ul class="list-inline fs-5 mb-1">
-              {%- if person.github is defined %}
-              <li class="list-inline-item">
-                <a href="https://github.com/{{ person.github }}"
-                   aria-label="GitHub" title="GitHub" target="_blank">
-                   <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
               {%- if person.email is defined %}
               <li class="list-inline-item">
                 <a href="mailto:{{ person.email }}"
                    aria-label="email" title="email" target="_blank">
                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                </a>
+              </li>
+              {%- endif %}
+              {%- if person.github is defined %}
+              <li class="list-inline-item">
+                <a href="https://github.com/{{ person.github }}"
+                   aria-label="GitHub" title="GitHub" target="_blank">
+                   <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
               </li>
               {%- endif %}
@@ -86,6 +86,14 @@
                 <a href="{{ person.researchgate }}"
                    aria-label="ResearchGate" title="ResearchGate" target="_blank">
                    <i class="ai ai-researchgate" aria-hidden="true"></i>
+                </a>
+              </li>
+              {%- endif %}
+              {%- if person.lattes is defined %}
+              <li class="list-inline-item">
+                <a href="https://lattes.cnpq.br/{{ person.lattes }}"
+                   aria-label="Currículo Lattes" title="Currículo Lattes" target="_blank">
+                   <i class="ai ai-lattes" aria-hidden="true"></i>
                 </a>
               </li>
               {%- endif %}

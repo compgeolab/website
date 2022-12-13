@@ -26,9 +26,10 @@ We'd love to hear from you if your project or idea could benefit from our
 expertise in data analysis, gravity & magnetics, inverse problems, and research
 software engineering.
 
-<i class="fa-li fa fa-envelope-open fa-fw" aria-hidden="true"></i>
-**Reach out to <a href="{{ site["team/index"].path|relative_to(page.path) }}#leouieda">Leo</a>**
-to start a conversation.
+👋🏽
+**Reach out to
+<a href="{{ site["team/index"].path|relative_to(page.path) }}#leouieda">Leo</a>
+to start a conversation.**
 
 <h2 class="mt-5">Positions in the lab</h2>
 

@@ -24,99 +24,60 @@
 {%- endmacro %}
 
 
-{%- macro make_people_list(people) %}
+{%- macro make_people_list(people, prefix="") %}
 {# Create a list of people with photos (from GitHub) and other info #}
-  <div class="row gy-3 gx-5 my-5">
-    {%- for person in people %}
-      <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
-        <div class="card" id="{{ person.github }}">
-          {%- if person.github is defined %}
-            <img class="card-img-top" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
-          {%- else %}
-            <img class="card-img-top" src="../images/avatar-placeholder.jpg" alt="{{ person.name }}'s profile picture">
-          {%- endif %}
-          <div class="card-body text-center">
-            <h3 class="card-title fs-4">{{ person.name }}</h3>
-            <p class="card-text fs-6 mb-1 text-muted">{{ person.affiliation }}</p>
-            <p class="card-text fs-6 mb-1 text-muted">{{ person.role }}</p>
-            {%- if person.pronouns is defined %}
-              <p class="card-text fs-6 mb-1 text-muted">pronouns: {{ person.pronouns }}</p>
-            {%- endif %}
-            <ul class="list-inline fs-5 mb-1">
-              {%- if person.email is defined %}
-              <li class="list-inline-item">
-                <a href="mailto:{{ person.email }}"
-                   aria-label="email" title="email" target="_blank">
-                   <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.github is defined %}
-              <li class="list-inline-item">
-                <a href="https://github.com/{{ person.github }}"
-                   aria-label="GitHub" title="GitHub" target="_blank">
-                   <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.orcid is defined %}
-              <li class="list-inline-item">
-                <a href="https://orcid.org/{{ person.orcid }}"
-                   aria-label="ORCID" title="ORCID" target="_blank">
-                   <i class="ai ai-orcid" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://impactstory.org/u/{{ person.orcid }}"
-                   aria-label="ImpactStory" title="ImpactStory" target="_blank">
-                   <i class="ai ai-impactstory" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.google_scholar is defined %}
-              <li class="list-inline-item">
-                <a href="{{ person.google_scholar }}"
-                   aria-label="Google Scholar" title="Google Scholar" target="_blank">
-                   <i class="ai ai-google-scholar" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.researchgate is defined %}
-              <li class="list-inline-item">
-                <a href="{{ person.researchgate }}"
-                   aria-label="ResearchGate" title="ResearchGate" target="_blank">
-                   <i class="ai ai-researchgate" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.lattes is defined %}
-              <li class="list-inline-item">
-                <a href="https://lattes.cnpq.br/{{ person.lattes }}"
-                   aria-label="Currículo Lattes" title="Currículo Lattes" target="_blank">
-                   <i class="ai ai-lattes" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.cv is defined %}
-              <li class="list-inline-item">
-                <a href="{{ person.cv }}"
-                   aria-label="CV" title="CV" target="_blank">
-                   <i class="ai ai-cv" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-              {%- if person.website is defined %}
-              <li class="list-inline-item">
-                <a href="{{ person.website }}"
-                   aria-label="Website" title="Website" target="_blank">
-                   <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
-                </a>
-              </li>
-              {%- endif %}
-            </ul>
-          </div>
-        </div>
-      </div>
-    {%- endfor %}
+{%- for person in people %}
+<div class="row gx-5 gy-5 my-5 align-items-center justify-content-center">
+  <div class="col-12 col-sm-8 col-md-9 text-center text-sm-start">
+    <h3 id="{{ prefix }}{{ person.github }}">{{ person.name }}</h3>
+    <ul class="team-info">
+      <li><strong>{{ person.role }}</strong> • {{ person.affiliation }}</li>
+      {%- if person.pronouns is defined %}
+        <li>Pronouns: {{ person.pronouns }}</li>
+      {%- endif %}
+      {%- if person.email is defined %}
+        <li>
+          Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a>
+        </li>
+      {%- endif %}
+      {%- if person.orcid is defined %}
+        <li>
+          ORCID: <a href="https://orcid.org/{{ person.orcid }}" target="_blank">{{ person.orcid }}</a>
+        </li>
+      {%- endif %}
+      {%- if person.website is defined %}
+        <li>
+          Website: <a href="{{ person.website }}" target="_blank">{{ person.website|replace("https://", "")|replace("http://", "") }}</a>
+        </li>
+      {%- endif %}
+      {%- if person.project is defined %}
+        <li>Project: {{ person.project }}</li>
+      {%- endif %}
+      <li class="team-icons">
+        Links:
+        {{- icon_link(person, "github", icon="fab fa-github", label="GitHub", prefix="https://github.com/") -}}
+        {{- icon_link(person, "orcid", icon="ai ai-impactstory", label="ImpactStory", prefix="https://impactstory.org/u/") -}}
+        {{- icon_link(person, "google_scholar", icon="ai ai-google-scholar", label="Google Scholar") -}}
+        {{- icon_link(person, "researchgate", icon="ai ai-researchgate", label="ResearchGate") -}}
+        {{- icon_link(person, "lattes", icon="ai ai-lattes", label="Currículo Lattes", prefix="https://lattes.cnpq.br/") -}}
+        {{- icon_link(person, "cv", icon="ai ai-cv", label="Curriculum Vitæ") -}}
+      </li>
+    </ul>
   </div>
+  <div class="col-9 col-sm-4 col-md-3 order-first">
+    {%- if person.github is defined %}
+      <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
+    {%- else %}
+      <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">
+    {%- endif %}
+  </div>
+</div>
+{%- endfor %}
 {%- endmacro %}
+
+
+{%- macro icon_link(person, field, icon, label, prefix="") -%}
+  {%- if field in person -%}
+    <a href="{{ prefix }}{{ person[field] }}" aria-label="{{ label }}" title="{{ label }}" target="_blank"><i class="{{ icon }}" aria-hidden="true"></i></a>
+  {%- endif -%}
+{%- endmacro -%}

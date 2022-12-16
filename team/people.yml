@@ -26,6 +26,7 @@ current:
     github: indiauppal
     email: I.Uppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
+    project: Improving estimates of Antarctic geothermal heat flow from geophysical data
 
   - name: Gelson Ferreira
     role: PhD student
@@ -35,71 +36,63 @@ current:
     email: gelson.ferreira@iag.usp.br
     orcid: 0000-0002-5695-4239
     researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
+    project: Micropaleomagnetism
 
 
 # List of external collaborators
 collaborators:
   - name: Santiago Soler
     role: Postdoctoral Researcher
-    affiliation: Earth, Ocean and Atmospheric Sciences, University of British Columbia
+    affiliation: University of British Columbia, Canada
     pronouns: he/him
     github: santisoler
-    email: santiago.r.soler@gmail.com
     orcid: 0000-0001-9202-5317
     google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
     researchgate: https://www.researchgate.net/profile/Santiago_Soler2
-    website: https://www.santisoler.com/
+    website: https://www.santisoler.com
     cv: https://www.santisoler.com/cv/cv.pdf
 
   - name: Vanderlei C. Oliveira Jr.
     role: Researcher
-    affiliation: PINGA Lab, Observatório Nacional, Brazil
+    affiliation: Observatório Nacional, Brazil
     github: birocoles
     orcid: 0000-0002-6338-4086
     lattes: 4332841435949533
-    website: https://www.pinga-lab.org/people/oliveira-jr.html
+    website: https://www.pinga-lab.org
+    cv: https://raw.githubusercontent.com/birocoles/curriculum/main/files/my_cv.pdf
 
   - name: Valéria C. F. Barbosa
     role: Researcher
-    affiliation: PINGA Lab, Observatório Nacional, Brazil
+    affiliation: Observatório Nacional, Brazil
     github: valcris
     orcid: 0000-0002-9767-6044
     lattes: 0391036221142471
-    website: https://www.pinga-lab.org/people/barbosa.html
+    website: https://www.pinga-lab.org
 
   - name: Ricardo I. F. Trindade
     role: Professor
     affiliation: Universidade de São Paulo, Brazil
     orcid: 0000-0001-9848-9550
     researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
+    lattes: 3934334115083849
 
 # List of past lab members
 alumni:
+  - name: Santiago Soler
+    role: PhD student
+    affiliation: Universidad Nacional de San Juan, Argentina
+    github: santisoler
+    orcid: 0000-0001-9202-5317
+    project:  Metodologías y herramientas computacionales para el procesamiento y modelado de datos gravimétricos
   - name: Laura Nicholls
     role: Undergraduate student
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: LNich
+    project: An open-source Python implementation of the gravitational fields of ellipsoids
   - name: Sarah Margrethe Askevold
     role: Undergraduate student
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: SAskevold
-  - name: Daniel Gilbert
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-  - name: Aidan Hernaman
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-  - name: Lottie Cooper
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-  - name: Charles Thomson
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-  - name: Steven Heer
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-  - name: Alexander Borges
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
+    project: An open-source Python implementation of k-nearest-neighbor interpolation

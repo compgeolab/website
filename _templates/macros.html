@@ -28,7 +28,7 @@
 {# Create a list of people with photos (from GitHub) and other info #}
 {%- for person in people %}
 <div class="row gx-5 gy-5 my-5 align-items-center justify-content-center">
-  <div class="col-12 col-sm-8 col-md-9 text-center text-sm-start">
+  <div class="col-12 col-sm-7 col-md-8 text-center text-sm-start">
     <h3 id="{{ prefix }}{{ person.github }}">{{ person.name }}</h3>
     <ul class="team-info">
       <li><strong>{{ person.role }}</strong> • {{ person.affiliation }}</li>
@@ -64,7 +64,7 @@
       </li>
     </ul>
   </div>
-  <div class="col-9 col-sm-4 col-md-3 order-first">
+  <div class="col-9 col-sm-5 col-md-4 order-first">
     {%- if person.github is defined %}
       <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
     {%- else %}

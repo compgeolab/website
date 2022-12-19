@@ -34,7 +34,7 @@ to start a conversation.**
 <h2 class="mt-5">Positions in the lab</h2>
 
 👩🏿‍🎓 **Looking for a funded position?** Keep an eye on the <a href="{{ site["news/index"].path|relative_to(page.path) }}">lab updates</a>
-and <a href="https://twitter.com/leouieda">social media</a>.
+and social media.
 We'll post calls for scholarships and open positions in the lab.
 
 💰 **Have your own funding?** Talk to [Leo]({{ site["team/index"].path|relative_to(page.path) }}#leouieda) if you're interested in

@@ -58,7 +58,7 @@ processing, and visualization.
 </div>
 <div class="col-md-5">
 
-<img src="../images/xlandsat.jpg" alt="Example infrared composite image of the 2022 Mauna Loa eruption generated with xlandsat from Landsat 9 data.">
+<img src="../images/xlandsat-logo.svg" alt="xlandsat logo">
 
 </div>
 </div>

@@ -16,7 +16,7 @@ geoscience and helping our peers by making free high-quality tools.
 
 ## Team members
 
-The core team working across our [themes and projects](../research):
+The core team working across our themes and projects:
 
 {{ macros.make_people_list(page.people.current) }}
 
@@ -41,7 +41,8 @@ world-leading researchers:
 
 ## Alumni
 
-People who passed through the lab and have since moved on:
+These are some of the people who passed through the lab and have since moved on
+(only those who have added themselves):
 
 {{ macros.make_people_list(page.people.alumni, prefix="alum-") }}
 

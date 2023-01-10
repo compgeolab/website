@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
 
-{%- macro make_nav_link(name, id, page, site) %}
+{%- macro make_nav_link(item, page, site) %}
   {% set aria = "" %}
   {% set class = "nav-link" %}
-  {% if page.id == id or page.parent == id|replace('/index', '') %}
+  {% if page.id == item.id or page.parent == item.id|replace('/index', '') %}
     {% set class = class + " active" %}
     {% set aria = 'aria-current="page"' %}
   {% endif %}
-  <a class="{{ class }}" {{ aria }} href="{{ site[id].path|relative_to(page.path) }}">{{ name }}</a>
+  <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
 {%- endmacro %}
 
 <head>
@@ -58,7 +58,7 @@
           <ul class="navbar-nav">
             {%- for item in config.navigation %}
               <li class="nav-item">
-                {{ make_nav_link(item.name, item.id, page, site) }}
+                {{ make_nav_link(item, page, site) }}
               </li>
             {%- endfor %}
           </ul>

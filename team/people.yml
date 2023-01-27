@@ -68,6 +68,7 @@ collaborators:
     orcid: 0000-0002-9767-6044
     lattes: 0391036221142471
     website: https://www.pinga-lab.org
+    picture: ../images/valeria-barbosa.jpg
 
   - name: Ricardo I. F. Trindade
     role: Professor
@@ -75,6 +76,7 @@ collaborators:
     orcid: 0000-0001-9848-9550
     researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
     lattes: 3934334115083849
+    picture: ../images/ricardo-trindade.jpg
 
 # List of past lab members
 alumni:

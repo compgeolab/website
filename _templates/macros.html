@@ -65,7 +65,9 @@
     </ul>
   </div>
   <div class="col-9 col-sm-5 col-md-4 order-first">
-    {%- if person.github is defined %}
+    {%- if person.picture is defined %}
+      <img class="headshot" src="{{ person.picture }}" alt="{{ person.name }}'s profile picture">
+    {%- elif person.github is defined %}
       <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
     {%- else %}
       <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">

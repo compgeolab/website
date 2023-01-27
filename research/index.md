@@ -13,13 +13,57 @@ We focus on the creation and application of new methods for geophysical
 gravimetry and magnetometry.
 </p>
 
-<section class="mt-5">
+<section class="row mb-5 gy-3 gx-5 align-items-center">
+<div class="col-md-7">
 
-## Themes
+### Magnetic microscopy
 
-<hr class="mb-5">
+The magnetization locked in minerals at the time of their formation is a
+gateway to the **Earth's distant past**.
+So far, researchers have only been able to make bulk measurements from each
+sample.
+Magnetic microscopy technology is now allowing us to distinguish **the magnetic
+fields of the individual minerals** that make up the rock sample.
+Our group is working with experts in paleomagnetism to **develop new methods**
+that are capable of unlocking the huge potential of these new data.
 
-<div class="row mb-5 gy-3 gx-5 align-items-center">
+Examples of our work on this theme:
+
+* {{ page_title_link(site["news/rsoc-mag-microscopy-2022"], page) }}
+
+</div>
+<div class="col-md-5">
+
+{{ figure(src="../images/magnetic-microscopy-example-data.jpg", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
+
+</div>
+</section>
+
+<section class="row mb-5 gy-3 gx-5 align-items-center">
+<div class="col-md-7">
+
+### Antarctic geothermal heat flow
+
+Heat flow from the Earth's interior is an important parameter for how **ice
+sheets flow** and how the Earth's crust rebounds upwards once ice mass is
+displaced, influencing **sea-level rise**.
+Magnetic anomaly data is one of the few ways we have to determine heat flow.
+Our group is working to improve the way **airborne and satellite magnetic
+data** are merged and modelled to produce heat flow estimates.
+
+Examples of our work on this theme:
+
+* {{ page_title_link(site["news/liverpool-phd-2021"], page) }}
+
+</div>
+<div class="col-md-5">
+
+{{ figure(src="../images/antarctica-magnetic-data.jpg", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica.') }}
+
+</div>
+</section>
+
+<section class="row mb-5 gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Machine learning & data processing
@@ -41,9 +85,9 @@ Examples of our work on this theme:
 {{ figure(src="../images/block-mean-example.jpg", caption="Spatial data has uncertainties which need to be handled properly. There are different ways to use uncertainties as data weights for processing.") }}
 
 </div>
-</div>
+</section>
 
-<div class="row mb-5 gy-3 gx-5 align-items-center">
+<section class="row mb-5 gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Geophysical inversion and imaging
@@ -66,9 +110,9 @@ Examples of our work on this theme:
 {{ video(src="../images/planting-inversion.mp4", caption="The planting method for solving the inverse problem of estimating density from observed gravity disturbances.", style="display: block; margin: 0 auto; width: 70%;") }}
 
 </div>
-</div>
+</section>
 
-<div class="row gy-3 gx-5 align-items-center">
+<section class="row gy-3 gx-5 align-items-center">
 <div class="col-md-7">
 
 ### Forward modeling
@@ -92,63 +136,4 @@ Examples of our work on this theme:
 {{ figure(src="../images/tesseroid.jpg", caption="A tesseroid (spherical prism) discretized using our adaptive algorithm.") }}
 
 </div>
-</div>
-
-</section>
-<section class="mt-5">
-
-## Projects
-
-<hr class="mb-5">
-
-<div class="row mb-5 gy-3 gx-5 align-items-center">
-<div class="col-md-7">
-
-### Magnetic microscopy
-
-The magnetization locked in minerals at the time of their formation is a
-gateway to the **Earth's distant past**.
-So far, researchers have only been able to make bulk measurements from each
-sample.
-Magnetic microscopy technology is now allowing us to distinguish **the magnetic
-fields of the individual minerals** that make up the rock sample.
-Our group is working with experts in paleomagnetism to **develop new methods**
-that are capable of unlocking the huge potential of these new data.
-
-Examples of our work on this project:
-
-* {{ page_title_link(site["news/rsoc-mag-microscopy-2022"], page) }}
-
-</div>
-<div class="col-md-5">
-
-{{ figure(src="../images/magnetic-microscopy-example-data.jpg", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
-
-</div>
-</div>
-
-<div class="row mb-5 gy-3 gx-5 align-items-center">
-<div class="col-md-7">
-
-### Antarctic geothermal heat flow
-
-Heat flow from the Earth's interior is an important parameter for how **ice
-sheets flow** and how the Earth's crust rebounds upwards once ice mass is
-displaced, influencing **sea-level rise**.
-Magnetic anomaly data is one of the few ways we have to determine heat flow.
-Our group is working to improve the way **airborne and satellite magnetic
-data** are merged and modelled to produce heat flow estimates.
-
-Examples of our work on this project:
-
-* {{ page_title_link(site["news/liverpool-phd-2021"], page) }}
-
-</div>
-<div class="col-md-5">
-
-{{ figure(src="../images/antarctica-magnetic-data.jpg", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica.') }}
-
-</div>
-</div>
-
 </section>

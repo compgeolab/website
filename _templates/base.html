@@ -55,24 +55,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-middle" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-lg-auto flex-row flex-wrap">
             {%- for item in config.navigation %}
-              <li class="nav-item">
+              <li class="nav-item col-6 col-lg-auto">
                 {{ make_nav_link(item, page, site) }}
               </li>
             {%- endfor %}
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link nav-icon" aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg me-1" title="GitHub" aria-hidden="true"></i></a>
-            </li>
-            <li class="nav-item">
-              <!-- The rel="me" attribute verifies for Mastodon that I own this domain -->
-              <a class="nav-link nav-icon" aria-label="Mastodon" href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank" rel="me"><i class="fab fa-mastodon fa-lg me-1" title="Mastodon" aria-hidden="true"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-icon" aria-label="LinkedIn" href="https://www.linkedin.com/in/{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg me-1" title="LinkedIn" aria-hidden="true"></i></a>
-            </li>
           </ul>
         </div>
       </div>
@@ -106,6 +94,21 @@
 
   <footer>
     <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg me-1" title="GitHub" aria-hidden="true"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <!-- The rel="me" attribute verifies for Mastodon that I own this domain -->
+          <a aria-label="Mastodon" href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank" rel="me"><i class="fab fa-mastodon fa-lg me-1" title="Mastodon" aria-hidden="true"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg me-1" title="LinkedIn" aria-hidden="true"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg me-2" title="ORCID" aria-hidden="true"></i></a>
+        </li>
+      </ul>
       <p>
         {{ config.location.department }}
         •

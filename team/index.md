@@ -16,7 +16,7 @@ geoscience and helping our peers by making free high-quality tools.
 
 ## Team members
 
-The core team working across our themes and projects:
+The core team working across our research themes:
 
 {{ macros.make_people_list(page.people.current) }}
 

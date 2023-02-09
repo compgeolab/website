@@ -10,7 +10,7 @@ Our team work on several open-source software projects and contribute across
 the scientific Python ecosystem.
 </p>
 
-<div class="row mt-5 gy-5 gx-5 align-items-center">
+<section class="row gy-5 gx-5 align-items-center">
 <div class="col-md-7">
 
 ## Fatiando a Terra
@@ -35,9 +35,11 @@ we work.
 <img src="../images/fatiando-banner.svg" alt="Fatiando a Terra logo">
 
 </div>
-</div>
+</section>
 
-<div class="row mt-5 gy-5 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-5 gx-5 align-items-center">
 <div class="col-md-7">
 
 ## xlandsat
@@ -61,9 +63,11 @@ processing, and visualization.
 <img src="../images/xlandsat-logo.svg" alt="xlandsat logo">
 
 </div>
-</div>
+</section>
 
-<div class="row mt-5 gy-5 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-5 gx-5 align-items-center">
 <div class="col-md-7">
 
 ## The Generic Mapping Tools
@@ -89,9 +93,11 @@ library which brings all the power of GMT to the Scientific Python ecosystem.
 <img src="../images/gmt-logo.png" alt="GMT logo">
 
 </div>
-</div>
+</section>
 
-<div class="row mt-5 gy-5 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-5 gx-5 align-items-center">
 <div class="col-md-7">
 
 ## Tesseroids
@@ -116,4 +122,4 @@ grids in Cartesian and spherical coordinates.
 <img src="../images/tesseroids-banner.svg" alt="Tesseroids logo">
 
 </div>
-</div>
+</section>

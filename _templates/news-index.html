@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {%- block content %}
-  <section class="container page-content">
-    {{ page.body }}
-
-    {%- for item in page["siblings"]|sort(attribute="date", reverse=True) %}
-      <h2 class="fs-4 mb-2 mt-5">
+  {{ page.body }}
+  <div class="row gy-5 gx-5">
+  {%- for item in page["siblings"]|sort(attribute="date", reverse=True) %}
+    <div class="col-lg-6">
+      <h2 class="fs-3 mb-2 mt-5">
         <a href="{{ item.path|relative_to(page.path) }}">
           {{ item.title }}
         </a>
@@ -14,9 +14,11 @@
         <i class="fas fa-calendar-alt me-1" aria-hidden="true"></i>
         {{ item.date|replace("-", "/") }}
       </p>
-      <p class="text-muted">
+      <p class="text-muted mb-1">
         {{ item.body|striptags|trim|truncate(200, end="&hellip;") }}
       </p>
-    {%- endfor %}
-  </section>
+      <a class="btn btn-outline-secondary mt-3" href="{{ item.path|relative_to(page.path) }}">Read more <i class="far fa-arrow-alt-circle-right ms-1" aria-hidden="true"></i></a>
+    </div>
+  {%- endfor %}
+  </div>
 {%- endblock %}

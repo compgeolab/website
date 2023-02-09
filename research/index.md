@@ -7,16 +7,16 @@ template: base.html
 
 # {{ page.title }}
 
-<p class="lead mb-5">
+<p class="lead">
 We focus on the creation and application of new methods for geophysical
 <strong>modeling and data processing</strong>, mostly in the fields of
 gravimetry and magnetometry.
 </p>
 
-<section class="row mb-5 gy-3 gx-5 align-items-center">
+<section class="row gy-3 gx-5">
 <div class="col-md-7">
 
-### Magnetic microscopy
+## Magnetic microscopy
 
 The magnetization locked in minerals at the time of their formation is a
 gateway to the **Earth's distant past**.
@@ -39,10 +39,12 @@ Examples of our work on this theme:
 </div>
 </section>
 
-<section class="row mb-5 gy-3 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-3 gx-5">
 <div class="col-md-7">
 
-### Antarctic geothermal heat flow
+## Antarctic geothermal heat flow
 
 Heat flow from the Earth's interior is an important parameter for how **ice
 sheets flow** and how the Earth's crust rebounds upwards once ice mass is
@@ -63,10 +65,12 @@ Examples of our work on this theme:
 </div>
 </section>
 
-<section class="row mb-5 gy-3 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-3 gx-5">
 <div class="col-md-7">
 
-### Machine learning & data processing
+## Machine learning & data processing
 
 It's undeniable that a **machine learning** frenzy has taken over the world.
 Geoscientists have been doing similar things for decades, for example the
@@ -87,10 +91,12 @@ Examples of our work on this theme:
 </div>
 </section>
 
-<section class="row mb-5 gy-3 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-3 gx-5">
 <div class="col-md-7">
 
-### Geophysical inversion and imaging
+## Geophysical inversion and imaging
 
 Our ultimate goal as geophysicists is to **understand the inner structure and
 dynamics of the Earth** from surface observations. This is a tough mathematical
@@ -107,15 +113,17 @@ Examples of our work on this theme:
 </div>
 <div class="col-md-5">
 
-{{ video(src="../images/planting-inversion.mp4", caption="The planting method for solving the inverse problem of estimating density from observed gravity disturbances.", style="display: block; margin: 0 auto; width: 70%;") }}
+{{ figure(src="../images/quadrilatero-ferrifero-density-model.png", caption="Modelled density anomalies associated with iron-ore formations derived from observed gravity disturbances.") }}
 
 </div>
 </section>
 
-<section class="row gy-3 gx-5 align-items-center">
+<hr class="section-separator">
+
+<section class="row gy-3 gx-5">
 <div class="col-md-7">
 
-### Forward modeling
+## Forward modeling
 
 A key component for solving an inverse problem is first solve the **forward
 problem** (predicting observed data from a known model of the subsurface).

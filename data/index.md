@@ -18,7 +18,7 @@ group.
 </p>
 
 {%- for data in page.data %}
-  <div class="row mt-5 gy-5 gx-5">
+  <section class="row gy-5 gx-5">
   <div class="col-md-7">
     <h2>{{ data.title }}</h2>
     <p>{{ data.description }}</p>
@@ -35,5 +35,8 @@ group.
   <div class="col-md-5">
     {{ figure(src=data.image|relative_to(page.path), caption=data.caption) }}
   </div>
-  </div>
+  </section>
+  {%- if not loop.last -%}
+    <hr class="section-separator">
+  {%- endif %}
 {%- endfor %}

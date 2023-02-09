@@ -26,12 +26,20 @@
 
 {%- macro make_people_list(people, prefix="") %}
 {# Create a list of people with photos (from GitHub) and other info #}
+<div class="row gx-5 gy-5 mt-5">
 {%- for person in people %}
-<div class="row gx-5 gy-5 my-5 align-items-center justify-content-center">
-  <div class="col-12 col-sm-7 col-md-8 text-center text-sm-start">
+<div class="col-md-6 col-lg-4 text-center">
+    {%- if person.picture is defined %}
+      <img class="headshot" src="{{ person.picture }}" alt="{{ person.name }}'s profile picture">
+    {%- elif person.github is defined %}
+      <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
+    {%- else %}
+      <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">
+    {%- endif %}
     <h3 id="{{ prefix }}{{ person.github }}">{{ person.name }}</h3>
     <ul class="team-info">
-      <li><strong>{{ person.role }}</strong> • {{ person.affiliation }}</li>
+      <li><strong>{{ person.role }}</strong></li>
+      <li>{{ person.affiliation }}</li>
       {%- if person.pronouns is defined %}
         <li>Pronouns: {{ person.pronouns }}</li>
       {%- endif %}
@@ -50,11 +58,7 @@
           Website: <a href="{{ person.website }}" target="_blank">{{ person.website|replace("https://", "")|replace("http://", "") }}</a>
         </li>
       {%- endif %}
-      {%- if person.project is defined %}
-        <li>Project: {{ person.project }}</li>
-      {%- endif %}
       <li class="team-icons">
-        Links:
         {{- icon_link(person, "github", icon="fab fa-github", label="GitHub", prefix="https://github.com/") -}}
         {{- icon_link(person, "orcid", icon="ai ai-impactstory", label="ImpactStory", prefix="https://impactstory.org/u/") -}}
         {{- icon_link(person, "google_scholar", icon="ai ai-google-scholar", label="Google Scholar") -}}
@@ -63,23 +67,14 @@
         {{- icon_link(person, "cv", icon="ai ai-cv", label="Curriculum Vitæ") -}}
       </li>
     </ul>
-  </div>
-  <div class="col-9 col-sm-5 col-md-4 order-first">
-    {%- if person.picture is defined %}
-      <img class="headshot" src="{{ person.picture }}" alt="{{ person.name }}'s profile picture">
-    {%- elif person.github is defined %}
-      <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
-    {%- else %}
-      <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">
-    {%- endif %}
-  </div>
 </div>
 {%- endfor %}
+</div>
 {%- endmacro %}
 
 
 {%- macro icon_link(person, field, icon, label, prefix="") -%}
   {%- if field in person -%}
-    <a href="{{ prefix }}{{ person[field] }}" aria-label="{{ label }}" title="{{ label }}" target="_blank"><i class="{{ icon }}" aria-hidden="true"></i></a>
+    <a href="{{ prefix }}{{ person[field] }}" aria-label="{{ label }}" title="{{ label }}" target="_blank"><i class="{{ icon }} fa-lg" aria-hidden="true"></i></a>
   {%- endif -%}
 {%- endmacro -%}

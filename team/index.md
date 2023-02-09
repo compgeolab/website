@@ -9,10 +9,10 @@ template: base.html
 
 <p class="lead">
 We are an international group of researchers joined by a shared passion for
-geoscience and helping our peers by making free high-quality tools.
+geoscience and open-source.
 </p>
 
-<section class="my-5">
+<section>
 
 ## Team members
 
@@ -22,9 +22,9 @@ The core team working across our research themes:
 
 </section>
 
-<hr>
+<hr class="section-separator">
 
-<section class="my-5">
+<section>
 
 ## Collaborators
 
@@ -35,9 +35,9 @@ world-leading researchers:
 
 </section>
 
-<hr>
+<hr class="section-separator">
 
-<section class="mt-5">
+<section>
 
 ## Alumni
 

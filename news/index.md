@@ -1,5 +1,5 @@
 ---
-title: News & updates from the lab
+title: Lab updates
 template: news-index.html
 ---
 

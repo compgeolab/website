@@ -248,13 +248,12 @@ li.list-inline-item {
 .banner h1 {
   font-size: calc(2rem + 1.5vw);
   line-height: calc(2.75rem + 1.75vw);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .banner p {
   font-size: calc(1rem + .5vw);
   font-weight: 300;
-  margin-bottom: 3rem;
 }
 
 .banner strong {
@@ -268,7 +267,7 @@ li.list-inline-item {
   animation-duration: 2s;
   animation-delay: 2.5s;
   opacity: 40%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .clab-button-outline {

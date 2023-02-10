@@ -28,45 +28,45 @@
 {# Create a list of people with photos (from GitHub) and other info #}
 <div class="row gx-5 gy-5 mt-5">
 {%- for person in people %}
-<div class="col-md-6 col-lg-4 text-center">
-    {%- if person.picture is defined %}
-      <img class="headshot" src="{{ person.picture }}" alt="{{ person.name }}'s profile picture">
-    {%- elif person.github is defined %}
-      <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
-    {%- else %}
-      <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">
+<div class="col-md-6 col-lg-4 text-center" id="{{ prefix }}{{ person.github }}">
+  {%- if person.picture is defined %}
+    <img class="headshot" src="{{ person.picture }}" alt="{{ person.name }}'s profile picture">
+  {%- elif person.github is defined %}
+    <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
+  {%- else %}
+    <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">
+  {%- endif %}
+  <h3>{{ person.name }}</h3>
+  <ul class="team-info">
+    <li><strong>{{ person.role }}</strong></li>
+    <li>{{ person.affiliation }}</li>
+    {%- if person.pronouns is defined %}
+      <li>Pronouns: {{ person.pronouns }}</li>
     {%- endif %}
-    <h3 id="{{ prefix }}{{ person.github }}">{{ person.name }}</h3>
-    <ul class="team-info">
-      <li><strong>{{ person.role }}</strong></li>
-      <li>{{ person.affiliation }}</li>
-      {%- if person.pronouns is defined %}
-        <li>Pronouns: {{ person.pronouns }}</li>
-      {%- endif %}
-      {%- if person.email is defined %}
-        <li>
-          Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a>
-        </li>
-      {%- endif %}
-      {%- if person.orcid is defined %}
-        <li>
-          ORCID: <a href="https://orcid.org/{{ person.orcid }}" target="_blank">{{ person.orcid }}</a>
-        </li>
-      {%- endif %}
-      {%- if person.website is defined %}
-        <li>
-          Website: <a href="{{ person.website }}" target="_blank">{{ person.website|replace("https://", "")|replace("http://", "") }}</a>
-        </li>
-      {%- endif %}
-      <li class="team-icons">
-        {{- icon_link(person, "github", icon="fab fa-github", label="GitHub", prefix="https://github.com/") -}}
-        {{- icon_link(person, "orcid", icon="ai ai-impactstory", label="ImpactStory", prefix="https://impactstory.org/u/") -}}
-        {{- icon_link(person, "google_scholar", icon="ai ai-google-scholar", label="Google Scholar") -}}
-        {{- icon_link(person, "researchgate", icon="ai ai-researchgate", label="ResearchGate") -}}
-        {{- icon_link(person, "lattes", icon="ai ai-lattes", label="Currículo Lattes", prefix="https://lattes.cnpq.br/") -}}
-        {{- icon_link(person, "cv", icon="ai ai-cv", label="Curriculum Vitæ") -}}
+    {%- if person.email is defined %}
+      <li>
+        Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a>
       </li>
-    </ul>
+    {%- endif %}
+    {%- if person.orcid is defined %}
+      <li>
+        ORCID: <a href="https://orcid.org/{{ person.orcid }}" target="_blank">{{ person.orcid }}</a>
+      </li>
+    {%- endif %}
+    {%- if person.website is defined %}
+      <li>
+        Website: <a href="{{ person.website }}" target="_blank">{{ person.website|replace("https://", "")|replace("http://", "") }}</a>
+      </li>
+    {%- endif %}
+    <li class="team-icons">
+      {{- icon_link(person, "github", icon="fab fa-github", label="GitHub", prefix="https://github.com/") -}}
+      {{- icon_link(person, "orcid", icon="ai ai-impactstory", label="ImpactStory", prefix="https://impactstory.org/u/") -}}
+      {{- icon_link(person, "google_scholar", icon="ai ai-google-scholar", label="Google Scholar") -}}
+      {{- icon_link(person, "researchgate", icon="ai ai-researchgate", label="ResearchGate") -}}
+      {{- icon_link(person, "lattes", icon="ai ai-lattes", label="Currículo Lattes", prefix="https://lattes.cnpq.br/") -}}
+      {{- icon_link(person, "cv", icon="ai ai-cv", label="Curriculum Vitæ") -}}
+    </li>
+  </ul>
 </div>
 {%- endfor %}
 </div>

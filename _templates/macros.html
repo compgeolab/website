@@ -11,7 +11,7 @@
 
 {%- macro video(src, caption, style="", type="video/mp4") %}
   <figure>
-    <video style="{{ style }}" muted autoplay controls="false" loop alt="{{ caption }}">
+    <video style="{{ style }}" muted autoplay loop alt="{{ caption }}">
       <source src="{{ src }}" type="{{ type }}"/>
     </video>
     <figcaption>{{ caption }}</figcaption>

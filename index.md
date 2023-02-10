@@ -31,7 +31,8 @@ tools in-house and contributing across the larger scientific ecosystem.
 <div class="mt-5">
 <a class="btn clab-button mb-4 me-2" href="{{ site["team/index"].path|relative_to(page.path) }}">Meet the team</a>
 <a class="btn clab-button-outline mb-4 me-2" href="{{ site["research/index"].path|relative_to(page.path) }}">Our research</a>
-<a class="btn clab-button-outline mb-4 me-2" href="https://github.com/compgeolab/manual" target="_blank"><i class="fas fa-file-alt me-1" aria-hidden="true"></i> Lab Manual</a>
+<a class="btn clab-button-outline mb-4 me-2" href="{{ site["manual/index"].path|relative_to(page.path) }}">Lab Manual</a>
+<a class="btn clab-button-outline mb-4 me-2" href="{{ site["contact/index"].path|relative_to(page.path) }}">Work with us</a>
 </div>
 
 </div>

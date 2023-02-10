@@ -42,10 +42,14 @@ fellowships to work in the lab.
 </div>
 
 <div class="callout callout-note mt-5">
-
-**Before deciding if you want to work with us:**
-Read our [Lab Manual](https://github.com/compgeolab/manual) carefully to make
-sure you agree with our stance on open-access, FAIR data/software, and overall
-work ethics.
-
+<p>
+<span class="callout-title">
+<i class="fas fa-info-circle me-1" aria-hidden="true"></i>
+Before deciding if you want to work with us:
+</span>
+Read our
+<a href="{{ site["manual/index"].path|relative_to(page.path) }}">Lab Manual</a>
+carefully to make sure you are aware of our stance on open-access, FAIR
+data/software, and overall work ethics.
+</p>
 </div>

@@ -20,18 +20,20 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 navigation:
   - name: Home
     id: index
+  - name: Team
+    id: team/index
   - name: Research
     id: research/index
   - name: Software
     id: software/index
   - name: Data
     id: data/index
-  - name: Team
-    id: team/index
-  - name: Work with us
-    id: contact/index
   - name: News
     id: news/index
+  - name: Work with us
+    id: contact/index
+  - name: Manual
+    id: manual/index
 ignore:
   - README.md
   - LICENSE.md

@@ -54,8 +54,24 @@ a:hover {
 }
 
 code {
-  color: #dc1c2f;
   font-size: 0.9rem;
+  color: var(--bs-gray-100);
+  background-color: var(--bs-gray-900);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+}
+
+pre {
+  padding: 1.5rem;
+  color: var(--bs-gray-100);
+  background-color: var(--bs-gray-900);
+  border-radius: 0.2rem;
+}
+
+pre code {
+  padding: 0;
+  background-color: unset;
+  border-radius: unset;
 }
 
 img {
@@ -63,7 +79,7 @@ img {
 }
 
 li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 header {
@@ -94,10 +110,6 @@ footer a {
 footer a:hover {
   color: #ffffff;
   text-decoration: underline;
-}
-
-code {
-  font-size: 0.9rem;
 }
 
 figcaption {
@@ -206,6 +218,35 @@ li.list-inline-item {
   color: var(--bs-gray-300);
 }
 
+.manual-nav-box {
+  padding-left: 1rem;
+  border-left: 2px solid var(--bs-gray-300);
+}
+
+.manual-nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: none;
+  border-left: 2px solid var(--clab-blue);
+  color: var(--clab-blue);
+}
+
+.manual-nav .nav-link.active:hover {
+  text-decoration: none;
+  color: var(--clab-blue);
+  border-left: 2px solid var(--clab-blue);
+}
+
+.manual-nav .nav-link {
+  color: var(--bs-gray-700);
+  padding: 0.25rem 0.5rem;
+  border-left: 2px solid #ffffff00;
+}
+
+.manual-nav .nav-link:hover {
+  text-decoration: none;
+  border-left: 2px solid var(--bs-gray-300);
+}
+
 .callout {
   margin: 0 auto 1.5rem;
   /* Set a tiny bottom padding because 0 causes it to ignore the p padding */
@@ -216,11 +257,21 @@ li.list-inline-item {
 }
 
 .callout-warning {
-  border-color: var(--bs-danger);
+  border-color: var(--clab-red);
+}
+
+.callout-warning .callout-title {
+  color: var(--clab-red);
+  font-weight: bold;
 }
 
 .callout-note {
-  border-color: var(--bs-primary);
+  border-color: var(--clab-blue);
+}
+
+.callout-note .callout-title {
+  color: var(--clab-blue);
+  font-weight: bold;
 }
 
 .full-height {

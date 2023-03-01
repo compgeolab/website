@@ -33,29 +33,84 @@ agree with them.</strong>
 * If material intellectual contributions (i.e., new directions, solutions to
   problems, specific and directed project ideas) are made by lab members, that
   would confer authorship.
-
-## External collaborations
-
 * Please keep Leo apprised of the broad outlines of your external and internal
   collaborations.
 * You do not have to involve Leo or grant him authorship in your external
-  collaborations (though he will probably be happy to be involved if asked).
+  collaborations.
 
-## Project ownership
+## Software papers and software archives
 
-This is meant from a social, rather than a licensing or intellectual
-property, perspective.
+We strive to give appropriate credit to contributors for their work on software
+projects led by lab members. To do so, we will attempt to define:
 
-* When a project is developed in the lab primarily by a single participant,
-  that participant is free to continue developing and assuming project
-  leadership once they have departed the lab.
-* Developing projects that mature, grow, and may contribute to their future
-  career is a key part of the process of scientific development.
-* For projects that are collaboratively developed with multiple roughly equal
-  participants, leadership will be decided on a case-by-case basis. Preference
-  is given to providing intellectual freedom and empowerment to earlier-stage
-  researchers.
-* Projects that are part of a strategic lab direction may continue to be
-  developed within the lab following departure of a primary developer.
-  Decisions about "forking" or bifurcating development will be held on a
-  case-by-case basis.
+- Fair and diverse ways of providing recognition for contributors' efforts.
+- Define _contributions_ in a broad way: writing code and/or documentation,
+  providing ideas, fostering the community, etc.
+
+The following are the ways in which individuals who have contributed will be
+recognized.
+
+<div class="callout callout-note">
+<p>
+<span class="callout-title">
+<i class="fas fa-info-circle me-1" aria-hidden="true"></i>
+Note:
+</span>
+These guidelines are based on the
+<a href="https://github.com/fatiando/community/blob/main/AUTHORSHIP.md">Fatiando a Terra authorship guidelines</a>.
+</p>
+</div>
+
+### Changelog for each release
+
+Every time we make a release, everyone who has made a commit to the software
+repository since the previous release will be mentioned in the changelog entry.
+This is a way of saying "Thank you".
+
+### The AUTHORS file
+
+Anyone who has contributed a pull request to the project is welcome to **add
+themselves to the `AUTHORS.md` file**. This file lives in the repository and is
+packaged with distributions.
+
+This is an optional process and is **opt-in**. Names and affiliations will be
+sourced from this file for publishing source code archives.
+
+### Zenodo archives of releases
+
+Anyone who has contributed to the repository (i.e., appears on `git log`) can
+be included as an author on the Zenodo source code archive of new releases.
+
+To be included as an author, you must add the following to the `AUTHORS.md`
+file of the repository:
+
+1. Full name
+2. Affiliation (if omitted, we will use "Unaffiliated")
+3. ORCID (optional)
+
+If you have contributed and **do not wish to be included** in Zenodo archives,
+there are a few options:
+
+1. Don't add yourself to `AUTHORS.md`
+2. Remove yourself from `AUTHORS.md`
+3. Indicate next to your name on `AUTHORS.md` that you do not wish to be
+   included with something like `(not included in Zenodo)`.
+
+### Scientific publications (papers)
+
+We aim to write academic papers for most of your software packages. Ideally, we
+will publish updated papers for major changes or large new components of the
+package.
+
+To be included as an author on the paper, you must satisfy the following
+criteria:
+
+1. Have made a contribution to the repository or significant non-coding
+   contributions.
+2. Add your full name, affiliation, and ORCID to the paper. These can be
+   submitted by pull requests to the corresponding paper repository.
+3. Write and/or read and review the manuscript in a timely manner and provide
+   comments on the paper (even if it's just an "OK", but preferably more).
+
+The order of authors will be decided on a case-by-case basis by open discussion
+with the authors.

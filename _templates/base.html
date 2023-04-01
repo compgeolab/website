@@ -50,11 +50,11 @@
     {%- set header_class = "" %}
   {%- endif %}
   <header class="{{ header_class }}">
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-labelledby="primary-navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="primary-navigation">
       <div class="container align-middle">
-        <a class="navbar-brand" href="{{ "index.html"|relative_to(page.path) }}">
+        <span class="navbar-brand">
           <img alt="{{ config.site_name }}" src="{{ config.brand|relative_to(page.path) }}">
-        </a>
+        </span>
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false"
@@ -99,7 +99,7 @@
 
   <footer>
     <div class="container text-center">
-      <nav class="footer-nav mb-4" aria-labelledby="secondary-navigation">
+      <nav class="footer-nav mb-4" aria-label="secondary-navigation">
         <ul class="nav">
           {%- for item in config.navigation %}
             <li class="nav-item">

@@ -29,7 +29,7 @@ that are capable of unlocking the huge potential of these new data.
 
 Examples of our work on this theme:
 
-* {{ page_title_link(site["news/rsoc-mag-microscopy-2022"], page) }}
+* [Full vector inversion of magnetic microscopy images using Euler deconvolution as a priori information](https://github.com/compgeolab/micromag-euler-dipole)
 
 </div>
 <div class="col-md-5">

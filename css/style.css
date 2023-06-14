@@ -119,6 +119,12 @@ figcaption {
   margin-top: 0.6rem;
 }
 
+blockquote {
+  color: #6c757d !important;
+  border-left: 0.25rem solid #6c757d;
+  padding-left: 1rem;
+}
+
 
 /* Tweaks to Bootstrap classes */
 /*****************************************************************************/

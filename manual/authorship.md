@@ -2,18 +2,6 @@
 title: Authorship policy
 ---
 
-<div class="callout callout-warning">
-<p>
-<span class="callout-title">
-<i class="fas fa-exclamation-triangle me-1" aria-hidden="true"></i>
-Important:
-</span>
-The following guidelines apply to publications involving lab members.
-<strong>If you want to collaborate with the lab, please make sure you understand and
-agree with them.</strong>
-</p>
-</div>
-
 ## General principles
 
 * **We do not view authorship as a [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_game)**.

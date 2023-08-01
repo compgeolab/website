@@ -7,19 +7,6 @@ agree with the following code of conduct. We will enforce this code as needed.
 We expect cooperation from all members to help ensuring a safe environment for
 everybody.
 
-<div class="callout callout-note">
-<p>
-<span class="callout-title">
-<i class="fas fa-info-circle me-1" aria-hidden="true"></i>
-Note:
-</span>
-The Computer-Oriented Geoscience Lab is subject to the policies of
-the University of Liverpool. This document does not override any of those
-policies, and the policies of the University take precedence over any
-statements (implied or explicit) in this document.
-</p>
-</div>
-
 ## The Quick Version
 
 The lab is dedicated to providing a harassment-free experience for everyone,
@@ -49,13 +36,13 @@ rolling).
 ## Reporting violations
 
 If you are being harassed, notice that someone else is being harassed, or have
-any other concerns, please contact 
-[Leonardo Uieda]({{ site["team/index"].path|relative_to(page.path) }}#leouieda) 
+any other concerns, please contact
+[Leonardo Uieda]({{ site["team/index"].path|relative_to(page.path) }}#leouieda)
 immediately.
 
 For official concerns or if Leonardo is the cause of your concern, please
-contact the 
-[Student Experience Team](https://www.liverpool.ac.uk/environmental-sciences/contacts-and-location/) 
+contact the
+[Student Experience Team](https://www.liverpool.ac.uk/environmental-sciences/contacts-and-location/)
 and read the
 [University of Liverpool guidelines on bullying and harassment](https://www.liverpool.ac.uk/hr/diversityandequality/bullying/).
 

@@ -19,9 +19,9 @@
 {%- endmacro %}
 
 
-{%- macro page_title_link(page, anchor) %}
+{%- macro page_title_link(page, anchor) -%}
   <a href="{{ page.path|relative_to(anchor.path) }}">{{ page.title }}</a>
-{%- endmacro %}
+{%- endmacro -%}
 
 
 {%- macro make_people_list(people, prefix="") %}

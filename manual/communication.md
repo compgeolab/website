@@ -42,7 +42,5 @@ If you wish to contact the group, please email
 
 ## Social media
 
-* In general, social media can be freely used if in line with the
-  [University of Liverpool Social Media Policy](https://www.liverpool.ac.uk/media/livacuk/computingservices/regulations/social-media-policy.pdf).
 * Lab members are encouraged to be respectful and kind while participating if
   they are representing themselves as lab members.

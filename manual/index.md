@@ -1,18 +1,20 @@
 ---
 title: Lab manual
 toc_table:
+    - manual/authorship
+    - manual/open-science
     - manual/coc
     - manual/induction
     - manual/expectations
     - manual/communication
     - manual/ethics
-    - manual/authorship
-    - manual/open-science
     - manual/software
     - manual/computing
     - manual/resources
     - manual/health
 ---
+
+{% import "macros.html" as macros %}
 
 ## About
 
@@ -21,23 +23,26 @@ process, and general information about how we operate as a research team.
 This document is designed to be a reference for lab members and collaborators.
 It's also part of an induction process when people join the lab.
 
+<div class="callout">
+
 **The manual is a living document.** Lab members are encouraged to submit fixes
 and improvements to it. See the [Contributing Guide][website-repo] for this
 website to find out how.
 
-<div class="callout callout-warning">
-<p>
-<span class="callout-title">
-<i class="fas fa-exclamation-triangle me-1" aria-hidden="true"></i>
-Important:
-</span>
-The <strong>first thing</strong> you should do is familiarize yourself
-with the lab
-<a href="{{ site["manual/coc"].path|relative_to(page.path) }}">Code of Conduct</a>,
-which applies to lab members and collaborators, both within and without the
-lab.
-</p>
 </div>
+
+## Want to work with us?
+
+If you're interested in joining the lab or starting a collaboration, please
+read:
+
+1. {{ macros.page_title_link(site["manual/open-science"], page) }}
+1. {{ macros.page_title_link(site["manual/authorship"], page) }}
+1. {{ macros.page_title_link(site["manual/coc"], page) }}
+
+These sections outline our core principles as scientists.
+If you want to work with us, please make sure that you are aware of and agree
+with these principles to a large extent.
 
 ## License
 

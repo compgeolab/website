@@ -2,15 +2,6 @@
 title: Our stance on Open Science
 ---
 
-<div class="callout">
-<p>
-This document outlines how we approach science and collaboration at a
-fundamental level.
-<strong>It is vital that you are aware of and agree with these principles to a large
-extent if you want to work with us</strong>.
-</p>
-</div>
-
 **We have an open-by-default policy**, meaning that we assume that software and
 data will be made openly available under permissive licenses
 ([CC-BY](https://creativecommons.org/licenses/by/4.0),

@@ -17,7 +17,7 @@ template: index.html
 ## About us
 
 The **CompGeoLab** is a research group based at the
-[{{ config.location.university }}'s {{ config.location.school }}][uol].
+[{{ config.location.university }}][usp].
 We are experts in solving **inverse problems** in the field of **Geophysics**.
 For example, determining the inner density distribution of the Earth from
 measured disturbances in the Earth's gravity field.
@@ -32,7 +32,6 @@ tools in-house and contributing across the larger scientific ecosystem.
 <a class="btn clab-button mb-4 me-2" href="{{ site["team/index"].path|relative_to(page.path) }}">Meet the team</a>
 <a class="btn clab-button-outline mb-4 me-2" href="{{ site["research/index"].path|relative_to(page.path) }}">Our research</a>
 <a class="btn clab-button-outline mb-4 me-2" href="{{ site["manual/index"].path|relative_to(page.path) }}">Lab Manual</a>
-<a class="btn clab-button-outline mb-4 me-2" href="{{ site["contact/index"].path|relative_to(page.path) }}">Work with us</a>
 </div>
 
 </div>
@@ -45,4 +44,4 @@ tools in-house and contributing across the larger scientific ecosystem.
 
 <hr class="section-separator">
 
-[uol]: https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/
+[usp]: https://www.iag.usp.br/

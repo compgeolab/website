@@ -3,14 +3,14 @@ title: "Phase 1 of our Royal Society magnetic microscopy grant"
 date: 2022-11-09
 ---
 
-{% from "macros.html" import figure %}
+{% import "macros.html" as macros %}
 
 This week we're getting started with phase 1 of our
 [Royal Society grant to develop magnetic microscopy](rsoc-mag-microscopy-2022.html)
 with the arrival of PhD student [Gelson Ferreira de Souza Junior](new-members-2021.html)
 at Liverpool!
 
-{{ figure(src="../images/compgeolab-mersey-2022-11-05.jpg", caption="Group photo with a golden sunset on the Mersey river as a background. Left to right: Leo, Gelson, India.") }}
+{{ macros.figure(src="../images/compgeolab-mersey-2022-11-05.jpg", alt="Photo of 3 people smiling with a river and building in the background.", caption="Group photo with a golden sunset on the Mersey river as a background. Left to right: Leo, Gelson, India.") }}
 
 We'll be working hard to put the finishing touches on our first paper on the
 subject, which is being led by Gelson.

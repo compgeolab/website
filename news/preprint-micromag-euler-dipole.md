@@ -3,7 +3,7 @@ title: "Preprint: Automatic dipole moment inversion of magnetic microscopy image
 date: 2023-06-14
 ---
 
-{% from "macros.html" import figure, page_title_link %}
+{% from "macros.html" import figure %}
 
 We have a new preprint out on [EarthArXiv](https://eartharxiv.org/):
 
@@ -26,5 +26,5 @@ GitHub repository [compgeolab/micromag-euler-dipole](https://github.com/compgeol
 A more user-friendly version will be implemented in the open-source library
 [Magali](https://github.com/compgeolab/magali), which is under construction.
 
-{{ figure(src="../images/micromag-euler-dipole-example-result.jpg", caption="Example result of our dipole moment inversion overlaid on magnetic microscopy data from a QDM.") }}
+{{ figure(src="../images/micromag-euler-dipole-example-result.jpg", alt="A grayscale map showing several dipolar anomalies of different sizes with colored vectors overlaid showing the estimated dipole moments", caption="Example result of our dipole moment inversion overlaid on magnetic microscopy data from a QDM.") }}
 

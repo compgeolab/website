@@ -3,7 +3,7 @@ title: Our research
 template: base.html
 ---
 
-{% from "macros.html" import figure, video, page_title_link %}
+{% import "macros.html" as macros %}
 
 # {{ page.title }}
 
@@ -34,7 +34,7 @@ Examples of our work on this theme:
 </div>
 <div class="col-md-5">
 
-{{ figure(src="../images/magnetic-microscopy-example-data.jpg", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
+{{ macros.figure(src="../images/magnetic-microscopy-example-data.jpg", alt="Red and blue map showing dipolar anomalies at a scale of 20 micrometers.", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
 
 </div>
 </section>
@@ -55,12 +55,12 @@ data** are merged and modelled to produce heat flow estimates.
 
 Examples of our work on this theme:
 
-* {{ page_title_link(site["news/liverpool-phd-2021"], page) }}
+* {{ macros.page_link("news/liverpool-phd-2021", page, site) }}
 
 </div>
 <div class="col-md-5">
 
-{{ figure(src="../images/antarctica-magnetic-data.jpg", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica.') }}
+{{ macros.figure(src="../images/antarctica-magnetic-data.jpg", alt="Map of Antarctica overlaid by red, white, and blue points representing magnetic measurements. The data coverage has a lot of gaps.", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica.') }}
 
 </div>
 </section>
@@ -86,7 +86,7 @@ Examples of our work on this theme:
 </div>
 <div class="col-md-5">
 
-{{ figure(src="../images/block-mean-example.jpg", caption="Spatial data has uncertainties which need to be handled properly. There are different ways to use uncertainties as data weights for processing.") }}
+{{ macros.figure(src="../images/block-mean-example.jpg", alt="3 maps of California with colored points representing different types of uncertainty calculations with each being slightly different from the observed data uncertainties.", caption="Spatial data has uncertainties which need to be handled properly. There are different ways to use uncertainties as data weights for processing.") }}
 
 </div>
 </section>
@@ -113,7 +113,7 @@ Examples of our work on this theme:
 </div>
 <div class="col-md-5">
 
-{{ figure(src="../images/quadrilatero-ferrifero-density-model.png", caption="Modelled density anomalies associated with iron-ore formations derived from observed gravity disturbances.") }}
+{{ macros.figure(src="../images/quadrilatero-ferrifero-density-model.png", alt="3D rendering of white blocks with topography and some red blocks spread in a thin vain representing the estimated iron ore body.", caption="Modelled density anomalies associated with iron-ore formations derived from observed gravity disturbances.") }}
 
 </div>
 </section>
@@ -141,7 +141,7 @@ Examples of our work on this theme:
 </div>
 <div class="col-md-5">
 
-{{ figure(src="../images/tesseroid.jpg", caption="A tesseroid (spherical prism) discretized using our adaptive algorithm.") }}
+{{ macros.figure(src="../images/tesseroid.jpg", alt="Drawing of a curved prism sitting on top of a curved Earth. The prism is cut by white lines that represent the discretization.", caption="A tesseroid (spherical prism) discretized using our adaptive algorithm.") }}
 
 </div>
 </section>

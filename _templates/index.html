@@ -9,7 +9,7 @@
     <p>
       The latest news and updates from CompGeoLab members.
       The full backlog can be found in the
-      {{ macros.page_title_link(site["news/index"], anchor=page) }} page.
+      {{ macros.page_link("news/index", page, site) }} page.
     </p>
     <div class="row my-5 gy-3 gx-5">
       {%- for item in (site["news/index"]["siblings"]|sort(attribute="date", reverse=True)|list)[:4] %}

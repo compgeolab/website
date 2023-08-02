@@ -36,9 +36,9 @@ website to find out how.
 If you're interested in joining the lab or starting a collaboration, please
 read:
 
-1. {{ macros.page_title_link(site["manual/open-science"], page) }}
-1. {{ macros.page_title_link(site["manual/authorship"], page) }}
-1. {{ macros.page_title_link(site["manual/coc"], page) }}
+1. {{ macros.page_link("manual/open-science", page, site) }}
+1. {{ macros.page_link("manual/authorship", page, site) }}
+1. {{ macros.page_link("manual/coc", page, site) }}
 
 These sections outline our core principles as scientists.
 If you want to work with us, please make sure that you are aware of and agree

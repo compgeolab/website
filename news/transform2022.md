@@ -3,7 +3,7 @@ title: Free online workshop "A geophysical tour of mid-ocean ridges" at Transfor
 date: 2022-04-27
 ---
 
-{% from "macros.html" import figure %}
+{% import "macros.html" as macros %}
 
 The 2022 edition of the
 [Transform virtual conference](https://transform.softwareunderground.org)
@@ -15,7 +15,7 @@ several of the [Fatiando a Terra](https://www.fatiando.org) packages and
 There is no registration and the workshop is [freely available on
 YouTube](https://www.youtube.com/watch?v=NzJmRlJCNbQ):
 
-{{ figure(src="../images/transform2022.jpg", caption="The Jupyter notebook used in the tutorial.") }}
+{{ macros.figure(src="../images/transform2022.jpg", alt="Screenshot of two Jupyter notebooks side by side showing the name of the workshop on the left (title of this post) and some code plotting a map of a mid-ocean ridge on the right.", caption="The Jupyter notebook used in the tutorial.") }}
 
 The workshop materials and instructions are available on GitHub:
 [compgeolab/transform2022](https://github.com/compgeolab/transform2022).

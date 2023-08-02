@@ -18,7 +18,6 @@ geoscience and open-source.
 
 The core team working across our research themes:
 
-{{ macros.make_people_list(page.people.current) }}
 
 </section>
 
@@ -31,7 +30,6 @@ The core team working across our research themes:
 Research is never done in a vacuum! We are proud to collaborate with
 world-leading researchers:
 
-{{ macros.make_people_list(page.people.collaborators) }}
 
 </section>
 
@@ -44,6 +42,5 @@ world-leading researchers:
 These are some of the people who passed through the lab and have since moved on
 (only those who have added themselves):
 
-{{ macros.make_people_list(page.people.alumni, prefix="alum-") }}
 
 </section>

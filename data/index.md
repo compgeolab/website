@@ -3,7 +3,7 @@ title: Data and models
 template: base.html
 ---
 
-{% from "macros.html" import figure, video %}
+{% import "macros.html" as macros %}
 
 # {{ page.title }}
 
@@ -33,7 +33,7 @@ group.
     </a>
   </div>
   <div class="col-md-5">
-    {{ figure(src=data.image|relative_to(page.path), caption=data.caption) }}
+    {{ macros.figure(src=data.image|relative_to(page.path), alt=data.alt, caption=data.caption) }}
   </div>
   </section>
   {%- if not loop.last -%}

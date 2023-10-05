@@ -1,18 +1,22 @@
 ---
 custom_page_title: Computer-Oriented Geoscience Lab
-banner_title: "Geophysical research <br> powered by open-source software"
+banner_image: images/banner.jpg
+banner_title: Geophysical research powered by open-source software
 banner_subtitle: |
   At the <strong>Computer-Oriented Geoscience Lab</strong>, we design
   state-of-the-art computational tools for the Geosciences.
   <strong>Source code included.</strong>
-banner_downward_link: "#about-us"
+banner_links:
+  - name: Meet the team
+    id: team/index
+  - name: Our research
+    id: research/index
+  - name: Lab Manual
+    id: manual/index
 template: index.html
 ---
 
 {% from "macros.html" import figure, video %}
-
-<section class="row gy-5 gx-5">
-<div class="col-md-7">
 
 ## About us
 
@@ -28,20 +32,6 @@ We also specialize in building **open-source scientific software**.
 Our team works on [several tools and projects]({{ site["software/index"].path|relative_to(page.path) }}), both developing
 tools in-house and contributing across the larger scientific ecosystem.
 
-<div class="mt-5">
-<a class="btn clab-button mb-4 me-2" href="{{ site["team/index"].path|relative_to(page.path) }}">Meet the team</a>
-<a class="btn clab-button-outline mb-4 me-2" href="{{ site["research/index"].path|relative_to(page.path) }}">Our research</a>
-<a class="btn clab-button-outline mb-4 me-2" href="{{ site["manual/index"].path|relative_to(page.path) }}">Lab Manual</a>
-</div>
-
-</div>
-<div class="col-md-5">
-
-{{ video(src="../images/planting-inversion.mp4", caption="The planting method for solving the inverse problem of estimating density from observed gravity disturbances.", style="display: block; margin: 0 auto; width: 100%;") }}
-
-</div>
-</section>
-
-<hr class="section-separator">
+{{ video(src="../images/planting-inversion.mp4", caption="The planting method for solving the inverse problem of estimating density from observed gravity disturbances.", style="display: block; margin: 0 auto; width: 50%;") }}
 
 [usp]: https://www.iag.usp.br/

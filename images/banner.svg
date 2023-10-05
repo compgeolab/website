@@ -7,7 +7,7 @@
    viewBox="0 0 199.99999 100"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="banner.svg"
    inkscape:export-filename="banner.jpg"
    inkscape:export-xdpi="182.88"
@@ -32,10 +32,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.85670232"
-     inkscape:cx="-91.046794"
+     inkscape:cx="469.24117"
      inkscape:cy="98.634027"
      inkscape:window-width="1920"
-     inkscape:window-height="1080"
+     inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -43,33 +43,7 @@
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#d1d1d1" />
   <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient2076">
-      <stop
-         style="stop-color:#000000;stop-opacity:0.80176282;"
-         offset="0.07656599"
-         id="stop2072" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0.40000001;"
-         offset="0.29684615"
-         id="stop1081" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0.30000001;"
-         offset="0.57607687"
-         id="stop2074" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2076"
-       id="linearGradient2078"
-       x1="101.59174"
-       y1="45.778191"
-       x2="101.87096"
-       y2="170.7012"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -84,7 +58,7 @@
        x="2.5179853"
        y="44.717079" />
     <rect
-       style="fill:url(#linearGradient2078);fill-opacity:1;stroke:none;stroke-width:1.70357;stroke-miterlimit:10"
+       style="fill:#000000;fill-opacity:0.5;stroke:none;stroke-width:1.70357;stroke-miterlimit:10"
        id="rect64"
        width="200"
        height="100"

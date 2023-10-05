@@ -1,16 +1,7 @@
+{%- import "macros.html" as macros -%}
+
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
-
-{%- macro make_nav_link(item, page, site) %}
-  {% set aria = "" %}
-  {% set class = "nav-link" %}
-  {% if page.id == item.id or page.parent == item.id|replace('/index', '') %}
-    {% set class = class + " active" %}
-    {% set aria = 'aria-current="page"' %}
-  {% endif %}
-  <a class="{{ class }}" {{ aria }} href="{{ site[item.id].path|relative_to(page.path) }}">{{ item.name }}</a>
-{%- endmacro %}
-
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,17 +14,26 @@
   <title>{{ title }}</title>
 
   {%- if config.favicon is defined %}
-  <link rel="shortcut icon" href="{{ config.favicon|e|relative_to(page.path) }}"/>
+  <link rel="shortcut icon" href="{{ config.favicon|relative_to(page.path)|e }}"/>
   {%- endif %}
 
+  <!-- Atkinson Hyperlegible font -->
+  <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible/fonts.css"|relative_to(page.path) }}" />
+
+  <!-- Ubuntu Mono font -->
+  <link rel="stylesheet" href="{{ "pkg/ubuntu-mono/fonts.css"|relative_to(page.path) }}" />
+
   <!-- FontAwsome icons -->
-  <link rel="stylesheet" href="{{ "css/fontawesome/css/all.css"|relative_to(page.path) }}">
+  <link rel="stylesheet" href="{{ "pkg/fontawesome/css/all.css"|relative_to(page.path) }}">
 
   <!-- Academicons icons -->
-  <link rel="stylesheet" href="{{ "css/academicons-1.9.1/css/academicons.min.css"|relative_to(page.path) }}">
+  <link rel="stylesheet" href="{{ "pkg/academicons-1.9.1/css/academicons.min.css"|relative_to(page.path) }}">
 
   <!-- Animate.css -->
-  <link rel="stylesheet" href="{{ "css/animate.css"|relative_to(page.path) }}">
+  <link rel="stylesheet" href="{{ "pkg/animate.css"|relative_to(page.path) }}">
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="{{ "css/reset.css"|relative_to(page.path) }}" />
 
   <!-- Main CSS stylesheet -->
   <link rel="stylesheet" href="{{ "css/style.css"|relative_to(page.path) }}">
@@ -46,53 +46,43 @@
 </head>
 
 <body>
-  {%- if page.banner_title is defined %}
-    {%- set header_class = "full-height" %}
-  {%- else %}
-    {%- set header_class = "" %}
-  {%- endif %}
-  <header class="{{ header_class }}">
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="primary-navigation">
-      <div class="container align-middle">
-        <span class="navbar-brand">
-          <img alt="{{ config.site_name }}" src="{{ config.brand|relative_to(page.path) }}">
-        </span>
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span><i class="fas fa-bars" aria-hidden="true"></i> Menu</span>
-        </button>
-        <div class="collapse navbar-collapse align-middle" id="navbarNav">
-          <ul class="navbar-nav ms-lg-auto text-end">
-            {%- for item in config.navigation %}
-              <li class="nav-item">
-                {{ make_nav_link(item, page, site) }}
+  <header>
+    <div class="spread content-wide">
+      <a href="{{ macros.pretty_relative_link(site['index'], page) }}">
+        <img src="{{ config.brand|relative_to(page.path) }}" alt="{{ config.site_name }}">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          {%- for item in config.navigation %}
+            <li>
+              {{ macros.nav_link(item, page, site) }}
+            </li>
+          {%- endfor %}
+          <li>
+            {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    {%- if page.banner_image is defined %}
+      <div class="banner" style="background-image: url({{ page.banner_image|relative_to(page.path) }}); background-position: center;" >
+        <div class="flow content">
+          <h1>{{ page.banner_title }}</h1>
+          <p>{{ page.banner_subtitle }}</p>
+          <ul class="list-inline" role="list">
+            {%- for item in page.banner_links %}
+              <li>
+                {{ macros.nav_link(item, page, site) }}
               </li>
             {%- endfor %}
           </ul>
         </div>
       </div>
-    </nav>
-    {%- if page.banner_title is defined %}
-      <div class="container text-center banner">
-        <div class="banner-title">
-          <h1>
-            {{ page.banner_title }}
-          </h1>
-          {%- if page.banner_subtitle is defined %}
-            <p>
-              {{ page.banner_subtitle }}
-            </p>
-          {%- endif %}
-        </div>
-          <a class="downward-link" href="#scroll-anchor"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-      </div>
     {%- endif %}
-    <div id="scroll-anchor"></div>
-  </header>
-  <main>
-    <div class="container page-content overflow-hidden">
+    <div class="content flow extra-space">
       {%- block content %}
         {{ page.body }}
       {%- endblock %}
@@ -100,51 +90,37 @@
   </main>
 
   <footer>
-    <div class="container text-center">
-      <nav class="footer-nav mb-4" aria-label="secondary-navigation">
-        <ul class="nav">
-          {%- for item in config.navigation %}
-            <li class="nav-item">
-              {{ make_nav_link(item, page, site) }}
-            </li>
-          {%- endfor %}
+    <div class="content-wide flow">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+        {%- for item in config.navigation %}
+          <li>
+            {{ macros.nav_link(item, page, site) }}
+          </li>
+        {%- endfor %}
+        <li>
+          {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
+        </li>
         </ul>
       </nav>
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a aria-label="GitHub" href="https://github.com/{{ config.github }}" target="_blank"><i class="fab fa-github fa-lg mx-3" title="GitHub" aria-hidden="true"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <!-- The rel="me" attribute verifies for Mastodon that I own this domain -->
-          <a aria-label="Mastodon" href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank" rel="me"><i class="fab fa-mastodon fa-lg mx-3" title="Mastodon" aria-hidden="true"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/{{ config.linkedin }}" target="_blank"><i class="fab fa-linkedin fa-lg mx-3" title="LinkedIn" aria-hidden="true"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a aria-label="ORCID" href="https://orcid.org/{{ config.orcid }}" target="_blank"><i class="ai ai-orcid fa-lg mx-3" title="ORCID" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-      <p>
-        {{ config.location.department }}
-        •
-        {{ config.location.school }}
-        •
-        {{ config.location.university }}
-        •
-        {{ config.location.country }}
-      </p>
-      <p>
-        Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
-        <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
-        Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}.
-      </p>
-      <p>
-        Source code used to build this site: <a href="https://github.com/{{ config.repository }}"><code>{{ config.repository }}</code></a>.
-      </p>
-      <p>
-        Copyright &copy; {{ build.today.year }} {{ config.author }}
-      </p>
+      <div class="font-small flow-large">
+        <p>
+          {{ config.location.department }}
+          •
+          {{ config.location.school }}
+          •
+          {{ config.location.university }}
+          •
+          {{ config.location.country }}
+        </p>
+        <p>
+          Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
+          <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
+        </p>
+        <p>
+          Copyright &copy; {{ build.today.year }} {{ config.author }}
+        </p>
+      </div>
     </div>
   </footer>
 

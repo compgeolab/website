@@ -1,5 +1,224 @@
+/* Typography and colors for main elements */
+/*****************************************************************************/
 :root {
-  --bs-body-font-size: 1.1rem;
-  --clab-red: #d41111;
-  --clab-blue: #2060c2;
+  /* Colors */
+  --color-dark: #212529;
+  --color-medium: #98a9bb;
+  --color-light: #ffffff;
+  --color-primary: #2060c2;
+  --color-secondary: #d41111;
+  --color-muted: #233f5c;
+  --color-note: var(--color-primary);
+  --color-info: #ffc107;
+  --color-warning: #dc3545;
+
+  /* Type scale calculated using https://utopia.fyi/type/calculator */
+  --size--1: clamp(0.94rem, calc(0.90rem + 0.18vw), 1.04rem);
+  --size-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --size-1: clamp(1.41rem, calc(1.35rem + 0.27vw), 1.56rem);
+  --size-2: clamp(1.76rem, calc(1.69rem + 0.34vw), 1.95rem);
+  --size-3: clamp(2.20rem, calc(2.11rem + 0.42vw), 2.44rem);
+  --size-4: clamp(2.75rem, calc(2.64rem + 0.53vw), 3.05rem);
+  --size-5: clamp(3.43rem, calc(3.30rem + 0.66vw), 3.82rem);
+
+  /* Space scale calculated using https://utopia.fyi/space/calculator/ */
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.54rem + 0.10vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.85rem + 0.10vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1.08rem + 0.21vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.63rem + 0.31vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2.17rem + 0.42vw), 2.50rem);
+  --space-xl: clamp(3.38rem, calc(3.25rem + 0.63vw), 3.75rem);
+  --space-2xl: clamp(4.50rem, calc(4.33rem + 0.83vw), 5.00rem);
+  --space-3xl: clamp(6.75rem, calc(6.50rem + 1.25vw), 7.50rem);
+  --space-4xl: clamp(10.13rem, calc(9.75rem + 1.88vw), 11.25rem);
+  --space-5xl: clamp(15.75rem, calc(15.1413rem + 3.0435vw), 17.5rem);
+
+  /* Spaces and other sizes */
+  --gutter: var(--space-s);
+  --block-border: 0.2em;
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: var(--size-0);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--size-4);
+}
+
+h2 {
+  font-size: var(--size-3);
+  border-bottom: 2px solid var(--color-muted);
+}
+
+h3 {
+  font-size: var(--size-2);
+}
+
+header, footer {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  color: var(--color-light);
+}
+
+header a, footer a {
+  color: var(--color-light);
+}
+
+header {
+  padding: var(--space-xs);
+}
+
+header img {
+  height: 45px;
+}
+
+footer {
+  padding: var(--space-xl) var(--space-xs);
+  margin-top: var(--space-3xl);
+}
+
+footer a {
+  color: var(--color-light);
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-light);
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--color-light);
+  text-decoration: none;
+}
+
+figcaption {
+  font-size: var(--size--1);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+
+/* Flow and rythm */
+/*****************************************************************************/
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+:is(h1, h2, h3, blockquote, hr) {
+  --flow-space: 1.5em;
+}
+
+/* Flow elements inside blockquotes and callouts automatically */
+blockquote > * + *, .callout > * + * {
+  margin-block-start: 0.5em;
+}
+
+
+/* Blocks */
+/*****************************************************************************/
+.content {
+  max-width: 76ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.content-wide {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  width: 100%;
+  background-size: cover;
+  padding: var(--space-3xl) var(--gutter);
+  color: var(--color-light);
+  line-height: 1.25;
+  --flow-space: 2em;
+}
+
+.banner a {
+  color: var(--color-light);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-light);
+}
+
+.banner a:hover {
+  color: var(--color-medium);
+  border-bottom: 2px solid var(--color-medium);
+}
+
+
+/* Utilities */
+/*****************************************************************************/
+.list-inline {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--gutter);
+  padding-left: 0;
+  line-height: 1;
+}
+
+.spread {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter);
+  justify-content: space-between;
+}
+
+
+/* Utilities */
+/*****************************************************************************/
+.font-small {
+  font-size: var(--size--1);
+}
+
+.font-large {
+  font-size: var(--size-1);
+}
+
+.flow-large {
+  --flow-space: 2.5em;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.extra-space {
+  margin-top: var(--space-2xl);
 }

@@ -16,7 +16,7 @@ banner_links:
 template: index.html
 ---
 
-{% from "macros.html" import figure, video %}
+{% import "macros.html" as macros %}
 
 ## About us
 
@@ -28,10 +28,11 @@ measured disturbances in the Earth's gravity field.
 These are the main tools used by geoscientists to **image the inside** of the
 Earth and other planets.
 
+<img src="images/research-highlights.jpg">
+
 We also specialize in building **open-source scientific software**.
-Our team works on [several tools and projects]({{ site["software/index"].path|relative_to(page.path) }}), both developing
+Our team works on several tools and projects, both developing
 tools in-house and contributing across the larger scientific ecosystem.
 
-{{ video(src="../images/planting-inversion.mp4", caption="The planting method for solving the inverse problem of estimating density from observed gravity disturbances.", style="display: block; margin: 0 auto; width: 50%;") }}
 
 [usp]: https://www.iag.usp.br/

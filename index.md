@@ -11,8 +11,10 @@ banner_links:
     id: team/index
   - name: Our research
     id: research/index
-  - name: Lab Manual
+  - name: Lab manual
     id: manual/index
+  - name: <i class="fab fa-github" aria-label="hidden"></i> GitHub
+    id: https://github.com/compgeolab
 template: index.html
 ---
 
@@ -28,11 +30,36 @@ measured disturbances in the Earth's gravity field.
 These are the main tools used by geoscientists to **image the inside** of the
 Earth and other planets.
 
-<img src="images/research-highlights.jpg">
+{{ macros.figure("images/research-highlights.jpg", caption="Four examples of our research outputs. Top left: automatic detection of anomalies in magnetic microscopy data. Top right: compilation of airborne magnetic data for Antarctica. Bottom left: a tesseroid (spherical prism) discretized with our adaptive algorithm for gravity modeling. Bottom right: estimated Moho depth for South America from gravity data and the misfit with seismological estimates.", alt="Figure with four panels. Top left is a map showing red and blue blobs and black squares surrounding each one. Top right is a map of Antarctica with red and blue points overlaid covering a large portion of the continent. Bottom left is a spherical 8-sided prism on top of the globe with white lines showing how it's broken up irregularly. Bottom right are two maps of South America, one colored green to yellow representing the Moho depth, larger around the Andes and smaller in towards the Atlantic coast, the other has scattered colored dots showing larger differences in the Andes and smaller elsewhere." ) }}
 
 We also specialize in building **open-source scientific software**.
 Our team works on several tools and projects, both developing
-tools in-house and contributing across the larger scientific ecosystem.
+tools in-house and contributing across the larger scientific ecosystem:
 
+[**Fatiando a Terra**][fatiando]:
+A collection of Python tools for geophysics. The Fatiando tools are the heart
+of most of our research and teaching efforts. This is the main project on which
+we work.
+
+[**xlandsat**][xlandsat]:
+A small Python library for loading Landsat multi-spectral remote sensing scenes
+from downloaded from USGS EarthExplorer into xarray.Dataset containers. It
+takes care of reading the metadata and organizing the bands into a single data
+structure for easier manipulation, processing, and visualization.
+
+[**The Generic Mapping Tools**][gmt]:
+GMT is one of the most widely used and loved open-source software in the
+geosciences. Our team contributes to both GMT and the PyGMT library which
+brings all the power of GMT to the Scientific Python ecosystem.
+
+[**Tesseroids**][tesseroids]:
+A collection of command-line programs for modeling the gravitational potential,
+acceleration, and gradient tensor. Tesseroids supports models and computation
+grids in Cartesian and spherical coordinates.
 
 [usp]: https://www.iag.usp.br/
+[fatiando]: https://www.fatiando.org/
+[xlandsat]:
+[explorer]:
+[pygmt]:
+[tesseroids]:

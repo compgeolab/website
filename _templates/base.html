@@ -72,7 +72,11 @@
           <ul class="list-inline" role="list">
             {%- for item in page.banner_links %}
               <li>
-                {{ macros.nav_link(item, page, site) }}
+                {%- if item.id[:4] == "http" %}
+                  <a href="{{ item.id }}" target="_blank">{{ item.name }}</a>
+                {%- else %}
+                  {{ macros.nav_link(item, page, site) }}
+                {%- endif %}
               </li>
             {%- endfor %}
           </ul>

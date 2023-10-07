@@ -137,8 +137,8 @@ figcaption {
   --flow-space: 1.5em;
 }
 
-/* Flow elements inside blockquotes and callouts automatically */
-blockquote > * + *, .callout > * + * {
+/* Flow elements inside these containers automatically */
+blockquote > * + *, figure > * + *, .callout > * + * {
   margin-block-start: 0.5em;
 }
 

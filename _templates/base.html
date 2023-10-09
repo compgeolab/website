@@ -48,7 +48,7 @@
 <body>
   <header>
     <div class="spread content-wide">
-        <img src="{{ config.brand|relative_to(page.path) }}" alt="{{ config.site_name }}">
+      <img src="{{ config.brand|relative_to(page.path) }}" alt="{{ config.site_name }}">
       <nav aria-label="Main">
         <ul class="list-inline" role="list">
           {%- for item in config.navigation %}
@@ -89,7 +89,7 @@
   </main>
 
   <footer>
-    <div class="content-wide flow">
+    <div class="content-wide flow flow-large">
       <nav aria-label="Main">
         <ul class="list-inline" role="list">
         {%- for item in config.navigation %}
@@ -97,11 +97,32 @@
             {{ macros.nav_link(item, page, site) }}
           </li>
         {%- endfor %}
-        <li>
-        </li>
         </ul>
       </nav>
-      <div class="font-small flow-large">
+      <ul class="list-inline" role="list">
+        <li>Follow the lab:</li>
+        <li>
+          <a href="https://github.com/{{ config.github }}" rel="me" target="_blank">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="{{ config.researchgate }}" rel="me" target="_blank">
+            ResearchGate
+          </a>
+        </li>
+        <li>
+          <a href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" rel="me" target="_blank">
+            Mastodon
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/{{ config.linkedin }}" rel="me" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+      <div class="font-small">
         <p>
           {{ config.location.department }}
           •
@@ -112,8 +133,12 @@
           {{ config.location.country }}
         </p>
         <p>
-          Last updated {{ build.today.strftime('%Y/%m/%d') }} from commit
-          <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}"><code>{{ build.commit }}</code></a>.
+          Last updated {{ build.today.strftime('%Y/%m/%d') }} from source code
+          at
+          <i class="fab fa-github" aria-label="hidden"></i>
+          <a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}">
+            {{ config.repository }}@{{ build.commit }}
+          </a>
         </p>
         <p>
           Copyright &copy; {{ build.today.year }} {{ config.author }}

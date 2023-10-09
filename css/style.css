@@ -198,6 +198,12 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   padding: var(--gutter);
 }
 
+.lead {
+  font-size: var(--size-1);
+  color: var(--color-muted);
+  --flow-space: 2em;
+}
+
 
 /* Utilities */
 /*****************************************************************************/
@@ -252,4 +258,8 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .text-muted {
   color: var(--color-muted);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
 }

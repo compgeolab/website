@@ -15,7 +15,7 @@ several of the [Fatiando a Terra](https://www.fatiando.org) packages and
 There is no registration and the workshop is [freely available on
 YouTube](https://www.youtube.com/watch?v=NzJmRlJCNbQ):
 
-{{ macros.figure(src="../images/transform2022.jpg", alt="Screenshot of two Jupyter notebooks side by side showing the name of the workshop on the left (title of this post) and some code plotting a map of a mid-ocean ridge on the right.", caption="The Jupyter notebook used in the tutorial.") }}
+{{ macros.figure(src="../images/news/transform2022.jpg", alt="Screenshot of two Jupyter notebooks side by side showing the name of the workshop on the left (title of this post) and some code plotting a map of a mid-ocean ridge on the right.", caption="The Jupyter notebook used in the tutorial.") }}
 
 The workshop materials and instructions are available on GitHub:
 [compgeolab/transform2022](https://github.com/compgeolab/transform2022).

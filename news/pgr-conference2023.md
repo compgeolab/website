@@ -19,4 +19,4 @@ of the geomagnetic field.
 **Checkout India's poster below and keep an eye out for her first publication on
 this topic!**
 
-{{ macros.figure(src="../images/poster-india-pgr-conference-2023.jpg", alt="Screenshot of a poster with green background and white text boxes. Includes example results.", caption="Poster designed by India showing some maps of the results we've obtained. The conversion between data types is not perfect but it's close enough to show real promise.") }}
+{{ macros.figure(src="../images/news/poster-india-pgr-conference-2023.jpg", alt="Screenshot of a poster with green background and white text boxes. Includes example results.", caption="Poster designed by India showing some maps of the results we've obtained. The conversion between data types is not perfect but it's close enough to show real promise.") }}

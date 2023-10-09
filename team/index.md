@@ -14,11 +14,18 @@ geoscience and open-source.
 
 </div>
 
-
 ## Team members
 
 The core team working across our research themes:
 
+{%- for person in page.people.current %}
+  <div class="profile">
+    <img src="https://github.com/{{ person.github }}.png">
+    <ul role="list">
+      <li>{{ person.name }}</li>
+    </ul>
+  </div>
+{%- endfor %}
 
 
 ## Collaborators

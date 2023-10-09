@@ -2,12 +2,13 @@
 /*****************************************************************************/
 :root {
   /* Colors */
-  --color-dark: #212529;
+  --color-dark: #15204a;
   --color-medium: #98a9bb;
-  --color-light: #ffffff;
-  --color-primary: #2060c2;
-  --color-secondary: #d41111;
-  --color-muted: #233f5c;
+  --color-lightish: #b7bcc3;
+  --color-light: #fff7f7;
+  --color-primary: #236ad5;
+  --color-secondary: #ffaaaa;
+  --color-muted: #4b6b9b;
   --color-note: var(--color-primary);
   --color-info: #ffc107;
   --color-warning: #dc3545;
@@ -35,7 +36,7 @@
   --space-5xl: clamp(15.75rem, calc(15.1413rem + 3.0435vw), 17.5rem);
 
   /* Spaces and other sizes */
-  --gutter: var(--space-s);
+  --gutter: var(--space-xs);
   --block-border: 0.2em;
 }
 
@@ -69,7 +70,7 @@ h1 {
 
 h2 {
   font-size: var(--size-3);
-  border-bottom: 1px solid var(--color-medium);
+  border-bottom: 2px solid var(--color-secondary);
 }
 
 h3 {
@@ -87,15 +88,16 @@ header a, footer a {
 }
 
 header {
-  padding: var(--space-xs);
+  padding: var(--gutter);
 }
 
 header img {
   height: 45px;
+  width: auto;
 }
 
 footer {
-  padding: var(--space-xl) var(--space-xs);
+  padding: var(--space-xl) var(--gutter);
   margin-top: var(--space-3xl);
 }
 
@@ -126,6 +128,10 @@ figcaption {
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+
 
 /* Flow and rythm */
 /*****************************************************************************/
@@ -146,7 +152,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 /* Blocks */
 /*****************************************************************************/
 .content {
-  max-width: 76ch;
+  max-width: 80ch;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--gutter);
@@ -162,7 +168,11 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 .banner {
   width: 100%;
   background-size: cover;
-  padding: var(--space-3xl) var(--gutter);
+  background-position: center right;
+  box-shadow:
+    inset 0px 30px 15px -15px rgba(0, 0, 0, 0.30),
+    inset 0px -30px 15px -15px rgba(0, 0, 0, 0.30);
+  padding: var(--space-4xl) 0;
   color: var(--color-light);
   line-height: 1.25;
   --flow-space: 2em;
@@ -175,8 +185,8 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 }
 
 .banner a:hover {
-  color: var(--color-medium);
-  border-bottom: 2px solid var(--color-medium);
+  color: var(--color-lightish);
+  border-bottom: 2px solid var(--color-lightish);
 }
 
 
@@ -193,16 +203,24 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 }
 
 .spread {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gutter);
+  align-items: center;
   justify-content: space-between;
+  gap: var(--gutter);
 }
 
 
 /* Utilities */
 /*****************************************************************************/
+.flow-large {
+  --flow-space: 2.5em;
+}
+
+.extra-space {
+  margin-top: var(--space-2xl);
+}
+
 .font-small {
   font-size: var(--size--1);
 }
@@ -211,14 +229,10 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   font-size: var(--size-1);
 }
 
-.flow-large {
-  --flow-space: 2.5em;
-}
-
 .text-muted {
   color: var(--color-muted);
 }
 
-.extra-space {
-  margin-top: var(--space-2xl);
+.text-bold {
+  font-weight: bold;
 }

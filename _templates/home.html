@@ -9,11 +9,13 @@
     The latest news and updates from CompGeoLab members. The full backlog can
     be found in the "{{ macros.page_link("news/index", page, site) }}" page.
   </p>
-  <ul class="flow" role="list">
+  <ul class="flow fa-ul">
     {%- for item in (site["news/index"]["siblings"]|sort(attribute="date", reverse=True)|list)[:4] %}
       <li>
-        <i class="far fa-arrow-alt-circle-right fa-xs" aria-hidden="true"></i>
-        <a href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>
+        <i class="fa-li far fa-arrow-alt-circle-right fa-fw" aria-hidden="true"></i>
+        <a class="text-bold" href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>.
+        <br>
+        <span class="font-small text-muted">{{ item.body|striptags|trim|truncate(200) }}</span>
       </li>
     {%- endfor %}
   </ul>

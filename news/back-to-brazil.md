@@ -3,15 +3,6 @@ title: "Moving back to Brazil"
 date: 2023-07-31
 ---
 
-<div class="callout">
-
-This article was first published on
-[my personal website](https://www.leouieda.com/blog/back-to-brazil.html)
-under a CC-BY license.
-It's reproduced here under the same license.
-
-</div>
-
 Today is my last day working at the University of Liverpool and my last week
 living in the UK.
 It's been a busy, interesting, exciting, and life-changing experience.
@@ -103,3 +94,12 @@ So I may disappear for a bit but I'll be back (at least partially) recharged to
 start this new chapter!
 
 Leo
+
+<div class="callout">
+
+This article was first published on
+[my personal website](https://www.leouieda.com/blog/back-to-brazil.html)
+under a CC-BY license.
+It's reproduced here under the same license.
+
+</div>

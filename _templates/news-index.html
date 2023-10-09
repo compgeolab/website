@@ -2,21 +2,20 @@
 
 {%- block content %}
   {{ page.body }}
-  {%- for item in page["siblings"]|sort(attribute="date", reverse=True) %}
-    <div class="mb-5">
-    <h2 class="fs-3 mb-2">
-      <a href="{{ item.path|relative_to(page.path) }}">
-        {{ item.title }}
-        <i class="far fa-arrow-alt-circle-right fa-xs" aria-hidden="true"></i>
-      </a>
-    </h2>
-    <p class="text-muted mb-1">
-      <i class="fas fa-calendar-alt me-1" aria-hidden="true"></i>
-      {{ item.date|replace("-", "/") }}
-    </p>
-    <p class="text-muted">
-      {{ item.body|striptags|trim|truncate(300, end="&hellip;") }}
-    </p>
-    </div>
-  {%- endfor %}
+  <ul class="flow fa-ul">
+    {%- for item in page["siblings"]|sort(attribute="date", reverse=True) %}
+      <li>
+        <i class="fa-li far fa-arrow-alt-circle-right font-large" aria-hidden="true"></i>
+        <a class="text-bold font-large" href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>
+        <br>
+        <span class="text-muted text-bold font-small">
+          <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+          {{ item.date|replace("-", "/") }}.
+        </span>
+        <span class="text-muted font-small">
+          {{ item.body|striptags|trim|truncate(200) }}
+        </span>
+      </li>
+    {%- endfor %}
+  </ul>
 {%- endblock %}

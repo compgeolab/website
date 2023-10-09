@@ -6,19 +6,21 @@
   {{ page.body }}
   <h2>News from the lab</h2>
   <p>
-    The latest news and updates from CompGeoLab members. The full backlog can
-    be found in the "{{ macros.page_link("news/index", page, site) }}" page.
+    The latest news and updates from CompGeoLab members.
   </p>
   <ul class="flow fa-ul">
     {%- for item in (site["news/index"]["siblings"]|sort(attribute="date", reverse=True)|list)[:4] %}
       <li>
         <i class="fa-li far fa-arrow-alt-circle-right fa-fw" aria-hidden="true"></i>
-        <a class="text-bold" href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>.
+        <a class="text-bold" href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>
         <br>
         <span class="font-small text-muted">{{ item.body|striptags|trim|truncate(200) }}</span>
       </li>
     {%- endfor %}
   </ul>
+  <p>
+    Older news items: {{ macros.page_link("news/index", page, site) }}
+  </p>
 {%- endblock %}
 
 

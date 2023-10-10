@@ -148,7 +148,7 @@ blockquote {
   margin-block-start: var(--flow-space, 1em);
 }
 
-:is(h1, h2, h3, blockquote, hr) {
+:is(h1, h2, h3) {
   --flow-space: 1.5em;
 }
 
@@ -209,15 +209,40 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   color: var(--color-muted);
 }
 
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gutter) var(--space-m);
+  --flow-space: 2.5em;
+}
+
+.profile > img {
+  flex: 1;
+  order: 1;
+  min-width: 125px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 15px -5px var(--color-dark);
+}
+
+.profile-info {
+  flex: 3;
+  order: 2;
+  min-width: 30ch;
+  line-height: 1.5;
+  --flow-space: 0.5em;
+}
+
 
 /* Utilities */
 /*****************************************************************************/
 .list-inline {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-start;
-  gap: var(--space-s);
+  gap: var(--gutter);
   line-height: 1;
   padding-left: 0;
 }
@@ -245,6 +270,10 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   font-size: var(--size--1);
 }
 
+.font-normal {
+  font-size: var(--size-0);
+}
+
 .font-large {
   font-size: var(--size-1);
 }
@@ -259,6 +288,10 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .text-bold {
   font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 .text-muted {

@@ -215,7 +215,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   align-items: center;
   justify-content: flex-start;
   gap: var(--gutter) var(--space-m);
-  --flow-space: 2.5em;
+  --flow-space: 2em;
 }
 
 .profile > img {
@@ -224,6 +224,8 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   min-width: 125px;
   border-radius: 3%;
   box-shadow: 0px 0px 15px -5px var(--color-dark);
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
 }
 
 .profile-info {
@@ -232,6 +234,44 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   min-width: 30ch;
   line-height: 1.5;
   --flow-space: 0.5em;
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-start;
+  gap: var(--space-l) var(--space-m);
+}
+
+.column-body {
+  flex: 3;
+  min-width: 75%;
+}
+
+.column-nav {
+  flex: 1;
+  min-width: 16ch;
+  height: 100%;
+  padding-left: var(--gutter);
+  border-left: 3px solid var(--color-lightish);
+}
+
+.column-nav a {
+  color: var(--color-muted);
+  padding-left: var(--space-xs);
+  border-left: 2px solid transparent;
+}
+
+.column-nav a:hover {
+  color: var(--color-muted);
+  text-decoration: none;
+  border-left: 2px solid var(--color-secondary);
+}
+
+.column-nav a.active {
+  border-left: 2px solid var(--color-secondary);
+  font-weight: bold;
 }
 
 

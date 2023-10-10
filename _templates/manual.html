@@ -1,35 +1,45 @@
 {% extends "base.html" %}
 
 {%- block content %}
-  <h1>{{ page.title }}</h1>
-  {%- if page.description is defined %}
-    <p class="lead">{{ page.description }}</p>
-  {%- endif %}
-  <div class="row gx-5 gy-5">
-    <article class="col-lg-8">
+
+  <div class="column-container flow">
+
+    <div class="column-body flow">
+      <h1>{{ page.title }}</h1>
       {{ page.body }}
-    </article>
-    <div class="col-lg-4">
-      <div class="manual-nav-box">
-        <h2 class="fs-3"><i class="fas fa-list fa-sm me-1" aria-hidden="true"></i> Manual contents</h2>
-        <nav class="manual-nav nav flex-column" aria-label="Page">
+    </div>
+
+    <div class="column-nav flow">
+      <p><i class="fas fa-list" aria-hidden="true"></i> Contents</p>
+      <nav class="font-small flow" aria-label="Page">
+        <ol role="list">
           {%- for id in site["manual/index"]["toc_table"] %}
             {%- if id == page.id %}
-              <a class="nav-link active" aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
-                {{ site[id].title }}
-              </a>
+              <li>
+                <a class="active" aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
+                  {{ site[id].title }}
+                </a>
+              </li>
             {%- else %}
-              <a class="nav-link" href="{{ site[id].path|relative_to(page.path) }}">
-                {{ site[id].title }}
-              </a>
+              <li>
+                <a href="{{ site[id].path|relative_to(page.path) }}">
+                  {{ site[id].title }}
+                </a>
+              </li>
             {%- endif %}
           {%- endfor %}
-          {%- if page.id != "manual/index" %}
-            <a class="nav-link mt-4" href="{{ site["manual/index"].path|relative_to(page.path) }}"><i class="far fa-arrow-alt-circle-left me-1" aria-hidden="true"></i> Back to {{ site["manual/index"].title|lower }} home</a>
-          {%- endif %}
-        </nav>
-      </div>
+        </ol>
+        {%- if page.id != "manual/index" %}
+          <p>
+            <a href="{{ site['manual/index'].path|relative_to(page.path) }}">
+              <i class="far fa-arrow-alt-circle-left" aria-hidden="true"></i>
+              Back to manual home
+            </a>
+          </p>
+        {%- endif %}
+      </nav>
     </div>
+
   </div>
 {%- endblock %}
 

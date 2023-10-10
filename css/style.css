@@ -255,12 +255,14 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   height: 100%;
   padding-left: var(--gutter);
   border-left: 3px solid var(--color-lightish);
+  --flow-space: 0.75em;
 }
 
 .column-nav a {
   color: var(--color-muted);
-  padding-left: var(--space-xs);
+  padding-left: var(--space-2xs);
   border-left: 2px solid transparent;
+  line-height: 1.2;
 }
 
 .column-nav a:hover {

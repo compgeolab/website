@@ -10,9 +10,9 @@
     </div>
 
     <div class="column-nav flow">
-      <p><i class="fas fa-list" aria-hidden="true"></i> Contents</p>
+      <p><i class="fas fa-list fa-sm" aria-hidden="true"></i> Contents</p>
       <nav class="font-small flow" aria-label="Page">
-        <ol role="list">
+        <ol class="flow" role="list">
           {%- for id in site["manual/index"]["toc_table"] %}
             {%- if id == page.id %}
               <li>
@@ -32,7 +32,7 @@
         {%- if page.id != "manual/index" %}
           <p>
             <a href="{{ site['manual/index'].path|relative_to(page.path) }}">
-              <i class="far fa-arrow-alt-circle-left" aria-hidden="true"></i>
+              <i class="far fa-arrow-alt-circle-left fa-sm" aria-hidden="true"></i>
               Back to manual home
             </a>
           </p>

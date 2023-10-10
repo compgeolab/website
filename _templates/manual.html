@@ -7,38 +7,53 @@
     <div class="column-body flow">
       <h1>{{ page.title }}</h1>
       {{ page.body }}
-    </div>
-
-    <div class="column-nav flow">
-      <p><i class="fas fa-list fa-sm" aria-hidden="true"></i> Contents</p>
-      <nav class="font-small flow" aria-label="Page">
-        <ol class="flow" role="list">
-          {%- for id in site["manual/index"]["toc_table"] %}
-            {%- if id == page.id %}
-              <li>
-                <a class="active" aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
-                  {{ site[id].title }}
-                </a>
-              </li>
-            {%- else %}
+      {%- if page.id == "manual/index" %}
+        <h2>Contents</h2>
+        <p>Browse the manual sections below:</p>
+        <nav aria-label="Manual">
+          <ol>
+            {%- for id in site["manual/index"]["toc_table"] %}
               <li>
                 <a href="{{ site[id].path|relative_to(page.path) }}">
                   {{ site[id].title }}
                 </a>
               </li>
-            {%- endif %}
-          {%- endfor %}
-        </ol>
-        {%- if page.id != "manual/index" %}
-          <p>
-            <a href="{{ site['manual/index'].path|relative_to(page.path) }}">
-              <i class="far fa-arrow-alt-circle-left fa-sm" aria-hidden="true"></i>
-              Back to manual home
-            </a>
-          </p>
-        {%- endif %}
-      </nav>
+            {%- endfor %}
+          </ol>
+        </nav>
+      {%- endif %}
     </div>
+
+    {%- if page.id != "manual/index" %}
+      <div class="column-nav flow">
+        <p><i class="fas fa-list fa-sm" aria-hidden="true"></i> Navigation</p>
+        <nav class="flow" aria-label="Manual">
+          <ol class="flow" role="list">
+            <li>
+              <a href="{{ site['manual/index'].path|relative_to(page.path) }}">
+                <i class="far fa-arrow-alt-circle-left fa-sm" aria-hidden="true"></i>
+                Back to overview
+              </a>
+            <li>
+            {%- for id in site["manual/index"]["toc_table"] %}
+              {%- if id == page.id %}
+                <li>
+                  <a class="active" aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
+                    {{ site[id].title }}
+                  </a>
+                </li>
+              {%- else %}
+                <li>
+                  <a href="{{ site[id].path|relative_to(page.path) }}">
+                    {{ site[id].title }}
+                  </a>
+                </li>
+              {%- endif %}
+            {%- endfor %}
+          </ol>
+        </nav>
+      </div>
+    {%- endif %}
 
   </div>
 {%- endblock %}

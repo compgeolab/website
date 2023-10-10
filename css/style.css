@@ -249,6 +249,16 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   min-width: 75%;
 }
 
+.column-body > nav a {
+  color: var(--color-primary);
+  /*line-height: 1.2;*/
+}
+
+.column-body > nav a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .column-nav {
   flex: 1;
   min-width: 16ch;

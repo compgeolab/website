@@ -2,10 +2,14 @@
 title: Code of Conduct
 ---
 
-All members of the lab, along with visitors and collaborators, are expected to
-agree with the following code of conduct. We will enforce this code as needed.
-We expect cooperation from all members to help ensuring a safe environment for
-everybody.
+<div class="lead">
+
+All **members of the lab**, along with **visitors and collaborators**, are
+expected to abide by the following code of conduct. We will enforce this code
+as needed and we expect cooperation from all members to help ensure a **safe
+environment for everybody**.
+
+</div>
 
 ## The Quick Version
 
@@ -41,12 +45,14 @@ any other concerns, please contact
 immediately.
 
 For official concerns or if Leonardo is the cause of your concern, please
-contact the
-[Student Experience Team](https://www.liverpool.ac.uk/environmental-sciences/contacts-and-location/)
-and read the
-[University of Liverpool guidelines on bullying and harassment](https://www.liverpool.ac.uk/hr/diversityandequality/bullying/).
+contact
+[Ouvidoria IAG-USP](https://www.iag.usp.br/ouvidoria)
+or the central
+[Ouvidoria USP](https://www5.usp.br/ouvidoria/).
 
-## About this document
+## Credit
 
-Adapted from [confcodeofconduct.com](https://confcodeofconduct.com) (CC-BY).
+This document was adapted from
+[confcodeofconduct.com](https://confcodeofconduct.com), licensed
+[CC-BY](https://creativecommons.org/licenses/by/3.0/deed.en).
 

@@ -74,6 +74,36 @@ h3 {
   font-size: var(--size-2);
 }
 
+hr {
+  height: 2px;
+  background-color: var(--color-muted);
+  opacity: 1;
+  border: none;
+  margin-bottom: 2em;
+  --flow-space: 2em;
+}
+
+code {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: var(--color-lightish);
+  padding: .2em .3em;
+  border-radius: 6px;
+}
+
+pre {
+  width: 100%;
+  background-color: var(--color-lightish);
+  border-radius: 0.25em;
+  overflow: auto;
+  display: block;
+  padding: var(--gutter);
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+}
+
 header, footer {
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -251,7 +281,6 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .column-body > nav a {
   color: var(--color-primary);
-  /*line-height: 1.2;*/
 }
 
 .column-body > nav a:hover {
@@ -264,7 +293,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   min-width: 16ch;
   height: 100%;
   padding-left: var(--gutter);
-  border-left: 3px solid var(--color-lightish);
+  border-left: 2px solid var(--color-muted);
   --flow-space: 0.75em;
 }
 
@@ -348,8 +377,4 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .text-muted {
   color: var(--color-muted);
-}
-
-.text-secondary {
-  color: var(--color-secondary);
 }

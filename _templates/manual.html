@@ -29,7 +29,7 @@
         <p><i class="fas fa-list fa-sm" aria-hidden="true"></i> Navigation</p>
         <nav class="flow" aria-label="Manual">
           <ol class="flow" role="list">
-            <li>
+            <li class="text-bold">
               <a href="{{ site['manual/index'].path|relative_to(page.path) }}">
                 <i class="far fa-arrow-alt-circle-left fa-sm" aria-hidden="true"></i>
                 Back to overview
@@ -52,6 +52,13 @@
             {%- endfor %}
           </ol>
         </nav>
+        <hr>
+        <p>
+          <a target="_blank" href="https://github.com/{{ config.repository }}/edit/main/{{ page.source }}">
+            <i class="fa fa-code-branch" aria-hidden="true"></i>
+            Edit on GitHub
+          </a>
+        </p>
       </div>
     {%- endif %}
 

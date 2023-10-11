@@ -1,13 +1,6 @@
 ---
-title: How we communicate
+title: Communication
 ---
-
-<div class="callout">
-
-If you wish to contact the group, please email
-[Leo]({{ site["team/index"].path|relative_to(page.path) }}#leouieda) directly.
-
-</div>
 
 ## Within the lab
 
@@ -20,11 +13,14 @@ If you wish to contact the group, please email
   [GitHub account](https://github.com/compgeolab/).
   Reviews of code, text, etc., will be done through the repository. We'll also
   use to set goals and tasks.
-* **Group meetings:** We will have *short* monthly group meetings for quick
-  updates from everyone, general discussion, announcements, interesting papers,
-  and informal chat.
-* **Individual meetings:** We aim to have weekly individual meetings to discuss
-  project status, goals, and work through problems and ideas.
+* **Group meetings:** We will have weekly group meetings for quick updates from
+  everyone, general discussion, announcements, interesting papers, etc. These
+  meetings are important to keep everyone in the lab aware of what each of us
+  are doing.
+* **Individual meetings:** We aim to have *short* weekly or bi-weekly
+  individual meetings to discuss project status, personal and professional
+  goals, work through problems, and to build a good supervisor-student
+  relationship.
 * Group members are also encouraged to have meetings and messages with each
   other. **Don't wait until problems build up to seek guidance.**
 
@@ -42,5 +38,5 @@ If you wish to contact the group, please email
 
 ## Social media
 
-* Lab members are encouraged to be respectful and kind while participating if
-  they are representing themselves as lab members.
+* Lab members are encouraged to be respectful and kind while participating in
+  social media if they are representing themselves as lab members.

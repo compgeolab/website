@@ -1,5 +1,5 @@
 ---
-title: Ethics when conducting research
+title: Research ethics
 ---
 
 Our actions should be guided by the ethics of participating in the scientific

@@ -1,10 +1,14 @@
 ---
-title: Setting up your computer
+title: Computer setup
 ---
+
+<div class="lead">
 
 Most projects developed in the lab will require you to have
 git, a terminal, and Python properly setup on your computer.
 Below are some instructions on how to do this.
+
+</div>
 
 ## Git and a terminal
 
@@ -12,9 +16,9 @@ Below are some instructions on how to do this.
 projects, track a history of changes, and backup to the cloud
 (GitHub).
 
-A terminal with a decent shell (e.g., bash) is the primary
-interface for using git and other command line utilities
-(LaTeX compilers, make, etc).
+A terminal with a decent shell (like [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)))
+is the primary interface for using git and other command line utilities (LaTeX
+compilers, make, etc).
 
 ### Windows
 
@@ -36,7 +40,13 @@ sudo apt-get install git
 
 ## Python
 
-**DO NOT** download Python from [www.python.org](https://www.python.org)!
+<div class="callout">
+
+**DO NOT download Python from [python.org](https://www.python.org)!**
+We need a bunch of libraries that don't come pre-installed and can be hard to
+install using the official distribution of Python.
+
+</div>
 
 The best way to get setup with Python for your project is
 by getting a Python distribution that has the `conda` or `mamba`

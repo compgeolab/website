@@ -1,7 +1,10 @@
 # This is the list that populates the team page. Add yourself to the
 # appropriate category.
 #
-# Your profile picture will be loaded from your GitHub account automatically.
+# Your profile picture will be loaded from your GitHub account automatically if
+# you have one. Otherwise, add a "picture" field with a path to a picture with
+# 500x500 pixels in size.
+#
 # Required fields: name, role, affiliation
 
 # List of current lab members
@@ -54,6 +57,7 @@ collaborators:
   - name: Vanderlei C. Oliveira Jr.
     role: Researcher
     affiliation: Observatório Nacional, Brazil
+    pronouns: he/him
     github: birocoles
     orcid: 0000-0002-6338-4086
     lattes: 4332841435949533
@@ -62,6 +66,7 @@ collaborators:
   - name: Valéria C. F. Barbosa
     role: Researcher
     affiliation: Observatório Nacional, Brazil
+    pronouns: she/her
     github: valcris
     orcid: 0000-0002-9767-6044
     lattes: 0391036221142471
@@ -71,6 +76,7 @@ collaborators:
   - name: Ricardo I. F. Trindade
     role: Professor
     affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
     orcid: 0000-0001-9848-9550
     researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
     lattes: 3934334115083849
@@ -81,6 +87,7 @@ alumni:
   - name: Santiago Soler
     role: PhD student
     affiliation: Universidad Nacional de San Juan, Argentina
+    pronouns: he/him
     github: santisoler
     orcid: 0000-0001-9202-5317
     google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ

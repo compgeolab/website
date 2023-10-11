@@ -8,9 +8,9 @@ toc_table:
   - manual/expectations
   - manual/communication
   - manual/ethics
+  - manual/health
   - manual/software
   - manual/computing
-  - manual/health
   - manual/resources
 ---
 

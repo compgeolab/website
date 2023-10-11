@@ -45,7 +45,9 @@
 <body>
   <header>
     <div class="spread content-wide">
-      <img src="{{ config.brand|relative_to(page.path) }}" alt="{{ config.site_name }}">
+      <a href="{{ site['index'].path|relative_to(page.path) }}">
+        <img src="{{ config.brand|relative_to(page.path) }}" alt="{{ config.site_name }}">
+      </a>
       <nav aria-label="Main">
         <ul class="list-inline" role="list">
           {%- for item in config.navigation %}

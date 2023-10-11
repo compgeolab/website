@@ -139,20 +139,37 @@ footer a:hover {
 
 nav a {
   color: var(--color-light);
+  border-bottom: none;
   text-decoration: none;
-  display: block;
-  border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
   color: var(--color-light);
+  border-bottom: none;
+  text-decoration: none;
+}
+
+nav a.active {
   text-decoration: none;
   border-bottom: 2px solid var(--color-light);
 }
 
-nav a.active {
-  border-bottom: 2px solid var(--color-light);
-  text-decoration: none;
+nav a::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-light);
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+}
+
+nav a:hover::after {
+  transform: scale(1);
+}
+
+nav a.active:hover::after {
+  transform: scale(0);
 }
 
 figcaption {

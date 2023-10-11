@@ -18,9 +18,5 @@ Join us on the [Software Underground](https://softwareunderground.org/) slack
 for discussions and support during the tutorial. There are many more tutorials
 to choose from, a hackathon, unsessions, and more!
 
-Can't wait? Watch is the [Verde tutorial from
-Transform 2020](https://www.youtube.com/watch?v=-xZdNdvzm3E) in the meantime:
-
-<div class="ratio ratio-16x9">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-xZdNdvzm3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+Can't wait? Watch the [Verde tutorial from
+Transform 2020](https://www.youtube.com/watch?v=-xZdNdvzm3E) in the meantime.

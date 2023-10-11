@@ -1,7 +1,10 @@
 # This is the list that populates the team page. Add yourself to the
 # appropriate category.
 #
-# Your profile picture will be loaded from your GitHub account automatically.
+# Your profile picture will be loaded from your GitHub account automatically if
+# you have one. Otherwise, add a "picture" field with a path to a picture with
+# 500x500 pixels in size.
+#
 # Required fields: name, role, affiliation
 
 # List of current lab members
@@ -16,7 +19,6 @@ current:
     google_scholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
     researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
     lattes: 8939551682050504
-    cv: https://www.leouieda.com/cv/
     website: https://www.leouieda.com
 
   - name: India Uppal
@@ -26,7 +28,7 @@ current:
     github: indiauppal
     email: I.Uppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
-    project: Improving estimates of Antarctic geothermal heat flow from geophysical data
+    project: Improving estimates of Antarctic geothermal heat flow from magnetic data
 
   - name: Gelson Ferreira Souza Junior
     role: PhD student
@@ -35,6 +37,7 @@ current:
     github: Souza-junior
     email: gelson.ferreira@iag.usp.br
     orcid: 0000-0002-5695-4239
+    lattes: 5458580084475010
     researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
     project: Micropaleomagnetism
 
@@ -50,48 +53,54 @@ collaborators:
     google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
     researchgate: https://www.researchgate.net/profile/Santiago_Soler2
     website: https://www.santisoler.com
-    cv: https://www.santisoler.com/cv/cv.pdf
 
   - name: Vanderlei C. Oliveira Jr.
     role: Researcher
     affiliation: Observatório Nacional, Brazil
+    pronouns: he/him
     github: birocoles
     orcid: 0000-0002-6338-4086
     lattes: 4332841435949533
     website: https://www.pinga-lab.org
-    cv: https://raw.githubusercontent.com/birocoles/curriculum/main/files/my_cv.pdf
 
   - name: Valéria C. F. Barbosa
     role: Researcher
     affiliation: Observatório Nacional, Brazil
+    pronouns: she/her
     github: valcris
     orcid: 0000-0002-9767-6044
     lattes: 0391036221142471
     website: https://www.pinga-lab.org
-    picture: ../images/valeria-barbosa.jpg
+    picture: ../images/team/valeria-barbosa.jpg
 
   - name: Ricardo I. F. Trindade
     role: Professor
     affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
     orcid: 0000-0001-9848-9550
     researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
     lattes: 3934334115083849
-    picture: ../images/ricardo-trindade.jpg
+    picture: ../images/team/ricardo-trindade.jpg
 
 # List of past lab members
 alumni:
   - name: Santiago Soler
     role: PhD student
     affiliation: Universidad Nacional de San Juan, Argentina
+    pronouns: he/him
     github: santisoler
     orcid: 0000-0001-9202-5317
+    google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
+    researchgate: https://www.researchgate.net/profile/Santiago_Soler2
     project:  Metodologías y herramientas computacionales para el procesamiento y modelado de datos gravimétricos
+
   - name: Laura Nicholls
     role: Undergraduate student
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: LNich
     project: An open-source Python implementation of the gravitational fields of ellipsoids
+
   - name: Sarah Margrethe Askevold
     role: Undergraduate student
     affiliation: University of Liverpool, UK

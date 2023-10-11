@@ -14,9 +14,9 @@ Paleomagnetism Lab of the University of São Paulo, Brazil, led by
 It will fund bi-directional travel between Liverpool and São Paulo for
 myself, Ricardo, and PhD student [Gelson](/news/new-members-2021.html).
 
-{% from "macros.html" import figure %}
+{% import "macros.html" as macros %}
 
-{{ figure(src="../images/magnetic-microscopy-example-data.jpg", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
+{{ macros.figure(src="../images/news/magnetic-microscopy-example-data.jpg", alt="Red and blue map showing dipolar anomalies at a scale of 20 micrometers.", caption="Example magnetic microscopy data showing tiny magnetic anomalies on the order of 20µm in size.") }}
 
 I'm thrilled to be able to work closely with this group, which is where I got
 [my first taste of research as an undergraduate](https://doi.org/10.6084/m9.figshare.4779769)!

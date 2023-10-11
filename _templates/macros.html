@@ -1,17 +1,17 @@
 {# Macros to make the life easier across the website #}
 
 
-{%- macro figure(src, caption, style="") %}
+{%- macro figure(src, caption, alt, style="") %}
   <figure>
-    <img src="{{ src }}" alt="{{ caption|striptags }}" style="{{ style }}">
+    <img src="{{ src }}" alt="{{ alt }}" style="{{ style }}">
     <figcaption>{{ caption }}</figcaption>
   </figure>
 {%- endmacro %}
 
 
-{%- macro video(src, caption, style="", type="video/mp4") %}
+{%- macro video(src, caption, alt, style="", type="video/mp4") %}
   <figure>
-    <video style="{{ style }}" muted autoplay controls loop alt="{{ caption }}">
+    <video style="{{ style }}" muted autoplay controls loop alt="{{ alt }}">
       <source src="{{ src }}" type="{{ type }}"/>
     </video>
     <figcaption>{{ caption }}</figcaption>
@@ -19,62 +19,38 @@
 {%- endmacro %}
 
 
-{%- macro page_title_link(page, anchor) -%}
-  <a href="{{ page.path|relative_to(anchor.path) }}">{{ page.title }}</a>
+{%- macro social_icon(title, icon, url) -%}
+  <!-- The rel="me" attribute verifies for these profiles that I own this domain -->
+  <a rel="me" href="{{ url }}" target="_blank">
+    <i class="{{ icon }}" title="{{ title }}" aria-label="{{ title }}"></i>
+    {{ title }}
+  </a>
 {%- endmacro -%}
 
 
-{%- macro make_people_list(people, prefix="") %}
-{# Create a list of people with photos (from GitHub) and other info #}
-<div class="row gx-5 gy-5 mt-5">
-{%- for person in people %}
-<div class="col-md-6 col-lg-4 text-center" id="{{ prefix }}{{ person.github }}">
-  {%- if person.picture is defined %}
-    <img class="headshot" src="{{ person.picture }}" alt="{{ person.name }}'s profile picture">
-  {%- elif person.github is defined %}
-    <img class="headshot" src="https://github.com/{{ person.github }}.png" alt="{{ person.name }}'s profile picture">
-  {%- else %}
-    <img class="headshot" src="../images/avatar-placeholder.jpg" alt="Placeholder image instead of {{ person.name }}'s profile picture">
-  {%- endif %}
-  <h3>{{ person.name }}</h3>
-  <ul class="team-info">
-    <li><strong>{{ person.role }}</strong></li>
-    <li>{{ person.affiliation }}</li>
-    {%- if person.pronouns is defined %}
-      <li>Pronouns: {{ person.pronouns }}</li>
-    {%- endif %}
-    {%- if person.email is defined %}
-      <li>
-        Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a>
-      </li>
-    {%- endif %}
-    {%- if person.orcid is defined %}
-      <li>
-        ORCID: <a href="https://orcid.org/{{ person.orcid }}" target="_blank">{{ person.orcid }}</a>
-      </li>
-    {%- endif %}
-    {%- if person.website is defined %}
-      <li>
-        Website: <a href="{{ person.website }}" target="_blank">{{ person.website|replace("https://", "")|replace("http://", "") }}</a>
-      </li>
-    {%- endif %}
-    <li class="team-icons">
-      {{- icon_link(person, "github", icon="fab fa-github", label="GitHub", prefix="https://github.com/") -}}
-      {{- icon_link(person, "orcid", icon="ai ai-impactstory", label="ImpactStory", prefix="https://impactstory.org/u/") -}}
-      {{- icon_link(person, "google_scholar", icon="ai ai-google-scholar", label="Google Scholar") -}}
-      {{- icon_link(person, "researchgate", icon="ai ai-researchgate", label="ResearchGate") -}}
-      {{- icon_link(person, "lattes", icon="ai ai-lattes", label="Currículo Lattes", prefix="https://lattes.cnpq.br/") -}}
-      {{- icon_link(person, "cv", icon="ai ai-cv", label="Curriculum Vitæ") -}}
-    </li>
-  </ul>
-</div>
-{%- endfor %}
-</div>
-{%- endmacro %}
-
-
-{%- macro icon_link(person, field, icon, label, prefix="") -%}
-  {%- if field in person -%}
-    <a href="{{ prefix }}{{ person[field] }}" aria-label="{{ label }}" title="{{ label }}" target="_blank"><i class="{{ icon }} fa-lg" aria-hidden="true"></i></a>
+{%- macro pretty_relative_link(page, reference) -%}
+  {%- if page.id == reference.id -%}
+    {%- set href = "." -%}
+  {%- else -%}
+    {%- set href = page.path|relative_to(reference.path)|replace('index.html', '') -%}
   {%- endif -%}
+  {{ href }}
+{%- endmacro -%}
+
+
+{%- macro nav_link(item, page, site) -%}
+  {%- set aria = "" -%}
+  {%- set class = "" -%}
+  {%- set href = pretty_relative_link(site[item.id], page) -%}
+  {%- if page.id == item.id or page.parent == item.id|replace('/index', '') -%}
+    {%- set class = "active" -%}
+    {%- set aria = 'aria-current="page"' -%}
+    {%- set href = "." -%}
+  {%- endif -%}
+  <a class="{{ class }}" {{ aria }} href="{{ href }}">{{ item.name }}</a>
+{%- endmacro -%}
+
+
+{%- macro page_link(id, page, site) -%}
+  <a href="{{ site[id].path|relative_to(page.path) }}">{{ site[id].title }}</a>
 {%- endmacro -%}

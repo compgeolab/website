@@ -1,9 +1,13 @@
 ---
-title: Software produced by the lab
+title: Software development
 ---
+
+<div class="lead">
 
 The following are guidelines to be followed when producing software tools as
 part of your work at the lab.
+
+</div>
 
 ## Licensing
 

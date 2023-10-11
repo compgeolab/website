@@ -9,7 +9,7 @@ mastodon: leouieda
 mastodon_server: scicomm.xyz
 github: compgeolab
 linkedin: uieda
-orcid: 0000-0001-6123-9515
+researchgate: https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda
 location:
   department: Departamento de Geofísica
   school: Instituto de Astronomia, Geofísica e Ciências Atmosféricas
@@ -20,16 +20,12 @@ keywords: 'science, geoscience, geophysics, software, open-source'
 navigation:
   - name: Home
     id: index
+  - name: News
+    id: news/index
   - name: Team
     id: team/index
   - name: Research
     id: research/index
-  - name: Software
-    id: software/index
-  - name: Data
-    id: data/index
-  - name: News
-    id: news/index
   - name: Manual
     id: manual/index
 ignore:

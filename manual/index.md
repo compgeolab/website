@@ -1,48 +1,47 @@
 ---
 title: Lab manual
 toc_table:
-    - manual/authorship
-    - manual/open-science
-    - manual/coc
-    - manual/induction
-    - manual/expectations
-    - manual/communication
-    - manual/ethics
-    - manual/software
-    - manual/computing
-    - manual/resources
-    - manual/health
+  - manual/coc
+  - manual/authorship
+  - manual/open-science
+  - manual/induction
+  - manual/expectations
+  - manual/communication
+  - manual/ethics
+  - manual/health
+  - manual/software
+  - manual/computing
+  - manual/resources
 ---
 
 {% import "macros.html" as macros %}
 
-## About
+<div class="lead">
 
 The lab manual outlines our principles, expectations, guidelines, on-boarding
 process, and general information about how we operate as a research team.
-This document is designed to be a reference for lab members and collaborators.
-It's also part of an induction process when people join the lab.
-
-<div class="callout">
-
-**The manual is a living document.** Lab members are encouraged to submit fixes
-and improvements to it. See the [Contributing Guide][website-repo] for this
-website to find out how.
 
 </div>
 
-## Want to work with us?
+## About
 
-If you're interested in joining the lab or starting a collaboration, please
-read:
+This document is designed to be a reference for lab members and collaborators.
+It's also part of an induction process when people join the lab.
+**The manual is a living document.** Lab members are **encouraged to submit
+fixes and improvements** to it. See the
+[Contributing Guide](https://github.com/compgeolab/website/blob/main/CONTRIBUTING.md)
+for this website to find out how.
 
-1. {{ macros.page_title_link(site["manual/open-science"], page) }}
-1. {{ macros.page_title_link(site["manual/authorship"], page) }}
-1. {{ macros.page_title_link(site["manual/coc"], page) }}
+<div class="callout">
 
-These sections outline our core principles as scientists.
-If you want to work with us, please make sure that you are aware of and agree
-with these principles to a large extent.
+**Want to work with us?**
+Before applying to join the lab or starting a collaboration, please
+read {{ macros.page_link("manual/open-science", page, site) }} and
+{{ macros.page_link("manual/authorship", page, site) }}.
+These sections outline our core principles as scientists and it's important
+that you are aware of and agree with these principles to a large extent.
+
+</div>
 
 ## License
 
@@ -53,5 +52,7 @@ the [Data Exploration Lab](https://data-exp-lab.github.io/).
 The manual contents are available under the
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0)
 license.
+
+
 
 [website-repo]: https://github.com/compgeolab/website

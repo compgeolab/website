@@ -47,11 +47,11 @@ body {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--color-muted);
 }
 
 h1,
@@ -127,14 +127,10 @@ footer {
 
 footer a {
   color: var(--color-light);
-  border-bottom: 2px solid var(--color-light);
-  text-decoration: none;
 }
 
 footer a:hover {
   color: var(--color-medium);
-  border-bottom: 2px solid var(--color-medium);
-  text-decoration: none;
 }
 
 nav a {
@@ -314,21 +310,27 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   --flow-space: 0.75em;
 }
 
+.column-nav li {
+  padding-left: var(--space-2xs);
+  border-left: 3px solid transparent;
+  line-height: 1.2;
+}
+
 .column-nav a {
   color: var(--color-muted);
-  padding-left: var(--space-2xs);
-  border-left: 2px solid transparent;
-  line-height: 1.2;
 }
 
 .column-nav a:hover {
   color: var(--color-muted);
   text-decoration: none;
-  border-left: 2px solid var(--color-secondary);
 }
 
-.column-nav a.active {
-  border-left: 2px solid var(--color-secondary);
+.column-nav li:hover {
+  border-left: 3px solid var(--color-secondary);
+}
+
+.column-nav li.active {
+  border-left: 3px solid var(--color-secondary);
   font-weight: bold;
 }
 

@@ -37,8 +37,8 @@
             <li>
             {%- for id in site["manual/index"]["toc_table"] %}
               {%- if id == page.id %}
-                <li>
-                  <a class="active" aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
+                <li class="active">
+                  <a aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
                     {{ site[id].title }}
                   </a>
                 </li>

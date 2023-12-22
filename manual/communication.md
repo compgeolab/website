@@ -4,8 +4,8 @@ title: Communication
 
 ## Within the lab
 
-* **Chat:** We have a lab chat room on [Matrix](https://app.element.io/#/room/#compgeolab:matrix.org),
-  which is the primary mode of communication for quick messages, announcements,
+* **Chat:** We have a lab chat room on the [Software Underground's Mattermost server](https://mattermost.softwareunderground.org/).
+  This is the **primary mode of communication** for quick messages, announcements,
   reminders, and organizing meetings. Messages can be ephemeral so you cannot
   count of being able to read messages forever. **Use email if you need a
   record of the conversation.**
@@ -17,10 +17,10 @@ title: Communication
   everyone, general discussion, announcements, interesting papers, etc. These
   meetings are important to keep everyone in the lab aware of what each of us
   are doing.
-* **Individual meetings:** We aim to have *short* weekly or bi-weekly
-  individual meetings to discuss project status, personal and professional
-  goals, work through problems, and to build a good supervisor-student
-  relationship.
+* **Individual meetings:** We aim to have *short* weekly, bi-weekly, or monthly
+  (depending on your preference) individual meetings to discuss project status,
+  personal and professional goals, work through problems, and to build a good
+  supervisor-student relationship.
 * Group members are also encouraged to have meetings and messages with each
   other. **Don't wait until problems build up to seek guidance.**
 

@@ -9,6 +9,7 @@
   --color-primary: #236ad5;
   --color-secondary: #ffaaaa;
   --color-muted: #4b6b9b;
+  --color-extramuted: #4b6b9b55;
 
   /* Type scale calculated using https://utopia.fyi/type/calculator */
   --size--1: clamp(0.94rem, calc(0.90rem + 0.18vw), 1.04rem);
@@ -76,7 +77,7 @@ h3 {
 
 hr {
   height: 2px;
-  background-color: var(--color-muted);
+  background-color: var(--color-extramuted);
   opacity: 1;
   border: none;
   margin-bottom: 2em;
@@ -168,6 +169,10 @@ nav a.active:hover::after {
   transform: scale(0);
 }
 
+figure > img {
+  box-shadow: 0px 0px 10px 1px var(--color-extramuted);
+}
+
 figcaption {
   font-size: var(--size--1);
   color: var(--color-muted);
@@ -191,7 +196,7 @@ blockquote {
   margin-block-start: var(--flow-space, 1em);
 }
 
-:is(h1, h2, h3) {
+:is(h1, h2, h3, figure) {
   --flow-space: 1.5em;
 }
 
@@ -306,7 +311,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   min-width: 16ch;
   height: 100%;
   padding-left: var(--gutter);
-  border-left: 2px solid var(--color-muted);
+  border-left: 2px solid var(--color-extramuted);
   --flow-space: 0.75em;
 }
 

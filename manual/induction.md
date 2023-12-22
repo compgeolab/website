@@ -4,12 +4,15 @@ title: Getting started
 
 {% import "macros.html" as macros %}
 
+<div class="lead">
+
 When you first join the lab (ideally within the first few weeks), you will have
 a meeting with Leo to introduce lab protocols, set expectations, add you to
-communication channels, etc. **If you don't hear from Leo within a week of
-starting, please remind him by email.**
+communication channels, etc. 
 
-Things to do after joining:
+</div>
+
+## Things to do after joining the lab
 
 1. Create an account on the chat room (see {{ macros.page_link("manual/communication", page, site) }}) and send Leo a message (`@leouieda`) so he can add you to the `CompGeoLab` channel.
 1. Install the [Mattermost app][mattermost]. You don't need to have it on your phone if you prefer not to, but at least install it on your comuter.
@@ -23,7 +26,7 @@ Things to do after joining:
 1. Read the main references for your project (if Leo doesn't send them to you, please remind him).
 1. Go and start making something brilliant!
 
-Leo's To Do list:
+## Leo's To Do list
 
 1. Introduce the [lab website][website] and [GitHub organization][gh] where all
    our research projects live.

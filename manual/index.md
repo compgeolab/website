@@ -2,13 +2,12 @@
 title: Lab manual
 toc_table:
   - manual/coc
-  - manual/authorship
-  - manual/open-science
   - manual/induction
+  - manual/open-science
   - manual/expectations
-  - manual/communication
-  - manual/ethics
   - manual/health
+  - manual/authorship
+  - manual/communication
   - manual/software
   - manual/computing
   - manual/resources

@@ -2,24 +2,28 @@
 title: Health and well-being
 ---
 
+<div class="lead">
+
 **Your first priority should always be your own health, safety, and
 well-being.**
-No project, paper, grant or collaboration is more important than that.
-In particular, time as a graduate students and as a postdoc is
-[known to cause undue stress](https://www.theatlantic.com/education/archive/2018/11/anxiety-depression-mental-health-graduate-school/576769/),
-resulting in consequences ranging from mild to extremely severe.
+No project, paper, grant, or collaboration is more important than that.
+
+</div>
 
 ## At Universidade de São Paulo
 
 * [Hospital Universitário](https://www.hu.usp.br/): The campus hospital is
   excellent, has a walk-in service and provides free medical for the university
   community.
+* [CEPE USP](https://cepe.usp.br/): The university sports center is full of
+  free activities that you can sign up for and has a large range of pools and
+  fields that also be used.
 * [Clinica Odontológica](https://sau.usp.br/clinica-odontologica/): The São
   Paulo campus also has a free dental health service for the community.
 * [Ministério da Saúde - Suicídio (Prevenção)](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao):
   The ministry of health website has resources for suicide prevention and how
   to get help with mental health issues.
-
+* [Centro de Valorização da Vida](https://cvv.org.br/): Offers a 24h help line by phone, chat, email, and in-person (the closest center to campus is in [Pinheiros](https://www.google.com/maps/place/R.+Cerro+Cor%C3%A1,+792+-+21+-+Vila+Romana,+S%C3%A3o+Paulo+-+SP,+05061-100/@-23.5401302,-46.7049922,19.29z/data=!4m5!3m4!1s0x94ce57d3e451c08b:0x28663176a7d2cad5!8m2!3d-23.5397673!4d-46.7047116?entry=ttu)). 
 
 ## At University of Liverpool
 

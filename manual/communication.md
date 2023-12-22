@@ -2,6 +2,15 @@
 title: Communication
 ---
 
+{% import "macros.html" as macros %}
+
+<div class="lead">
+
+How we communicate in the lab and policies for external engagement when
+representing the lab.
+
+</div>
+
 ## Within the lab
 
 * **Chat:** We have a lab chat room on the [Software Underground's Mattermost server](https://mattermost.softwareunderground.org/).
@@ -39,4 +48,5 @@ title: Communication
 ## Social media
 
 * Lab members are encouraged to be respectful and kind while participating in
-  social media if they are representing themselves as lab members.
+  social media. **If you are representing yourself as a lab member, the lab
+  {{ macros.page_link("manual/coc", page, site) }} applies!**

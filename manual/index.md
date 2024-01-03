@@ -41,17 +41,3 @@ These sections outline our core principles as scientists and it's important
 that you are aware of and agree with these principles to a large extent.
 
 </div>
-
-## License
-
-This manual is based on the excellent
-[Lab Carpentry](https://github.com/lab-carpentry) blueprints, with material
-adapted from the [Data Intensive Biology Lab](http://ivory.idyll.org/lab/) and
-the [Data Exploration Lab](https://data-exp-lab.github.io/).
-The manual contents are available under the
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0)
-license.
-
-
-
-[website-repo]: https://github.com/compgeolab/website

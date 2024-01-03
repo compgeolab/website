@@ -77,11 +77,11 @@ h3 {
 
 hr {
   height: 2px;
-  background-color: var(--color-extramuted);
+  background-color: var(--color-secondary);
   opacity: 1;
   border: none;
-  margin-bottom: 2em;
-  --flow-space: 2em;
+  margin-bottom: 3em;
+  --flow-space: 3em;
 }
 
 code {
@@ -177,6 +177,14 @@ figcaption {
   font-size: var(--size--1);
   color: var(--color-muted);
   text-align: center;
+}
+
+figcaption a {
+  color: var(--color-muted);
+}
+
+figcaption a:hover {
+  color: var(--color-primary);
 }
 
 img {
@@ -401,4 +409,12 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .text-muted {
   color: var(--color-muted);
+}
+
+.text-muted a {
+  color: var(--color-muted);
+}
+
+.text-muted a:hover {
+  color: var(--color-primary);
 }

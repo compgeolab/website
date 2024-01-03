@@ -5,8 +5,11 @@
   <div class="column-container flow">
 
     <div class="column-body flow">
+
       <h1>{{ page.title }}</h1>
+
       {{ page.body }}
+
       {%- if page.id == "manual/index" %}
         <h2>Contents</h2>
         <p>Browse the manual sections below:</p>
@@ -22,6 +25,12 @@
           </ol>
         </nav>
       {%- endif %}
+
+      <hr>
+      <section class="text-muted">
+        <p><strong>Credit and terms of reuse:</strong> {{ page.license }}</p>
+      </section>
+
     </div>
 
     {%- if page.id != "manual/index" %}

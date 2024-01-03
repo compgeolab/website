@@ -52,7 +52,7 @@ or the central
 
 ## Credit
 
-This document was adapted from
+This Code of Conduct was adapted from
 [confcodeofconduct.com](https://confcodeofconduct.com), licensed
 [CC-BY](https://creativecommons.org/licenses/by/3.0/deed.en).
 

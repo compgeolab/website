@@ -76,8 +76,8 @@ h3 {
 }
 
 hr {
-  height: 2px;
-  background-color: var(--color-secondary);
+  height: 3px;
+  background-color: var(--color-extramuted);
   opacity: 1;
   border: none;
   margin-bottom: 3em;
@@ -377,6 +377,10 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .extra-space {
   margin-top: var(--space-2xl);
+}
+
+.extra-space-xl {
+  margin-top: var(--space-3xl);
 }
 
 .font-small {

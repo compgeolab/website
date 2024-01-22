@@ -10,10 +10,12 @@ template: base.html
 <div class="lead">
 
 We focus our efforts on creating and applying new methods for **3D modeling and
-data processing**, mostly for gravimetry and magnetometry.
+data processing**, mostly for gravimetry and magnetometry. Below, you'll find
+the main research themes that we pursue.
 
 </div>
 
+<section class="extra-space flow">
 
 ## Magnetic microscopy
 
@@ -36,6 +38,8 @@ Our work on this theme:
 
 </div>
 
+</section>
+<section class="extra-space-xl flow">
 
 ## Antarctic geothermal heat flow
 
@@ -46,7 +50,7 @@ Magnetic anomaly data is one of the few ways we have to determine heat flow.
 Our group is working to improve the way **airborne and satellite magnetic
 data** are merged and modelled to produce heat flow estimates.
 
-{{ macros.figure(src="../images/antarctica-magnetic-data.jpg", alt="Map of Antarctica overlaid by red, white, and blue points representing magnetic measurements. The data coverage has a lot of gaps.", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica.') }}
+{{ macros.figure(src="../images/antarctica-magnetic-data.jpg", alt="Map of Antarctica overlaid by red, white, and blue points representing magnetic measurements. The data coverage has a lot of gaps.", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica. We are working on improving the compilation and the process for merging these data with satellite observations.') }}
 
 <div class="callout">
 
@@ -56,6 +60,8 @@ Our work on this theme:
 
 </div>
 
+</section>
+<section class="extra-space-xl flow">
 
 ## Machine learning & data processing
 
@@ -78,6 +84,8 @@ Our work on this theme:
 
 </div>
 
+</section>
+<section class="extra-space-xl flow">
 
 ## Geophysical inversion and imaging
 
@@ -98,6 +106,9 @@ Our work on this theme:
 * [Robust 3D gravity gradient inversion by planting anomalous densities](https://github.com/pinga-lab/paper-planting-densities)
 
 </div>
+
+</section>
+<section class="extra-space-xl flow">
 
 
 ## Forward modeling
@@ -120,3 +131,5 @@ Our work on this theme:
 * [Tesseroids: forward modeling gravitational fields in spherical coordinates](https://github.com/pinga-lab/paper-tesseroids)
 
 </div>
+
+</section>

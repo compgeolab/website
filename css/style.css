@@ -321,6 +321,8 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   padding-left: var(--gutter);
   border-left: 2px solid var(--color-extramuted);
   --flow-space: 0.75em;
+  position: sticky;
+  top: 0;
 }
 
 .column-nav li {

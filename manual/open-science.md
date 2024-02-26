@@ -1,5 +1,5 @@
 ---
-title: Open Science
+title: Open science
 ---
 
 <div class="lead">

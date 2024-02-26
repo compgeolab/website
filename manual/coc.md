@@ -1,5 +1,5 @@
 ---
-title: Code of Conduct
+title: Code of conduct
 ---
 
 <div class="lead">

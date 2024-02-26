@@ -1,6 +1,7 @@
 ---
 title: Lab manual
 toc_table:
+  - manual/index
   - manual/coc
   - manual/induction
   - manual/open-science

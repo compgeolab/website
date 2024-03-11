@@ -41,6 +41,23 @@ current:
     researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
     project: Micropaleomagnetism
 
+  - name: Yago Moreira Castro
+    role: MSc student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: YagoMCastro
+    email: yagomcastro@usp.br
+    orcid: 0009-0003-3884-9675
+    lattes: 3638234138206203
+
+  - name: Arthur Siqueira de Macêdo
+    role: MSc student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: arthursmacedo
+    email: arthursmacedo@usp.br
+    orcid: 0009-0006-5106-4356
+    lattes: 8208731636024394
 
 # List of external collaborators
 collaborators:

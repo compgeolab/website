@@ -21,7 +21,7 @@ repository to grab a copy of the repository to your personal account.
 Then you can clone your fork of the site to your personal computer so you can
 edit the files. In a terminal, type:
 
-    git clone https://github.com/YOUR_USER_NAME/website.git
+    git clone git@github.com:YOUR_USER_NAME/website.git
 
 This will create a `website` folder in the current directory holding the
 website code.
@@ -49,7 +49,7 @@ sync with the original repository at
 To update your local copy and fork, first you'll need to register the original
 repository. In your local copy, run:
 
-    git remote add upstream https://github.com/compgeolab/website.git
+    git remote add upstream git@github.com:compgeolab/website.git
 
 This will register the original repository as a source. Then run the following
 to pull in changes from the original:

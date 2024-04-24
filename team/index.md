@@ -20,7 +20,7 @@ geoscience and open-source.
 {%- for person in people %}
   <div class="profile">
     <div class="profile-info flow">
-      <h3>
+      <h3 id="{{ person.github }}">
         {{ person.name }}
         {%- if person.pronouns is defined %}
           <span class="font-normal">({{ person.pronouns }})</span>

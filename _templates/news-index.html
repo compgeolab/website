@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{%- block content %}
+{%- block body %}
   {{ page.body }}
   <ul class="flow fa-ul">
     {%- for item in page["siblings"]|sort(attribute="date", reverse=True) %}

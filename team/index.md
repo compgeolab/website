@@ -5,15 +5,12 @@ template: base.html
 
 {%- import "macros.html" as macros %}
 
-# {{ page.title }}
-
 <div class="lead">
 
 We are an international group of researchers joined by a shared passion for
 geoscience and open-source.
 
 </div>
-
 
 {%- macro profiles(people) %}
 {# Function for generating the profiles of a list of people #}

@@ -5,8 +5,6 @@ template: base.html
 
 {% import "macros.html" as macros %}
 
-# {{ page.title }}
-
 <div class="lead">
 
 We focus our efforts on creating and applying new methods for **3D modeling and

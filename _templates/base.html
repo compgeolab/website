@@ -17,6 +17,20 @@
   <link rel="shortcut icon" href="{{ config.favicon|relative_to(page.path)|e }}"/>
   {%- endif %}
 
+  <!-- OpenGraph social media card -->
+  {%- if page.description is defined -%}
+    {% set description = page.description|striptags|trim  %}
+  {%- elif page.banner_subtitle -%}
+    {% set description = page.banner_subtitle|striptags|trim %}
+  {%- else -%}
+    {% set description = page.body|striptags|trim|truncate(200) %}
+  {%- endif %}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ config.url }}/{{ config.thumbnail }}" />
+  <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
+
   <!-- Atkinson Hyperlegible font -->
   <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible/fonts.css"|relative_to(page.path) }}" />
 
@@ -82,7 +96,12 @@
     {%- endif %}
     <div class="content flow extra-space">
       {%- block content %}
-        {{ page.body }}
+        {%- if page.title is defined %}
+          <h1>{{ page.title }}</h1>
+        {%- endif %}
+        {%- block body %}
+          {{ page.body }}
+        {%- endblock %}
       {%- endblock %}
     </div>
   </main>

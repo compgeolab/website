@@ -2,6 +2,7 @@ site_name: "Computer-Oriented Geoscience Lab"
 site_description: "Geophysical research powered by open-source software"
 brand: "images/compgeolab-banner.svg"
 favicon: "images/favicon.png"
+thumbnail: "images/thumbnail.jpg"
 url: "https://www.compgeolab.org"
 repository: compgeolab/website
 author: Leonardo Uieda

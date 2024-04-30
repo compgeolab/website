@@ -4,7 +4,9 @@ brand: "images/compgeolab-banner.svg"
 favicon: "images/favicon.png"
 thumbnail: "images/thumbnail.jpg"
 url: "https://www.compgeolab.org"
+domain: compgeolab.org
 repository: compgeolab/website
+repository_branch: main
 author: Leonardo Uieda
 mastodon: leouieda
 mastodon_server: bertha.social

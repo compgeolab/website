@@ -15,9 +15,14 @@ geoscience and open-source.
 {%- macro profiles(people) %}
 {# Function for generating the profiles of a list of people #}
 {%- for person in people %}
+  {%- if person.id is defined %}
+    {%- set id=person.id %}
+  {%- else %}
+    {%- set id=person.github %}
+  {%- endif %}
   <div class="profile">
     <div class="profile-info flow">
-      <h3 id="{{ person.github }}">
+      <h3 id="{{ id }}">
         {{ person.name }}
         {%- if person.pronouns is defined %}
           <span class="font-normal">({{ person.pronouns }})</span>

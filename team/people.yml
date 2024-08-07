@@ -93,6 +93,7 @@ collaborators:
     picture: ../images/team/valeria-barbosa.jpg
 
   - name: Ricardo I. F. Trindade
+    id: ricardo
     role: Professor
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him

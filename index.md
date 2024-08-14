@@ -22,7 +22,9 @@ template: home.html
 
 ## About us
 
-The **CompGeoLab** is a research group based at the
+The **CompGeoLab** is a
+[research group]({{ macros.pretty_relative_link(site["team/index"], page) }})
+based at the
 [{{ config.location.university }}][usp], Brazil.
 We are experts in solving **inverse problems** in the field of **Geophysics**,
 particularly in **gravity and magnetic methods** (AKA potential-field methods).

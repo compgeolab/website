@@ -30,7 +30,7 @@ current:
     orcid: 0000-0003-3531-2656
     project: Improving estimates of Antarctic geothermal heat flow from magnetic data
 
-  - name: Gelson Ferreira Souza Junior
+  - name: Gelson Ferreira Souza-Junior
     role: PhD student
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
@@ -39,7 +39,7 @@ current:
     orcid: 0000-0002-5695-4239
     lattes: 5458580084475010
     researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
-    project: Micropaleomagnetism
+    project: "Micropaleomagnetism: Combining magnetic microscopy and applied geophysics"
 
   - name: Yago Moreira Castro
     role: MSc student
@@ -50,6 +50,7 @@ current:
     orcid: 0009-0003-3884-9675
     lattes: 3638234138206203
     researchgate: https://www.researchgate.net/profile/Yago-Moreira-Castro
+    project: "Magali: An open-source software package for magnetic microscopy"
 
   - name: Arthur Siqueira de Macêdo
     role: MSc student
@@ -60,6 +61,7 @@ current:
     orcid: 0009-0006-5106-4356
     lattes: 8208731636024394
     researchgate: https://www.researchgate.net/profile/Arthur-Macedo-9
+    project: Integration of airborne geophysics datasets with gradient-boosted equivalent sources on the sphere
 
 # List of external collaborators
 collaborators:

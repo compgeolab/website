@@ -12,6 +12,8 @@ geoscience and open-source.
 
 </div>
 
+{{ macros.figure("../images/compgeolab-group-photo-2024-08-12.jpg", caption="CompGeoLab members (as of August 2024) in front of the IAG building at Universidade de São Paulo. From left to right: Yago, Santiago, Ellen, Leo, India, Arthur, Gelson, Gabriel.", alt="Group of men and women standing shoulder-to-shoulder and smiling in the sunlight in front of a building entrance, with concrete pillars and stairs leading into glass doors with IAG logo on them." ) }}
+
 {%- macro profiles(people) %}
 {# Function for generating the profiles of a list of people #}
 {%- for person in people %}
@@ -31,9 +33,6 @@ geoscience and open-source.
       <ul role="list">
         <li><span class="text-bold">{{ person.role }}</span></li>
         <li>{{ person.affiliation }}</li>
-        {%- if person.project is defined %}
-          <li>Project: <span class="text-italic">{{ person.project }}</span></li>
-        {%- endif %}
         {%- if person.email is defined %}
           <li>Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a></li>
         {%- endif %}
@@ -42,6 +41,9 @@ geoscience and open-source.
         {%- endif %}
         {%- if person.website is defined %}
           <li>Website: <a href="{{ person.website }}" target="_blank">{{ person.website[8:] }}</a></li>
+        {%- endif %}
+        {%- if person.project is defined %}
+          <li>Project: <span class="text-muted">{{ person.project }}</span></li>
         {%- endif %}
       </ul>
       <ul class="list-inline font-large" role="list">

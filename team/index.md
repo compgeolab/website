@@ -12,7 +12,7 @@ geoscience and open-source.
 
 </div>
 
-{{ macros.figure("../images/compgeolab-group-photo-2024-08-12.jpg", caption="CompGeoLab members (as of August 2024) in front of the IAG building at Universidade de São Paulo. From left to right: Yago, Santiago, Ellen, Leo, India, Arthur, Gelson, Gabriel.", alt="Group of men and women standing shoulder-to-shoulder and smiling in the sunlight in front of a building entrance, with concrete pillars and stairs leading into glass doors with IAG logo on them." ) }}
+{{ macros.figure("../images/compgeolab-group-photo-2024-08-12.jpg", caption="CompGeoLab members (as of August 2024) in front of the IAG building at Universidade de São Paulo. From left to right: Yago, Santiago, Ellen, Leo, India, Arthur, Gelson, Gabriel. This was the first time ever that our whole team was physically in the same place!", alt="Group of men and women standing shoulder-to-shoulder and smiling in the sunlight in front of a building entrance, with concrete pillars and stairs leading into glass doors with IAG logo on them." ) }}
 
 {%- macro profiles(people) %}
 {# Function for generating the profiles of a list of people #}

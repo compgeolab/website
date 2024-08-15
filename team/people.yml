@@ -63,6 +63,16 @@ current:
     researchgate: https://www.researchgate.net/profile/Arthur-Macedo-9
     project: Integration of airborne geophysics datasets with gradient-boosted equivalent sources on the sphere
 
+  - name: Ellen Fernandes Marcos
+    role: Bachelor's student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: she/her
+    github: fernandesellen
+    email: ellenfernandes@usp.br
+    lattes: 0331850218891856
+    researchgate: https://www.researchgate.net/profile/Ellen-Fernandes
+    project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler

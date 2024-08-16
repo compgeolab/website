@@ -8,14 +8,14 @@ title: Getting started
 
 When you first join the lab (ideally within the first few weeks), you will have
 a meeting with Leo to introduce lab protocols, set expectations, add you to
-communication channels, etc. 
+communication channels, etc.
 
 </div>
 
 ## Things to do after joining the lab
 
 1. Create an account on the chat room (see {{ macros.page_link("manual/communication", page, site) }}) and send Leo a message (`@leouieda`) so he can add you to the `CompGeoLab` channel.
-1. Install the [Mattermost app][mattermost]. You don't need to have it on your phone if you prefer not to, but at least install it on your comuter.
+1. Install the [Mattermost app][mattermost]. You don't need to have it on your phone if you prefer not to, but at least install it on your computer.
 1. Create an account on [GitHub](https://github.com/). Make sure your username is something that you would be OK putting on a publication or your CV (so nothing offensive, please).
 1. Send Leo a message with your GitHub username so he can add you to the [lab GitHub organization][gh].
 1. Read the [lab Code of Conduct][coc] carefully.

@@ -73,6 +73,16 @@ current:
     researchgate: https://www.researchgate.net/profile/Ellen-Fernandes
     project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
 
+  - name: Gabriel Aparecido das Chagas Silva
+    role: Undergraduate student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: chagas-gabriel
+    email: gabaparecidochagas@usp.br
+    lattes: 6035373599732811
+    researchgate: https://www.researchgate.net/profile/Gabriel-Silva-282
+    project: Mesh refinement in the 3D inversion of potential-field  data through the planting method
+  
 # List of external collaborators
 collaborators:
   - name: Santiago Soler

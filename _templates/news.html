@@ -4,8 +4,7 @@
   <article class="flow">
     <h1>{{ page.title }}</h1>
     <p class="text-muted">
-      <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-      {{ page.date|replace("-", "/") }}
+      by {{ page.author }} | {{ page.date|replace("-", "/") }}
     </p>
     {{ page.body }}
     <p class="text-right">

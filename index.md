@@ -32,8 +32,9 @@ Inverse problems are the means by which geoscientists **image the inside** of
 the Earth and other planets.
 For example, we are able to determine the inner density distribution of the
 Earth from measured disturbances in the Earth's gravity field.
-We are also champions of **open science** and all of our research and teaching
-efforts are symbiotic with the development of **open source software**.
+We are also champions of **open science** and **reproducible research**.
+All of our teaching and research efforts are symbiotic with the development of
+**open source software** for geoscience.
 
 {{ macros.figure("images/research-highlights.jpg", caption="Example research outputs. <strong>Top left:</strong> automatic detection of anomalies in magnetic microscopy data. <strong>Top right:</strong> compilation of airborne magnetic data for Antarctica. <strong>Bottom left:</strong> a tesseroid (spherical prism) discretized with our adaptive algorithm for gravity modeling. <strong>Bottom right:</strong> estimated Moho depth for South America from gravity data (left) and the misfit with seismological estimates (right).", alt="Figure with four panels. Top left is a map showing red and blue blobs and black squares surrounding each one. Top right is a map of Antarctica with red and blue points overlaid covering a large portion of the continent. Bottom left is a spherical 8-sided prism on top of the globe with white lines showing how it's broken up irregularly. Bottom right are two maps of South America, one colored green to yellow representing the Moho depth, larger around the Andes and smaller in towards the Atlantic coast, the other has scattered colored dots showing larger differences in the Andes and smaller elsewhere." ) }}
 
@@ -58,6 +59,9 @@ across the larger scientific ecosystem:
   Tesseroids supports models and computation grids in Cartesian and spherical
   coordinates.
 
+We also **publish all of the code and data** needed to reproduce our projects
+on [our <i class="fab fa-github" aria-hidden="true"></i> GitHub organization][github].
+
 [usp]: https://www.iag.usp.br/
 [fatiando]: https://www.fatiando.org/
 [xlandsat]: https://www.compgeolab.org/xlandsat
@@ -66,4 +70,4 @@ across the larger scientific ecosystem:
 [gmt]: https://www.generic-mapping-tools.org/
 [pygmt]: https://www.pygmt.org
 [tesseroids]: https://tesseroids.leouieda.com/
-
+[github]: https://github.com/compgeolab

@@ -8,7 +8,7 @@
     The latest news and updates from CompGeoLab members.
   </p>
   <ul class="flow fa-ul">
-    {%- for item in (site["news/index"]["siblings"]|sort(attribute="date", reverse=True)|list)[:2] %}
+    {%- for item in (site["news/index"]["siblings"]|sort(attribute="date", reverse=True)|list)[:3] %}
       <li>
         <i class="fa-li far fa-arrow-alt-circle-right fa-fw" aria-hidden="true"></i>
         <a class="text-bold" href="{{ item.path|relative_to(page.path) }}">{{ item.title }}</a>
@@ -18,7 +18,7 @@
     {%- endfor %}
   </ul>
   <p>
-    Older news items can be found in: {{ macros.page_link("news/index", page, site) }}.
+    More news items can be found in: {{ macros.page_link("news/index", page, site) }}.
   </p>
   {{ page.body }}
 {%- endblock %}

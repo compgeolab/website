@@ -25,8 +25,6 @@ macros.youtube_video(
 )
 }}
 
-### [Magali (Yago's presentation)](https://www.youtube.com/live/5ZxFyw3ZN6s?si=sdQxzEzJsymJTcFI&t=3367)
-
 {{
 macros.youtube_video(
   "https://www.youtube.com/live/5ZxFyw3ZN6s?si=sdQxzEzJsymJTcFI&t=3367",

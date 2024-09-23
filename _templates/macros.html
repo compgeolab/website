@@ -53,3 +53,40 @@
 {%- macro page_link(id, page, site) -%}
   <a href="{{ site[id].path|relative_to(page.path) }}">{{ site[id].title }}</a>
 {%- endmacro -%}
+
+
+{%- macro youtube_video(video_url, thumbnail, caption="", play_logo="/images/yt-icons/play.svg", yt_logo="/images/yt-icons/yt-logo.svg") -%}
+  <!-- Thumbnail of Youtube video without tracking-->
+  <figure>
+  <div class="ratio ratio-16x9">
+    <div class="yt" style='background-image: url("{{ thumbnail }}")'>
+      <a
+        href="{{ video_url }}"
+        aria-label="Watch on YouTube"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Watch on YouTube"
+      >
+        <div class="play-button">
+          <img src="{{ play_logo }}" alt="Play video in YouTube">
+        </div>
+      </a>
+      <a
+        href="{{ video_url }}"
+        aria-label="Watch on YouTube"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Watch on YouTube"
+      >
+        <div class="watch-on-yt">
+          <div aria-hidden="true">Watch on</div>
+          <div><img src="{{ yt_logo }}" alt="YouTube logo"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+  {% if caption != "" %}
+  <figcaption>{{ caption }}</figcaption>
+  {% endif %}
+  </figure>
+{%- endmacro -%}

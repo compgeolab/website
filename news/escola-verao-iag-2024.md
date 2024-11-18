@@ -70,7 +70,7 @@ Universidade de São Paulo. Rua do Matão, 1226, São Paulo - SP
 **Inscrições:** Até **17:00 de 25 de novembro** de 2024. Instruções no [site da
 Escola de Verão](https://www.iag.usp.br/eventos/curso-extensao-escola-verao-2025).
 
-**Material online:** https://github.com/compgeolab/kit
+**Material online:** [https://github.com/compgeolab/kit](https://github.com/compgeolab/kit)
 
 **Público alvo:** graduandos, pós-graduandos, pós-doutorandos e profissionais
 atuantes das áreas de Geofísica, Geologia, Meteorologia, Astronomia ou outras

@@ -1,5 +1,5 @@
 ---
-title: 'Lab oferecerá curso na Escola de Verão de Geofísica do IAG "Kit de sobrevivência digital para cientistas"'
+title: 'CompGeoLab oferecerá curso na Escola de Verão de Geofísica do IAG "Kit de sobrevivência digital para cientistas"'
 date: 2024-11-18
 author: Leonardo Uieda
 ---

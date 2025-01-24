@@ -2,6 +2,7 @@
 title: Lab manual
 toc_table:
   - manual/index
+  - manual/mission
   - manual/open-science
   - manual/authorship
   - manual/join
@@ -37,7 +38,9 @@ for this website to find out how.
 
 **Want to work with us?**
 Before applying to join the lab or starting a collaboration, please
-read {{ macros.page_link("manual/open-science", page, site) }} and
+read
+{{ macros.page_link("manual/mission", page, site) }},
+{{ macros.page_link("manual/open-science", page, site) }}, and
 {{ macros.page_link("manual/authorship", page, site) }}.
 These sections outline our core principles as scientists and it's important
 that you are aware of and agree with these principles to a large extent.

@@ -5,8 +5,8 @@ title: Computer setup
 <div class="lead">
 
 Most projects developed in the lab will require you to have
-git, a terminal, and Python properly setup on your computer.
-Below are some instructions on how to do this.
+a computer with git, a terminal, and Python properly setup.
+Below are some **instructions** on how to get started.
 
 </div>
 

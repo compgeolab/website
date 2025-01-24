@@ -10,7 +10,7 @@ No project, paper, grant, or collaboration is more important than that.
 
 </div>
 
-## At Universidade de São Paulo
+## Resources in São Paulo
 
 * [Hospital Universitário](https://www.hu.usp.br/): The campus hospital is
   excellent, has a walk-in service and provides free medical for the university
@@ -23,9 +23,9 @@ No project, paper, grant, or collaboration is more important than that.
 * [Ministério da Saúde - Suicídio (Prevenção)](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao):
   The ministry of health website has resources for suicide prevention and how
   to get help with mental health issues.
-* [Centro de Valorização da Vida](https://cvv.org.br/): Offers a 24h help line by phone, chat, email, and in-person (the closest center to campus is in [Pinheiros](https://www.google.com/maps/place/R.+Cerro+Cor%C3%A1,+792+-+21+-+Vila+Romana,+S%C3%A3o+Paulo+-+SP,+05061-100/@-23.5401302,-46.7049922,19.29z/data=!4m5!3m4!1s0x94ce57d3e451c08b:0x28663176a7d2cad5!8m2!3d-23.5397673!4d-46.7047116?entry=ttu)). 
+* [Centro de Valorização da Vida](https://cvv.org.br/): Offers a 24h help line by phone, chat, email, and in-person (the closest center to campus is in [Pinheiros](https://www.google.com/maps/place/R.+Cerro+Cor%C3%A1,+792+-+21+-+Vila+Romana,+S%C3%A3o+Paulo+-+SP,+05061-100/@-23.5401302,-46.7049922,19.29z/data=!4m5!3m4!1s0x94ce57d3e451c08b:0x28663176a7d2cad5!8m2!3d-23.5397673!4d-46.7047116?entry=ttu)).
 
-## At University of Liverpool
+## Resources in Liverpool
 
 * [Student Services](https://www.liverpool.ac.uk/studentsupport/): General
   information and links to the different types of support offered to university

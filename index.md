@@ -36,6 +36,14 @@ We are also champions of **open science** and **reproducible research**.
 All of our teaching and research efforts are symbiotic with the development of
 **open source software** for geoscience.
 
+<div class="callout">
+
+**Want to work with us?**
+Have a look at the {{ macros.page_link("manual/index", page, site) }}, which
+outlines our core principles as scientists and how we operate as a team.
+
+</div>
+
 {{ macros.figure("images/research-highlights.jpg", caption="Example research outputs. <strong>Top left:</strong> automatic detection of anomalies in magnetic microscopy data. <strong>Top right:</strong> compilation of airborne magnetic data for Antarctica. <strong>Bottom left:</strong> a tesseroid (spherical prism) discretized with our adaptive algorithm for gravity modeling. <strong>Bottom right:</strong> estimated Moho depth for South America from gravity data (left) and the misfit with seismological estimates (right).", alt="Figure with four panels. Top left is a map showing red and blue blobs and black squares surrounding each one. Top right is a map of Antarctica with red and blue points overlaid covering a large portion of the continent. Bottom left is a spherical 8-sided prism on top of the globe with white lines showing how it's broken up irregularly. Bottom right are two maps of South America, one colored green to yellow representing the Moho depth, larger around the Andes and smaller in towards the Atlantic coast, the other has scattered colored dots showing larger differences in the Andes and smaller elsewhere." ) }}
 
 

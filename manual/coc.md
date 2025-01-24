@@ -53,6 +53,6 @@ or the central
 ## Credit
 
 This Code of Conduct was adapted from
-[confcodeofconduct.com](https://confcodeofconduct.com), licensed
+[confcodeofconduct.com](https://confcodeofconduct.com), which is licensed
 [CC-BY](https://creativecommons.org/licenses/by/3.0/deed.en).
 

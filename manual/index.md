@@ -2,13 +2,14 @@
 title: Lab manual
 toc_table:
   - manual/index
-  - manual/coc
-  - manual/induction
   - manual/open-science
-  - manual/expectations
-  - manual/health
   - manual/authorship
+  - manual/join
+  - manual/getting-started
+  - manual/expectations
   - manual/communication
+  - manual/health
+  - manual/coc
   - manual/software
   - manual/computing
   - manual/resources
@@ -40,5 +41,7 @@ read {{ macros.page_link("manual/open-science", page, site) }} and
 {{ macros.page_link("manual/authorship", page, site) }}.
 These sections outline our core principles as scientists and it's important
 that you are aware of and agree with these principles to a large extent.
+See {{ macros.page_link("manual/join", page, site) }} for opportunities for
+students or postdoc.
 
 </div>

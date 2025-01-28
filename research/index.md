@@ -96,6 +96,7 @@ We develop methods to overcome these challenges and solve different kinds of inv
 
 Our work on this theme:
 
+* [Euler inversion: Locating sources of potential-field data through inversion of Euler’s homogeneity equation](https://github.com/compgeolab/euler-inversion)
 * [Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho](https://github.com/pinga-lab/paper-moho-inversion-tesseroids)
 * [Robust 3D gravity gradient inversion by planting anomalous densities](https://github.com/pinga-lab/paper-planting-densities)
 

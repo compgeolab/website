@@ -63,16 +63,6 @@ current:
     researchgate: https://www.researchgate.net/profile/Arthur-Macedo-9
     project: Integration of airborne geophysics datasets with gradient-boosted equivalent sources on the sphere
 
-  - name: Ellen Fernandes Marcos
-    role: Undergraduate student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: she/her
-    github: fernandesellen
-    email: ellenfernandes@usp.br
-    lattes: 0331850218891856
-    researchgate: https://www.researchgate.net/profile/Ellen-Fernandes
-    project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
-
   - name: Gabriel Aparecido das Chagas Silva
     role: Undergraduate student
     affiliation: Universidade de São Paulo, Brazil
@@ -82,7 +72,7 @@ current:
     lattes: 6035373599732811
     researchgate: https://www.researchgate.net/profile/Gabriel-Silva-282
     project: Mesh refinement in the 3D inversion of potential-field  data through the planting method
-  
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler
@@ -126,6 +116,17 @@ collaborators:
 
 # List of past lab members
 alumni:
+
+  - name: Ellen Fernandes Marcos
+    role: Undergraduate student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: she/her
+    github: fernandesellen
+    email: ellenfernandes@usp.br
+    lattes: 0331850218891856
+    researchgate: https://www.researchgate.net/profile/Ellen-Fernandes
+    project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
+
   - name: Santiago Soler
     role: PhD student
     affiliation: Universidad Nacional de San Juan, Argentina

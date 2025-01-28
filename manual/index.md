@@ -5,8 +5,8 @@ toc_table:
   - manual/open-science
   - manual/authorship
   - manual/join
-  - manual/getting-started
   - manual/expectations
+  - manual/getting-started
   - manual/communication
   - manual/health
   - manual/coc

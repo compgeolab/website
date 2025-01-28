@@ -21,8 +21,8 @@ Our goal is for the lab to be a relatively small group of people who work well
 together and support each other.
 This necessitates that we get along on a personal level and that we share the
 same principles and ethics.
-It also means that we able to provide the adequate support that each member
-needs to achieve their career goals.
+It also means that we will be able to provide the adequate support that each
+member needs to achieve their career goals.
 
 Please read {{ macros.page_link("manual/open-science", page, site) }} and
 {{ macros.page_link("manual/authorship", page, site) }}.
@@ -33,7 +33,7 @@ to make sure you are aware of what we expect from lab members and what they can
 expect from Leo.
 These are things in which **we do not compromise**.
 
-## What we are looking for
+## What are we looking for?
 
 Our research almost always involves a large amount of programming and numerical
 methods.

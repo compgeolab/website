@@ -13,7 +13,8 @@ representing the lab.
 
 ## Within the lab
 
-* **Chat:** We have a lab chat room on the [Software Underground's Mattermost server](https://mattermost.softwareunderground.org/).
+* **Chat:** We have a lab chat room on the
+  [Software Underground's Mattermost server](https://mattermost.softwareunderground.org/).
   This is the **primary mode of communication** for quick messages, announcements,
   reminders, and organizing meetings. Messages can be ephemeral so you cannot
   count of being able to read messages forever. **Use email if you need a
@@ -32,6 +33,10 @@ representing the lab.
   supervisor-student relationship.
 * Group members are also encouraged to have meetings and messages with each
   other. **Don't wait until problems build up to seek guidance.**
+* **Language:** Since not everyone speaks Portuguese, we **use English** in our
+  group chat, group meetings, and GitHub so that everyone can participate. In
+  individual meetings or group meetings with no international participants, we
+  **use Portuguese**.
 
 ## Using our website
 

@@ -180,10 +180,17 @@ they are much more useful than a bunch of replies at StackOverflow.
 
 Do you want to procrastinate a little bit?
 
-* Try to do the [Python Challenge](http://www.pythonchallenge.com/)!
-* [Python and the Glories of the UNIX Tradition](https://www.youtube.com/watch?v=zFMdhXYlFfY)
-  by Brandon Rhodes
+Try to do the [Python Challenge](http://www.pythonchallenge.com/)!
+It's very difficult but you will learn a lot about programming, pattern
+matching, web scraping, and other things that are actually useful for
+a scientist.
+
+Watch some really good talks on YouTube:
+
+* [Python and the Glories of the UNIX Tradition](https://www.youtube.com/watch?v=zFMdhXYlFfY) by Brandon Rhodes
 * [Stopping to Sharpen Your Tools](https://www.youtube.com/watch?v=I56oFTm9UlE) by Brandon Rhodes
 * [The Antipodes](https://www.youtube.com/watch?v=Nd6vturx_yg) by Brandon Rhodes
 * [Data Science and Open Communities](https://www.youtube.com/watch?v=sla_vxu-jDk) by Fernando Perez
 * [History of Python in Science](https://www.youtube.com/watch?v=riuyDEHxeEo) by David Beazley
+* [A talk near the future of Python?](https://youtu.be/VUT386_GKI8?si=mmV5PAmEfc4tJIwv) by David Beazley
+* [Builtin superheroes](https://youtu.be/lyDLAutA88s?si=khElSQ2VZUyp9vQT) by David Beazley

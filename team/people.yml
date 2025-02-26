@@ -73,6 +73,17 @@ current:
     researchgate: https://www.researchgate.net/profile/Gabriel-Silva-282
     project: Mesh refinement in the 3D inversion of potential-field  data through the planting method
 
+  - name: Eros Kerouak Cordeiro Pereira
+    role: MSc student
+    affiliation: Universidade Federal do Paraná, Brazil
+    pronouns: he/him
+    github: ErosKerouak
+    email: eroskerouak@gmail.com
+    orcid: 0009-0008-0891-6781
+    lattes: 3980280544623493
+    researchgate: https://www.researchgate.net/profile/Eros-Kerouak-Pereira
+    project: "Application of the Gravimetric Method to the Study of the Dom Feliciano Orogen and the Southern Portion of the Ribeira Orogen"
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler

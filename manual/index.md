@@ -1,15 +1,15 @@
 ---
 title: Lab manual
-toc_table:
-  - manual/index
+handbook_toc:
   - manual/open-science
   - manual/authorship
   - manual/join
   - manual/expectations
-  - manual/getting-started
   - manual/communication
   - manual/health
   - manual/coc
+technical_toc:
+  - manual/getting-started
   - manual/software
   - manual/computing
   - manual/resources

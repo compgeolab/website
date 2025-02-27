@@ -11,27 +11,42 @@
       </blockquote>
     </div>
     <div class="column-nav flow">
-      <p class="text-bold font-large"><i class="fas fa-list fa-sm" aria-hidden="true"></i> Contents</p>
       <nav class="flow" aria-label="Manual">
-        <ol class="flow" role="list">
-          {%- for id in site["manual/index"]["toc_table"] %}
-            {%- if id == page.id %}
-              <li class="active">
-                <a aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
-                  {{ site[id].title }}
-                </a>
-              </li>
-            {%- else %}
-              <li>
-                <a href="{{ site[id].path|relative_to(page.path) }}">
-                  {{ site[id].title }}
-                </a>
-              </li>
-            {%- endif %}
-          {%- endfor %}
-        </ol>
+        <p class="text-bold font-large">
+          <i class="fas fa-list fa-sm" aria-hidden="true"></i> Handbook
+        </p>
+        {{ create_toc(site["manual/index"]["handbook_toc"]) }}
+        <hr>
+        <p class="text-bold font-large">
+          <i class="fas fa-list fa-sm" aria-hidden="true"></i> Technical
+        </p>
+        {{ create_toc(site["manual/index"]["technical_toc"]) }}
+        <hr>
+        <a aria-current="page" href="{{ site["manual/index"].path|relative_to(page.path) }}">
+          <i class="fas fa-arrow-left fa-sm" aria-hidden="true"></i> Back to the index
+        </a>
       </nav>
     </div>
   </div>
 {%- endblock %}
 
+
+{%- macro create_toc(toc) %}
+  <ol class="flow" role="list">
+    {%- for id in toc %}
+      {%- if id == page.id %}
+        <li class="active">
+          <a aria-current="page" href="{{ site[id].path|relative_to(page.path) }}">
+            {{ site[id].title }}
+          </a>
+        </li>
+      {%- else %}
+        <li>
+          <a href="{{ site[id].path|relative_to(page.path) }}">
+            {{ site[id].title }}
+          </a>
+        </li>
+      {%- endif %}
+    {%- endfor %}
+  </ol>
+{%- endmacro %}

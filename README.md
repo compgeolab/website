@@ -1,19 +1,8 @@
-# Souce code for compgeolab.org
-
-[![build-html](https://github.com/compgeolab/website/workflows/build-html/badge.svg?event=push)](https://github.com/compgeolab/website/actions?query=workflow%3Abuild-html)
+# Souce code for GR-water project
 
 ## Making changes to the site
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Automatic deploy of HTML to GitHub Pages
-
-The site is automatically built and deployed to
-[compgeolab/compgeolab.github.io](https://github.com/compgeolab/compgeolab.github.io)
-by the GitHub Actions service.
-Every time a commit is pushed to the *main* branch, the HTML is compiled and
-the website is updated.
-See `.github/workflows/build.yml` for the configuration.
 
 ## License
 

@@ -1,18 +1,21 @@
 ---
 title: Lab manual
-toc_table:
-  - manual/index
-  - manual/open-science
-  - manual/authorship
-  - manual/join
-  - manual/expectations
-  - manual/getting-started
-  - manual/communication
-  - manual/health
-  - manual/coc
-  - manual/software
-  - manual/computing
-  - manual/resources
+toc:
+   - title: Handbook
+     pages:
+       - manual/coc
+       - manual/open-science
+       - manual/expectations
+       - manual/authorship
+   - title: Guides
+     pages:
+       - manual/join
+       - manual/getting-started
+       - manual/communication
+       - manual/health
+       - manual/software
+       - manual/computing
+       - manual/resources
 ---
 
 {% import "macros.html" as macros %}
@@ -26,10 +29,16 @@ process, and general information about how we operate as a research team.
 
 ## About
 
-This document is designed to be a reference for lab members and collaborators.
-It's also part of an induction process when people join the lab.
-**The manual is a living document.** Lab members are **encouraged to submit
-fixes and improvements** to it. See the
+This document is designed to be a reference for lab members and collaborators,
+explaining how we work and what are our expectations.
+It's divided into two sections:
+
+* **{{ page.toc[0].title }}:** Lays out our core principles and work ethic.
+* **{{ page.toc[1].title }}:** Explains of how we operate and other useful
+  information.
+
+The manual is a **living document.** Lab members are encouraged to submit
+**fixes and improvements** to it. See the
 [Contributing Guide](https://github.com/compgeolab/website/blob/main/CONTRIBUTING.md)
 for this website to find out how.
 

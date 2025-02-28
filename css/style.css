@@ -302,7 +302,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .column-body {
   flex: 3;
-  min-width: 75%;
+  min-width: 70%;
 }
 
 .column-body > nav a {
@@ -316,7 +316,7 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .column-nav {
   flex: 1;
-  min-width: 16ch;
+  min-width: 18ch;
   height: 100%;
   padding-left: var(--gutter);
   border-left: 2px solid var(--color-extramuted);
@@ -325,28 +325,48 @@ blockquote > * + *, figure > * + *, .callout > * + * {
   top: 0;
 }
 
-.column-nav li {
-  padding-left: var(--space-2xs);
-  border-left: 3px solid transparent;
-  line-height: 1.2;
-}
-
 .column-nav a {
   color: var(--color-muted);
 }
 
 .column-nav a:hover {
-  color: var(--color-muted);
+  color: var(--color-dark);
   text-decoration: none;
+}
+
+.column-nav ol {
+  padding-left: 0;
+}
+
+.column-nav li {
+  list-style-position: inside;
+  padding-left: var(--space-3xs);
+  border-left: 3px solid transparent;
+  line-height: 1.2;
+}
+
+.column-nav li::marker {
+  color: var(--color-muted);
 }
 
 .column-nav li:hover {
   border-left: 3px solid var(--color-secondary);
 }
 
+.column-nav li:hover::marker {
+  color: var(--color-dark);
+}
+
 .column-nav li.active {
   border-left: 3px solid var(--color-secondary);
-  font-weight: bold;
+}
+
+.column-nav li.active > a{
+  color: var(--color-dark);
+}
+
+.column-nav li.active::marker {
+  color: var(--color-dark);
 }
 
 
@@ -383,6 +403,10 @@ blockquote > * + *, figure > * + *, .callout > * + * {
 
 .extra-space-xl {
   margin-top: var(--space-3xl);
+}
+
+.extra-space-xs {
+  margin-top: var(--space-l);
 }
 
 .font-small {

@@ -1,5 +1,5 @@
 ---
-title: How to join the lab
+title: Joining the lab
 ---
 
 {% import "macros.html" as macros %}

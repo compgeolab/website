@@ -28,7 +28,7 @@ jobs:
       - name: Add extra files for GitHub pages
         run: |
           touch _build/.nojekyll
-          echo "www.compgeolab.org" > _build/CNAME
+          #echo "www.compgeolab.org" > _build/CNAME
 
       - name: Push to compgeolab.github.io
         if: success() && github.event_name == 'push'
@@ -36,8 +36,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: compgeolab/compgeolab.github.io
-          publish_branch: master
+          #external_repository: compgeolab/compgeolab.github.io
+          publish_branch: main
           publish_dir: ./_build
           # Only keep the latest commit to avoid bloating the repository
           force_orphan: true

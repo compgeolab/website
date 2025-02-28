@@ -3,9 +3,9 @@
 {%- import "macros.html" as macros %}
 
 {%- block content %}
-  <h2>News from the lab</h2>
+  <h2>News from the project</h2>
   <p>
-    The latest news and updates from CompGeoLab members.
+    The latest news and updates from GR-water project members.
   </p>
   <ul class="flow fa-ul">
     {%- for item in (site["news/index"]["siblings"]|sort(attribute="date", reverse=True)|list)[:3] %}

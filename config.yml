@@ -1,25 +1,25 @@
-site_name: "Computer-Oriented Geoscience Lab"
-site_description: "Geophysical research powered by open-source software"
-brand: "images/compgeolab-banner.svg"
-favicon: "images/favicon.png"
-thumbnail: "images/thumbnail.jpg"
-url: "https://www.compgeolab.org"
-domain: compgeolab.org
-repository: compgeolab/website
-repository_branch: main
-author: Leonardo Uieda
-mastodon: leouieda
-mastodon_server: bertha.social
-github: compgeolab
-linkedin: uieda
-researchgate: https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda
+site_name: "GR-Water project"
+site_description: "Multiscale earth critical zone monitoring for post-fire forest ecosystem management"
+brand: "images/Logo - Tech4Agro_primary.png"
+favicon: "images/Logo - Tech4Agro_primary.png"
+thumbnail: "images/Logo - Tech4Agro_primary.png"
+#url: "https://www.compgeolab.org"
+#domain: compgeolab.org
+#repository: compgeolab/website
+#repository_branch: main
+author: Benjamin Mary
+#mastodon: leouieda
+#mastodon_server: bertha.social
+github: website_grwater
+#linkedin: uieda
+#researchgate: https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda
 location:
-  department: Departamento de Geofísica
-  school: Instituto de Astronomia, Geofísica e Ciências Atmosféricas
-  university: Universidade de São Paulo
-  country: Brasil
+  department: Tech4Agro
+  school: ICA
+  university: Consejo Superior de Investigaciones Científicas,Spanish National Research Council,CSIC
+  country: Spain
 language: en
-keywords: 'science, geoscience, geophysics, software, open-source'
+keywords: 'science, geoscience, geophysics, evapotranspiration, fires, software, open-source'
 navigation:
   - name: Home
     id: index
@@ -29,8 +29,8 @@ navigation:
     id: team/index
   - name: Research
     id: research/index
-  - name: Manual
-    id: manual/index
+  #- name: Manual
+  #  id: manual/index
 ignore:
   - README.md
   - LICENSE.md
@@ -38,3 +38,5 @@ ignore:
   - environment.yml
   - Makefile
   - css/academicons/README.md
+  
+

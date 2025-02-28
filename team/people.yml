@@ -9,155 +9,40 @@
 
 # List of current lab members
 current:
-  - name: Leonardo Uieda
-    role: PI / Professor
-    affiliation: Universidade de São Paulo, Brazil
+  - name: Hector Nieto 
+    role: PI - Tenured Scientist
+    affiliation: Tech4Agro (ICA-CSIC)
+    #pronouns: he/him
+    github: hectornieto
+    #email: 
+    #orcid: 0000-0001-7199-2885
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+
+  - name: Benjamin Mary
+    role: Co-PI - Post-doc Researcher
+    affiliation: Tech4Agro (ICA-CSIC)
     pronouns: he/him
-    github: leouieda
-    email: uieda@usp.br
-    orcid: 0000-0001-6123-9515
-    google_scholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
-    researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
-    lattes: 8939551682050504
-    website: https://www.leouieda.com
+    github: BenjMy
+    email: benjamin.mary@ica.csic.es
+    orcid: 0000-0001-7199-2885
+    google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    website: https://benjmy.github.io/myCareerBook/intro.html
 
-  - name: India Uppal
-    role: PhD student
-    affiliation: University of Liverpool, UK
-    pronouns: she/her
-    github: indiauppal
-    email: I.Uppal@liverpool.ac.uk
-    orcid: 0000-0003-3531-2656
-    project: Improving estimates of Antarctic geothermal heat flow from magnetic data
 
-  - name: Gelson Ferreira Souza-Junior
-    role: PhD student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: Souza-junior
-    email: gelson.ferreira@iag.usp.br
-    orcid: 0000-0002-5695-4239
-    lattes: 5458580084475010
-    researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
-    project: "Micropaleomagnetism: Combining magnetic microscopy and applied geophysics"
+  - name: Vicente Burchard-Levine
+    role: Tenured Scientist
+    affiliation: Speclab (CCHS-CSIC)
+    #pronouns: he/him
+    github: VicenteBurchard
+    #email: benjamin.mary@ica.csic.es
+    #orcid: 0000-0001-7199-2885
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
 
-  - name: Yago Moreira Castro
-    role: MSc student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: YagoMCastro
-    email: yagomcastro@usp.br
-    orcid: 0009-0003-3884-9675
-    lattes: 3638234138206203
-    researchgate: https://www.researchgate.net/profile/Yago-Moreira-Castro
-    project: "Magali: An open-source software package for magnetic microscopy"
-
-  - name: Arthur Siqueira de Macêdo
-    role: MSc student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: arthursmacedo
-    email: arthursmacedo@usp.br
-    orcid: 0009-0006-5106-4356
-    lattes: 8208731636024394
-    researchgate: https://www.researchgate.net/profile/Arthur-Macedo-9
-    project: Integration of airborne geophysics datasets with gradient-boosted equivalent sources on the sphere
-
-  - name: Gabriel Aparecido das Chagas Silva
-    role: Undergraduate student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: chagas-gabriel
-    email: gabaparecidochagas@usp.br
-    lattes: 6035373599732811
-    researchgate: https://www.researchgate.net/profile/Gabriel-Silva-282
-    project: Mesh refinement in the 3D inversion of potential-field  data through the planting method
-
-  - name: Eros Kerouak Cordeiro Pereira
-    role: MSc student
-    affiliation: Universidade Federal do Paraná, Brazil
-    pronouns: he/him
-    github: ErosKerouak
-    email: eroskerouak@gmail.com
-    orcid: 0009-0008-0891-6781
-    lattes: 3980280544623493
-    researchgate: https://www.researchgate.net/profile/Eros-Kerouak-Pereira
-    project: "Application of the gravimetric method to the study of the Dom Feliciano orogen and the southern portion of the Ribeira orogen"
-
-# List of external collaborators
-collaborators:
-  - name: Santiago Soler
-    role: Postdoctoral Researcher
-    affiliation: University of British Columbia, Canada
-    pronouns: he/him
-    github: santisoler
-    orcid: 0000-0001-9202-5317
-    google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
-    researchgate: https://www.researchgate.net/profile/Santiago_Soler2
-    website: https://www.santisoler.com
-
-  - name: Vanderlei C. Oliveira Jr.
-    role: Researcher
-    affiliation: Observatório Nacional, Brazil
-    pronouns: he/him
-    github: birocoles
-    orcid: 0000-0002-6338-4086
-    lattes: 4332841435949533
-    website: https://www.pinga-lab.org
-
-  - name: Valéria C. F. Barbosa
-    role: Researcher
-    affiliation: Observatório Nacional, Brazil
-    pronouns: she/her
-    github: valcris
-    orcid: 0000-0002-9767-6044
-    lattes: 0391036221142471
-    website: https://www.pinga-lab.org
-    picture: ../images/team/valeria-barbosa.jpg
-
-  - name: Ricardo I. F. Trindade
-    id: ricardo
-    role: Professor
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    orcid: 0000-0001-9848-9550
-    researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
-    lattes: 3934334115083849
-    picture: ../images/team/ricardo-trindade.jpg
-
-# List of past lab members
-alumni:
-
-  - name: Ellen Fernandes Marcos
-    role: Undergraduate student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: she/her
-    github: fernandesellen
-    email: ellenfernandes@usp.br
-    lattes: 0331850218891856
-    researchgate: https://www.researchgate.net/profile/Ellen-Fernandes
-    project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
-
-  - name: Santiago Soler
-    role: PhD student
-    affiliation: Universidad Nacional de San Juan, Argentina
-    pronouns: he/him
-    github: santisoler
-    orcid: 0000-0001-9202-5317
-    google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
-    researchgate: https://www.researchgate.net/profile/Santiago_Soler2
-    project:  Metodologías y herramientas computacionales para el procesamiento y modelado de datos gravimétricos
-
-  - name: Laura Nicholls
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-    pronouns: she/her
-    github: LNich
-    project: An open-source Python implementation of the gravitational fields of ellipsoids
-
-  - name: Sarah Margrethe Askevold
-    role: Undergraduate student
-    affiliation: University of Liverpool, UK
-    pronouns: she/her
-    github: SAskevold
-    project: An open-source Python implementation of k-nearest-neighbor interpolation

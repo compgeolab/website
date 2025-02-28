@@ -1,0 +1,86 @@
+# This is the list that populates the team page. Add yourself to the
+# appropriate category.
+#
+# Your profile picture will be loaded from your GitHub account automatically if
+# you have one. Otherwise, add a "picture" field with a path to a picture with
+# 500x500 pixels in size.
+#
+# Required fields: name, role, affiliation
+
+# List of current lab members
+current:
+  - name: Hector Nieto 
+    role: PI - Tenured Scientist
+    affiliation: Tech4Agro (ICA-CSIC)
+    #pronouns: he/him
+    github: hectornieto
+    #email: 
+    #orcid: 0000-0001-7199-2885
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+
+  - name: Benjamin Mary
+    role: Co-PI - Post-doc Researcher
+    affiliation: Tech4Agro (ICA-CSIC)
+    pronouns: he/him
+    github: BenjMy
+    email: benjamin.mary@ica.csic.es
+    orcid: 0000-0001-7199-2885
+    google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    website: https://benjmy.github.io/myCareerBook/intro.html
+
+
+  - name: Monica Garcia
+    role: Tenured Scientist
+    affiliation: Estacion Experimental de Zonas Aridas-CSIC (EEZA-CSIC)
+    #pronouns: he/him
+    github: 
+    #email: benjamin.mary@ica.csic.es
+    orcid: 0000-0002-4587-8920
+    google_scholar: https://scholar.google.com/citations?user=93-q1egAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+
+
+  - name: Vicente Burchard-Levine
+    role: Tenured Scientist
+    affiliation: Speclab (CCHS-CSIC)
+    #pronouns: he/him
+    github: VicenteBurchard
+    #email: benjamin.mary@ica.csic.es
+    #orcid: 0000-0001-7199-2885
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+
+
+  - name: Manuel Esteban Lucas Borja
+    role: Professor
+    affiliation: Universidad de Castilla-La Mancha (UCLM)
+    #pronouns: he/him
+    github: 
+    #email: benjamin.mary@ica.csic.es
+    #orcid: 0000-0001-7199-2885
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    researchgate: https://www.researchgate.net/profile/Manuel-Esteban-Lucas-Borja
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+
+  - name: Maria Burguet Marimón 
+    role: Post-doc Researcher
+    affiliation: Tech4Agro (ICA-CSIC)
+    #pronouns: he/him
+    github: 
+    #email: benjamin.mary@ica.csic.es
+    #orcid: 0000-0001-7199-2885
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    researchgate: https://www.researchgate.net/profile/Maria-Burguet
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+

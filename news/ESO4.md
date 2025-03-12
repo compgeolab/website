@@ -1,6 +1,7 @@
 ---
 title: "Welcome students at ICA to showcase research activity"
 date: 2025-03-12
+author: Hector Nieto
 ---
 
 {% import "macros.html" as macros %}

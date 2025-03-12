@@ -14,8 +14,8 @@ current:
     affiliation: Tech4Agro (ICA-CSIC)
     #pronouns: he/him
     github: hectornieto
-    #email: 
-    #orcid: 0000-0001-7199-2885
+    email: hector.nieto@ica.csic.es 
+    orcid: 0000-0003-4250-6424
     #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
     #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
     #lattes: 8939551682050504
@@ -33,7 +33,19 @@ current:
     #lattes: 8939551682050504
     website: https://benjmy.github.io/myCareerBook/intro.html
 
-
+  - name: María Burguet
+    role: Hired postdoc
+    affiliation: Tech4Agro (ICA-CSIC)
+    #pronouns: he/him
+    #github: VicenteBurchard
+    email: maria.burguet@ica.csic.es
+    orcid: 0000-0002-9748-8078
+    picture: pictures/maria.burguet.jpg
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
+    #lattes: 8939551682050504
+    #website: https://benjmy.github.io/myCareerBook/intro.html
+    
   - name: Vicente Burchard-Levine
     role: Tenured Scientist
     affiliation: Speclab (CCHS-CSIC)

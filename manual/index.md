@@ -12,7 +12,8 @@ toc_table:
   - manual/coc
   - manual/software
   - manual/computing
-  - manual/resources
+  - manual/resources  
+  - manual/wp1
 ---
 
 {% import "macros.html" as macros %}

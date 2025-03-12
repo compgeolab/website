@@ -1,9 +1,9 @@
 {# Macros to make the life easier across the website #}
 
 
-{%- macro figure(src, caption, alt, style="") %}
+{%- macro figure(src, caption, alt, figsize="") %}
   <figure>
-    <img src="{{ src }}" alt="{{ alt }}" style="{{ style }}">
+    <img src="{{ src }}" alt="{{ alt }}" style="max-width: 100%; {{ figsize }}">
     <figcaption>{{ caption }}</figcaption>
   </figure>
 {%- endmacro %}

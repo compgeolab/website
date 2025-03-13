@@ -48,13 +48,26 @@ current:
     
   - name: Vicente Burchard-Levine
     role: Tenured Scientist
-    affiliation: Speclab (CCHS-CSIC)
+    affiliation: Speclab (IEGD-CSIC)
     #pronouns: he/him
     github: VicenteBurchard
-    #email: benjamin.mary@ica.csic.es
-    #orcid: 0000-0001-7199-2885
+    email: vicente.burchard@ica.csic.es
+    orcid: 0000-0003-0222-8706
     #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
     #researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
     #lattes: 8939551682050504
     #website: https://benjmy.github.io/myCareerBook/intro.html
 
+  - name: Manuel Esteban Lucas Borja
+    role: Professor
+    affiliation: Universidad de Castilla-La Mancha (UCLM)
+    #pronouns: he/him
+    #github: 
+    email: Manuelesteban.lucas@uclm.es
+    orcid: 0000-0001-6270-8408
+    picture: pictures/Manuel Esteban.Lucas.Borja.jpg
+    #google_scholar: https://scholar.google.com/citations?user=3kDP4-AAAAAJ&hl=en
+    researchgate: https://www.researchgate.net/profile/Manuel-Esteban-Lucas-Borja
+    #lattes: 8939551682050504
+    website: https://blog.uclm.es/manuelestebanlucas/
+    

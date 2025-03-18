@@ -1,6 +1,6 @@
 ---
 title: "XXVII Geophysics Summer School"
-date: 2024-09-23
+date: 2025-03-18
 author: Yago Moreira Castro
 ---
 

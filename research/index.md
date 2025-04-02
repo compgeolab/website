@@ -39,15 +39,17 @@ Our work on this theme:
 </section>
 <section class="extra-space-xl flow">
 
-## Antarctic magnetic data and geothermal heat flow
+## Antarctic geophysical data
 
-Antarctica is a vast and poorly explored continent that is suffering greatly from the impacts of human-induced climate change.
-One parameter that is crucial to understanding how Antarctica's **ice sheets will respond to climate change** is the **flow of heat coming from the Earth's crust**.
-This so-called *geothermal heat flow* is needed to constrain models of how ice sheets flow and how the Earth's crust rebounds upwards once ice mass is displaced, influencing **sea-level rise**.
-One of the few ways we have to determine heat flow over the entire continent is through indirect geophysical observations, like **magnetic anomaly data**.
+Antarctica is a vast and poorly explored continent that is suffering greatly
+from the impacts of human-induced climate change.
+Geophysical data are crucial to understanding how Antarctica's **ice sheets
+will respond to climate change** and how the Earth's crust rebounds upwards
+once ice mass is displaced, influencing **sea-level rise**.
 
-We are working hard on improving the way that **airborne and satellite magnetic data** are processed and merged, aiming to reach the highest resolution possible from the data.
-Our group is also tackling the challenging **inverse problem of producing heat flow estimates** from the magnetic data.
+We are working hard on improving the way that **airborne and satellite**
+gravity and magnetic data from Antarctica are processed and merged, aiming to
+reach the highest resolution possible from the data.
 
 {{ macros.figure(src="../images/antarctica-magnetic-data.jpg", alt="Map of Antarctica overlaid by red, white, and blue points representing magnetic measurements. The data coverage has a lot of gaps.", caption='The <a href="https://doi.org/10.1029/2018GL078153">ADMAP2</a> compilation of open-access airborne magnetic anomaly data for Antarctica. We are improving the compilation by adding more recent surveys and standardizing the data, as well as developing a new process for merging these data with satellite observations.') }}
 

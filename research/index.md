@@ -8,7 +8,8 @@ template: base.html
 <div class="lead">
 
 We focus our efforts on creating and applying new methods for **3D modeling and
-data processing**, mostly for gravimetry and magnetometry. Below, you'll find
+data processing**, mostly for gravimetry and magnetometry (AKA
+**potential-field methods**). Below, you'll find
 the main research themes that we pursue.
 
 </div>
@@ -30,6 +31,7 @@ Our group is collaborating with experts in paleomagnetism to **develop new metho
 
 Our work on this theme:
 
+* [Robust directional analysis of magnetic microscopy images using non-linear inversion and iterative Euler deconvolution](https://github.com/compgeolab/micromag-interfering-sources)
 * [Full vector inversion of magnetic microscopy images using Euler deconvolution as a priori information](https://github.com/compgeolab/micromag-euler-dipole)
 
 </div>

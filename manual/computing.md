@@ -32,7 +32,7 @@ You should already have a terminal with bash (look for the "terminal" app).
 Git is often already installed as well or you can install it with
 your distributions package manager.
 
-On Ubuntu:
+On Ubuntu or Linux Mint:
 
 ```bash
 sudo apt-get install git
@@ -48,48 +48,55 @@ install using the official distribution of Python.
 
 </div>
 
-The best way to get setup with Python for your project is
-by getting a Python distribution that has the `conda` or `mamba`
-package managers. Anaconda itself (which you likely have from
-one of Leo's classes) is good for some cases but for your
-project work it will likely cause more harm than good because
-it comes with too many libraries that we won't need (and is thus
+The best way to get setup with Python for your project is by getting a Python
+distribution that has the `conda` package manager.
+[Anaconda](https://www.anaconda.com/download) is very popular and is good for
+some cases but for your project work it will **likely cause more harm than
+good** because it comes with too many libraries that we won't need (and is thus
 a huge pain to update).
 
-The recommended distribution to install for Windows, Linux, and Mac
-is [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge).
+The **recommended** distribution to install for Windows, Linux, and Mac
+is [Miniforge](https://conda-forge.org/download/).
 This is a minimalist version of Anaconda made by the
-[conda-forge](https://conda-forge.org/) team. It comes only with Python
-and `mamba` (which we use to install other libraries).
+[conda-forge](https://conda-forge.org/) team.
+It comes only with Python and `conda` (which we use to install other
+libraries).
 
-Follow the instructions below to download and setup Mambaforge.
+Follow the instructions below to download and setup Miniforge.
 
 ### Windows
 
-Download the [latest Mambaforge](https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Windows-x86_64.exe).
+Download the [latest Miniforge](https://conda-forge.org/download/).
+Run the installer and the default should save the installation in a sub folder
+`AppData/Local/` within your home folder. For example,
+`C:/Users/YOUR_USERNAME/AppData/Local/miniforge3`.
+This should create a `miniforge3` folder in your home directory.
 
-Run the installer and the default should save the installation in a sub folder `AppData/Local/` within your home folder.
-For example,  `C:/Users/YOUR_USERNAME/AppData/Local/mambaforge`.
+<div class="callout">
 
-This should create a `mambaforge` folder in your home directory
-(open Git Bash and run `cd` to get to your home).
+**Working with Git Bash as well?**
+If so, we need to make Git Bash aware of Miniforge so that
+you have access to the `conda` package manager.
 
-Now we need to make Git Bash aware of Mambaforge so that
-you have access to the `mamba` package manager.
-
-Run the commands below on Git Bash.
-
-Add the following initialization code to a file called `.bashrc` in your home folder:
+Add the following initialization code to a file called `.bashrc` in your home
+folder (use any text editor you want to do that):
 
 ```bash
-# Mambaforge initialization code
-source ~/AppData/Local/mambaforge/etc/profile.d/conda.sh
+# Miniforge initialization code
+source ~/AppData/Local/miniforge3/etc/profile.d/conda.sh
 conda activate
 ```
 
-After that, close Git Bash and open it again.
-To test that your setup worked, run `python` and
-check if the output looks something like the following:
+If you had Git Bash open, close it and open it again.
+
+</div>
+
+### Testing your install
+
+To test that your setup worked, open Git Bash or the "Miniforge Prompt" program
+(on Windows) or your terminal (on Linux).
+Run `python` and check if the output looks something like the following (look
+for the `packaged by conda-forge` part in particular):
 
 ```
 Python 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)
@@ -98,55 +105,27 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Also try running `mamba` and check that the output is something like:
+### Installing other Python packages
 
-```
-usage: mamba [-h] [-V] command ...
-
-conda is a tool for managing and deploying applications, environments and packages.
-
-Options:
-
-positional arguments:
-  command
-    clean        Remove unused packages and caches.
-    compare      Compare packages between conda environments.
-    config       Modify configuration values in .condarc. This is modeled after the git config command. Writes to the user .condarc file (/home/leo/.condarc) by default.
-    create       Create a new conda environment from a list of specified packages.
-    help         Displays a list of available conda commands and their help strings.
-    info         Display information about current conda install.
-    init         Initialize conda for shell interaction. [Experimental]
-    install      Installs a list of packages into a specified conda environment.
-    list         List linked packages in a conda environment.
-    package      Low-level conda package utility. (EXPERIMENTAL)
-    remove       Remove a list of packages from a specified conda environment.
-    uninstall    Alias for conda remove.
-    run          Run an executable in a conda environment. [Experimental]
-    search       Search for packages and display associated information. The input is a MatchSpec, a query language for conda packages. See examples below.
-    update       Updates conda packages to the latest compatible version.
-    upgrade      Alias for conda update.
-    repoquery    Query repositories using mamba.
-
-optional arguments:
-  -h, --help     Show this help message and exit.
-  -V, --version  Show the conda version number and exit.
-
-conda commands available from other packages:
-  env
-```
-
-Now that you have Python installed and properly configured,
-use `mamba` to install the standard Python libraries that
-we will most likely be using:
+Now that you have Python installed and properly configured, open Git Bash or
+the "Miniforge Prompt" program (on Windows) or your terminal (on Linux).
+Then, use `conda` to install the standard Python libraries that we will most
+likely be using:
 
 ```bash
-mamba install numpy scipy pandas matplotlib xarray netcdf4 make \
-    jupyter jupyterlab pyproj verde harmonica boule pooch
+conda install numpy scipy pandas matplotlib jupyterlab
 ```
 
-You should be good to go from here. To start JupyterLab, run
-(it's a good idea to return to your home folder before doing
-this by running `cd`):
+You may also want to install some additional libraries for geophysics:
+
+```bash
+conda install xarray netcdf4 pygmt verde harmonica boule bordado
+```
+
+You should be good to go from here.
+
+To start JupyterLab, run (it's a good idea to return to your home folder before
+doing this by running `cd`):
 
 ```
 jupyter lab

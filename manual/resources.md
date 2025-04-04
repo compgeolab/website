@@ -71,7 +71,8 @@ Python:
 * [mamba](https://mamba.readthedocs.io/): Python package manager
 * [Miniforge](https://github.com/conda-forge/miniforge): a conda-forge
   distribution (alternative to Anaconda, useful if we don't desire to agree
-  with the [Anaconda TOS](https://www.anaconda.com/terms-of-service)).
+  with the [Anaconda
+  TOS](https://www.anaconda.com/pricing/terms-of-service-faqs)).
 * [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge): another
   conda-forge distribution that ships the `mamba` package manager by default.
 

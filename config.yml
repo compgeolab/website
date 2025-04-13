@@ -12,7 +12,8 @@ mastodon: leouieda
 mastodon_server: bertha.social
 github: compgeolab
 linkedin: uieda
-researchgate: https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda
+researchgate: Computer-Oriented-Geoscience-Lab-Leonardo-Uieda
+zenodo: compgeolab
 location:
   department: Departamento de Geofísica
   school: Instituto de Astronomia, Geofísica e Ciências Atmosféricas

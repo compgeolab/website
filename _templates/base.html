@@ -120,16 +120,19 @@
       <ul class="list-inline" role="list">
         <li>Follow the lab:</li>
         <li>
-          {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
+          <a href="https://github.com/{{ config.github }}" target="_blank">GitHub</a>
         </li>
         <li>
-          {{ macros.social_icon("Mastodon", "fab fa-mastodon", "https://" + config.mastodon_server + "/@" + config.mastodon) }}
+          <a href="https://{{ config.mastodon_server }}/@{{ config.mastodon }}" target="_blank">Mastodon</a>
         </li>
         <li>
-          {{ macros.social_icon("LinkedIn", "fab fa-linkedin", "https://www.linkedin.com/in/" + config.linkedin) }}
+          <a href="https://www.linkedin.com/in/{{ config.linkedin }}" target="_blank">LinkedIn</a>
         </li>
         <li>
-          {{ macros.social_icon("ResearchGate", "ai ai-researchgate", config.researchgate) }}
+          <a href="https://zenodo.org/communities/{{ config.zenodo }}" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/{{ config.researchgate }}" target="_blank">ResearchGate</a>
         </li>
       </ul>
       <div class="font-small">

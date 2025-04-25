@@ -57,6 +57,7 @@ reach the highest resolution possible from the data.
 
 Our work on this theme:
 
+* [Transforming total field anomaly into anomalous magnetic field: Using dual-layer gradient-boosted equivalent sources](https://github.com/compgeolab/eqs-gb-norm-of-b)
 * {{ macros.page_link("news/pgr-conference2023", page, site) }}
 
 </div>

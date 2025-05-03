@@ -6,10 +6,8 @@ author: Yago Moreira Castro & Arthur Siqueira de Macêdo
 
 # MSc Seminars
 
-Explain what it is
+The MSc seminar presentation is a formal step in the graduate program used to evaluate the progress of research projects after approximately one year of work. It allows the department and the student to assess whether the initial objectives are being met, if the timeline remains feasible, and what adjustments may be necessary. The presentation includes a summary of the project's goals, methodology, and partial results. Feedback received during the seminar supports the planning of next steps and helps ensure the project stays aligned with academic requirements and deadlines.
 
-
-<!-- Image here -->
 
 ## Arthur
 On April 4th, 2025, Arthur presented his MSc seminar at the **Institute of Astronomy, Geophysics and Atmospheric Sciences (IAG-USP)**, part of the University of São Paulo. My research, titled **Integration of airborne geophysics datasets with equivalent sources on the sphere**, focuses on developing and applying novel methods for integrating airborne geophysical data using equivalent source techniques on a spherical surface.

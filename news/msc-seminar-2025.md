@@ -31,6 +31,6 @@ Check out the presentation [here](https://yagomcastro.github.io/magali-msc-quali
 
 ### Availability
 
-The presentation materials are publicly available under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en):
+The [presentation materials](https://github.com/YagoMCastro/magali-msc-qualification) are publicly available under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en):
 
 The research team welcomes feedback and collaboration proposals from interested researchers in the field of magnetic microscopy and computational geophysics.

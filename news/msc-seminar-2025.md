@@ -1,5 +1,5 @@
 ---
-title: "MSc Seminar Presentaions"
+title: "2025 MSc seminar presentaions at IAG - USP"
 date: 2025-04-23
 author: Yago Moreira Castro & Arthur Siqueira de Macêdo
 ---

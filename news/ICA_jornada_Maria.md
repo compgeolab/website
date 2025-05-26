@@ -1,6 +1,7 @@
 ---
 title: "My super talk at ICA Jornada"
 date: 2025-04-26
+author: Maria Burguet
 ---
 
 {% import "macros.html" as macros %}

@@ -5,6 +5,8 @@
 - Index files --> don't need to touch them
 - files in Markdown --> content of the website
 
+https://www.markdownguide.org/basic-syntax/
+
 ## Example: I want to add a news
 1. Open the github
 2. Open the news folder
@@ -14,6 +16,20 @@
 6. Fill the text
 7. Press commit changes 
 
+
+
+
+
+
+## To upload pictures
+
+
+{{ macros.figure(src="../images/news/NAMEOFMYPICTURE.jpg", alt="", caption="") }}
+
+
+
+## Template
+
 ---
 title: ""
 date: 2023-04-26
@@ -21,10 +37,7 @@ date: 2023-04-26
 
 {% import "macros.html" as macros %}
 
-
 ## Abstract
 
-
-
-
-
+**This line below allow you to insert the image**
+{{ macros.figure(src="../images/news/NAMEOFMYPICTURE.jpg", alt="", caption="") }}

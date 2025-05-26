@@ -11,4 +11,4 @@ author: Maria Burguet
 
 During my talk, I presented myself....
 
-
+{{ macros.figure(src="../images/news/TALK.jpg", alt="", caption="") }}

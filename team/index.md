@@ -8,7 +8,7 @@ template: base.html
 <div class="lead">
 
 We are an international group of researchers joined by a shared passion for
-geoscience and high-quality open research software.
+environmental sciences and high-quality open research software.
 
 </div>
 

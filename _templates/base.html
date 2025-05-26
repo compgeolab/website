@@ -118,7 +118,7 @@
         </ul>
       </nav>
       <ul class="list-inline" role="list">
-        <li>Follow the lab:</li>
+        <li>Follow the project:</li>
         <li>
           {{ macros.social_icon("GitHub", "fab fa-github", "https://github.com/" + config.github) }}
         </li>
@@ -146,6 +146,12 @@
           <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
         </p>
       </div>
+	<div class="logo-funding">
+          <p><strong>Funding:</strong> This project has received funding from FFBVA.</p>
+          <a href="https://www.fbbva.es/noticias/apertura-prismas-problemas-investigaciones-aplicadas-interdisciplinares/">
+            <img src="{{ config.funding_logo|relative_to(page.path) }}" alt="FBBVA Logo">
+          </a>
+        </div>
     </div>
   </footer>
 

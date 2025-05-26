@@ -197,6 +197,15 @@ blockquote {
   padding: var(--gutter);
 }
 
+.logo-funding {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between text and image */
+}
+
+.logo-funding img {
+  max-height: 50px;
+}
 
 /* Flow and rythm */
 /*****************************************************************************/

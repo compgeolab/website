@@ -114,7 +114,7 @@
         </ul>
       </nav>
       <ul class="list-inline" role="list">
-        <li>Follow the lab:</li>
+        <li><strong>Follow the lab:</strong></li>
         <li>
           <a href="https://github.com/{{ config.github }}" target="_blank">GitHub</a>
         </li>
@@ -134,18 +134,18 @@
       <div class="font-small">
         <p class="text-bold">
           {{ config.location.department }}
-          •
+          —
           {{ config.location.school }}
-          •
+          —
           {{ config.location.university }}
-          •
+          —
           {{ config.location.country }}
         </p>
         <p>
           Last updated on {{ build.today.strftime('%d %B %Y') }}.
           Built with <a href="https://nene.leouieda.com">Nēnē</a> {{ build.nene_version }}
           from source code at
-          <a href="https://github.com/{{ config.repository }}"><i class="fa fa-code-branch" aria-hidden="true"></i> {{ config.repository}}</a>
+          <a href="https://github.com/{{ config.repository }}">{{ config.repository}}</a>
           (<a href="https://github.com/{{ config.repository }}/commit/{{ build.commit }}">{{ build.commit }}</a>).
         </p>
         <p>

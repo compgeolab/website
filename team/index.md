@@ -7,8 +7,8 @@ template: base.html
 
 <div class="lead">
 
-We are an international group of researchers joined by a shared passion for
-geoscience and high-quality open research software.
+We are a group of scientists joined by a shared passion for geoscience, problem
+solving, open science, and software engineering.
 
 </div>
 
@@ -42,25 +42,27 @@ geoscience and high-quality open research software.
         {%- if person.website is defined %}
           <li>Website: <a href="{{ person.website }}" target="_blank">{{ person.website[8:] }}</a></li>
         {%- endif %}
+        <li>Links:
+          {%- set links = [] -%}
+          {%- if person.github is defined -%}
+            {%- do links.append(("https://github.com/" + person.github, "GitHub")) -%}
+          {%- endif -%}
+          {%- if person.lattes is defined -%}
+            {%- do links.append(("https://lattes.cnpq.br/" + person.lattes, "Lattes")) -%}
+          {%- endif -%}
+          {%- if person.researchgate is defined -%}
+            {%- do links.append(("https://www.researchgate.net/profile/" + person.researchgate, "ResearchGate")) -%}
+          {%- endif -%}
+          {%- if person.google_scholar is defined -%}
+            {%- do links.append(("http://scholar.google.com/citations?user=" + person.google_scholar, "Google Scholar")) -%}
+          {%- endif -%}
+          {%- for url, title in links %}
+            <a href="{{ url }}" target="_blank">{{ title }}</a>{%- if
+            not loop.last %} / {%- endif %}
+          {%- endfor %}
+        </li>
         {%- if person.project is defined %}
-          <li>Project: <span class="text-muted">{{ person.project }}</span></li>
-        {%- endif %}
-      </ul>
-      <ul class="list-inline font-large" role="list">
-        {%- if person.github is defined %}
-          <li><a href="https://github.com/{{ person.github }}" target="_blank"><i class="fab fa-github" aria-label="GitHub" title="GitHub"></i></a></li>
-        {%- endif %}
-        {%- if person.lattes is defined %}
-          <li><a href="https://lattes.cnpq.br/{{ person.lattes }}" target="_blank"><i class="ai ai-lattes" aria-label="Currículo Lattes" title="Currículo Lattes"></i></a></li>
-        {%- endif %}
-        {%- if person.google_scholar is defined %}
-          <li><a href="{{ person.google_scholar }}" target="_blank"><i class="ai ai-google-scholar" aria-label="Google Scholar" title="Google Scholar"></i></a></li>
-        {%- endif %}
-        {%- if person.orcid is defined %}
-          <li><a href="https://impactstory.org/u/{{ person.orcid }}" target="_blank"><i class="ai ai-impactstory" aria-label="ImpactStory" title="ImpactStory"></i></a></li>
-        {%- endif %}
-        {%- if person.researchgate is defined %}
-          <li><a href="{{ person.researchgate }}" target="_blank"><i class="ai ai-researchgate" aria-label="ResearchGate" title="ResearchGate"></i></a></li>
+          <li>Project: <span class="text-muted">"{{ person.project }}"</span></li>
         {%- endif %}
       </ul>
     </div>

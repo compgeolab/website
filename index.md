@@ -13,7 +13,7 @@ banner_links:
     id: research/index
   - name: Lab manual
     id: manual/index
-  - name: <i class="fab fa-github" aria-label="hidden"></i> GitHub
+  - name: GitHub
     id: https://github.com/compgeolab
 template: home.html
 ---
@@ -68,7 +68,7 @@ across the larger scientific ecosystem:
   coordinates.
 
 We also **publish all of the code and data** needed to reproduce our projects
-on [our <i class="fab fa-github" aria-hidden="true"></i> GitHub organization][github].
+on [our GitHub organization][github].
 
 [usp]: https://www.iag.usp.br/
 [fatiando]: https://www.fatiando.org/

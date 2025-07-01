@@ -16,9 +16,9 @@ current:
     github: leouieda
     email: uieda@usp.br
     orcid: 0000-0001-6123-9515
-    google_scholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
-    researchgate: https://www.researchgate.net/profile/Leonardo_Uieda
-    lattes: 8939551682050504
+    google_scholar: qfmPrUEAAAAJ
+    researchgate: Leonardo_Uieda
+    lattes: "8939551682050504"
     website: https://www.leouieda.com
 
   - name: India Uppal
@@ -29,6 +29,7 @@ current:
     email: I.Uppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
     project: Improving estimates of Antarctic geothermal heat flow from magnetic data
+    researchgate: India-Uppal
 
   - name: Gelson Ferreira Souza-Junior
     role: PhD student
@@ -37,8 +38,9 @@ current:
     github: Souza-junior
     email: gelson.ferreira@iag.usp.br
     orcid: 0000-0002-5695-4239
-    lattes: 5458580084475010
-    researchgate: https://www.researchgate.net/profile/Gelson-Souza-Junior
+    lattes: "5458580084475010"
+    researchgate: Gelson-Souza-Junior
+    googlescholar: h7rx2r4AAAAJ
     project: "Micropaleomagnetism: Combining magnetic microscopy and applied geophysics"
 
   - name: Yago Moreira Castro
@@ -48,8 +50,8 @@ current:
     github: YagoMCastro
     email: yagomcastro@usp.br
     orcid: 0009-0003-3884-9675
-    lattes: 3638234138206203
-    researchgate: https://www.researchgate.net/profile/Yago-Moreira-Castro
+    lattes: "3638234138206203"
+    researchgate: Yago-Moreira-Castro
     project: "Magali: An open-source software package for magnetic microscopy"
 
   - name: Arthur Siqueira de Macêdo
@@ -59,8 +61,8 @@ current:
     github: arthursmacedo
     email: arthursmacedo@usp.br
     orcid: 0009-0006-5106-4356
-    lattes: 8208731636024394
-    researchgate: https://www.researchgate.net/profile/Arthur-Macedo-9
+    lattes: "8208731636024394"
+    researchgate: Arthur-Macedo-9
     project: Integration of airborne geophysics datasets with gradient-boosted equivalent sources on the sphere
 
   - name: Gabriel Aparecido das Chagas Silva
@@ -69,8 +71,8 @@ current:
     pronouns: he/him
     github: chagas-gabriel
     email: gabaparecidochagas@usp.br
-    lattes: 6035373599732811
-    researchgate: https://www.researchgate.net/profile/Gabriel-Silva-282
+    lattes: "6035373599732811"
+    researchgate: Gabriel-Silva-282
     project: Mesh refinement in the 3D inversion of potential-field  data through the planting method
 
   - name: Eros Kerouak Cordeiro Pereira
@@ -80,8 +82,8 @@ current:
     github: ErosKerouak
     email: eroskerouak@gmail.com
     orcid: 0009-0008-0891-6781
-    lattes: 3980280544623493
-    researchgate: https://www.researchgate.net/profile/Eros-Kerouak-Pereira
+    lattes: "3980280544623493"
+    researchgate: Eros-Kerouak-Pereira
     project: "Application of the gravimetric method to the study of the Dom Feliciano orogen and the southern portion of the Ribeira orogen"
 
 # List of external collaborators
@@ -92,8 +94,8 @@ collaborators:
     pronouns: he/him
     github: santisoler
     orcid: 0000-0001-9202-5317
-    google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
-    researchgate: https://www.researchgate.net/profile/Santiago_Soler2
+    google_scholar: 7OWfWx0AAAAJ
+    researchgate: Santiago_Soler2
     website: https://www.santisoler.com
 
   - name: Vanderlei C. Oliveira Jr.
@@ -102,8 +104,10 @@ collaborators:
     pronouns: he/him
     github: birocoles
     orcid: 0000-0002-6338-4086
-    lattes: 4332841435949533
+    lattes: "4332841435949533"
     website: https://www.pinga-lab.org
+    google_scholar: TQbQ4TcAAAAJ
+    researchgate: Vanderlei-Oliveira-Jr
 
   - name: Valéria C. F. Barbosa
     role: Researcher
@@ -111,9 +115,11 @@ collaborators:
     pronouns: she/her
     github: valcris
     orcid: 0000-0002-9767-6044
-    lattes: 0391036221142471
+    lattes: "0391036221142471"
     website: https://www.pinga-lab.org
     picture: ../images/team/valeria-barbosa.jpg
+    google_scholar: IujiT0cAAAAJ
+    researchgate: Valeria-Barbosa
 
   - name: Ricardo I. F. Trindade
     id: ricardo
@@ -121,9 +127,10 @@ collaborators:
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     orcid: 0000-0001-9848-9550
-    researchgate: https://www.researchgate.net/profile/Ricardo-Trindade
-    lattes: 3934334115083849
+    researchgate: Ricardo-Trindade
+    lattes: "3934334115083849"
     picture: ../images/team/ricardo-trindade.jpg
+    google_scholar: neZp4UsAAAAJ
 
 # List of past lab members
 alumni:
@@ -134,8 +141,8 @@ alumni:
     pronouns: she/her
     github: fernandesellen
     email: ellenfernandes@usp.br
-    lattes: 0331850218891856
-    researchgate: https://www.researchgate.net/profile/Ellen-Fernandes
+    lattes: "0331850218891856"
+    researchgate: Ellen-Fernandes
     project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
 
   - name: Santiago Soler
@@ -144,9 +151,7 @@ alumni:
     pronouns: he/him
     github: santisoler
     orcid: 0000-0001-9202-5317
-    google_scholar: https://scholar.google.com/citations?user=7OWfWx0AAAAJ
-    researchgate: https://www.researchgate.net/profile/Santiago_Soler2
-    project:  Metodologías y herramientas computacionales para el procesamiento y modelado de datos gravimétricos
+    project: Metodologías y herramientas computacionales para el procesamiento y modelado de datos gravimétricos
 
   - name: Laura Nicholls
     role: Undergraduate student

@@ -36,4 +36,4 @@ macros.youtube_video(
 
 ## Get the slides
 
-My presentation is released under a Creative Commons Attribution 4.0 International License and is available in the GitHub repository [<i class="fab fa-github" aria-hidden="true"></i> YagoMCastro/science-day-2024-magali](https://github.com/YagoMCastro/science-day-2024-magali).
+My presentation is released under a Creative Commons Attribution 4.0 International License and is available in the GitHub repository [YagoMCastro/science-day-2024-magali](https://github.com/YagoMCastro/science-day-2024-magali).

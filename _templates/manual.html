@@ -14,7 +14,6 @@
       <nav class="flow" aria-label="Manual">
         {%- for section in site["manual/index"].toc %}
           <p class="text-bold font-large">
-            <i class="fas fa-list fa-sm" aria-hidden="true"></i>
             {{ section.title }}
           </p>
           <ol class="flow">
@@ -30,8 +29,7 @@
         <div class="extra-space-xs">
         {%- if page.id != "manual/index" %}
           <a aria-current="page" href="{{ site["manual/index"].path|relative_to(page.path) }}">
-            <i class="fas fa-arrow-left fa-sm" aria-hidden="true"></i>
-            Back to the manual
+            ← Back to the manual
           </a>
         {%- endif %}
         </div>

@@ -19,14 +19,6 @@
 {%- endmacro %}
 
 
-{%- macro social_icon(title, icon, url) -%}
-  <!-- The rel="me" attribute verifies for these profiles that I own this domain -->
-  <a rel="me" href="{{ url }}" target="_blank">
-    <i class="{{ icon }} fa-lg" title="{{ title }}" aria-label="{{ title }}"></i>
-  </a>
-{%- endmacro -%}
-
-
 {%- macro pretty_relative_link(page, reference) -%}
   {%- if page.id == reference.id -%}
     {%- set href = "." -%}

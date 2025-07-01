@@ -41,7 +41,7 @@
 body {
   background: var(--color-light);
   color: var(--color-dark);
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
   font-size: var(--size-0);
   line-height: 1.6;
 }
@@ -85,7 +85,7 @@ hr {
 }
 
 code {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Atkinson Hyperlegible Mono", monospace;
   background-color: var(--color-lightish);
   padding: .2em .3em;
   border-radius: 6px;

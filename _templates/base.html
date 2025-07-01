@@ -31,11 +31,9 @@
   <meta property="og:image" content="{{ config.url }}/{{ config.thumbnail }}" />
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
 
-  <!-- Atkinson Hyperlegible font -->
-  <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible/fonts.css"|relative_to(page.path) }}" />
-
-  <!-- Ubuntu Mono font -->
-  <link rel="stylesheet" href="{{ "pkg/ubuntu-mono/fonts.css"|relative_to(page.path) }}" />
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible-next/font.css"|relative_to(page.path) }}" />
+  <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible-mono/font.css"|relative_to(page.path) }}" />
 
   <!-- FontAwsome icons -->
   <link rel="stylesheet" href="{{ "pkg/fontawesome/css/all.css"|relative_to(page.path) }}">
@@ -51,8 +49,6 @@
 
   <!-- Plausible analytics for anonymous usage statistics -->
   <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
-
-  {%- block extrahead %}{% endblock %}
 
 </head>
 

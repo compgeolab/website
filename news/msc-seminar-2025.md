@@ -21,6 +21,7 @@ The motivation behind this work lies in the increasing availability of regional 
 
 
 ## Yago
+
 On April 15 2025, Yago gave a MSc seminar presentation at the [IAG-USP](https://www.iag.usp.br/), presenting the development progress of [Magali](https://github.com/fatiando/magali), a Python library for magnetic microscopy data processing.
 
 Magali is designed as an open-source computational tool for **magnetic microscopy data analysis**, featuring:

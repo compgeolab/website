@@ -6,7 +6,7 @@ author: Yago Moreira Castro & Arthur Siqueira de Macêdo
 
 {%- import "macros.html" as macros %}
 
-The MSc seminar presentation is a formal step in the graduate program used to evaluate the progress of research projects after approximately one year of work. It allows the department and the student to assess whether the initial objectives are being met, if the timeline remains feasible, and what adjustments may be necessary. The presentation includes a summary of the project's goals, methodology, and partial results. Feedback received during the seminar supports the planning of next steps and helps ensure the project stays aligned with academic requirements and deadlines.
+The MSc seminar presentations at the [Institute of Astronomy, Geophysics and Atmospheric Sciences (IAG)](https://www.iag.usp.br/), part of the University of São Paulo, is a formal step in the graduate program used to evaluate the progress of research projects after approximately one year of work. It allows the department and the student to assess whether the initial objectives are being met, if the timeline remains feasible, and what adjustments may be necessary. The presentation includes a summary of the project's goals, methodology, and partial results. Feedback received during the seminar supports the planning of next steps and helps ensure the project stays aligned with academic requirements and deadlines.
 
 
 ## Arthur

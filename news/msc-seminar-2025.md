@@ -17,7 +17,7 @@ The motivation behind this work lies in the increasing availability of regional 
 
 
 
-{{ macros.figure("../images/news/msc-presentation-arthur.png", caption = "Arthur presenting his MSc seminar at IAG-USP 2025", alt="A man in a maroon T-shirt is giving a presentation in a classroom, pointing to a slide projected on a screen. The slide discusses the acquisition of magnetometry data through airborne surveys and shows two maps with magnetic data, one labeled **INTERPOLAÇÃO** Several people are seated, and a microphone is placed on a chair in front of the presenter. A monitor on the right displays a video call with the same slide visible." ) }}
+{{ macros.figure("../images/news/msc-presentation-arthur.png", caption="Arthur presenting his MSc seminar at IAG-USP 2025", alt="A man in a maroon T-shirt is giving a presentation in a classroom, pointing to a slide projected on a screen. The slide discusses the acquisition of magnetometry data through airborne surveys and shows two maps with magnetic data, one labeled "INTERPOLAÇÃO" Several people are seated, and a microphone is placed on a chair in front of the presenter. A monitor on the right displays a video call with the same slide visible." ) }}
 
 
 ## Yago

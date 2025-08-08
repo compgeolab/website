@@ -25,6 +25,7 @@ The motivation behind this work lies in the increasing availability of regional 
 On April 15 2025, Yago presented the development progress of [Magali](https://www.fatiando.org/magali), a Python library for magnetic microscopy data processing.
 
 Magali is designed as an open-source computational tool for **magnetic microscopy data analysis**, featuring:
+
 - Data transformation capabilities
 - Automated particle identification in microscopy images
 - Magnetic dipole moment inversion algorithms

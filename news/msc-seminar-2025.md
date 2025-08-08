@@ -28,8 +28,6 @@ Magali is designed as an open-source computational tool for **magnetic microscop
 - Automated particle identification in microscopy images
 - Magnetic dipole moment inversion algorithms
 
-Check out the presentation [here](https://yagomcastro.github.io/magali-msc-qualification/).
-
 {{ macros.figure("../images/news/msc-qualification-yago.jpeg", caption = "Yago presenting Magali at IAG-USP 2025 MSc seminar", alt="A man stands at a podium in a classroom, delivering a presentation. He is wearing a white t-shirt and glasses, and is positioned behind a wooden desk with a laptop and water bottle. On the projection screen behind him is a slide displaying the word Magali alongside a circular red-and-teal logo. The classroom has a drop ceiling with fluorescent lights, a green chalkboard on the right, and several cables extending across the floor in front of the presenter." ) }}
 
 ### Availability

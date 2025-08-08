@@ -11,7 +11,7 @@ The MSc seminar presentations at the [Institute of Astronomy, Geophysics and Atm
 
 ## Arthur
 
-On April 4th, 2025, Arthur presented his MSc seminar at the [**Institute of Astronomy, Geophysics and Atmospheric Sciences (IAG-USP)**](https://www.iag.usp.br/), part of the University of São Paulo. My research, titled **Integration of airborne geophysics datasets with equivalent sources on the sphere**, focuses on developing and applying novel methods for integrating airborne geophysical data using equivalent source techniques on a spherical surface.
+On April 4th, 2025, I presented my MSc seminar titled **"Integration of airborne geophysics datasets with equivalent sources on the sphere"**. My research focuses on developing and applying novel methods for integrating airborne geophysical data using equivalent source techniques on a spherical surface.
 
 The motivation behind this work lies in the increasing availability of regional and global geophysical surveys, which often differ in resolution, coverage, and acquisition parameters. Traditional approaches struggle to reconcile these differences, especially when working at continental scales. By using equivalent sources defined on a spherical geometry, my methodology enables more consistent and accurate integration of these datasets, preserving the physical meaning of the data. Throughout the project, I implemented and tested this approach on synthetic datasets, demonstrating its potential to support applications in geological mapping and crustal structure studies.
 

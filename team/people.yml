@@ -86,6 +86,14 @@ current:
     researchgate: Eros-Kerouak-Pereira
     project: "Application of the gravimetric method to the study of the Dom Feliciano orogen and the southern portion of the Ribeira orogen"
 
+  - name: Paulo Eduardo Crystal
+    role: Undergraduate student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: paulocrystal
+    email: paulocrystalpe@usp.br
+    project: "Tremelique: An Interactive Open-Source Tool for Seismology Education"
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler

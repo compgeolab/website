@@ -57,7 +57,7 @@ across the larger scientific ecosystem:
   teaching efforts. This is the main project on which we work.
 * [**xlandsat**][xlandsat]: A small Python library for loading and analyzing
   Landsat scenes downloaded from [USGS EarthExplorer][explorer] with the power
-  of xarray into [xarray][xarray].
+  of [xarray][xarray].
 * [**The Generic Mapping Tools**][gmt]: One of the most widely used and loved
   open-source software in the geosciences. Our team contributes to both GMT and
   the [PyGMT][pygmt] library which brings all the power of GMT to the

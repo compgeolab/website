@@ -75,6 +75,12 @@ current:
     researchgate: Eros-Kerouak-Pereira
     project: "Application of the gravimetric method to the study of the Dom Feliciano orogen and the southern portion of the Ribeira orogen"
 
+  - name: Sofia Vieira dos Santos
+    role: Undergraduate student
+    affiliation: Universidade de São Paulo, Brazil
+    github: black-water-lilies
+    project: Using the gradient-boosting method to speed-up spherical harmonic synthesis
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler
@@ -120,6 +126,15 @@ collaborators:
     lattes: "3934334115083849"
     picture: ../images/team/ricardo-trindade.jpg
     google_scholar: neZp4UsAAAAJ
+
+  - name: Ualisson Donardelli Bellon
+    role: Researchers
+    affiliation: University of Edinburgh, Scotland
+    pronouns: he/him
+    orcid: 0000-0002-4599-6548
+    github: bellon-donardelli
+    researchgate: Ualisson-Donardelli-Bellon
+    google_scholar: fSQ0xkIAAAAJ
 
 # List of past lab members
 alumni:

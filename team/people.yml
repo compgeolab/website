@@ -43,19 +43,8 @@ current:
     googlescholar: h7rx2r4AAAAJ
     project: "Micropaleomagnetism: Combining magnetic microscopy and applied geophysics"
 
-  - name: Yago Moreira Castro
-    role: MSc student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: YagoMCastro
-    email: yagomcastro@usp.br
-    orcid: 0009-0003-3884-9675
-    lattes: "3638234138206203"
-    researchgate: Yago-Moreira-Castro
-    project: "Magali: An open-source software package for magnetic microscopy"
-
   - name: Arthur Siqueira-Macedo
-    role: MSc student
+    role: PhD student
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: arthursmacedo
@@ -63,7 +52,7 @@ current:
     orcid: 0009-0006-5106-4356
     lattes: "8208731636024394"
     researchgate: Arthur-Macedo-9
-    project: Integration of airborne geophysics datasets with gradient-boosted equivalent sources on the sphere
+    project: Modeling continental-scale airborne and satellite potential-field data from Antarctica
 
   - name: Gabriel Aparecido das Chagas Silva
     role: Undergraduate student
@@ -134,6 +123,17 @@ collaborators:
 
 # List of past lab members
 alumni:
+
+  - name: Yago Moreira Castro
+    role: MSc student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: YagoMCastro
+    email: yagomcastro@usp.br
+    orcid: 0009-0003-3884-9675
+    lattes: "3638234138206203"
+    researchgate: Yago-Moreira-Castro
+    project: "Magali: An open-source software package for magnetic microscopy"
 
   - name: Ellen Fernandes Marcos
     role: Undergraduate student

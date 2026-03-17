@@ -31,6 +31,10 @@
   <meta property="og:image" content="{{ config.url }}/{{ config.thumbnail }}" />
   <meta property="og:url" content="{{ config.url }}/{{ page.path }}" />
 
+  <!-- Mastodon author attribution -->
+  <!-- https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/ -->
+  <meta name="fediverse:creator" content="@{{ config.mastodon }}@{{ config.mastodon_server }}">
+
   <!-- Atkinson Hyperlegible fonts -->
   <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible-next/font.css"|relative_to(page.path) }}" />
   <link rel="stylesheet" href="{{ "pkg/atkinson-hyperlegible-mono/font.css"|relative_to(page.path) }}" />

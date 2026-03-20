@@ -81,6 +81,18 @@ current:
     github: black-water-lilies
     project: Using the gradient-boosting method to speed-up spherical harmonic synthesis
 
+  - name: Felipe Nascimento Hong
+    role: Undergraduate student
+    affiliation: Universidade de São Paulo, Brazil
+    github: felipehong
+    project: Topographic correction using tesseroids
+
+  - name: Paulo Eduardo Crystal
+    role: Undergraduate student
+    affiliation: Universidade de São Paulo, Brazil
+    github: paulocrystal
+    project: Modeling elastic wave propagation in Python for geophysics education
+
 # List of external collaborators
 collaborators:
   - name: Santiago Soler

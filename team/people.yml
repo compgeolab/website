@@ -96,7 +96,7 @@ current:
 # List of external collaborators
 collaborators:
   - name: Santiago Soler
-    role: Postdoctoral Researcher
+    role: Researcher
     affiliation: University of British Columbia, Canada
     pronouns: he/him
     github: santisoler
@@ -140,7 +140,7 @@ collaborators:
     google_scholar: neZp4UsAAAAJ
 
   - name: Ualisson Donardelli Bellon
-    role: Researchers
+    role: Researcher
     affiliation: University of Edinburgh, Scotland
     pronouns: he/him
     orcid: 0000-0002-4599-6548

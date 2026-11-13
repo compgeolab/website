@@ -33,17 +33,20 @@ solving, open science, and software engineering.
       <ul role="list">
         <li><span class="text-bold">{{ person.role }}</span></li>
         <li>{{ person.affiliation }}</li>
+        {%- if person.advisor is defined %}
+          <li>Advisor: {{ person.advisor }}</li>
+        {%- endif %}
         {%- if person.email is defined %}
           <li>Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a></li>
         {%- endif %}
         {%- if person.orcid is defined %}
           <li>ORCID: <a href="https://orcid.org/{{ person.orcid }}" target="_blank">{{ person.orcid }}</a></li>
         {%- endif %}
-        {%- if person.website is defined %}
-          <li>Website: <a href="{{ person.website }}" target="_blank">{{ person.website[8:] }}</a></li>
-        {%- endif %}
         <li>Links:
           {%- set links = [] -%}
+          {%- if person.website is defined -%}
+            {%- do links.append((person.website, "Website")) -%}
+          {%- endif -%}
           {%- if person.github is defined -%}
             {%- do links.append(("https://github.com/" + person.github, "GitHub")) -%}
           {%- endif -%}
@@ -80,19 +83,13 @@ solving, open science, and software engineering.
 
 ## Team members
 
-The core team working across our research themes:
+The current core team working across our research themes:
 
 {{ profiles(page.people.current) }}
 
-## Collaborators
-
-Research is never done in a vacuum! We are proud to collaborate with
-world-leading researchers:
-
-{{ profiles(page.people.collaborators) }}
-
 ## Alumni
 
-These are some of the people who passed through the lab and have since moved on:
+The people who graduated from the lab, some of whom remain as close
+collaborators:
 
 {{ profiles(page.people.alumni) }}

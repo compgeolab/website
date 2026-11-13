@@ -22,7 +22,7 @@ current:
     website: https://www.leouieda.com
 
   - name: India Uppal
-    role: PhD student
+    role: PhD researcher
     advisor: Richard Holme
     affiliation: University of Liverpool, UK
     pronouns: she/her
@@ -33,7 +33,7 @@ current:
     researchgate: India-Uppal
 
   - name: Arthur Siqueira-Macedo
-    role: PhD student
+    role: PhD researcher
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: arthursmacedo
@@ -54,7 +54,7 @@ current:
     project: Gravity-topography regression analysis
 
   - name: Eros Kerouak Cordeiro Pereira
-    role: PhD student
+    role: PhD researcher
     advisor: Tiago Lima Rodrigues
     affiliation: Universidade Federal do Paraná, Brazil
     pronouns: he/him
@@ -83,11 +83,22 @@ current:
     github: paulocrystal
     project: Modeling elastic waves in Python for geophysics education
 
+  - name: Victoria Malta Pereira de Lima
+    role: MSc student
+    affiliation: Universidade de São Paulo, Brazil
+    advisor: Andrea Teixeira Ustra
+    orcid: 0009-0002-7833-0731
+    github: VMaltaL
+    email: victoriamaltadelima@usp.br
+    lattes: "8434523256554497"
+    researchgate: Victoria-Lima-12
+    project: The effect of organic matter on the IP response
+
 # List of past lab members
 alumni:
 
   - name: Gelson Ferreira Souza-Junior
-    role: PhD student
+    role: PhD researcher
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: Souza-junior
@@ -120,7 +131,7 @@ alumni:
     project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
 
   - name: Santiago Soler
-    role: PhD student
+    role: PhD researcher
     advisor: Mario Gimenez
     affiliation: Universidad Nacional de San Juan, Argentina
     pronouns: he/him

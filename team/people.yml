@@ -23,6 +23,7 @@ current:
 
   - name: India Uppal
     role: PhD student
+    advisor: Richard Holme
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: indiauppal
@@ -30,18 +31,6 @@ current:
     orcid: 0000-0003-3531-2656
     project: Magnetic Probing of the Antarctic Crust
     researchgate: India-Uppal
-
-  - name: Gelson Ferreira Souza-Junior
-    role: PhD student
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: Souza-junior
-    email: gelson.ferreira@iag.usp.br
-    orcid: 0000-0002-5695-4239
-    lattes: "5458580084475010"
-    researchgate: Gelson-Souza-Junior
-    googlescholar: h7rx2r4AAAAJ
-    project: "Micropaleomagnetism: Combining magnetic microscopy and applied geophysics"
 
   - name: Arthur Siqueira-Macedo
     role: PhD student
@@ -52,7 +41,7 @@ current:
     orcid: 0009-0006-5106-4356
     lattes: "8208731636024394"
     researchgate: Arthur-Macedo-9
-    project: Modeling continental-scale airborne and satellite potential-field data from Antarctica
+    project: Modeling continental-scale potential-field data from Antarctica
 
   - name: Gabriel Aparecido das Chagas Silva
     role: Undergraduate student
@@ -62,10 +51,11 @@ current:
     email: gabaparecidochagas@usp.br
     lattes: "6035373599732811"
     researchgate: Gabriel-Silva-282
-    project: Mesh refinement in the 3D inversion of potential-field  data through the planting method
+    project: Gravity-topography regression analysis
 
   - name: Eros Kerouak Cordeiro Pereira
-    role: MSc student
+    role: PhD student
+    advisor: Tiago Lima Rodrigues
     affiliation: Universidade Federal do Paraná, Brazil
     pronouns: he/him
     github: ErosKerouak
@@ -73,13 +63,13 @@ current:
     orcid: 0009-0008-0891-6781
     lattes: "3980280544623493"
     researchgate: Eros-Kerouak-Pereira
-    project: "Application of the gravimetric method to the study of the Dom Feliciano orogen and the southern portion of the Ribeira orogen"
+    project: Gravity data integration with equivalent sources
 
   - name: Sofia Vieira dos Santos
     role: Undergraduate student
     affiliation: Universidade de São Paulo, Brazil
     github: black-water-lilies
-    project: Using the gradient-boosting method to speed-up spherical harmonic synthesis
+    project: Gradient-boosting to speed-up spherical harmonic synthesis
 
   - name: Felipe Nascimento Hong
     role: Undergraduate student
@@ -91,65 +81,22 @@ current:
     role: Undergraduate student
     affiliation: Universidade de São Paulo, Brazil
     github: paulocrystal
-    project: Modeling elastic wave propagation in Python for geophysics education
-
-# List of external collaborators
-collaborators:
-  - name: Santiago Soler
-    role: Researcher
-    affiliation: University of British Columbia, Canada
-    pronouns: he/him
-    github: santisoler
-    orcid: 0000-0001-9202-5317
-    google_scholar: 7OWfWx0AAAAJ
-    researchgate: Santiago_Soler2
-    website: https://www.santisoler.com
-
-  - name: Vanderlei C. Oliveira Jr.
-    role: Researcher
-    affiliation: Observatório Nacional, Brazil
-    pronouns: he/him
-    github: birocoles
-    orcid: 0000-0002-6338-4086
-    lattes: "4332841435949533"
-    website: https://www.pinga-lab.org
-    google_scholar: TQbQ4TcAAAAJ
-    researchgate: Vanderlei-Oliveira-Jr
-
-  - name: Valéria C. F. Barbosa
-    role: Researcher
-    affiliation: Observatório Nacional, Brazil
-    pronouns: she/her
-    github: valcris
-    orcid: 0000-0002-9767-6044
-    lattes: "0391036221142471"
-    website: https://www.pinga-lab.org
-    picture: ../images/team/valeria-barbosa.jpg
-    google_scholar: IujiT0cAAAAJ
-    researchgate: Valeria-Barbosa
-
-  - name: Ricardo I. F. Trindade
-    id: ricardo
-    role: Professor
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    orcid: 0000-0001-9848-9550
-    researchgate: Ricardo-Trindade
-    lattes: "3934334115083849"
-    picture: ../images/team/ricardo-trindade.jpg
-    google_scholar: neZp4UsAAAAJ
-
-  - name: Ualisson Donardelli Bellon
-    role: Researcher
-    affiliation: University of Edinburgh, Scotland
-    pronouns: he/him
-    orcid: 0000-0002-4599-6548
-    github: bellon-donardelli
-    researchgate: Ualisson-Donardelli-Bellon
-    google_scholar: fSQ0xkIAAAAJ
+    project: Modeling elastic waves in Python for geophysics education
 
 # List of past lab members
 alumni:
+
+  - name: Gelson Ferreira Souza-Junior
+    role: PhD student
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: Souza-junior
+    email: gelson.ferreira@iag.usp.br
+    orcid: 0000-0002-5695-4239
+    lattes: "5458580084475010"
+    researchgate: Gelson-Souza-Junior
+    googlescholar: h7rx2r4AAAAJ
+    project: "Micropaleomagnetism"
 
   - name: Yago Moreira Castro
     role: MSc student
@@ -174,11 +121,15 @@ alumni:
 
   - name: Santiago Soler
     role: PhD student
+    advisor: Mario Gimenez
     affiliation: Universidad Nacional de San Juan, Argentina
     pronouns: he/him
     github: santisoler
     orcid: 0000-0001-9202-5317
     project: Metodologías y herramientas computacionales para el procesamiento y modelado de datos gravimétricos
+    google_scholar: 7OWfWx0AAAAJ
+    researchgate: Santiago_Soler2
+    website: https://www.santisoler.com
 
   - name: Laura Nicholls
     role: Undergraduate student

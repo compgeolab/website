@@ -1,0 +1,23 @@
+# Get the authors list from citation.doi.org using the american-geophysical-union style
+
+preprints:
+
+- title: "Multipole Modeling for Magnetic Microscopy Constrained by Euler Deconvolution"
+  is_preprint: true
+  year: 2026
+  authors: Souza-Junior, G., Donardelli Bellon, U., Uieda, L., Ferreira da Trindade, R., Fu, R., Williams, W., & Siqueira-Macedo, A.
+  journal: EarthArXiv
+  doi: 10.31223/X5K20C
+  repository: compgeolab/micromag-spherical-harmonic
+  data: 10.5281/zenodo.20446906
+
+papers:
+
+- title:
+  year:
+  authors:
+  journal:
+  doi:
+  repository:
+  data:
+  preprint:

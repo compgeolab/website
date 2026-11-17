@@ -30,6 +30,8 @@ navigation:
     id: team/index
   - name: Research
     id: research/index
+  - name: Publications
+    id: publications/index
   - name: Manual
     id: manual/index
 ignore:

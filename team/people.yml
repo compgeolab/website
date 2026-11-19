@@ -10,7 +10,8 @@
 # List of current lab members
 current:
   - name: Leonardo Uieda
-    role: PI / Professor
+    roles:
+      - title: PI / Professor
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: leouieda
@@ -21,75 +22,109 @@ current:
     lattes: "8939551682050504"
     website: https://www.leouieda.com
 
+  - name: Gelson Ferreira Souza-Junior
+    roles:
+      - title: Postdoctoral researcher
+        date: 2026 - present
+        advisor: Marly Babinski
+      - title: PhD researcher
+        date: 2021 - 2026
+    affiliation: Universidade de São Paulo, Brazil
+    pronouns: he/him
+    github: Souza-junior
+    orcid: 0000-0002-5695-4239
+    lattes: "5458580084475010"
+    google_scholar: h7rx2r4AAAAJ
+    researchgate: Gelson-Souza-Junior
+    googlescholar: h7rx2r4AAAAJ
+    project: "Micropaleomagnetism"
+
   - name: India Uppal
-    role: PhD researcher
-    advisor: Richard Holme
+    roles:
+      - title: PhD researcher
+        date: 2021 - present
+        advisor: Richard Holme
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: indiauppal
-    email: I.Uppal@liverpool.ac.uk
     orcid: 0000-0003-3531-2656
     project: Magnetic Probing of the Antarctic Crust
     researchgate: India-Uppal
 
   - name: Arthur Siqueira-Macedo
-    role: PhD researcher
+    roles:
+      - title: PhD researcher
+        date: 2026 - present
+      - title: MSc student
+        date: 2024 - 2026
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: arthursmacedo
-    email: arthursmacedo@usp.br
     orcid: 0009-0006-5106-4356
     lattes: "8208731636024394"
     researchgate: Arthur-Macedo-9
+    google_scholar: XxM00ZIAAAAJ
     project: Modeling continental-scale potential-field data from Antarctica
 
   - name: Gabriel Aparecido das Chagas Silva
-    role: Undergraduate student
+    roles:
+      - title: Undergraduate student
+        date: 2024 - present
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: chagas-gabriel
-    email: gabaparecidochagas@usp.br
     lattes: "6035373599732811"
     researchgate: Gabriel-Silva-282
     project: Gravity-topography regression analysis
 
   - name: Eros Kerouak Cordeiro Pereira
-    role: PhD researcher
-    advisor: Tiago Lima Rodrigues
+    roles:
+      - title: PhD researcher
+        date: 2026 - present
+        advisor: Tiago Rodrigues
+      - title: MSc student
+        date: 2024 - 2026
+        advisor: Alessandra Bongiolo
     affiliation: Universidade Federal do Paraná, Brazil
     pronouns: he/him
     github: ErosKerouak
-    email: eroskerouak@gmail.com
     orcid: 0009-0008-0891-6781
     lattes: "3980280544623493"
     researchgate: Eros-Kerouak-Pereira
     project: Gravity data integration with equivalent sources
 
-  - name: Sofia Vieira dos Santos
-    role: Undergraduate student
-    affiliation: Universidade de São Paulo, Brazil
-    github: black-water-lilies
-    project: Gradient-boosting to speed-up spherical harmonic synthesis
-
   - name: Felipe Nascimento Hong
-    role: Undergraduate student
+    roles:
+      - title: Undergraduate student
+        date: 2025 - present
     affiliation: Universidade de São Paulo, Brazil
     github: felipehong
     project: Topographic correction using tesseroids
 
   - name: Paulo Eduardo Crystal
-    role: Undergraduate student
+    roles:
+      - title: Undergraduate student
+        date: 2025 - present
     affiliation: Universidade de São Paulo, Brazil
     github: paulocrystal
     project: Modeling elastic waves in Python for geophysics education
 
-  - name: Victoria Malta Pereira de Lima
-    role: MSc student
+  - name: Sofia Vieira dos Santos
+    roles:
+      - title: Undergraduate student
+        date: 2026 - present
     affiliation: Universidade de São Paulo, Brazil
-    advisor: Andrea Teixeira Ustra
+    github: black-water-lilies
+    project: Gradient-boosting to speed-up spherical harmonic synthesis
+
+  - name: Victoria Malta Pereira de Lima
+    roles:
+      - title: MSc student
+        date: 2026 - present
+        advisor: Andrea Ustra
+    affiliation: Universidade de São Paulo, Brazil
     orcid: 0009-0002-7833-0731
     github: VMaltaL
-    email: victoriamaltadelima@usp.br
     lattes: "8434523256554497"
     researchgate: Victoria-Lima-12
     project: The effect of organic matter on the IP response
@@ -97,42 +132,34 @@ current:
 # List of past lab members
 alumni:
 
-  - name: Gelson Ferreira Souza-Junior
-    role: PhD researcher
-    affiliation: Universidade de São Paulo, Brazil
-    pronouns: he/him
-    github: Souza-junior
-    email: gelson.ferreira@iag.usp.br
-    orcid: 0000-0002-5695-4239
-    lattes: "5458580084475010"
-    researchgate: Gelson-Souza-Junior
-    googlescholar: h7rx2r4AAAAJ
-    project: "Micropaleomagnetism"
-
   - name: Yago Moreira Castro
-    role: MSc student
+    roles:
+      - title: MSc student
+        date: 2024 - 2026
     affiliation: Universidade de São Paulo, Brazil
     pronouns: he/him
     github: YagoMCastro
-    email: yagomcastro@usp.br
     orcid: 0009-0003-3884-9675
     lattes: "3638234138206203"
     researchgate: Yago-Moreira-Castro
     project: "Magali: An open-source software package for magnetic microscopy"
 
   - name: Ellen Fernandes Marcos
-    role: Undergraduate student
+    roles:
+      - title: Undergraduate student
+        date: 2024
     affiliation: Universidade de São Paulo, Brazil
     pronouns: she/her
     github: fernandesellen
-    email: ellenfernandes@usp.br
     lattes: "0331850218891856"
     researchgate: Ellen-Fernandes
     project: Quantifying the quality of data interpolation from potential methods by equivalent sources using block cross-validation
 
   - name: Santiago Soler
-    role: PhD researcher
-    advisor: Mario Gimenez
+    roles:
+      - title: PhD researcher
+        date: 2017 - 2022
+        advisor: Mario Gimenez
     affiliation: Universidad Nacional de San Juan, Argentina
     pronouns: he/him
     github: santisoler
@@ -143,14 +170,18 @@ alumni:
     website: https://www.santisoler.com
 
   - name: Laura Nicholls
-    role: Undergraduate student
+    roles:
+      - title: Undergraduate student
+        date: 2021 - 2022
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: LNich
     project: An open-source Python implementation of the gravitational fields of ellipsoids
 
   - name: Sarah Margrethe Askevold
-    role: Undergraduate student
+    roles:
+      - title: Undergraduate student
+        date: 2021 - 2022
     affiliation: University of Liverpool, UK
     pronouns: she/her
     github: SAskevold

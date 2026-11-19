@@ -31,11 +31,10 @@ solving, open science, and software engineering.
         {%- endif %}
       </h3>
       <ul role="list">
-        <li><span class="text-bold">{{ person.role }}</span></li>
+        {%- for role in person.roles %}
+          <li><span class="text-bold">{{ role.title }}</span>{%- if role.date is defined %} <span class="font-small">({{ role.date }}{%- if role.advisor is defined %} | Advisor: {{ role.advisor }}{%- endif %})</span>{%- endif %}</li>
+        {%- endfor %}
         <li>{{ person.affiliation }}</li>
-        {%- if person.advisor is defined %}
-          <li>Advisor: {{ person.advisor }}</li>
-        {%- endif %}
         {%- if person.email is defined %}
           <li>Email: <a href="mailto:{{ person.email }}" target="_blank">{{ person.email }}</a></li>
         {%- endif %}

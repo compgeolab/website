@@ -3,13 +3,13 @@
 preprints:
 
 - title: "Multipole Modeling for Magnetic Microscopy Constrained by Euler Deconvolution"
-  is_preprint: true
   year: 2026
   authors: Souza-Junior, G., Donardelli Bellon, U., Uieda, L., Ferreira da Trindade, R., Fu, R., Williams, W., & Siqueira-Macedo, A.
   journal: EarthArXiv
   doi: 10.31223/X5K20C
   github: compgeolab/micromag-spherical-harmonic
   data: 10.5281/zenodo.20446906
+  theme: microscopy
 
 papers:
 
@@ -21,6 +21,7 @@ papers:
   preprint: 10.31223/X5M19R
   data: 10.5281/zenodo.18509844
   github: compgeolab/eqs-magnetic-spherical
+  theme: integration
 
 - title: "PyGMT: Bridging Python and the Generic Mapping Tools for Geospatial Visualization and Analysis"
   year: 2026
@@ -29,15 +30,7 @@ papers:
   doi: 10.1029/2026GC013105
   data: 10.5281/zenodo.19412361
   github: GenericMappingTools/pygmt-paper-figures
-
-- title: "Estimating Earth’s past field strength from individual sources in archaeological ceramics using quantum diamond microscopy"
-  year: 2026
-  authors: Bellon, U. D., F. Souza-Junior, G., Williams, W., Muxworthy, A. R., Uieda, L., Fu, R. R., et al.
-  journal: Communications Earth & Environment
-  preprint: 10.21203/rs.3.rs-8864846/v1
-  doi: 10.1038/s43247-026-03725-3
-  data: 10.5281/zenodo.19455703
-  github: bellon-donardelli/QDM_maps_alignment_script
+  theme: software
 
 - title: "Robust directional analysis of magnetic microscopy images using non-linear inversion and iterative Euler deconvolution"
   year: 2026
@@ -48,6 +41,17 @@ papers:
   preprint: 10.31223/X5N42F
   data: 10.5281/zenodo.15132658
   github: compgeolab/micromag-interfering-sources
+  theme: microscopy
+
+- title: "Estimating Earth’s past field strength from individual sources in archaeological ceramics using quantum diamond microscopy"
+  year: 2026
+  authors: Bellon, U. D., F. Souza-Junior, G., Williams, W., Muxworthy, A. R., Uieda, L., Fu, R. R., et al.
+  journal: Communications Earth & Environment
+  preprint: 10.21203/rs.3.rs-8864846/v1
+  doi: 10.1038/s43247-026-03725-3
+  data: 10.5281/zenodo.19455703
+  github: bellon-donardelli/QDM_maps_alignment_script
+  theme: microscopy
 
 - title: "Distance-dependent stray field decay in magnetically stable remanence carriers: Implications for magnetic microscopy"
   year: 2026
@@ -58,6 +62,7 @@ papers:
   preprint: 10.22541/essoar.176071652.24509178/v1
   data: 10.5281/zenodo.17256342
   github: bellon-donardelli/Stray-fields
+  theme: microscopy
 
 - title: "Dual-layer gradient-boosted equivalent sources for magnetic data"
   year: 2025
@@ -67,6 +72,7 @@ papers:
   doi: 10.1093/gji/ggaf359
   data: 10.5281/zenodo.15120457
   github: compgeolab/eqs-magnetic-dual-layer
+  theme: integration
 
 - title: "Euler inversion: Locating sources of potential-field data through inversion of Euler's homogeneity equation"
   year: 2025
@@ -76,6 +82,7 @@ papers:
   preprint: 10.31223/X5T41M
   github: compgeolab/euler-inversion
   data: 10.6084/m9.figshare.26384140
+  theme: inversion
 
 - title: Full vector inversion of magnetic microscopy images using Euler deconvolution as prior information
   year: 2024
@@ -85,6 +92,7 @@ papers:
   preprint: 10.31223/X5QD5Z
   data: 10.6084/m9.figshare.22672978.v3
   github: compgeolab/micromag-euler-dipole
+  theme: microscopy
 
 - title: Gradient-boosted equivalent sources
   year: 2021
@@ -94,6 +102,7 @@ papers:
   preprint: 10.31223/X58G7C
   data: 10.6084/m9.figshare.13604360
   github: compgeolab/eql-gradient-boosted
+  theme: integration
 
 - title: "Pooch: A friend to fetch your data files"
   year: 2020
@@ -101,6 +110,7 @@ papers:
   authors: Uieda, L., Soler, S., Rampin, R., van Kemenade, H., Turk, M., Shapero, D., et al.
   journal: Journal of Open Source Software
   github: fatiando/pooch
+  theme: software
 
 - title: The Generic Mapping Tools Version 6
   year: 2019
@@ -109,3 +119,4 @@ papers:
   journal: Geochemistry, Geophysics, Geosystems
   data: 10.6084/m9.figshare.8171339
   github: GenericMappingTools/gmt
+  theme: software

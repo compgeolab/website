@@ -16,7 +16,7 @@ preprints, source code, and data.
 {% if articles %}
 <ul role="list" class="flow">
 {%- for article in articles %}
-  <li>
+  <li id="{{ article.doi }}">
   <span class="font-small">[{{ "{:02d}".format(loop.revindex) }}]</span>
   <strong>{{ article.title }}.</strong>
   {{ article.authors }} ({{ article.year }}).

@@ -1,5 +1,5 @@
 ---
-title: Our research
+title: Our research themes
 template: base.html
 ---
 
@@ -27,7 +27,7 @@ find the main research themes that we pursue.
 
 {{ theme.description }}
 
-{{ macros.figure(src=theme.img, alt=theme.alt, caption=theme.caption) }}
+{{ macros.figure(src="../images/research/" + tag + ".webp", alt=theme.alt, caption=theme.caption) }}
 
 <div class="callout">
 

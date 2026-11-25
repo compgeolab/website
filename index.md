@@ -9,7 +9,7 @@ banner_subtitle: |
 banner_links:
   - name: Meet the team
     id: team/index
-  - name: Learn abou our research
+  - name: Learn about our research
     id: research/index
   - name: Read the lab manual
     id: manual/index

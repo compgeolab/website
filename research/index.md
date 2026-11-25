@@ -36,7 +36,7 @@ Examples of our work on this theme:
 {%- for theme_tag, papers in site["publications/index"].publications.papers|groupby("theme") %}
 {%- if theme_tag == tag %}
 {% for paper in papers %}
-{%- if loop.index > 3 %}{% break %}{%- endif %}
+{%- if loop.index > 2 %}{% break %}{%- endif %}
 
 * [{{ paper.title }}](../publications#{{ paper.doi }})
 

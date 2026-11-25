@@ -1,0 +1,37 @@
+integration:
+  title: Data integration and interpolation
+  description: |
+    Geoscientists have been dealing with problems of integrating and interpolating unevenly distributed data for decades. Many of our approaches have similarities with **machine learning** problems. For example the **equivalent sources technique** (used in gravity and magnetics) and **spline interpolation** are basically supervised-learning methods. Given the many similarities, it makes sense to apply and adapt machine learning techniques and best-practices to these geophysical problems.
+
+    At the lab, we are employing machine-learning methods like **ensemble techniques** and **cross-validation** to overcome key computational challenges in equivalent-source methods and data interpolation (AKA gridding).
+  alt: Two maps side by side of the area, with coastlines visible on the upper part, the left map showing red-white-blue dots scattered throughout the continental part, the right map showing a continuous red-white-blue distribution of colors.
+  caption: Results from our interpolation of millions of <a href="https://github.com/compgeolab/australia-gravity-data">ground gravity data from Australia</a> to a uniform height using gradient-boosted equivalent sources (<a href="https://doi.org/10.1093/gji/ggab297">Soler and Ueida, 2021</a>). <strong>Left:</strong> Section of the ground measurements of gravity disturbance (red means positive and blue means negative) from several surveys with different spacings and distributions. <strong>Right:</strong> Same section of the interpolated grid at a uniform height, which is able to retain the high resolution of the denser surveys while filling in the gaps in the data.
+
+microscopy:
+  title: Magnetic microscopy
+  description: |
+    The magnetization that gets locked in some minerals (known as [*ferromagnetic minerals*](https://en.wikipedia.org/wiki/Ferromagnetism)) at the time of their formation is one of a few gateways we have into the **Earth's distant past**. So far, researchers have mostly only been able to make bulk measurements of magnetization from collected rock samples. Emerging *magnetic microscopy* technology is now allowing us to image thin-sections and distinguish **the magnetic fields of the individual minerals** that make up the rock sample.
+
+    Our group is collaborating with experts in paleomagnetism to **develop new methods and software for data processing and interpretation**, unlocking the huge potential of these exciting new datasets.
+  alt: To the left, gray scale map showing dark spots and a lighter rectangular section in the middle. To the right, red and blue map showing dipolar anomalies at a scale of 400 micrometers.
+  caption: Example QDM magnetic microscopy data from a basalt sample (<a href="https://doi.org/10.1029/2025JB031725">Souza-Junior et al., 2026</a>), showing tiny magnetic anomalies (on the order of 10-50 µm in size) that are associated with the ferromagnetic minerals found in the rock. The left image shows the optical equivalent of the magnetic data on the right.
+
+inversion:
+  title: Subsurface imaging
+  description: |
+    Our ultimate goal as geophysicists is to **understand the inner structure and dynamics of the Earth** from surface observations. This is a tough mathematical and computational problem: it's an ill-posed **inverse problem**, to which a solution might not exist, not be unique, and not be stable.
+
+    We develop methods to overcome these challenges and solve different kinds of inverse problems that arise in geophysics.
+  alt: Map with red and blue colored points along vertical lines and colored triangles, circles and squares highlighting linear and dipolar anomalies
+  caption: |
+    Estimated 3D position and shape of sources from airborne magnetic data using Euler inversion (<a href="https://doi.org/10.1093/gji/ggaf114">Uieda et al., 2025</a>). The structural index corresponds to the shape. A good rule of thumb is: 1 = dikes, 2 = sills, 3 = spheres. Black outlines are the outcropping parts of intrusions.
+
+software:
+  title: Free software development
+  description: |
+    Software underpins everything we do as geoscientists. We have a **strong commitment developing free and open-source software** to support not only our own research efforts, but those of **our entire community**. Software development is also a way for us to help **train new generations** on advanced topics and **build human capacity** within geoscience.
+
+    Our group works mostly on [Fatiando a Terra](https://www.fatiando.org/), a collection of Python libraries for geophysics. Leo was also the creator of [PyGMT](https://www.pygmt.org) and a core contributor to the [Generic Mapping Tools (GMT)](https://www.generic-mapping-tools.org/).
+  alt: Screenshot of a black screen with colored text (source code) in two columns.h
+  caption: |
+    Source code for the International Geomagnetic Reference Field (IGRF) calculation in the <a href="https://www.fatiando.org/harmonica">Harmonica</a> library of Fatiando a Terra. The code is pure Python with the performance bottlenecks optimized using the <a href="https://numba.pydata.org/">Numba</a> library to achieve close to C speeds.
